@@ -26,4 +26,17 @@ register_nav_menus( array(
   'main-menu' => esc_html__( 'Main Menu', 'dwpcustomtheme' ), //add additional menus here
 ) );
 
+// Setup widget areas
+function dwpcustomtheme_widgets_init(){
+  register_sidebar([
+    'name'            => esc_html__( 'Main Sidebar', 'dwpcustomtheme' ),
+    'id'              => 'main-sidebar',
+    'description'     => esc_html__( 'Add widgets for main sidebar here', 'dwpcustomtheme' ),
+    'before_widget'   => '<section class="widget">',
+    'after_widget'    => '</section>',
+    'before_title'    => '<h2 class="widget-title">',
+    'after_title'    => '</h2>',
+  ]);
+}
+add_action('widgets_init', 'dwpcustomtheme_widgets_init');
 ?>
