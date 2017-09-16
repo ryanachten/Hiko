@@ -3,8 +3,8 @@
 // THEME SUPPORT
 add_theme_support( 'title-tag' ); // handle title in seperate php file
 add_theme_support( 'post-thumbnails' );
-add_theme_support( 'post-formats', ['aside', 'gallery', 'link', 'image',
-                    'quote', 'status', 'video', 'audio', 'chat'] ); //types of posts enabled
+// add_theme_support( 'post-formats', ['aside', 'gallery', 'link', 'image',
+                    // 'quote', 'status', 'video', 'audio', 'chat'] ); //Removed post formats as these do not align with format needs
 add_theme_support( 'html5' );
 add_theme_support( 'automatic-feed-links' ); //helps with site metadata
 // customize support
