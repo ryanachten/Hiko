@@ -15,8 +15,8 @@ Longer descript goes here
 /*TODO: update info above*/
 
 body {
-  background-color: #fff091;
-  font-family: "Open Sans", sans-serif;
+  background-color: #f4f0eb;
+  font-family: "Roboto", sans-serif;
 }
 
 body.tag-50,
@@ -26,7 +26,7 @@ body.category-9 {
 
 h1, h2, h3, h4, h5, h6,
 .site-title {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -94,7 +94,7 @@ footer.site-footer {
 .main-navigation li.current-menu-item>a,
 .main-navigation li.current-page-parent>a {
   font-weight: bold;
-  color: #494329;
+  /*color: #987b65;*/
 }
 
 .main-navigation li ul {
@@ -106,7 +106,7 @@ footer.site-footer {
   position: absolute;
   margin-left: -10px;
   z-index: 100;
-  background: #fff091;
+  background: #ffffff;
   padding: 5px 10px;
 }
 
