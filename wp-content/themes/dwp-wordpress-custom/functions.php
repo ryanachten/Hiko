@@ -28,10 +28,21 @@ register_nav_menus( array(
 
 // Setup widget areas
 function dwpcustomtheme_widgets_init(){
+  // Sidebar used on the blog pages (via content.php)
   register_sidebar([
     'name'            => esc_html__( 'Main Sidebar', 'dwpcustomtheme' ),
     'id'              => 'main-sidebar',
     'description'     => esc_html__( 'Add widgets for main sidebar here', 'dwpcustomtheme' ),
+    'before_widget'   => '<section class="widget">',
+    'after_widget'    => '</section>',
+    'before_title'    => '<h2 class="widget-title">',
+    'after_title'    => '</h2>',
+  ]);
+  // Sidebar used on the front-page
+  register_sidebar([
+    'name'            => esc_html__( 'Main Sidebar', 'dwpcustomtheme' ),
+    'id'              => 'front-page',
+    'description'     => esc_html__( 'Add widgets for the front page sidebar here', 'dwpcustomtheme' ),
     'before_widget'   => '<section class="widget">',
     'after_widget'    => '</section>',
     'before_title'    => '<h2 class="widget-title">',
