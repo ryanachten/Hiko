@@ -8,6 +8,9 @@ groupings such as categories, date, author etc -->
     <main id="main" class="site-main" role="main">
 
       <h1><?php the_archive_title(); ?></h1>
+      <p>
+        <?php echo the_author_meta('description', $post->post_author); ?>
+      </p>
 
       <!-- The Loop through posts -->
       <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
@@ -22,7 +25,7 @@ groupings such as categories, date, author etc -->
 
       <?php echo paginate_links(); ?>
 
-      <p>Template: archive.php</p>
+      <p>Template: author.php</p>
 
     </main>
 
