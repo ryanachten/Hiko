@@ -5,7 +5,7 @@
      <?php the_title( '<h1>', '</h1>'); ?>
 
      <div class="byline">
-      <?php esc_html_e( 'Author: ' ); ?><?php the_author(); ?>
+      <?php esc_html_e( 'Author: ' ); ?><?php the_author_posts_link(); ?>
      </div>
 
   </header>
