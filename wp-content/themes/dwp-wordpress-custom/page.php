@@ -1,4 +1,4 @@
-<!-- Fallback template for pages, TODO: may not be needed -->
+<!-- Base template used by pages -->
 
 <?php get_header(); ?>
 
@@ -17,7 +17,7 @@
 
       <?php endif; ?>
 
-      <p>Template: singular.php</p>
+      <p>Template: page.php</p>
 
     </main>
 
