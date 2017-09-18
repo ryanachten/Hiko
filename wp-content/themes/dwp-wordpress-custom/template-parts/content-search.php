@@ -1,3 +1,4 @@
+<!-- Controls how search result content is displayed -->
 <article id="post-<?php the_ID(); ?>" class="post">
 
   <header class="entry-header">

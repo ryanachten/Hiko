@@ -1,4 +1,4 @@
-<!-- Base template used by pages -->
+<!-- Template used to display search results -->
 
 <?php get_header(); ?>
 
