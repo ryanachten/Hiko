@@ -23,6 +23,11 @@
 
           </div>
 
+          <p>
+            Course:
+            <?php the_terms( $post->ID, 'courses' ); ?>
+          </p>
+
         </article>
 
 
