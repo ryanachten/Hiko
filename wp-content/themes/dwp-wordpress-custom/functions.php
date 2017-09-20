@@ -17,7 +17,7 @@ add_theme_support( 'starter-content' ); //provides starter content to users
 function dwpcustomtheme_enqueue_styles(){ //namespace w/ theme textdomain to avoid conflicts
   wp_enqueue_style( 'main-fonts-css', 'https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Roboto:400,400i,700,700i"', [], '', 'all' );
   wp_enqueue_style( 'main-css', get_stylesheet_directory_uri() . '/style.css', ['main-fonts-css'], time() ); //TODO: change version arg from timecode
-  wp_enqueue_style( 'foundation', get_stylesheet_directory_uri() . '/foundation.min.css', [], 1 );
+  wp_enqueue_style( 'foundation', get_stylesheet_directory_uri() . '/foundation.min.css', [], 6.4 );
 
 }
 add_action( 'wp_enqueue_scripts', 'dwpcustomtheme_enqueue_styles' ); //add theme css to wp build cycle
