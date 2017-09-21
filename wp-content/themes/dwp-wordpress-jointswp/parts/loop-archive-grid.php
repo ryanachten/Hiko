@@ -23,13 +23,13 @@ $grid_columns = 3; ?>
 
 				<header class="article-header">
 					<h3 class="title">
-						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-					</h3>
+						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 					<?php get_template_part( 'parts/content', 'byline' ); ?>
 				</header> <!-- end article header -->
 
 				<section class="entry-content" itemprop="articleBody">
-					<?php the_excerpt('<button class="tiny">' . __( 'Read more...', 'jointswp' ) . '</button>'); ?>
+					<?php the_excerpt(); ?>
+					<!-- '<button class="tiny">' . __( 'Read more...', 'jointswp' ) . '</button>' -->
 				</section> <!-- end article section -->
 
 			</article> <!-- end article -->
