@@ -1,14 +1,15 @@
-/* Accessibility features */
-.screen-reader-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
-    position: absolute !important;
-    white-space: nowrap;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
+/* ***MENU STYLES*** */
+
+.top-bar *, .top-bar, .title-bar{
+  color: black;
+  background-color: #f3f1f1;
+}
+.menu-icon:after {
+  background: #000000;
+  box-shadow: 0 7px 0 #000000, 0 14px 0 #000000;
 }
 
+/* ***HEADER STYLES*** */
 
 /*Top widget cotainer styles*/
 div#topwidgets {
@@ -44,4 +45,16 @@ section.archive-grid.featured-image{
 .article-header .title>a,
 .entry-content p{
   word-wrap: break-word;
+}
+
+
+/* Accessibility features */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+    position: absolute !important;
+    white-space: nowrap;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
