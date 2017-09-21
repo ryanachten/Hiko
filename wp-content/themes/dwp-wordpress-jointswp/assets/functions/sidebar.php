@@ -21,6 +21,16 @@ function joints_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 
+	register_sidebar(array(
+		'id' => 'topwidgets',
+		'name' => __('Top Widgets', 'jointswp'),
+		'description' => __('Widget area for the top of holder pages', 'jointswp'),
+		'before_widget' => '<div id="%1$s" class="widget %2$s small-2">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
+
 	/*
 	to add more sidebars or widgetized areas, just copy
 	and edit the above sidebar code. In order to call
