@@ -2,14 +2,17 @@
 
 .top-bar *, .top-bar, .title-bar{
   color: black;
-  background-color: #f3f1f1;
+  background-color: white;
 }
-.menu-icon:after {
+.menu-icon:after, .menu-icon:hover:after{
   background: #000000;
   box-shadow: 0 7px 0 #000000, 0 14px 0 #000000;
 }
 
 /* ***HEADER STYLES*** */
+.header{
+  margin-bottom: 40px;
+}
 
 /*Top widget cotainer styles*/
 div#topwidgets {
@@ -20,26 +23,39 @@ div#topwidgets {
   display: inline-block;
   vertical-align: top;
 }
+/* POST AND PAGE STYLES*/
+.archive-header, .article-header{
+  text-align: center;
+  margin-bottom: 30px;
+}
+section.featured-image{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ***SINGLE / PAGE STYLES*** */
+/*Article grid loop styles*/
+.entry-content section.featured-image{
+  height: 400px;
+  margin-bottom: 20px;
+}
+/*Safeguard for non-breaking text*/
+h1.entry-title.single-title, .comments-title span{
+  word-wrap: break-word;
+}
 
 /* ***ARCHIVE / INDEX STYLES*** */
 
 /*Archive header styles*/
-.archive-header{
-  text-align: center;
-  margin-bottom: 30px;
-}
 .archive-header .taxonomy-description{
   font-size: 1.2rem;
   width: 80%;
   margin: 0 auto;
 }
-
 /*Archive grid loop styles*/
 section.archive-grid.featured-image{
   height: 200px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 /*Safeguard for non-breaking text*/
 .article-header .title>a,
