@@ -22,7 +22,7 @@ function site_scripts() {
     wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array(), '', 'all' );
 
     // Add global style overrides for customising Joints
-    wp_enqueue_style( 'global-css', get_template_directory_uri() . '/assets/css/global.css', array(), '', 'all' );
+    wp_enqueue_style( 'global-css', get_template_directory_uri() . '/assets/css/global.css', array(), time(), 'all' );
 
     // Comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
