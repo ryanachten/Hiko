@@ -1,15 +1,19 @@
 <?php get_header(); ?>
 
-	<div id="content">
+	<div id="content" class="row">
+
+		<header class="archive-header medium-10 large-10 small-centered columns" >
+			<h1 class="page-title"><?php the_archive_title();?></h1>
+		<?php the_archive_description('<div class="taxonomy-description">', '</div>');?>
+		</header>
+
+		<?php get_sidebar(); ?>
+
+		<hr>
 
 		<div id="inner-content" class="row">
 
-		    <main id="main" class="large-8 medium-8 columns" role="main">
-
-		    	<header>
-		    		<h1 class="page-title"><?php the_archive_title();?></h1>
-					<?php the_archive_description('<div class="taxonomy-description">', '</div>');?>
-		    	</header>
+		    <main id="main" class="medium-10 large-10 small-centered columns" role="main">
 
 		    	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -28,7 +32,7 @@
 
 			</main> <!-- end #main -->
 
-			<?php get_sidebar(); ?>
+
 
 	    </div> <!-- end #inner-content -->
 

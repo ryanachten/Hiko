@@ -9,10 +9,20 @@ div#topwidgets {
   vertical-align: top;
 }
 
-/*Archive grid styles*/
+/* ***ARCHIVE / INDEX STYLES*** */
+
+/*Archive header styles*/
+.archive-header{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.archive-header .taxonomy-description{
+  font-size: 1.2rem;
+  width: 80%;
+  margin: 0 auto;
+}
 
 /*Archive grid loop styles*/
-
 section.archive-grid.featured-image{
   height: 200px;
   background-position: center;
