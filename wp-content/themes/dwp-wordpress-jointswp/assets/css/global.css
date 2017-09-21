@@ -9,10 +9,8 @@
   box-shadow: 0 7px 0 #000000, 0 14px 0 #000000;
 }
 
-/* ***HEADER STYLES*** */
-.header{
-  margin-bottom: 40px;
-}
+
+/* ***WIDGET STYLES*** */
 
 /*Top widget cotainer styles*/
 div#topwidgets {
@@ -23,7 +21,19 @@ div#topwidgets {
   display: inline-block;
   vertical-align: top;
 }
-/* POST AND PAGE STYLES*/
+
+/* ***AVATAR STYLES*** */
+img.avatar{
+  border-radius: 50%;
+}
+
+
+/* ***HEADER STYLES*** */
+.header{
+  margin-bottom: 40px;
+}
+
+/* ***POST AND PAGE STYLES*** */
 .archive-header, .article-header{
   text-align: center;
   margin-bottom: 30px;
