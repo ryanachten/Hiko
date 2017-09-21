@@ -21,6 +21,9 @@ function site_scripts() {
     // Register main stylesheet
     wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array(), '', 'all' );
 
+    // Add Foundation icon set
+    wp_enqueue_style( 'foundation-icons-css', get_template_directory_uri() . '/assets/css/foundation-icons/foundation-icons.css', array(), 3, 'all' );
+
     // Add global style overrides for customising Joints
     wp_enqueue_style( 'global-css', get_template_directory_uri() . '/assets/css/global.css', array(), time(), 'all' );
 

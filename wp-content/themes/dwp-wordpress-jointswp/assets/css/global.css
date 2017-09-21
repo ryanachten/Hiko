@@ -73,6 +73,11 @@ section.archive-grid.featured-image{
   word-wrap: break-word;
 }
 
+/* *** AUTHOR PROFILE STYLES*** */
+.author-social-icon{
+  font-size: 30px;
+  margin: 0 10px;
+}
 
 /* Accessibility features */
 .screen-reader-text {
