@@ -17,10 +17,14 @@
 					the_author_meta( 'user_email', $post->post_author ); ?>">
 						<i class="fi-mail"></i>
 					</a>
-					<a class="author-social-icon" href="<?php
-					the_author_meta( 'url', $post->post_author ); ?>">
-						<i class="fi-web"></i>
-					</a>
+					<?php
+						$author_web = get_the_author_meta( 'url', $post->post_author );
+						if( !empty($author_web) ): ?>
+							<a class="author-social-icon" href="<?php
+							the_author_meta( 'url', $post->post_author ); ?>">
+								<i class="fi-web"></i>
+							</a>
+					<?php endif; ?>
 			</div>
 		</header>
 
