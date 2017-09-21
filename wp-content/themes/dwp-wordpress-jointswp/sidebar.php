@@ -1,4 +1,4 @@
-<div id="topwidgets" class="sidebar row" role="complementary">
+<div id="topwidgets" class="sidebar row large-12 medium-12 small-centered " role="complementary">
 
 	<?php if ( is_active_sidebar( 'topwidgets' ) ) : ?>
 

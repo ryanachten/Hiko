@@ -1,3 +1,9 @@
+
+/*Top widget cotainer styles*/
+div#topwidgets {
+    text-align: center;
+}
+
 #topwidgets .widget{
   display: inline-block;
   vertical-align: top;

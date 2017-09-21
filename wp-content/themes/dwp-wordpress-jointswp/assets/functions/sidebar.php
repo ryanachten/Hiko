@@ -25,7 +25,7 @@ function joints_register_sidebars() {
 		'id' => 'topwidgets',
 		'name' => __('Top Widgets', 'jointswp'),
 		'description' => __('Widget area for the top of holder pages', 'jointswp'),
-		'before_widget' => '<div id="%1$s" class="widget %2$s small-2">',
+		'before_widget' => '<div id="%1$s" class="widget %2$s small-12 medium-3 small-centered columns">',
 		'after_widget' => '</div>',
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
