@@ -1,3 +1,4 @@
 <p class="byline">
-	Posted on <?php the_time('F j, Y') ?> by <?php the_author_posts_link(); ?>  - <?php the_category(', ') ?>
-</p>	
+	<h6 class="subheader"> <?php the_author_posts_link(); ?> </h6>
+	<small> <?php the_time('F j, Y') ?> </small>
+</p>
