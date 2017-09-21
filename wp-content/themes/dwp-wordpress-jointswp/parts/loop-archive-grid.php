@@ -22,7 +22,9 @@ $grid_columns = 3; ?>
 				<?php endif; ?>
 
 				<header class="article-header">
-					<h3 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+					<h3 class="title">
+						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+					</h3>
 					<?php get_template_part( 'parts/content', 'byline' ); ?>
 				</header> <!-- end article header -->
 

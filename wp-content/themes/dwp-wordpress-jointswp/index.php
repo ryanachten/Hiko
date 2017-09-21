@@ -4,6 +4,8 @@
 
  	<?php get_sidebar(); ?>
 
+	<hr>
+
 		<div id="inner-content" class="row">
 
 		    <main id="main" class="medium-10 large-10 small-centered columns" role="main">
