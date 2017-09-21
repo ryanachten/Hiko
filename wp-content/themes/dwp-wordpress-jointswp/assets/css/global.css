@@ -12,9 +12,15 @@ div#topwidgets {
 /*Archive grid styles*/
 
 /*Archive grid loop styles*/
+
 section.archive-grid.featured-image{
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+/*Safeguard for non-breaking text*/
+.article-header .title>a,
+.entry-content p{
+  word-wrap: break-word;
 }
