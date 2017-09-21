@@ -8,3 +8,11 @@ div#topwidgets {
   display: inline-block;
   vertical-align: top;
 }
+
+/*Archive grid styles*/
+/*Archive grid loop styles*/
+section.archive-grid.featured-image{
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
