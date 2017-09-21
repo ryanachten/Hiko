@@ -16,7 +16,7 @@ $grid_columns = 3; ?>
 				<!-- If post has a thumnail, add to section bg-img -->
 				<?php if( has_post_thumbnail() ): ?>
 					<section class="archive-grid featured-image" itemprop="articleBody" style="background-image: url('<?php
-						echo esc_url( get_the_post_thumbnail_url($post->ID, 'full') );
+						echo esc_url( get_the_post_thumbnail_url($post->ID, 'medium') );
 					?>');">
 					</section> <!-- end article section -->
 				<?php endif; ?>
