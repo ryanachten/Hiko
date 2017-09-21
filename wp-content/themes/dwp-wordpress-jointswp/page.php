@@ -20,6 +20,6 @@
 
 	</div> <!-- end #content -->
 
-	<p>Template: page.php</p>
+	<p style="text-align: center;">Template: page.php</p>
 
 <?php get_footer(); ?>

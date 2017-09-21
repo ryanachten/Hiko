@@ -27,12 +27,10 @@
 
 		    </main> <!-- end #main -->
 
-
+				<p style="text-align: center;">Template: index.php</p>
 
 		</div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
-
-	<p>Template: index.php</p>
 
 <?php get_footer(); ?>

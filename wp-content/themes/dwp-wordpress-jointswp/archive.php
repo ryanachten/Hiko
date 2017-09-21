@@ -37,6 +37,6 @@
 	    </div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
-	<p>Template: archive.php</p>
+	<p style="text-align: center;">Template: archive.php</p>
 
 <?php get_footer(); ?>
