@@ -4,11 +4,10 @@
 
 		<header class="archive-header medium-10 large-10 small-centered columns" >
 			<h1 class="page-title">
-				<?php $seriesObj = get_post_type_object( 'series' );
-				echo ucfirst( $seriesObj->name ); ?>
+				<?php	post_type_archive_title(); ?>
 			</h1>
 			<div class="taxonomy-description">
-				<?php	echo $seriesObj->description; ?>
+				<?php	echo get_post_type_object( 'series' )->description; ?>
 		</div>
 		</header>
 
