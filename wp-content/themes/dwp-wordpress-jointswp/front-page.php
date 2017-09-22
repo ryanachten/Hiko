@@ -40,6 +40,8 @@
 
 		</header>
 
+		<h1 class="text-center"><?php bloginfo('name'); ?></h1>
+		<p class="text-center"><?php bloginfo('description'); ?></p>
 		<?php get_sidebar(); ?>
 
 		<div id="inner-content" class="row">
