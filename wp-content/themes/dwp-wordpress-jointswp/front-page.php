@@ -2,7 +2,7 @@
 
 	<div id="content" class="row">
 
-		<header class="archive-header medium-12 small-centered columns" >
+		<header class="archive-header small-11 small-centered columns" >
 
 			<?php
 				$args = array(
@@ -44,11 +44,11 @@
 
 		<div id="inner-content" class="row">
 
-		    <main id="main" class="medium-12 large-12 small-centered columns row" role="main">
+		    <main id="main" class="small-11 small-centered columns row frontpage-content" role="main">
 
-					<h3 class="text-center">Projects</h3>
+					<h3 class="text-center">Latest Projects</h3>
 					<hr>
-					<section class="frontpage-sections medium-12 large-12 columns row">
+					<section class="frontpage-sections small-12 columns row">
 			    	<?php
 							$args = array(
 								'numberposts' => 2,
@@ -67,9 +67,9 @@
 						?>
 					</section>
 
-					<h3 class="text-center">Series</h3>
+					<h3 class="text-center">Latest Series</h3>
 					<hr>
-					<section class="frontpage-sections medium-12 large-12 columns row">
+					<section class="frontpage-sections small-12 columns row">
 			    	<?php
 							$args = array(
 								'numberposts' => 2,

@@ -43,6 +43,7 @@ section.featured-image{
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
+  margin-bottom: 10px;
 }
 
 /* ***SINGLE / PAGE STYLES*** */
@@ -78,6 +79,7 @@ section.archive-grid.featured-image{
 .frontpage-sections{
   display: inline-block;
   vertical-align: top;
+  margin-bottom: 20px;
 }
 section.featured-post.featured-image {
     height: 400px;
@@ -92,6 +94,9 @@ section.featured-post.featured-image {
 .featured-post.description div{
   display: inline-block;
   vertical-align: top;
+}
+main#main.frontpage-content {
+    margin: 0 auto;
 }
 
 /* *** AUTHOR PROFILE STYLES*** */
