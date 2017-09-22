@@ -42,6 +42,7 @@ section.featured-image{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 20px;
 }
 
 /* ***SINGLE / PAGE STYLES*** */
@@ -71,6 +72,26 @@ section.archive-grid.featured-image{
 .article-header .title>a,
 .entry-content p{
   word-wrap: break-word;
+}
+
+/* *** FRONT-PAGE STYLES*** */
+.frontpage-sections{
+  display: inline-block;
+  vertical-align: top;
+}
+section.featured-post.featured-image {
+    height: 400px;
+    padding: 40px;
+}
+.featured-post.description{
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+}
+.featured-post.description div{
+  display: inline-block;
+  vertical-align: top;
 }
 
 /* *** AUTHOR PROFILE STYLES*** */
