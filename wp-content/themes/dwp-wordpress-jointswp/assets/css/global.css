@@ -56,6 +56,11 @@ section.featured-image{
 h1.entry-title.single-title, .comments-title span{
   word-wrap: break-word;
 }
+/* Avatar style wrapper */
+.coauthor-avatar{
+  display: inline-block;
+  margin: 0 10px;
+}
 
 /* ***ARCHIVE / INDEX STYLES*** */
 

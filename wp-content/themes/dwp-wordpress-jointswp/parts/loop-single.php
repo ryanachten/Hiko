@@ -1,8 +1,19 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 	<header class="article-header">
-		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
+		<?php
+			if( function_exists( 'get_coauthors' ) ):
+				$coauthors = get_coauthors();
+				foreach( $coauthors as $coauthor): ?>
+				<div class="coauthor-avatar">
+					<?php echo coauthors_get_avatar( $coauthor, 65 ); ?>
+				</div>
+				<?php endforeach; else:
+					echo get_avatar( $post->post_author );
+				endif;
+		?>
 		<?php get_template_part( 'parts/content', 'byline' ); ?>
+		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
     </header> <!-- end article header -->
 
     <section class="entry-content" itemprop="articleBody">
