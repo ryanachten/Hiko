@@ -2,13 +2,15 @@
 
 	<header class="article-header">
 		<?php
+			// If co-authors are present, pull in their avatars
 			if( function_exists( 'get_coauthors' ) ):
 				$coauthors = get_coauthors();
 				foreach( $coauthors as $coauthor): ?>
-				<div class="coauthor-avatar">
-					<?php echo coauthors_get_avatar( $coauthor, 65 ); ?>
-				</div>
+					<div class="coauthor-avatar">
+						<?php echo coauthors_get_avatar( $coauthor, 65 ); ?>
+					</div>
 				<?php endforeach; else:
+					// If co-authors not are present, pull in author avatar
 					echo get_avatar( $post->post_author );
 				endif;
 		?>
@@ -17,7 +19,6 @@
     </header> <!-- end article header -->
 
     <section class="entry-content" itemprop="articleBody">
-		<?php //the_post_thumbnail('full'); ?>
 
 		<!-- If post has a thumnail, add to section bg-img -->
 		<?php if( has_post_thumbnail() ): ?>
