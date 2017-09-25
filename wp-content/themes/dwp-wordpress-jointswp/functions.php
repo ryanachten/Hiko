@@ -42,8 +42,19 @@ require_once(get_template_directory().'/assets/translation/translation.php');
 // Customize the WordPress admin
 // require_once(get_template_directory().'/assets/functions/admin.php');
 
-
+// Change the default length of excerpts to be shorter
 function custom_excerpt_length( $length ) {
 	return 20;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+// Add markdown support to custom post types (projects and series)
+add_action('init', 'init_project_markdown_support');
+function init_project_markdown_support(){
+	add_post_type_support('projects', 'wpcom-markdown');
+}
+
+add_action('init', 'init_series_markdown_support');
+function init_series_markdown_support(){
+	add_post_type_support('series', 'wpcom-markdown');
+}
