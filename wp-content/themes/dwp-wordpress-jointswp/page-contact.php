@@ -4,7 +4,7 @@
 
 		<div id="inner-content" class="row">
 
-		    <main id="main" class="large-8 medium-8 small-centered columns" role="main">
+		    <main id="main" class="large-8 medium-8 small-11 small-centered columns" role="main">
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -22,21 +22,21 @@
 
 										<div class="name-field large-6 columns">
 									    <label>Your name <small>required</small>
-									      <input type="text" required pattern="[a-zA-Z]+">
+									      <input type="text" required placeholder="Name...">
 									    </label>
 									    <small class="error">Name is required and must be a string.</small>
 									  </div>
 
 									  <div class="email-field large-6 columns">
 									    <label>Email <small>required</small>
-									      <input type="email" required>
+									      <input type="email" placeholder="Email..." required>
 									    </label>
 									    <small class="error">An email address is required.</small>
 									  </div>
 									</div>
 
 									<div>
-										<textarea placeholder="Message..."></textarea>
+										<textarea placeholder="Message..." required></textarea>
 	  								<small class="error">Invalid entry</small>
 									</div>
 
