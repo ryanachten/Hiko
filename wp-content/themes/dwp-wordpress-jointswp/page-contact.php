@@ -15,29 +15,30 @@
 							</header> <!-- end article header -->
 
 							<section class="entry-content" itemprop="articleBody">
-								<?php the_content(); ?>
+								<h3 class="subheader text-center"><?php the_content(); ?></h3>
 
-								<form data-abide>
+								<form data-abide novalidate>
 									<div class="row">
 
 										<div class="name-field large-6 columns">
 									    <label>Your name <small>required</small>
 									      <input type="text" required placeholder="Name...">
 									    </label>
-									    <small class="error">Name is required and must be a string.</small>
+									    <!-- <small class="error">Name is required and must be a string.</small> -->
 									  </div>
 
 									  <div class="email-field large-6 columns">
 									    <label>Email <small>required</small>
 									      <input type="email" placeholder="Email..." required>
 									    </label>
-									    <small class="error">An email address is required.</small>
+									    <!-- <small class="error">An email address is required.</small> -->
 									  </div>
 									</div>
 
 									<div>
+										<label>Your message <small>required</small>
 										<textarea placeholder="Message..." required></textarea>
-	  								<small class="error">Invalid entry</small>
+	  								<!-- <small class="error">Invalid entry</small> -->
 									</div>
 
 
