@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA;;UAAW;EAGT,KAAK,ECJU,KAAK;EDKpB,gBAAgB,ECJE,KAAK;;ADQvB,sBAAa;EACX,UAAU,ECVG,KAAK;EDWlB,UAAU,EAAE,6BAAiD;;AEdjE,cAAc;EACZ,UAAU,EAAE,MAAM;;AAGlB,mBAAO;EACL,OAAO,EAAE,YAAY;EACrB,cAAc,EAAE,GAAG",
+"sources": ["partials/_nav.sass","partials/_global.sass","partials/_widget.sass"],
+"names": [],
+"file": "output.css"
+}
