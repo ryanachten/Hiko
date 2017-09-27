@@ -3,3 +3,12 @@
 $font-stack:  Helvetica, san-serif
 $primary-colour: black
 $background-colour: white
+
+// Format featured image bg img mixin
+=featured-image($height, $margin-bottom)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  border-radius: 20px
+  margin-bottom: $margin-bottom
+  height: $height

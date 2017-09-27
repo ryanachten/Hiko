@@ -4,7 +4,7 @@
   color: black;
   background-color: white; }
 
-.menu-icon:hover:after {
+.menu-icon:after, .menu-icon:hover:after {
   background: black;
   box-shadow: 0 7px 0 black, 0 14px 0 black; }
 
@@ -14,5 +14,88 @@ div#topwidgets {
 #topwidgets .widget {
   display: inline-block;
   vertical-align: top; }
+
+.entry-content section.featured-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  height: 400px; }
+
+h1.entry-title.single-title,
+.comments-title span {
+  word-wrap: break-word; }
+
+.coauthor-avatar {
+  display: inline-block;
+  margin: 0 10px; }
+
+section.archive-grid.featured-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  height: 200px; }
+
+.archive-header .taxonomy-description {
+  font-size: 1.2rem;
+  width: 80%;
+  margin: 0 auto; }
+
+.article-header .title > a,
+.entry-content p {
+  word-wrap: break-word; }
+
+.frontpage-sections {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px; }
+
+section.featured-post.featured-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  height: 400px;
+  padding: 40px; }
+
+.featured-post.description {
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px; }
+  .featured-post.description div {
+    display: inline-block;
+    vertical-align: top; }
+
+main#main.frontpage-content {
+  margin: 0 auto; }
+
+img.avatar {
+  border-radius: 50%; }
+
+.header {
+  margin-bottom: 40px; }
+
+.archive-header,
+.article-header {
+  text-align: center;
+  margin-bottom: 30px; }
+
+.author-social-icon {
+  font-size: 30px;
+  margin: 0 10px; }
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
 
 /*# sourceMappingURL=output.css.map */
