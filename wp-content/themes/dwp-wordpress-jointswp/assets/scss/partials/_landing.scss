@@ -1,0 +1,29 @@
+// Styling of the front page sections
+.frontpage-sections{
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+
+section.featured-post.featured-image{
+  @include featured-image(400px, 20px);
+  padding: 40px;
+}
+
+// Styles for featured post description box
+.featured-post.description{
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+
+  div{
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+// Centre front page sections
+main#main.frontpage-content{
+  margin: 0 auto;
+}

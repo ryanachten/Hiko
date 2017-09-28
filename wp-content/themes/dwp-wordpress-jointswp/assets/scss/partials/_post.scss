@@ -1,0 +1,15 @@
+// Article grid loop styles
+.entry-content section.featured-image{
+  @include featured-image(400px, 20px);
+}
+
+// Safeguard for non-breaking text
+h1.entry-title.single-title,
+.comments-title span{
+  word-wrap: break-word;
+}
+
+.coauthor-avatar{
+  display: inline-block;
+  margin: 0 10px;
+}
