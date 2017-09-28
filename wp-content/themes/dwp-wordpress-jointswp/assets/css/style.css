@@ -4702,7 +4702,7 @@ div#topwidgets {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-bottom: 20px;
   height: 400px; }
 
@@ -4718,7 +4718,7 @@ section.archive-grid.featured-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-bottom: 10px;
   height: 200px; }
 
@@ -4740,7 +4740,7 @@ section.featured-post.featured-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-bottom: 20px;
   height: 400px;
   padding: 40px; }
