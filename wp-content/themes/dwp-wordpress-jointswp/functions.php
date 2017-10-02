@@ -49,12 +49,22 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 // Add markdown support to custom post types (projects and series)
-add_action('init', 'init_project_markdown_support');
+add_action( 'init', 'init_project_markdown_support' );
 function init_project_markdown_support(){
-	add_post_type_support('projects', 'wpcom-markdown');
+	add_post_type_support( 'projects', 'wpcom-markdown' );
+}
+add_action( 'init', 'init_series_markdown_support' );
+function init_series_markdown_support(){
+	add_post_type_support( 'series', 'wpcom-markdown' );
 }
 
-add_action('init', 'init_series_markdown_support');
-function init_series_markdown_support(){
-	add_post_type_support('series', 'wpcom-markdown');
-}
+// Change default query to include custom page types
+add_action( 'pre_get_posts', function( $query )
+{
+		if(	!is_admin() // Only target front end queries
+				&& $query->is_main_query() // Only target the main query
+				// && $query->is_category() // Only target category archives
+		 ){
+			 $query->set( 'post_type', [ 'post', 'projects', 'series' ] );
+		 }
+});
