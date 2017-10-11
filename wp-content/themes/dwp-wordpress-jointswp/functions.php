@@ -64,7 +64,7 @@ add_action( 'pre_get_posts', function( $query )
 		if(	!is_admin() // Only target front end queries
 				&& $query->is_main_query() // Only target the main query
 				&& !$query->is_post_type_archive([ 'projects', 'series' ]) // Don't apply modified query to CPT archives
-				&& !is_home() // Don't apply modified query to Blog page
+				&& is_archive() // Restrict custom query to only archive pages
 		 ){
 			 $query->set( 'post_type', [ 'post', 'projects', 'series' ] );
 		 }
