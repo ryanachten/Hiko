@@ -69,3 +69,14 @@ add_action( 'pre_get_posts', function( $query )
 			 $query->set( 'post_type', [ 'post', 'projects', 'series' ] );
 		 }
 });
+
+// Modify Series Advanced Custom Field Relationship query
+function series_parts_relationship_query( $args, $field, $post_id ){
+
+	// only make available posts / projects owned by the current user
+	$current_user = wp_get_current_user();
+	$args[ 'author' ] = $current_user->ID;
+
+	return $args;
+}
+add_filter('acf/fields/relationship/query/name=series_parts', 'series_parts_relationship_query', 10, 3);
