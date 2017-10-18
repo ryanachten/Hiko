@@ -42,11 +42,13 @@ require_once(get_template_directory().'/assets/translation/translation.php');
 // Customize the WordPress admin
 // require_once(get_template_directory().'/assets/functions/admin.php');
 
+
 // Change the default length of excerpts to be shorter
 function custom_excerpt_length( $length ) {
 	return 20;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 
 // Add markdown support to custom post types (projects and series)
 add_action( 'init', 'init_project_markdown_support' );
@@ -57,6 +59,7 @@ add_action( 'init', 'init_series_markdown_support' );
 function init_series_markdown_support(){
 	add_post_type_support( 'series', 'wpcom-markdown' );
 }
+
 
 // Change default query to include custom page types
 add_action( 'pre_get_posts', function( $query )
@@ -70,8 +73,9 @@ add_action( 'pre_get_posts', function( $query )
 		 }
 });
 
-// Modify Series Advanced Custom Field Relationship query
-function series_parts_relationship_query( $args, $field, $post_id ){
+
+// Modify Advanced Custom Field Relationship query
+function user_only_relationship_query( $args, $field, $post_id ){
 
 	// only make available posts / projects owned by the current user
 	$current_user = wp_get_current_user();
@@ -79,4 +83,4 @@ function series_parts_relationship_query( $args, $field, $post_id ){
 
 	return $args;
 }
-add_filter('acf/fields/relationship/query/name=series_parts', 'series_parts_relationship_query', 10, 3);
+add_filter('acf/fields/relationship/query', 'user_only_relationship_query', 10, 3);
