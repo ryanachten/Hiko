@@ -75,11 +75,12 @@ add_action( 'pre_get_posts', function( $query )
 
 
 // Modify Advanced Custom Field Relationship query
+// only make available posts / projects owned by the current user
 function user_only_relationship_query( $args, $field, $post_id ){
 
-	// only make available posts / projects owned by the current user
 	$current_user = wp_get_current_user();
-	$args[ 'author' ] = $current_user->ID;
+	// use user_login to get posts assigned via Co Author plugin
+	$args[ 'author_name' ] = $current_user->user_login;
 
 	return $args;
 }
