@@ -30,26 +30,56 @@
 
 		<hr>
 
-		<h3 class="text-center">Recent Articles:</h3>
+		<h3 class="text-center">Featured Projects</h3>
 
 		<div id="inner-content" class="row">
 
 		    <main id="main" class="medium-10 large-10 small-centered columns" role="main">
 
-		    	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<?php
 
-					<!-- To see additional archive styles, visit the /parts directory -->
-					<?php get_template_part( 'parts/loop', 'archive-grid' ); ?>
+						// assign posts to the return from the ACF Relationship field type
+						$posts = get_field( 'featured_projects', 'user_'.$post->post_author );
+						if( $posts ):	?>
 
-				<?php endwhile; ?>
+							<?php
+								// Need custom index tracker since this doesn't work
+								// work directly with wp_query->current_index
+								// process below based on loop-archive-grid.php
+								$grid_columns = 3;
+								$current_index = 0;
+							?>
 
-					<?php joints_page_navi(); ?>
+							<?php foreach ($posts as $post): ?>
 
-				<?php else : ?>
+								<!-- Check for the start of new row -->
+								<?php if( 0 === ( $current_index  ) % $grid_columns ): ?>
 
-					<?php get_template_part( 'parts/content', 'missing' ); ?>
+								    <div class="row archive-grid" data-equalizer>
 
-				<?php endif; ?>
+								<?php endif; ?>
+
+								<?php setup_postdata($post); ?>
+
+								<?php get_template_part( 'parts/loop', 'custom-grid' ); ?>
+
+								<!-- If the next post exceeds the grid_columns or at the end of the posts, close off the row -->
+								<?php if( 0 === ( $current_index + 1 ) % $grid_columns
+									||  ( $current_index + 1 ) ===  3 ): ?>
+
+									</div>  <!--End row -->
+
+								<?php endif; ?>
+
+								<?php
+									$current_index++;
+								?>
+
+					    <?php endforeach; ?>
+
+					   	<?php wp_reset_postdata(); ?>
+
+			    <?php endif; ?>
 
 			</main> <!-- end #main -->
 
