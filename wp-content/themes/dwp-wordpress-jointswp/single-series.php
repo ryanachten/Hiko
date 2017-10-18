@@ -29,39 +29,38 @@
 					$posts = get_field( 'series_parts' );
 					if( $posts ):	?>
 
+						<?php
+							// Need custom index tracker since this doesn't work
+							// work directly with wp_query->current_index
+							// process below based on loop-archive-grid.php
+							$grid_columns = 3;
+							$current_index = 0;
+						?>
+
 						<?php foreach ($posts as $post): ?>
+
+							<!-- Check for the start of new row -->
+							<?php if( 0 === ( $current_index  ) % $grid_columns ): ?>
+
+							    <div class="row archive-grid" data-equalizer>
+
+							<?php endif; ?>
 
 							<?php setup_postdata($post); ?>
 
-							<!-- Thumbnail styles from loop-archive-grid.php
-								TODO: move into template part to keep DRY
-							-->
-							<div class="large-4 medium-4 columns panel" data-equalizer-watch>
+							<?php get_template_part( 'parts/loop', 'custom-grid' ); ?>
 
-								<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article">
+							<!-- If the next post exceeds the grid_columns or at the end of the posts, close off the row -->
+							<?php if( 0 === ( $current_index + 1 ) % $grid_columns
+								||  ( $current_index + 1 ) ===  3 ): ?>
 
-									<!-- If post has a thumnail, add to section bg-img -->
-									<?php if( has_post_thumbnail() ): ?>
-										<section class="archive-grid featured-image" itemprop="articleBody" style="background-image: url('<?php
-											echo esc_url( get_the_post_thumbnail_url($post->ID, 'medium') );
-										?>');">
-										</section> <!-- end article section -->
-									<?php endif; ?>
+								</div>  <!--End row -->
 
-									<header class="article-header">
-										<h3 class="title">
-											<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-										<?php get_template_part( 'parts/content', 'byline' ); ?>
-									</header> <!-- end article header -->
+							<?php endif; ?>
 
-									<section class="entry-content" itemprop="articleBody">
-										<?php the_excerpt(); ?>
-										<!-- '<button class="tiny">' . __( 'Read more...', 'jointswp' ) . '</button>' -->
-									</section> <!-- end article section -->
-
-								</article> <!-- end article -->
-
-							</div>
+							<?php
+								$current_index++;
+							?>
 
 				    <?php endforeach; ?>
 
