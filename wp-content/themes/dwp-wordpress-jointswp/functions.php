@@ -74,9 +74,9 @@ add_action( 'pre_get_posts', function( $query )
 });
 
 
-// Modify Advanced Custom Field Relationship query
+// Series Advanced Custom Field Relationship query
 // only make available posts / projects owned by the current user
-function user_only_relationship_query( $args, $field, $post_id ){
+function series_relationship_query( $args, $field, $post_id ){
 
 	$current_user = wp_get_current_user();
 	// use user_login to get posts assigned via Co Author plugin
@@ -84,4 +84,17 @@ function user_only_relationship_query( $args, $field, $post_id ){
 
 	return $args;
 }
-add_filter('acf/fields/relationship/query', 'user_only_relationship_query', 10, 3);
+add_filter('acf/fields/relationship/query/name=series_parts', 'series_relationship_query', 10, 3);
+
+
+function profile_relationship_query( $args, $field, $post_id ){
+
+	$current_user = wp_get_current_user();
+	// use user_login to get posts assigned via Co Author plugin
+	$args[ 'author_name' ] = $current_user->user_login;
+	// only make available projects which have a status of published
+	$args[ 'post_status' ] = 'publish';
+
+	return $args;
+}
+add_filter('acf/fields/relationship/query/name=featured_projects', 'profile_relationship_query', 10, 3);
