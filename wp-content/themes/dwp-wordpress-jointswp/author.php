@@ -59,22 +59,37 @@
 
 		<hr>
 
-		<h3 class="text-center">Featured Projects</h3>
-
 		<div id="inner-content" class="row">
 
-		    <main id="main" class="medium-10 large-10 small-centered columns" role="main">
+		    <section id="featured-posts" class="featured-article medium-10 large-10 small-centered columns" role="region">
 
-					<?php
+					<h3 class="text-center">Featured Posts</h3>
 
-						// assign posts to the return from the ACF Relationship field type
-						get_custom_grid('featured_projects', 3);
-					?>
+					<?php	get_custom_grid('featured_posts', 3); ?>
 
-			</main> <!-- end #main -->
+				</section>
 
+				<hr>
 
+				<section id="featured-projects" class="featured-article medium-10 large-10 small-centered columns" role="region">
 
+					<h3 class="text-center">Featured Projects</h3>
+
+					<?php	get_custom_grid('featured_projects', 3); ?>
+
+				</section>
+
+				<hr>
+
+				<section id="featured-series" class="featured-article medium-10 large-10 small-centered columns" role="region">
+
+					<h3 class="text-center">Featured Series</h3>
+
+					<?php	get_custom_grid('featured_series', 3); ?>
+
+				</section>
+
+				
 	    </div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
