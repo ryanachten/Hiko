@@ -1,8 +1,37 @@
+<?php
+	function get_custom_grid($field, $grid_columns){
+		global $post;
+		$posts = get_field( $field, 'user_'.$post->post_author );
+
+			if( $posts ){
+					$current_index = 0;
+
+				foreach ($posts as $post){
+
+					if( 0 === ( $current_index  ) % $grid_columns ){
+						echo '<div class="row archive-grid" data-equalizer>';
+					}
+
+					setup_postdata($post);
+
+					get_template_part( 'parts/loop', 'custom-grid' );
+
+					if( 0 === ( $current_index + 1 ) % $grid_columns
+						||  ( $current_index + 1 ) ===  3 ){
+								echo '</div>';
+						}
+
+					$current_index++;
+
+				}
+				wp_reset_postdata();
+
+			}
+} ?>
+
 <?php get_header(); ?>
 
 	<div id="content" class="row">
-
-
 
 		<header class="archive-header medium-10 large-10 small-centered columns" >
 			<?php echo get_avatar( $post->post_author ); ?>
@@ -39,47 +68,8 @@
 					<?php
 
 						// assign posts to the return from the ACF Relationship field type
-						$posts = get_field( 'featured_projects', 'user_'.$post->post_author );
-						if( $posts ):	?>
-
-							<?php
-								// Need custom index tracker since this doesn't work
-								// work directly with wp_query->current_index
-								// process below based on loop-archive-grid.php
-								$grid_columns = 3;
-								$current_index = 0;
-							?>
-
-							<?php foreach ($posts as $post): ?>
-
-								<!-- Check for the start of new row -->
-								<?php if( 0 === ( $current_index  ) % $grid_columns ): ?>
-
-								    <div class="row archive-grid" data-equalizer>
-
-								<?php endif; ?>
-
-								<?php setup_postdata($post); ?>
-
-								<?php get_template_part( 'parts/loop', 'custom-grid' ); ?>
-
-								<!-- If the next post exceeds the grid_columns or at the end of the posts, close off the row -->
-								<?php if( 0 === ( $current_index + 1 ) % $grid_columns
-									||  ( $current_index + 1 ) ===  3 ): ?>
-
-									</div>  <!--End row -->
-
-								<?php endif; ?>
-
-								<?php
-									$current_index++;
-								?>
-
-					    <?php endforeach; ?>
-
-					   	<?php wp_reset_postdata(); ?>
-
-			    <?php endif; ?>
+						get_custom_grid('featured_projects', 3);
+					?>
 
 			</main> <!-- end #main -->
 

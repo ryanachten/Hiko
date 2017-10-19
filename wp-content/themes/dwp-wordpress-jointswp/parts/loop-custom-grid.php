@@ -3,7 +3,6 @@ to be used outside of The Loop alongside custom
 index tracking
 
 Based on loop-archive-grid -->
-
 		<!--Item: -->
 		<div class="large-4 medium-4 columns panel" data-equalizer-watch>
 
@@ -25,15 +24,8 @@ Based on loop-archive-grid -->
 
 				<section class="entry-content" itemprop="articleBody">
 					<?php the_excerpt(); ?>
-					<!-- '<button class="tiny">' . __( 'Read more...', 'jointswp' ) . '</button>' -->
 				</section> <!-- end article section -->
 
 			</article> <!-- end article -->
 
 		</div>
-
-<?php //if( 0 === ( $wp_query->current_post + 1 )  % $grid_columns ||  ( $wp_query->current_post + 1 ) ===  $wp_query->post_count ): ?>
-
-   <!-- </div>  <!--End Row: -->
-
-<?php //endif; ?>
