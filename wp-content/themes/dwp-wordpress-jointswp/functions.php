@@ -98,3 +98,5 @@ function profile_relationship_query( $args, $field, $post_id ){
 	return $args;
 }
 add_filter('acf/fields/relationship/query/name=featured_projects', 'profile_relationship_query', 10, 3);
+add_filter('acf/fields/relationship/query/name=featured_series', 'profile_relationship_query', 10, 3);
+add_filter('acf/fields/relationship/query/name=featured_posts', 'profile_relationship_query', 10, 3);
