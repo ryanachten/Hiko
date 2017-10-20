@@ -1,33 +1,4 @@
-<?php
-	function get_custom_grid($field, $grid_columns){
-		global $post;
-		$posts = get_field( $field, 'user_'.$post->post_author );
 
-			if( $posts ){
-					$current_index = 0;
-
-				foreach ($posts as $post){
-
-					if( 0 === ( $current_index  ) % $grid_columns ){
-						echo '<div class="row archive-grid" data-equalizer>';
-					}
-
-					setup_postdata($post);
-
-					get_template_part( 'parts/loop', 'custom-grid' );
-
-					if( 0 === ( $current_index + 1 ) % $grid_columns
-						||  ( $current_index + 1 ) ===  3 ){
-								echo '</div>';
-						}
-
-					$current_index++;
-
-				}
-				wp_reset_postdata();
-
-			}
-} ?>
 
 <?php get_header(); ?>
 
@@ -65,7 +36,7 @@
 
 					<h3 class="text-center">Featured Posts</h3>
 
-					<?php	get_custom_grid('featured_posts', 3); ?>
+					<?php	loop_custom_grid('featured_posts', true, 3); ?>
 
 				</section>
 
@@ -75,7 +46,7 @@
 
 					<h3 class="text-center">Featured Projects</h3>
 
-					<?php	get_custom_grid('featured_projects', 3); ?>
+					<?php	loop_custom_grid('featured_projects', true, 3); ?>
 
 				</section>
 
@@ -85,11 +56,11 @@
 
 					<h3 class="text-center">Featured Series</h3>
 
-					<?php	get_custom_grid('featured_series', 3); ?>
+					<?php	loop_custom_grid('featured_series', true, 3); ?>
 
 				</section>
 
-				
+
 	    </div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->

@@ -100,3 +100,48 @@ function profile_relationship_query( $args, $field, $post_id ){
 add_filter('acf/fields/relationship/query/name=featured_projects', 'profile_relationship_query', 10, 3);
 add_filter('acf/fields/relationship/query/name=featured_series', 'profile_relationship_query', 10, 3);
 add_filter('acf/fields/relationship/query/name=featured_posts', 'profile_relationship_query', 10, 3);
+
+
+// Equalised thumbnails, looped outside of The Loop for
+// ACF Relaitonship fields
+// $field - field to pull from admin UI
+// $$user_field - whether or not this is a user field
+// $grid_columns - number of columns for thumbnail grid
+function loop_custom_grid( $field, $user_field, $grid_columns ){
+	global $post;
+	// assign posts to the return from the ACF Relationship field type
+	if( $user_field ){
+		$posts = get_field( $field, 'user_'.$post->post_author );
+	}
+	else{
+		$posts = get_field( $field );
+	}
+
+	if( $posts ){
+		// Need custom index tracker since this doesn't work
+		// work directly with wp_query->current_index
+		// process below based on loop-archive-grid.php
+		$current_index = 0;
+
+		foreach ($posts as $post){
+
+			// Check for the start of new row
+			if( 0 === ( $current_index  ) % $grid_columns ){
+				echo '<div class="row archive-grid" data-equalizer>';
+			}
+
+			setup_postdata($post);
+
+			get_template_part( 'parts/loop', 'custom-grid' );
+
+			// If the next post exceeds the grid_columns or at the end of the posts, close off the row
+			if( 0 === ( $current_index + 1 ) % $grid_columns
+				||  ( $current_index + 1 ) ===  3 ){
+						echo '</div>';
+				}
+				
+			$current_index++;
+		}
+		wp_reset_postdata();
+	}
+}
