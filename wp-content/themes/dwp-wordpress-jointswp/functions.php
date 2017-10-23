@@ -139,9 +139,48 @@ function loop_custom_grid( $field, $user_field, $grid_columns ){
 				||  ( $current_index + 1 ) ===  3 ){
 						echo '</div>';
 				}
-				
+
 			$current_index++;
 		}
 		wp_reset_postdata();
 	}
 }
+
+// Courses custom taxonomy registration
+// majority of rules outputed via CPT UI with customisations for role permissions
+// interfaces with ACF 'Courses' Taxonomy field
+function register_courses_taxonomy() {
+
+	$labels = array(
+		"name" => __( "Courses", "" ),
+		"singular_name" => __( "Course", "" ),
+		"menu_name" => __( "Courses", "" ),
+	);
+
+	$args = array(
+		"label" => __( "Courses", "" ),
+		"labels" => $labels,
+		"public" => false,
+		"publicly_queryable" => true,
+		'capabilities' => array(
+      'manage_terms'=> 'manage_categories',
+      'edit_terms'=> 'manage_categories',
+      'delete_terms'=> 'manage_categories',
+      'assign_terms' => 'edit_posts'
+    ),
+		"hierarchical" => false,
+		"label" => "Courses",
+		"show_ui" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"query_var" => true,
+		"rewrite" => array( 'slug' => 'courses', 'with_front' => true,  'hierarchical' => true, ),
+		"show_admin_column" => false,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"show_in_quick_edit" => false,
+	);
+	register_taxonomy( "courses", array( "post", "projects", "series" ), $args );
+}
+
+add_action( 'init', 'register_courses_taxonomy' );
