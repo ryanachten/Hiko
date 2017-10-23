@@ -160,8 +160,9 @@ function register_courses_taxonomy() {
 	$args = array(
 		"label" => __( "Courses", "" ),
 		"labels" => $labels,
-		"public" => false,
-		"publicly_queryable" => true,
+		"public" => false, //set to false to prevent default search field appearing
+		"publicly_queryable" => true, //set to true to enable search access
+		// Assign custom tax capabilties per role permissions
 		'capabilities' => array(
       'manage_terms'=> 'manage_categories',
       'edit_terms'=> 'manage_categories',
