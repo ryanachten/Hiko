@@ -73,9 +73,8 @@ add_action( 'pre_get_posts', function( $query )
 		 }
 });
 
-
-// Series Advanced Custom Field Relationship query
-// only make available posts / projects owned by the current user
+/* Series Advanced Custom Field Relationship query
+only make available posts / projects owned by the current user */
 function series_relationship_query( $args, $field, $post_id ){
 
 	$current_user = wp_get_current_user();
@@ -85,7 +84,6 @@ function series_relationship_query( $args, $field, $post_id ){
 	return $args;
 }
 add_filter('acf/fields/relationship/query/name=series_parts', 'series_relationship_query', 10, 3);
-
 
 function profile_relationship_query( $args, $field, $post_id ){
 
@@ -100,6 +98,7 @@ function profile_relationship_query( $args, $field, $post_id ){
 add_filter('acf/fields/relationship/query/name=featured_projects', 'profile_relationship_query', 10, 3);
 add_filter('acf/fields/relationship/query/name=featured_series', 'profile_relationship_query', 10, 3);
 add_filter('acf/fields/relationship/query/name=featured_posts', 'profile_relationship_query', 10, 3);
+
 
 /* Equalised thumbnails, looped outside of The Loop for
 ACF Relaitonship fields
@@ -145,6 +144,7 @@ function loop_custom_grid( $field, $user_field, $grid_columns ){
 	}
 }
 
+
 /* Courses custom taxonomy registration
 majority of rules outputed via CPT UI with customisations for role permissions
 interfaces with ACF 'Courses' Taxonomy field */
@@ -184,6 +184,7 @@ function register_courses_taxonomy() {
 }
 add_action( 'init', 'register_courses_taxonomy' );
 
+
 /* Restrict file types able to uploaded to the media manager
 to only image files */
 function allowed_media_upload_mimetypes( $mimes ){
@@ -210,3 +211,13 @@ function media_upload_filesize_cap( $size ){
 	return $size;
 }
 add_filter( 'upload_size_limit', 'media_upload_filesize_cap' );
+
+/* Remove Author role capability to publish their own posts
+need to submit for review by Editor instead */
+function remove_author_publish_cap(){
+	// access author class instance
+	$author = get_role( 'author' );
+	// set publish_post capability to false
+	$author->add_cap( 'publish_posts', false );
+}
+add_action( 'admin_init', 'remove_author_publish_cap' );
