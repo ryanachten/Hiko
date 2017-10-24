@@ -171,7 +171,7 @@ function register_courses_taxonomy() {
     ),
 		"hierarchical" => false,
 		"label" => "Courses",
-		"show_ui" => true,
+		"show_ui" => false, //need to have this also set to false to prevent showing in UI
 		"show_in_menu" => true,
 		"show_in_nav_menus" => true,
 		"query_var" => true,
@@ -183,5 +183,4 @@ function register_courses_taxonomy() {
 	);
 	register_taxonomy( "courses", array( "post", "projects", "series" ), $args );
 }
-
 add_action( 'init', 'register_courses_taxonomy' );
