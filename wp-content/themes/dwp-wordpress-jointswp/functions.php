@@ -101,12 +101,11 @@ add_filter('acf/fields/relationship/query/name=featured_projects', 'profile_rela
 add_filter('acf/fields/relationship/query/name=featured_series', 'profile_relationship_query', 10, 3);
 add_filter('acf/fields/relationship/query/name=featured_posts', 'profile_relationship_query', 10, 3);
 
-
-// Equalised thumbnails, looped outside of The Loop for
-// ACF Relaitonship fields
-// $field - field to pull from admin UI
-// $$user_field - whether or not this is a user field
-// $grid_columns - number of columns for thumbnail grid
+/* Equalised thumbnails, looped outside of The Loop for
+ACF Relaitonship fields
+@param string $field - field to pull from admin UI
+@param boolean $user_field - whether or not this is a user field
+@param int $grid_columns - number of columns for thumbnail grid */
 function loop_custom_grid( $field, $user_field, $grid_columns ){
 	global $post;
 	// assign posts to the return from the ACF Relationship field type
@@ -146,9 +145,9 @@ function loop_custom_grid( $field, $user_field, $grid_columns ){
 	}
 }
 
-// Courses custom taxonomy registration
-// majority of rules outputed via CPT UI with customisations for role permissions
-// interfaces with ACF 'Courses' Taxonomy field
+/* Courses custom taxonomy registration
+majority of rules outputed via CPT UI with customisations for role permissions
+interfaces with ACF 'Courses' Taxonomy field */
 function register_courses_taxonomy() {
 
 	$labels = array(
@@ -184,3 +183,30 @@ function register_courses_taxonomy() {
 	register_taxonomy( "courses", array( "post", "projects", "series" ), $args );
 }
 add_action( 'init', 'register_courses_taxonomy' );
+
+/* Restrict file types able to uploaded to the media manager
+to only image files */
+function allowed_media_upload_mimetypes( $mimes ){
+	$allowed_mimes = array(
+	    'jpg|jpeg|jpe' => 'image/jpeg',
+	    'gif' => 'image/gif',
+	    'png' => 'image/png',
+	    'bmp' => 'image/bmp',
+	    'tif|tiff' => 'image/tiff'
+	);
+	return $allowed_mimes;
+}
+add_filter( 'upload_mimes', 'allowed_media_upload_mimetypes' );
+
+/* Overwrite media uploads file size cap to 5MB
+for users other than admin */
+function media_upload_filesize_cap( $size ){
+	// Check user permissions (!=admin)
+	if( !current_user_can( 'manage_options' ) ){
+		// Size param needs to be in bytes
+		// i.e. 5,242,880 bytes binary = 5MB
+		$size = 1024 * 1024 * 5;
+	}
+	return $size;
+}
+add_filter( 'upload_size_limit', 'media_upload_filesize_cap' );
