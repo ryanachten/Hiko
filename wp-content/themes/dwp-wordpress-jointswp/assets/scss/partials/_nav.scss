@@ -1,18 +1,34 @@
 @import 'global';
 
-// TODO: this could probably be more elegantly achieved via altering the
-// Foundation top bar sass vars
+/* Foundation Top-bar overrides
+TODO: this could probably be more elegantly achieved via altering the
+Foundation top bar sass vars */
 .top-bar *,
 .top-bar,
 .title-bar{
   color: $primary-colour;
   background-color: $background-colour;
 }
-
 .menu-icon{
   &:after,
   &:hover:after{
     background: $primary-colour;
     box-shadow: 0 7px 0 $primary-colour, 0 14px 0 $primary-colour;
   }
+}
+
+/* Top nav link styles */
+@mixin top-bar-link-type {
+  font-family: $header-font;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+#top-bar-menu-logotype{
+  @include top-bar-link-type;
+  font-weight: bold;
+}
+.menu-item a, .title-bar-title{
+  @include top-bar-link-type;
 }

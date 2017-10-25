@@ -4687,6 +4687,9 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: "Roboto Slab", serif; }
 
+/* Foundation Top-bar overrides
+TODO: this could probably be more elegantly achieved via altering the
+Foundation top bar sass vars */
 .top-bar *,
 .top-bar,
 .title-bar {
@@ -4696,6 +4699,20 @@ p {
 .menu-icon:after, .menu-icon:hover:after {
   background: black;
   box-shadow: 0 7px 0 black, 0 14px 0 black; }
+
+/* Top nav link styles */
+#top-bar-menu-logotype {
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: bold; }
+
+.menu-item a, .title-bar-title {
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 3px; }
 
 div#topwidgets {
   text-align: center; }
