@@ -24,11 +24,17 @@ Foundation top bar sass vars */
   font-size: 16px;
   letter-spacing: 3px;
 }
-
 #top-bar-menu-logotype{
   @include top-bar-link-type;
   font-weight: bold;
 }
 .menu-item a, .title-bar-title{
   @include top-bar-link-type;
+}
+
+.header{
+  margin-bottom: 0px;
+}
+.top-bar-right{
+  margin-top: 22.5px;
 }

@@ -1,5 +1,5 @@
 // Article grid loop styles
-.entry-content section.featured-image{
+.article-header section.featured-image{
   @include featured-image(400px, 20px);
 }
 

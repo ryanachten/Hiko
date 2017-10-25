@@ -65,11 +65,12 @@ CSS file.
 
 // Import your custom styles
 @import "main";
-// Primary DWP styles file
-@import "input";
 
 // Import your retina/HD styles
 @import "2x";
 
 // Import your print styles
 @import "print";
+
+// Primary DWP styles file
+@import "input";

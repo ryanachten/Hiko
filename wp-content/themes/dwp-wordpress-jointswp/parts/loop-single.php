@@ -1,6 +1,17 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 	<header class="article-header">
+
+		<!-- If post has a thumnail, add to section bg-img -->
+		<?php if( has_post_thumbnail() ): ?>
+		  <section class="articleBody featured-image" itemprop="articleBody" style="background-image: url('<?php
+		    echo esc_url( get_the_post_thumbnail_url($post->ID, 'medium') );
+		  ?>');">
+		  </section> <!-- end article section -->
+		<?php endif; ?>
+
+		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
+
 		<?php
 			// If co-authors are present, pull in their avatars
 			if( function_exists( 'get_coauthors' ) ):
@@ -15,18 +26,9 @@
 				endif;
 		?>
 		<?php get_template_part( 'parts/content', 'byline' ); ?>
-		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
     </header> <!-- end article header -->
 
     <section class="entry-content" itemprop="articleBody">
-
-		<!-- If post has a thumnail, add to section bg-img -->
-		<?php if( has_post_thumbnail() ): ?>
-		  <section class="articleBody featured-image" itemprop="articleBody" style="background-image: url('<?php
-		    echo esc_url( get_the_post_thumbnail_url($post->ID, 'medium') );
-		  ?>');">
-		  </section> <!-- end article section -->
-		<?php endif; ?>
 
 		<?php the_content(); ?>
 	</section> <!-- end article section -->
