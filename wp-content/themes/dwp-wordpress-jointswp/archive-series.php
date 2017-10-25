@@ -7,7 +7,7 @@
 				<?php	post_type_archive_title(); ?>
 			</h1>
 			<div class="taxonomy-description">
-				<?php	echo get_post_type_object( 'series' )->description; ?>
+				<p><?php	echo get_post_type_object( 'series' )->description; ?></p>
 		</div>
 		</header>
 

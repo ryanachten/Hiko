@@ -9,7 +9,7 @@ $grid_columns = 3; ?>
 <?php endif; ?>
 
 		<!--Item: -->
-		<div class="large-4 medium-4 columns panel" data-equalizer-watch>
+		<div class="article-thumbnail large-4 medium-4 columns panel" data-equalizer-watch>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article">
 
@@ -22,12 +22,12 @@ $grid_columns = 3; ?>
 				<?php endif; ?>
 
 				<header class="article-header">
-					<h3 class="title">
-						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+					<h4 class="article-title">
+						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
 					<?php get_template_part( 'parts/content', 'byline' ); ?>
 				</header> <!-- end article header -->
 
-				<section class="entry-content" itemprop="articleBody">
+				<section class="article-body entry-content" itemprop="articleBody">
 					<?php the_excerpt(); ?>
 					<!-- '<button class="tiny">' . __( 'Read more...', 'jointswp' ) . '</button>' -->
 				</section> <!-- end article section -->
