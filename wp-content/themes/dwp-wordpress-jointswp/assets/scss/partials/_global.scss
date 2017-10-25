@@ -1,5 +1,18 @@
 // Contains all of the global vars to be used across partials
-$font-stack:  Helvetica, san-serif;
+// $font-stack:  Helvetica, san-serif;
+
+// Typography
+$header-font: 'Exo 2', sans-serif;
+$body-font: 'Roboto Slab', serif;
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $header-font;
+}
+p{
+  font-family: $body-font;
+}
+
+// Colour scheme
 $primary-colour: black;
 $background-colour: white;
 

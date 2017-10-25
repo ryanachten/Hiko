@@ -18,12 +18,15 @@ function site_scripts() {
     wp_enqueue_style( 'foundation-css', get_template_directory_uri() . '/vendor/foundation-sites/dist/css/foundation.min.css', array(), '', 'all' );
      //wp_enqueue_style( 'foundation-css', get_template_directory_uri() . '/vendor/foundation-sites/dist/foundation-flex.min.css', array(), '', 'all' );
 
+    //  Load Google Fonts
+    wp_enqueue_style('google-fonts', "https://fonts.googleapis.com/css?family=Exo+2|Roboto|Roboto+Slab", array(), time(), 'all');
+
     // Register main stylesheet
-    wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array(), time(), 'all' );
+    wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array('google-fonts'), time(), 'all' );
 
     // Add Foundation icon set
     wp_enqueue_style( 'foundation-icons-css', get_template_directory_uri() . '/assets/css/foundation-icons/foundation-icons.css', array(), 3, 'all' );
-    
+
 
     // Comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
