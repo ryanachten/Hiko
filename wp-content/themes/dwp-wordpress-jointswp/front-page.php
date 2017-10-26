@@ -1,48 +1,41 @@
 <?php get_header(); ?>
 
+<section class="frontpage-hero-section small-12 small-centered columns" >
+
+	<?php
+		$args = array(
+			'numberposts' => 1,
+			'post_type'   => 'post'
+			);
+
+		$latest_posts = get_posts( $args );
+
+		if( $latest_posts ): foreach( $latest_posts as $post ):?>
+						<?php setup_postdata( $post ); ?>
+						<?php if( has_post_thumbnail() ): ?>
+							<section class="frontpage-hero-post featured-image"
+							style="background-image: url('<?php
+								echo esc_url( get_the_post_thumbnail_url( $post->ID, 'medium') ); ?>');">
+
+								<div class="frontpage-hero-description small-12 medium-6 row">
+										<?php get_template_part( 'parts/content', 'byline' ); ?>
+										<h3 class="title projecttype-background">
+											<a class="" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+												<?php the_title(); ?>
+											</a>
+										</h3>
+										<?php the_excerpt(); ?>
+								</div>
+							</section>
+						<?php endif; ?>
+					<?php endforeach;?>
+				<?php wp_reset_postdata();  ?>
+	<?php endif; ?>
+
+
+</section>
+
 	<div id="content" class="row">
-
-		<header class="archive-header small-11 small-centered columns" >
-
-			<?php
-				$args = array(
-					'numberposts' => 1,
-					'post_type'   => 'post'
-					);
-
-				$latest_posts = get_posts( $args );
-
-				if( $latest_posts ): foreach( $latest_posts as $post ):?>
-								<?php setup_postdata( $post ); ?>
-								<?php if( has_post_thumbnail() ): ?>
-									<section class="featured-post featured-image"
-									style="background-image: url('<?php
-										echo esc_url( get_the_post_thumbnail_url( $post->ID, 'medium') ); ?>');">
-
-										<div class="featured-post description small-12 medium-6 row">
-											<div class="small-12 large-5">
-												<h3 class="title">
-													<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-													<?php get_template_part( 'parts/content', 'byline' ); ?>
-												</h3>
-
-
-											</div>
-
-											<div class="small-12 large-5"> <?php the_excerpt(); ?> </div>
-										</div>
-									</section>
-								<?php endif; ?>
-							<?php endforeach;?>
-						<?php wp_reset_postdata();  ?>
-			<?php endif; ?>
-
-
-		</header>
-
-		<h1 class="text-center"><?php bloginfo('name'); ?></h1>
-		<p class="text-center"><?php bloginfo('description'); ?></p>
-		<?php get_sidebar(); ?>
 
 		<div id="inner-content" class="row">
 
