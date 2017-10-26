@@ -26,16 +26,16 @@
     h6{
       margin-bottom: 20px;
     }
-    h3{
+    h1{
       // To align p to bottom of header
-      margin-bottom: 7px;
+      margin-bottom: 6px;
     }
     h6, p{
       display: inline-block;
       background-color: $background-colour;
       padding: 10px;
     }
-    h3 a{
+    h1 a{
       background-color: $project-background;
       padding: 10px;
     }

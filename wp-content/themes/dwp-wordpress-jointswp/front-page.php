@@ -19,11 +19,11 @@
 
 								<div class="frontpage-hero-description small-12 medium-6 row">
 										<?php get_template_part( 'parts/content', 'byline' ); ?>
-										<h3 class="title projecttype-background">
+										<h1 class="title projecttype-background">
 											<a class="" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 												<?php the_title(); ?>
 											</a>
-										</h3>
+										</h1>
 										<?php the_excerpt(); ?>
 								</div>
 							</section>
@@ -35,24 +35,24 @@
 
 </section>
 
-	<div id="content" class="row">
+	<div id="content">
 
-		<div id="inner-content" class="row">
+		<div id="inner-content">
 
-		    <main id="main" class="small-11 small-centered columns row frontpage-content" role="main">
+		    <main id="main" class="small-12 small-centered columns frontpage-content" role="main">
 
-					<section class="frontpage-sections small-12 columns row">
+					<section class="frontpage-sections small-12 columns">
 
 						<div class="frontpage-section-header">
 							<a href="#">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_mainlogo.svg'?>" alt="">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_projectlogo_bg.svg'?>" alt="projects page">
 								<h3>Projects</h3>
 							</a>
 						</div>
 
 			    	<?php
 							$args = array(
-								'numberposts' => 2,
+								'numberposts' => 3,
 								'post_type'   => 'projects'
 								);
 
@@ -61,7 +61,7 @@
 							if($latest_projects){
 									foreach ( $latest_projects as $post ){
 											setup_postdata( $post );
-											get_template_part( 'parts/loop', 'frontpage-grid' );
+											get_template_part( 'parts/loop', 'custom-grid' );
 										}
 									wp_reset_postdata();
 							}
@@ -69,17 +69,17 @@
 					</section>
 
 
-					<section class="frontpage-sections small-12 columns row">
+					<section class="frontpage-sections small-12 columns">
 						<div class="frontpage-section-header">
 							<a href="#">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_mainlogo.svg'?>" alt="">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_serieslogo_bg.svg'?>" alt="">
 								<h3>Series</h3>
 							</a>
 						</div>
 
 			    	<?php
 							$args = array(
-								'numberposts' => 2,
+								'numberposts' => 3,
 								'post_type'   => 'series'
 								);
 
@@ -88,7 +88,7 @@
 							if($latest_series){
 									foreach ( $latest_series as $post ){
 											setup_postdata( $post );
-											get_template_part( 'parts/loop', 'frontpage-grid' );
+											get_template_part( 'parts/loop', 'custom-grid' );
 										}
 									wp_reset_postdata();
 							}
@@ -100,6 +100,9 @@
 	    </div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
-	<p style="text-align: center;">Template: front-page.php</p>
+	<div class="small-12">
+			<p style="text-align: center;">Template: front-page.php</p>
+	</div>
+
 
 <?php get_footer(); ?>

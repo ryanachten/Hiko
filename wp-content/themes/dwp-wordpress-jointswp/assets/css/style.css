@@ -4790,6 +4790,10 @@ p {
 .byline-divider {
   margin: 0 10px; }
 
+.byline-typeicon {
+  width: 20px;
+  margin: 0 10px 0 5px; }
+
 /* Foundation Top-bar overrides
 TODO: this could probably be more elegantly achieved via altering the
 Foundation top bar sass vars */
@@ -4903,13 +4907,13 @@ section.archive-grid.featured-image {
     border-radius: 10px; }
     .frontpage-hero-section .frontpage-hero-description h6 {
       margin-bottom: 20px; }
-    .frontpage-hero-section .frontpage-hero-description h3 {
-      margin-bottom: 7px; }
+    .frontpage-hero-section .frontpage-hero-description h1 {
+      margin-bottom: 6px; }
     .frontpage-hero-section .frontpage-hero-description h6, .frontpage-hero-section .frontpage-hero-description p {
       display: inline-block;
       background-color: white;
       padding: 10px; }
-    .frontpage-hero-section .frontpage-hero-description h3 a {
+    .frontpage-hero-section .frontpage-hero-description h1 a {
       background-color: #DDF6FF;
       padding: 10px; }
 
