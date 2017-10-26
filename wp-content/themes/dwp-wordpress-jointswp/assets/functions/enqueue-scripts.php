@@ -19,7 +19,7 @@ function site_scripts() {
      //wp_enqueue_style( 'foundation-css', get_template_directory_uri() . '/vendor/foundation-sites/dist/foundation-flex.min.css', array(), '', 'all' );
 
     //  Load Google Fonts
-    wp_enqueue_style('google-fonts', "https://fonts.googleapis.com/css?family=Exo+2|Roboto|Roboto+Slab", array(), time(), 'all');
+    wp_enqueue_style('google-fonts', "https://fonts.googleapis.com/css?family=Exo+2|Roboto|Roboto+Slab|Signika", array(), time(), 'all');
 
     // Register main stylesheet
     wp_enqueue_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array('google-fonts'), time(), 'all' );

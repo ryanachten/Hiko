@@ -4782,10 +4782,10 @@ to display none.
   nav {
     display: none; } }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Exo 2", sans-serif; }
+  font-family: "Signika", sans-serif; }
 
 p {
-  font-family: "Roboto Slab", serif; }
+  font-family: "Roboto", sans-serif; }
 
 /* Foundation Top-bar overrides
 TODO: this could probably be more elegantly achieved via altering the
@@ -4802,14 +4802,14 @@ Foundation top bar sass vars */
 
 /* Top nav link styles */
 #top-bar-menu-logotype {
-  font-family: "Exo 2", sans-serif;
+  font-family: "Signika", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 3px;
   font-weight: bold; }
 
 .menu-item a, .title-bar-title {
-  font-family: "Exo 2", sans-serif;
+  font-family: "Signika", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 3px; }
