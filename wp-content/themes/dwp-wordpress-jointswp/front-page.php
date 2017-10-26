@@ -41,9 +41,15 @@
 
 		    <main id="main" class="small-11 small-centered columns row frontpage-content" role="main">
 
-					<h3 class="text-center">Latest Projects</h3>
-					<hr>
 					<section class="frontpage-sections small-12 columns row">
+
+						<div class="frontpage-section-header">
+							<a href="#">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_mainlogo.svg'?>" alt="">
+								<h3>Projects</h3>
+							</a>
+						</div>
+
 			    	<?php
 							$args = array(
 								'numberposts' => 2,
@@ -62,9 +68,15 @@
 						?>
 					</section>
 
-					<h3 class="text-center">Latest Series</h3>
-					<hr>
+
 					<section class="frontpage-sections small-12 columns row">
+						<div class="frontpage-section-header">
+							<a href="#">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_mainlogo.svg'?>" alt="">
+								<h3>Series</h3>
+							</a>
+						</div>
+
 			    	<?php
 							$args = array(
 								'numberposts' => 2,

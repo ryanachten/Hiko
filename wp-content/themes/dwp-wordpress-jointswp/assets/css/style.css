@@ -4913,6 +4913,10 @@ section.archive-grid.featured-image {
       background-color: #DDF6FF;
       padding: 10px; }
 
+.frontpage-section-header {
+  display: block;
+  text-align: center; }
+
 main#main.frontpage-content {
   margin: 0 auto; }
 
