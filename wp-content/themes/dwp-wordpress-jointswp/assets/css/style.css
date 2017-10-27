@@ -4897,8 +4897,7 @@ body.author .archive-grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
-  text-align: center; }
+  width: 100%; }
 body.author .article-thumbnail {
   min-width: 300px; }
 
