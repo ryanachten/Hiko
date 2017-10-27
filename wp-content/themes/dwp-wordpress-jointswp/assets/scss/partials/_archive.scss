@@ -15,8 +15,23 @@ section.archive-grid.featured-image{
   margin-bottom: 30px;
 }
 .article-header{
-  text-align: center;
+  // text-align: center;
   padding: 0 10px;
+  .article-title {
+    display: inline-block;
+  }
+  .article-title.project-background a{
+    background-color: $project-background;
+    // padding: 10px;
+  }
+  .article-title.series-background a{
+    background-color: $series-background;
+    // padding: 10px;
+  }
+  .article-title.blog-background a{
+    background-color: $blog-background;
+    // padding: 10px;
+  }
 }
 
 // Safeguard for non-breaking text

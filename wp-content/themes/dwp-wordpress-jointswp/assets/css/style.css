@@ -4871,8 +4871,15 @@ section.archive-grid.featured-image {
   margin-bottom: 30px; }
 
 .article-header {
-  text-align: center;
   padding: 0 10px; }
+  .article-header .article-title {
+    display: inline-block; }
+  .article-header .article-title.project-background a {
+    background-color: #DDF6FF; }
+  .article-header .article-title.series-background a {
+    background-color: #D5FFF9; }
+  .article-header .article-title.blog-background a {
+    background-color: #FFCDDD; }
 
 .article-header .title > a,
 .entry-content p {

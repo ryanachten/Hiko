@@ -22,7 +22,14 @@ $grid_columns = 4; ?>
 				<?php endif; ?>
 
 				<header class="article-header">
-					<h4 class="article-title">
+					<header class="article-header">
+						<?php if( get_post_type() == 'projects'):  ?>
+							<h4 class="article-title project-background">
+						<?php elseif( get_post_type() == 'series'):  ?>
+							<h4 class="article-title series-background">
+						<?php elseif( get_post_type() == 'post'):  ?>
+							<h4 class="article-title blog-background">
+						<?php endif; ?>
 						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h4>
 					<?php get_template_part( 'parts/content', 'byline' ); ?>
 				</header> <!-- end article header -->

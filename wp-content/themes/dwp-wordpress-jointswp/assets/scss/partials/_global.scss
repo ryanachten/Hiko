@@ -16,6 +16,8 @@ p{
 $primary-colour: black;
 $background-colour: white;
 $project-background: #DDF6FF;
+$series-background: #D5FFF9;
+$blog-background: #FFCDDD;
 
 // Format featured image bg img mixin
 @mixin featured-image($height, $margin-bottom){
