@@ -42,10 +42,22 @@
   }
 }
 
+// Header for each thumbnail section
 .frontpage-section-header{
   display: block;
   text-align: center;
-  // margin: 0 auto;
+
+  a{
+    img{
+      margin-bottom: 10px;
+    }
+    .section-title{
+      text-transform: uppercase;
+      letter-spacing: 3.5px;
+      margin-bottom: 10px;
+    }
+  }
+
 }
 
 // Centre front page sections

@@ -44,9 +44,10 @@
 					<section class="frontpage-sections small-12 columns" data-equalizer>
 
 						<div class="frontpage-section-header">
-							<a href="#">
+							<!-- Link to project archive page -->
+							<a href="<?php echo get_post_type_archive_link( 'projects' ); ?>">
 								<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_projectlogo_bg.svg'?>" alt="projects page">
-								<h3>Projects</h3>
+								<h4 class="section-title">Projects</h4>
 							</a>
 						</div>
 
@@ -71,9 +72,10 @@
 
 					<section class="frontpage-sections small-12 columns" data-equalizer>
 						<div class="frontpage-section-header">
-							<a href="#">
+							<!-- Link to series archive page -->
+							<a href="<?php echo get_post_type_archive_link( 'series' ); ?>">
 								<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_serieslogo_bg.svg'?>" alt="">
-								<h3>Series</h3>
+								<h4 class="section-title">Series</h4>
 							</a>
 						</div>
 

@@ -4873,13 +4873,17 @@ section.archive-grid.featured-image {
 .article-header {
   padding: 0 10px; }
   .article-header .article-title {
-    display: inline-block; }
+    display: inline-block;
+    margin: 10px 0 20px 0; }
   .article-header .article-title.project-background a {
-    background-color: #DDF6FF; }
+    background-color: #DDF6FF;
+    padding: 2px; }
   .article-header .article-title.series-background a {
-    background-color: #D5FFF9; }
+    background-color: #D5FFF9;
+    padding: 2px; }
   .article-header .article-title.blog-background a {
-    background-color: #FFCDDD; }
+    background-color: #FFCDDD;
+    padding: 2px; }
 
 .article-header .title > a,
 .entry-content p {
@@ -4937,6 +4941,12 @@ body.author .article-thumbnail {
 .frontpage-section-header {
   display: block;
   text-align: center; }
+  .frontpage-section-header a img {
+    margin-bottom: 10px; }
+  .frontpage-section-header a .section-title {
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    margin-bottom: 10px; }
 
 main#main.frontpage-content {
   margin: 0 auto; }
