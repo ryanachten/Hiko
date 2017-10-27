@@ -4,7 +4,7 @@ $grid_columns = 4; ?>
 
 <?php if( 0 === ( $wp_query->current_post  )  % $grid_columns ): ?>
 
-    <div class="row archive-grid" data-equalizer> <!--Begin Row:-->
+    <div class="archive-grid" data-equalizer> <!--Begin Row:-->
 
 <?php endif; ?>
 
