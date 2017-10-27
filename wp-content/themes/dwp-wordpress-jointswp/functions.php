@@ -134,7 +134,7 @@ function loop_custom_grid( $field, $user_field, $grid_columns ){
 
 			// If the next post exceeds the grid_columns or at the end of the posts, close off the row
 			if( 0 === ( $current_index + 1 ) % $grid_columns
-				||  ( $current_index + 1 ) ===  3 ){
+				||  ( $current_index + 1 ) ===  $grid_columns ){
 						echo '</div>';
 				}
 

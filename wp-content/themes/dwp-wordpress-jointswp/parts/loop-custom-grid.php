@@ -4,7 +4,7 @@ index tracking
 
 Based on loop-archive-grid -->
 		<!--Item: -->
-		<div class="large-4 medium-4 columns panel" data-equalizer-watch>
+		<div class="article-thumbnail large-3 medium-6 columns panel" data-equalizer-watch>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article">
 

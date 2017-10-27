@@ -23,7 +23,7 @@
 
 			<!-- get posts for series parts and loop through posts
 		 		defined in functions.php-->
-			<?php	loop_custom_grid( 'series_parts', false, 3 ); ?>
+			<?php	loop_custom_grid( 'series_parts', false, 4 ); ?>
 
 			</section>
 

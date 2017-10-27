@@ -36,7 +36,7 @@
 
 					<h3 class="text-center">Featured Posts</h3>
 
-					<?php	loop_custom_grid('featured_posts', true, 3); ?>
+					<?php	loop_custom_grid('featured_posts', true, 4); ?>
 
 				</section>
 

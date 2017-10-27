@@ -41,7 +41,7 @@
 
 		    <main id="main" class="small-12 small-centered columns frontpage-content" role="main">
 
-					<section class="frontpage-sections small-12 columns">
+					<section class="frontpage-sections small-12 columns" data-equalizer>
 
 						<div class="frontpage-section-header">
 							<a href="#">
@@ -52,7 +52,7 @@
 
 			    	<?php
 							$args = array(
-								'numberposts' => 3,
+								'numberposts' => 4,
 								'post_type'   => 'projects'
 								);
 
@@ -69,7 +69,7 @@
 					</section>
 
 
-					<section class="frontpage-sections small-12 columns">
+					<section class="frontpage-sections small-12 columns" data-equalizer>
 						<div class="frontpage-section-header">
 							<a href="#">
 								<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_serieslogo_bg.svg'?>" alt="">
@@ -79,7 +79,7 @@
 
 			    	<?php
 							$args = array(
-								'numberposts' => 3,
+								'numberposts' => 4,
 								'post_type'   => 'series'
 								);
 

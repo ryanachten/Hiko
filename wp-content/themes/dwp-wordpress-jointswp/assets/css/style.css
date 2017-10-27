@@ -4884,6 +4884,10 @@ section.archive-grid.featured-image {
 .article-body {
   padding: 0 10px; }
 
+.archive-grid {
+  display: flex;
+  justify-content: center; }
+
 .frontpage-sections {
   display: inline-block;
   vertical-align: top;
