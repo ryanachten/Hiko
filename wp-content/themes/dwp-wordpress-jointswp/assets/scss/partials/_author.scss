@@ -1,0 +1,18 @@
+
+// HACK: competes with the custom-grid / archive-grid approach
+//clean up with more elegant solution
+body.author{
+  .featured-article{
+    box-sizing: content-box;
+  }
+  .archive-grid{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      text-align: center;
+  }
+  .article-thumbnail{
+    min-width: 300px;
+  }
+}

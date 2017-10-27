@@ -4884,9 +4884,16 @@ section.archive-grid.featured-image {
 .article-body {
   padding: 0 10px; }
 
-.archive-grid {
+body.author .featured-article {
+  box-sizing: content-box; }
+body.author .archive-grid {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center; }
+body.author .article-thumbnail {
+  min-width: 300px; }
 
 .frontpage-sections {
   display: inline-block;

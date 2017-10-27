@@ -32,11 +32,3 @@ section.archive-grid.featured-image{
 .article-body{
   padding: 0 10px;
 }
-
-// Container of grid items (thumbnails)
-.archive-grid{
-  // Use Foundation's Flex mixins to override the
-  // weird alignment caused by custom grid limitations
-  @include flex;
-  @include flex-align(center, null);
-}

@@ -46,7 +46,7 @@
 
 					<h3 class="text-center">Featured Projects</h3>
 
-					<?php	loop_custom_grid('featured_projects', true, 3); ?>
+					<?php	loop_custom_grid('featured_projects', true, 4); ?>
 
 				</section>
 
@@ -56,7 +56,7 @@
 
 					<h3 class="text-center">Featured Series</h3>
 
-					<?php	loop_custom_grid('featured_series', true, 3); ?>
+					<?php	loop_custom_grid('featured_series', true, 4); ?>
 
 				</section>
 
