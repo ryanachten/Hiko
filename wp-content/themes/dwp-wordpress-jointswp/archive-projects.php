@@ -4,9 +4,9 @@
 
 		<header class="archive-header medium-10 large-10 small-centered columns" >
 			<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_projectlogo_bg.svg'?>" alt="projects page">
-			<h2 class="page-title">
+			<h3 class="page-title">
 				<?php	post_type_archive_title(); ?>
-			</h2>
+			</h3>
 			<div class="taxonomy-description project-background">
 				<p><?php	echo get_post_type_object( 'projects' )->description; ?></p>
 		</div>

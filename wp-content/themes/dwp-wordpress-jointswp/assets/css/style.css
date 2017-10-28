@@ -4883,7 +4883,7 @@ section.archive-grid.featured-image {
   text-align: center;
   margin-bottom: 30px; }
   .archive-header img {
-    width: 100px;
+    width: 80px;
     margin-bottom: 10px; }
   .archive-header .page-title {
     text-transform: uppercase;
@@ -4928,6 +4928,10 @@ section.archive-grid.featured-image {
 
 .article-body {
   padding: 0 10px; }
+
+.page-navigation {
+  clear: both;
+  text-align: center; }
 
 body.author .featured-article {
   box-sizing: content-box; }

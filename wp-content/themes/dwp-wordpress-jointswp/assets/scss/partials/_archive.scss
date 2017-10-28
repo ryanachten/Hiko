@@ -9,7 +9,7 @@ section.archive-grid.featured-image{
 
   // Archive post type icon
   img{
-    width: 100px;
+    width: 80px;
     margin-bottom: 10px;
   }
 
@@ -68,4 +68,10 @@ section.archive-grid.featured-image{
 
 .article-body{
   padding: 0 10px;
+}
+
+// Pagination links
+.page-navigation{
+  clear: both; //prevent aligning with project thumbs
+  text-align: center;
 }
