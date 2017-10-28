@@ -16,6 +16,18 @@ h1.entry-title.single-title,
 
 body.single{
   text-align: center;
+  .entry-title{
+      display: inline-block;
+  }
+  .entry-title.project-background{
+    @include project-title-background;
+  }
+  .entry-title.series-background{
+    @include series-title-background;
+  }
+  .entry-title.blog-background{
+    @include blog-title-background;
+  }
 
   .coauthor-avatar{
     margin-bottom: 10px;

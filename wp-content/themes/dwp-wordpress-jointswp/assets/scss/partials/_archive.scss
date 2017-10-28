@@ -22,16 +22,13 @@ section.archive-grid.featured-image{
     margin: 10px 0 20px 0;
   }
   .article-title.project-background a{
-    background-color: $project-background;
-    padding: 2px;
+    @include project-title-background;
   }
   .article-title.series-background a{
-    background-color: $series-background;
-    padding: 2px;
+    @include series-title-background;
   }
   .article-title.blog-background a{
-    background-color: $blog-background;
-    padding: 2px;
+    @include blog-title-background;
   }
 }
 

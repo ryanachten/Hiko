@@ -4855,6 +4855,17 @@ h1.entry-title.single-title,
 
 body.single {
   text-align: center; }
+  body.single .entry-title {
+    display: inline-block; }
+  body.single .entry-title.project-background {
+    background-color: #DDF6FF;
+    padding: 2px; }
+  body.single .entry-title.series-background {
+    background-color: #D5FFF9;
+    padding: 2px; }
+  body.single .entry-title.blog-background {
+    background-color: #FFCDDD;
+    padding: 2px; }
   body.single .coauthor-avatar {
     margin-bottom: 10px; }
   body.single .entry-content {

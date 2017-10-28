@@ -10,7 +10,15 @@
 		  </section> <!-- end article section -->
 		<?php endif; ?>
 
-		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
+		<div class="title-container">
+			<?php if ( get_post_type() == 'projects' ): ?>
+					<h1 class="entry-title single-title project-background" itemprop="headline"><?php the_title(); ?></h1>
+			<?php elseif ( get_post_type() == 'series' ): ?>
+					<h1 class="entry-title single-title series-background" itemprop="headline"><?php the_title(); ?></h1>
+			<?php elseif ( get_post_type() == 'post' ): ?>
+					<h1 class="entry-title single-title blog-background" itemprop="headline"><?php the_title(); ?></h1>
+			<?php endif; ?>
+		</div>
 
 		<?php
 			// If co-authors are present, pull in their avatars

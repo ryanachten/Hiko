@@ -41,6 +41,6 @@
 	    </div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
-	<p style="text-align: center;">Template: archive-series.php</p>
+	<p style="clear: both; text-align: center;">Template: archive-series.php</p>
 
 <?php get_footer(); ?>

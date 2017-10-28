@@ -18,6 +18,18 @@ $background-colour: white;
 $project-background: #DDF6FF;
 $series-background: #D5FFF9;
 $blog-background: #FFCDDD;
+@mixin project-title-background{
+  background-color: $project-background;
+  padding: 2px;
+}
+@mixin series-title-background{
+  background-color: $series-background;
+  padding: 2px;
+}
+@mixin blog-title-background{
+  background-color: $blog-background;
+  padding: 2px;
+}
 
 // Format featured image bg img mixin
 @mixin featured-image($height, $margin-bottom){
