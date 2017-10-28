@@ -2,29 +2,42 @@ section.archive-grid.featured-image{
   @include featured-image(200px, 10px);
 }
 
-// Format archive description byline
-.archive-header .taxonomy-description{
-  font-size: 1.2rem;
-  width: 80%;
-  margin: 0 auto;
-}
-.taxonomy-description p{
-  display: inline-block;
-}
-.taxonomy-description.project-background p{
-  @include project-title-background;
-}
-.taxonomy-description.series-background p{
-  @include series-title-background;
-}
-.taxonomy-description.blog-background p{
-  @include blog-title-background;
-}
-
 // Format headers for archive and article pages
 .archive-header{
   text-align: center;
   margin-bottom: 30px;
+
+  // Archive post type icon
+  img{
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  // Archvive post type title
+  .page-title{
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+  }
+
+  // Description of the archive
+  .taxonomy-description {
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 0 auto;
+
+    p{
+      display: inline-block;
+    }
+  }
+  .taxonomy-description.project-background p{
+    @include project-title-background;
+  }
+  .taxonomy-description.series-background p{
+    @include series-title-background;
+  }
+  .taxonomy-description.blog-background p{
+    @include blog-title-background;
+  }
 }
 .article-header{
   padding: 0 10px;

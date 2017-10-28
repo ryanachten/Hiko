@@ -4,9 +4,9 @@
 
 		<header class="archive-header medium-10 large-10 small-centered columns" >
 			<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_serieslogo_bg.svg'?>" alt="series page">
-			<h1 class="page-title">
+			<h2 class="page-title">
 				<?php	post_type_archive_title(); ?>
-			</h1>
+			</h2>
 			<div class="taxonomy-description series-background">
 				<p><?php	echo get_post_type_object( 'series' )->description; ?></p>
 		</div>
