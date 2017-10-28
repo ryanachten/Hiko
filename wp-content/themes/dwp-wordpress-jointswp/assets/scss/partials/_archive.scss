@@ -8,6 +8,18 @@ section.archive-grid.featured-image{
   width: 80%;
   margin: 0 auto;
 }
+.taxonomy-description p{
+  display: inline-block;
+}
+.taxonomy-description.project-background p{
+  @include project-title-background;
+}
+.taxonomy-description.series-background p{
+  @include series-title-background;
+}
+.taxonomy-description.blog-background p{
+  @include blog-title-background;
+}
 
 // Format headers for archive and article pages
 .archive-header{
@@ -15,7 +27,6 @@ section.archive-grid.featured-image{
   margin-bottom: 30px;
 }
 .article-header{
-  // text-align: center;
   padding: 0 10px;
   .article-title {
     display: inline-block;

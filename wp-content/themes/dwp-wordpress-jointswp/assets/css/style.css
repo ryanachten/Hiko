@@ -4884,6 +4884,21 @@ section.archive-grid.featured-image {
   width: 80%;
   margin: 0 auto; }
 
+.taxonomy-description p {
+  display: inline-block; }
+
+.taxonomy-description.project-background p {
+  background-color: #DDF6FF;
+  padding: 2px; }
+
+.taxonomy-description.series-background p {
+  background-color: #D5FFF9;
+  padding: 2px; }
+
+.taxonomy-description.blog-background p {
+  background-color: #FFCDDD;
+  padding: 2px; }
+
 .archive-header {
   text-align: center;
   margin-bottom: 30px; }

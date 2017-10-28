@@ -3,6 +3,7 @@
 	<div id="content">
 
 		<header class="archive-header medium-10 large-10 small-centered columns" >
+			<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_bloglogo_bg.svg'?>" alt="blog page">
 			<h1 class="page-title"><?php wp_title( '', true, '');?></h1>
 		<?php the_archive_description('<div class="taxonomy-description">', '</div>');?>
 		</header>

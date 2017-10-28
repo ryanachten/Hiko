@@ -3,13 +3,8 @@
 	<div id="content">
 
 		<header class="archive-header medium-10 large-10 small-centered columns" >
-			<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_projectlogo_bg.svg'?>" alt="projects page">
-			<h1 class="page-title">
-				<?php	post_type_archive_title(); ?>
-			</h1>
-			<div class="taxonomy-description project-background">
-				<p><?php	echo get_post_type_object( 'projects' )->description; ?></p>
-		</div>
+			<h1 class="page-title"><?php wp_title( '', true, '');?></h1>
+		<?php the_archive_description('<div class="taxonomy-description">', '</div>');?>
 		</header>
 
 		<?php get_sidebar(); ?>
@@ -42,6 +37,6 @@
 	    </div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
-	<p style="clear: both; text-align: center;">Template: archive-projects.php</p>
+	<p style="text-align: center;">Template: home.php</p>
 
 <?php get_footer(); ?>
