@@ -13,3 +13,11 @@ h1.entry-title.single-title,
   display: inline-block;
   margin: 0 10px;
 }
+
+body.single{
+  text-align: center;
+
+  .coauthor-avatar{
+    margin-bottom: 10px;
+  }
+}

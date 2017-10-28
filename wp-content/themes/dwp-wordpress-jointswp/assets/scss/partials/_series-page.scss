@@ -1,0 +1,20 @@
+/* Styles for a single series page */
+
+// HACK: competes with the custom-grid / archive-grid approach
+//clean up with more elegant solution
+body.single-series{
+
+  .archive-grid{
+    box-sizing: content-box;
+    justify-content: center;
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  .article-thumbnail{
+
+    .article-title, .entry-content{
+      text-align: left;
+    }
+  }
+}

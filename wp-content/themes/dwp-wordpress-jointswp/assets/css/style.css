@@ -4853,6 +4853,11 @@ h1.entry-title.single-title,
   display: inline-block;
   margin: 0 10px; }
 
+body.single {
+  text-align: center; }
+  body.single .coauthor-avatar {
+    margin-bottom: 10px; }
+
 section.archive-grid.featured-image {
   background-position: center;
   background-repeat: no-repeat;
@@ -4904,6 +4909,15 @@ body.author .archive-grid {
   width: 100%; }
 body.author .article-thumbnail {
   min-width: 300px; }
+
+/* Styles for a single series page */
+body.single-series .archive-grid {
+  box-sizing: content-box;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap; }
+body.single-series .article-thumbnail .article-title, body.single-series .article-thumbnail .entry-content {
+  text-align: left; }
 
 .frontpage-sections {
   display: inline-block;

@@ -1,9 +1,10 @@
-@import 'partials/nav';
-@import 'partials/widget';
-@import 'partials/post';
-@import 'partials/archive';
-@import 'partials/author';
-@import 'partials/landing';
+@import 'partials/nav'; //topbar naviagtion styles
+@import 'partials/widget'; //widget/sidebar styles
+@import 'partials/post'; //general post styles
+@import 'partials/archive'; //general archive styles
+@import 'partials/author'; // author archive page styles
+@import 'partials/series-page'; //single series page styles
+@import 'partials/landing'; //front page styles
 
 // Make avatar circular
 img.avatar{
