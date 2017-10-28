@@ -4857,6 +4857,8 @@ body.single {
   text-align: center; }
   body.single .coauthor-avatar {
     margin-bottom: 10px; }
+  body.single .entry-content {
+    text-align: left; }
 
 section.archive-grid.featured-image {
   background-position: center;
@@ -4916,7 +4918,7 @@ body.single-series .archive-grid {
   justify-content: center;
   display: flex;
   flex-wrap: wrap; }
-body.single-series .article-thumbnail .article-title, body.single-series .article-thumbnail .entry-content {
+body.single-series .article-thumbnail .article-title {
   text-align: left; }
 
 .frontpage-sections {

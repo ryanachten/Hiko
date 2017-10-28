@@ -19,7 +19,7 @@
 
 			</main> <!-- end #main -->
 
-			 <section class="medium-10 large-10 small-centered columns">
+			 <section class="medium-12 large-12 small-centered columns">
 
 			<!-- get posts for series parts and loop through posts
 		 		defined in functions.php-->
