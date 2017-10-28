@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<div id="content" class="row">
+	<div id="content">
 
 		<header class="archive-header medium-10 large-10 small-centered columns" >
 			<h1 class="page-title">
@@ -15,9 +15,9 @@
 
 		<hr>
 
-		<div id="inner-content" class="row">
+		<div id="inner-content">
 
-		    <main id="main" class="medium-10 large-10 small-centered columns" role="main">
+		    <main id="main" class="medium-12 large-12 small-centered columns" role="main">
 
 		    	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
