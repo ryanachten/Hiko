@@ -17,6 +17,7 @@ section.archive-grid.featured-image{
   .page-title{
     text-transform: uppercase;
     letter-spacing: 3.5px;
+    font-weight: bold;
   }
 
   // Description of the archive
@@ -64,6 +65,13 @@ section.archive-grid.featured-image{
 
 .article-thumbnail{
   margin-bottom: 20px;
+
+  // Article thumb container
+  article{
+    padding: 10px;
+    box-shadow: 0 0 5px #888888;
+    border-radius: 7px;
+  }
 }
 
 .article-body{

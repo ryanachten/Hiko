@@ -34,7 +34,7 @@
 
 		<div id="inner-content">
 
-		    <main id="main" class="medium-10 large-10 small-centered columns" role="main">
+		    <main id="main" class="medium-12 large-12 small-centered columns" role="main">
 
 		    	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

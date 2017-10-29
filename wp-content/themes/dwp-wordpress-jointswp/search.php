@@ -4,8 +4,8 @@
 
 		<header class="archive-header medium-10 large-10 small-centered columns" >
 			<!-- Title formatting for Course archive -->
-			<h3 class="page-title">Search for:</h3>
-			<h2 class="subheader">"<?php echo esc_attr(get_search_query()); ?>"</h2>
+			<h3 class="page-title">Search</h3>
+			<h2 class="subheader">Showing results for: <em>'<?php echo esc_attr(get_search_query()); ?>'</em></h2>
 
 		<?php the_archive_description('<div class="taxonomy-description">', '</div>');?>
 		</header>

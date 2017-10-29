@@ -4887,7 +4887,8 @@ section.archive-grid.featured-image {
     margin-bottom: 10px; }
   .archive-header .page-title {
     text-transform: uppercase;
-    letter-spacing: 3.5px; }
+    letter-spacing: 3.5px;
+    font-weight: bold; }
   .archive-header .taxonomy-description {
     font-size: 1.2rem;
     width: 80%;
@@ -4925,6 +4926,10 @@ section.archive-grid.featured-image {
 
 .article-thumbnail {
   margin-bottom: 20px; }
+  .article-thumbnail article {
+    padding: 10px;
+    box-shadow: 0 0 5px #888888;
+    border-radius: 7px; }
 
 .article-body {
   padding: 0 10px; }
