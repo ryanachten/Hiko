@@ -10,10 +10,12 @@ Based on loop-archive-grid -->
 
 				<!-- If post has a thumnail, add to section bg-img -->
 				<?php if( has_post_thumbnail() ): ?>
-					<section class="archive-grid featured-image" itemprop="articleBody" style="background-image: url('<?php
-						echo esc_url( get_the_post_thumbnail_url($post->ID, 'medium') );
-					?>');">
-					</section> <!-- end article section -->
+					<a class="article-thumb-link" href="<?php the_permalink(); ?>">
+						<section class="archive-grid featured-image" itemprop="articleBody" style="background-image: url('<?php
+							echo esc_url( get_the_post_thumbnail_url($post->ID, 'medium') );
+						?>');">
+						</section> <!-- end article section -->
+					</a>
 				<?php endif; ?>
 
 				<header class="article-header">
