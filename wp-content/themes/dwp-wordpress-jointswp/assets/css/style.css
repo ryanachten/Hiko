@@ -4986,17 +4986,15 @@ body.single-series .article-thumbnail .article-title {
     margin: 0px;
     padding: 20px;
     border-radius: 10px; }
-    .frontpage-hero-section .frontpage-hero-description h6 {
+    .frontpage-hero-section .frontpage-hero-description h6, .frontpage-hero-section .frontpage-hero-description h1 {
       margin-bottom: 20px; }
-    .frontpage-hero-section .frontpage-hero-description h1 {
-      margin-bottom: 6px; }
     .frontpage-hero-section .frontpage-hero-description h6, .frontpage-hero-section .frontpage-hero-description p {
       display: inline-block;
       background-color: white;
       padding: 10px; }
     .frontpage-hero-section .frontpage-hero-description h1 a {
       background-color: #DDF6FF;
-      padding: 10px; }
+      padding: 2px; }
 
 .frontpage-section-header {
   display: block;
