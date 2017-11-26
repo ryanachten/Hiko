@@ -37,7 +37,7 @@ require_once(get_template_directory().'/assets/translation/translation.php');
 // require_once(get_template_directory().'/assets/functions/custom-post-type.php');
 
 // Customize the WordPress login menu
-// require_once(get_template_directory().'/assets/functions/login.php');
+require_once(get_template_directory().'/assets/functions/login.php');
 
 // Customize the WordPress admin
 // require_once(get_template_directory().'/assets/functions/admin.php');
