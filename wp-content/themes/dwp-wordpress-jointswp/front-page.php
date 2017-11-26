@@ -5,7 +5,7 @@
 	<?php
 		$args = array(
 			'numberposts' => 1,
-			'post_type'   => 'post'
+			'post_type'   => 'projects'
 			);
 
 		$latest_posts = get_posts( $args );
@@ -41,6 +41,36 @@
 
 		    <main id="main" class="small-12 small-centered columns frontpage-content" role="main">
 
+					<!-- Start of latest blog post section -->
+					<section class="frontpage-sections small-12 columns" data-equalizer>
+
+						<div class="frontpage-section-header">
+							<!-- Link to blog archive page -->
+							<a href="<?php echo get_post_type_archive_link( 'post' ); ?>">
+								<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_bloglogo_bg.svg'?>" alt="projects page">
+								<h4 class="section-title">Blog</h4>
+							</a>
+						</div>
+
+			    	<?php
+							$args = array(
+								'numberposts' => 4,
+								'post_type'   => 'post'
+								);
+
+							$latest_projects = get_posts( $args );
+
+							if($latest_projects){
+									foreach ( $latest_projects as $post ){
+											setup_postdata( $post );
+											get_template_part( 'parts/loop', 'custom-grid' );
+										}
+									wp_reset_postdata();
+							}
+						?>
+					</section>
+
+					<!-- Start of latest project post section -->
 					<section class="frontpage-sections small-12 columns" data-equalizer>
 
 						<div class="frontpage-section-header">
@@ -69,7 +99,7 @@
 						?>
 					</section>
 
-
+					<!-- Start of latest series post section -->
 					<section class="frontpage-sections small-12 columns" data-equalizer>
 						<div class="frontpage-section-header">
 							<!-- Link to series archive page -->
