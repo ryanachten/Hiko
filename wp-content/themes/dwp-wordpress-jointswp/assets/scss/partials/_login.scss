@@ -1,0 +1,6 @@
+@import 'global';
+
+#login-logotype{
+  @include main-logotype(32px, 6px);
+  text-align: center;
+}

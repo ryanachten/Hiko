@@ -4810,16 +4810,18 @@ Foundation top bar sass vars */
 /* Top nav link styles */
 #top-bar-menu-logotype {
   font-family: "Signika", sans-serif;
-  text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 3px;
-  font-weight: bold; }
-
-.menu-item a, .title-bar-title {
-  font-family: "Signika", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 3px; }
+
+.menu-item a, .title-bar-title {
+  font-family: "Signika", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: normal; }
 
 .header {
   margin-bottom: 0px; }
@@ -5008,6 +5010,27 @@ body.single-series .article-thumbnail .article-title {
 
 main#main.frontpage-content {
   margin: 0 auto; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Signika", sans-serif; }
+
+p {
+  font-family: "Roboto", sans-serif; }
+
+.byline-divider {
+  margin: 0 10px; }
+
+.byline-typeicon {
+  width: 20px;
+  margin: 0 10px 0 5px; }
+
+#login-logotype {
+  font-family: "Signika", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 6px;
+  text-align: center; }
 
 img.avatar {
   border-radius: 50%; }

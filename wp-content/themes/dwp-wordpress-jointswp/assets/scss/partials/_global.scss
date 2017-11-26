@@ -12,6 +12,15 @@ p{
   font-family: $body-font;
 }
 
+// Main logotype
+@mixin main-logotype($font-size, $letter-spacing){
+  font-family: $header-font;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+}
+
 // Colour scheme
 $primary-colour: black;
 $background-colour: white;
