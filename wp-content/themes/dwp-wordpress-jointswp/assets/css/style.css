@@ -4787,6 +4787,25 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: "Roboto", sans-serif; }
 
+.button {
+  background-color: #999;
+  border-radius: 1px; }
+
+.button:hover, .button:focus {
+  background-color: #999;
+  border-radius: 1px;
+  background-color: #777; }
+
+.pagination .current {
+  background-color: #999;
+  border-radius: 1px; }
+
+a {
+  color: black; }
+
+a:hover, a:focus {
+  color: #777; }
+
 .byline-divider {
   margin: 0 10px; }
 
@@ -4823,12 +4842,17 @@ Foundation top bar sass vars */
   letter-spacing: 3px;
   font-weight: normal; }
 
+.menu .active a {
+  background-color: #999;
+  border-radius: 1px; }
+
 .header {
   margin-bottom: 0px; }
 
 .top-bar-right {
   margin-top: 22.5px; }
 
+/* Footer navigation */
 .footer nav {
   text-align: center;
   margin-bottom: 20px; }
@@ -5016,6 +5040,25 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: "Roboto", sans-serif; }
+
+.button {
+  background-color: #999;
+  border-radius: 1px; }
+
+.button:hover, .button:focus {
+  background-color: #999;
+  border-radius: 1px;
+  background-color: #777; }
+
+.pagination .current {
+  background-color: #999;
+  border-radius: 1px; }
+
+a {
+  color: black; }
+
+a:hover, a:focus {
+  color: #777; }
 
 .byline-divider {
   margin: 0 10px; }

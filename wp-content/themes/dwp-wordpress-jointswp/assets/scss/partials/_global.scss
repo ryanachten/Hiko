@@ -23,6 +23,8 @@ p{
 
 // Colour scheme
 $primary-colour: black;
+$secondary-colour: #999; //matches Foundation subheader colour
+$tertiary-colour: #777;
 $background-colour: white;
 $project-background: #DDF6FF;
 $series-background: #D5FFF9;
@@ -48,6 +50,30 @@ $blog-background: #FFCDDD;
   border-radius: 5px;
   margin-bottom: $margin-bottom;
   height: $height;
+}
+
+// Style for active menu links and filter buttons
+@mixin button-link{
+  background-color: $secondary-colour;
+  border-radius: 1px;
+}
+.button{
+  @include button-link;
+}
+.button:hover, .button:focus{
+  @include button-link;
+  background-color: $tertiary-colour;
+}
+.pagination .current{
+  @include button-link;
+}
+
+// Styles for general links
+a{
+  color: $primary-colour;
+}
+a:hover, a:focus{
+  color: $tertiary-colour;
 }
 
 // Byline used in thumbs and posts

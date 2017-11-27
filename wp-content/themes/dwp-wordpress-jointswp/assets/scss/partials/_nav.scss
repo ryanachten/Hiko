@@ -25,6 +25,11 @@ Foundation top bar sass vars */
   @include main-logotype(16px, 3px);
   font-weight: normal;
 }
+.menu .active{
+  a{
+    @include button-link;
+  }
+}
 
 .header{
   margin-bottom: 0px;
@@ -33,7 +38,7 @@ Foundation top bar sass vars */
   margin-top: 22.5px;
 }
 
-// Footer navigation
+/* Footer navigation */
 .footer{
 
   nav{
