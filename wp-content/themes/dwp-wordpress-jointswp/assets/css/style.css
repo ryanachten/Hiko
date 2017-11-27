@@ -4807,7 +4807,7 @@ a:hover, a:focus {
   color: #777; }
 
 .byline-divider {
-  margin: 0 10px; }
+  color: #999; }
 
 .byline-typeicon {
   width: 20px;
@@ -4940,7 +4940,8 @@ section.archive-grid.featured-image {
     padding: 2px; }
 
 .article-header {
-  padding: 0 10px; }
+  padding: 0 10px;
+  text-align: center; }
   .article-header .article-title {
     display: inline-block;
     margin: 10px 0 20px 0; }
@@ -5061,7 +5062,7 @@ a:hover, a:focus {
   color: #777; }
 
 .byline-divider {
-  margin: 0 10px; }
+  color: #999; }
 
 .byline-typeicon {
   width: 20px;
