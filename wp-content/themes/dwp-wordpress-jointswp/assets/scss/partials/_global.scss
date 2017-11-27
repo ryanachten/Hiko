@@ -77,8 +77,9 @@ a:hover, a:focus{
 }
 
 // Byline used in thumbs and posts
-.byline-divider{
+.byline-date{
   color: $secondary-colour;
+  font-size: 0.9rem;
 }
 .byline-typeicon{
   width: 20px;

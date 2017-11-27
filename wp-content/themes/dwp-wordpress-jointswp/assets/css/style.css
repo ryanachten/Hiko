@@ -4806,8 +4806,9 @@ a {
 a:hover, a:focus {
   color: #777; }
 
-.byline-divider {
-  color: #999; }
+.byline-date {
+  color: #999;
+  font-size: 0.9rem; }
 
 .byline-typeicon {
   width: 20px;
@@ -5021,7 +5022,10 @@ body.single-series .article-thumbnail .article-title {
       padding: 10px; }
     .frontpage-hero-section .frontpage-hero-description h1 a {
       background-color: #DDF6FF;
-      padding: 2px; }
+      padding: 10px; }
+    .frontpage-hero-section .frontpage-hero-description .byline-date {
+      background: none;
+      color: white; }
 
 .frontpage-section-header {
   display: block;
@@ -5061,8 +5065,9 @@ a {
 a:hover, a:focus {
   color: #777; }
 
-.byline-divider {
-  color: #999; }
+.byline-date {
+  color: #999;
+  font-size: 0.9rem; }
 
 .byline-typeicon {
   width: 20px;
