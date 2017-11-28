@@ -4951,18 +4951,31 @@ h1.entry-title.single-title,
   .article-hero-description .byline-date {
     background: none;
     color: white; }
+  .article-hero-description .entry-title.project-background {
+    background-color: #DDF6FF;
+    padding: 2px; }
+  .article-hero-description .entry-title.series-background {
+    background-color: #D5FFF9;
+    padding: 2px; }
+  .article-hero-description .entry-title.blog-background {
+    background-color: #FFCDDD;
+    padding: 2px; }
+  .article-hero-description .entry-title {
+    display: inline; }
 
-.entry-title.project-background {
-  background-color: #DDF6FF;
-  padding: 2px; }
+#article-relatedseries-container {
+  text-align: center; }
 
-.entry-title.series-background {
-  background-color: #D5FFF9;
-  padding: 2px; }
-
-.entry-title.blog-background {
-  background-color: #FFCDDD;
-  padding: 2px; }
+.article-relatedseries-thumb {
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+  margin: 10px 10px;
+  padding: 10px;
+  vertical-align: top; }
 
 section.archive-grid.featured-image {
   background-position: center;

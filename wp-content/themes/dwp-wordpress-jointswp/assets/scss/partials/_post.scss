@@ -26,17 +26,37 @@ h1.entry-title.single-title,
   @include splash-hero-description;
   margin: 0 auto;
   text-align: center;
+
+
+  .entry-title.project-background{
+    @include project-title-background;
+  }
+  .entry-title.series-background{
+    @include series-title-background;
+  }
+  .entry-title.blog-background{
+    @include blog-title-background;
+  }
+
+  .entry-title{
+    display: inline;
+  }
 }
 
-// .entry-title{
-//     display: inline-block;
-// }
-.entry-title.project-background{
-  @include project-title-background;
+// Related series articles
+#article-relatedseries-container{
+  text-align: center;
 }
-.entry-title.series-background{
-  @include series-title-background;
-}
-.entry-title.blog-background{
-  @include blog-title-background;
+
+// Related series thumbnails
+.article-relatedseries-thumb{
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+  margin: 10px 10px;
+  padding: 10px;
+  vertical-align: top;
 }

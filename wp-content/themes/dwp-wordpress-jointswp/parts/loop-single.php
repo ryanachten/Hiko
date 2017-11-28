@@ -9,18 +9,19 @@
 
 			<!-- Splash description -->
 			<div class="article-hero-description small-12 large-6 row">
-					<?php get_template_part( 'parts/content', 'byline' ); ?>
 
+				<?php get_template_part( 'parts/content', 'byline' ); ?>
+
+				<div>
 					<!-- Title background based on post type -->
-					<!-- <div class="title-container"> -->
-						<?php if ( get_post_type() == 'projects' ): ?>
-								<h1 class="entry-title single-title project-background" itemprop="headline"><?php the_title(); ?></h1>
-						<?php elseif ( get_post_type() == 'series' ): ?>
-								<h1 class="entry-title single-title series-background" itemprop="headline"><?php the_title(); ?></h1>
-						<?php elseif ( get_post_type() == 'post' ): ?>
-								<h1 class="entry-title single-title blog-background" itemprop="headline"><?php the_title(); ?></h1>
-						<?php endif; ?>
-					<!-- </div> -->
+					<?php if ( get_post_type() == 'projects' ): ?>
+							<h1 class="entry-title single-title project-background" itemprop="headline"><?php the_title(); ?></h1>
+					<?php elseif ( get_post_type() == 'series' ): ?>
+							<h1 class="entry-title single-title series-background" itemprop="headline"><?php the_title(); ?></h1>
+					<?php elseif ( get_post_type() == 'post' ): ?>
+							<h1 class="entry-title single-title blog-background" itemprop="headline"><?php the_title(); ?></h1>
+					<?php endif; ?>
+				</div>
 			</div>
 		</section>
 
@@ -32,7 +33,7 @@
 		<?php the_content(); ?>
 	</section> <!-- end article section -->
 
-	<footer class="article-footer">
+	<footer class="article-footer small-12 medium-10 large-8 small-centered">
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jointswp' ), 'after'  => '</div>' ) ); ?>
 		<p class="tags"><?php the_tags('<span class="tags-title">' . __( 'Tags:', 'jointswp' ) . '</span> ', ', ', ''); ?></p>
 	</footer> <!-- end article footer -->

@@ -26,18 +26,21 @@
 					)); ?>
 					<!-- If the Post/Project is associated with a Series
 				link to the Series -->
+				<section id="article-relatedseries-container" class="small-10 small-centered">
 					<?php if( $series ): ?>
-						<p><strong>Featured in the following Series:</strong></p>
-						<ul>
+						<h4>Featured in the following Series:</h4>
 							<?php foreach( $series as $series_post ): ?>
-								<li>
-									<a href="<?php echo get_permalink( $series_post->ID ); ?>">
-										<?php echo get_the_title( $series_post->ID ); ?>
-									</a>
-								</li>
+								<a href="<?php echo get_permalink( $series_post->ID ); ?>">
+									<div class="article-relatedseries-thumb" style="background-image: url(<?php echo get_the_post_thumbnail_url($series_post->ID); ?>);">
+
+										<h5><?php echo get_the_title( $series_post->ID ); ?></h5>
+
+									</div>
+
+								</a>
 							<?php endforeach; ?>
-						</ul>
 					<?php endif; ?>
+				</section>
 
 		    <?php endwhile; else : ?>
 
