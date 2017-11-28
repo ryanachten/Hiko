@@ -33,7 +33,7 @@
 								<a href="<?php echo get_permalink( $series_post->ID ); ?>">
 									<div class="article-relatedseries-thumb" style="background-image: url(<?php echo get_the_post_thumbnail_url($series_post->ID); ?>);">
 
-										<h5><?php echo get_the_title( $series_post->ID ); ?></h5>
+										<h5 class="article-relatedseries-title"><?php echo get_the_title( $series_post->ID ); ?></h5>
 
 									</div>
 

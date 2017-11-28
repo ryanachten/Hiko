@@ -57,6 +57,12 @@ h1.entry-title.single-title,
   width: 200px;
   height: 150px;
   margin: 10px 10px;
-  padding: 10px;
+  padding: 15px;
   vertical-align: top;
+
+  .article-relatedseries-title{
+    background-color: $background-colour;
+    display: inline;
+    padding: 2px;
+  }
 }

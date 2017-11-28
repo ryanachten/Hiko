@@ -28,7 +28,7 @@
 	</header>
 
 	<!-- Article content -->
-  <section class="entry-content small-12 medium-10 large-8 small-centered" itemprop="articleBody">
+  <section class="entry-content small-11 medium-10 large-8 small-centered" itemprop="articleBody">
 
 		<?php the_content(); ?>
 	</section> <!-- end article section -->
