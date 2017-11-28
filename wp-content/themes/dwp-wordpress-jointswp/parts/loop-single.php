@@ -10,11 +10,17 @@
 			<!-- Splash description -->
 			<div class="article-hero-description small-12 large-6 row">
 					<?php get_template_part( 'parts/content', 'byline' ); ?>
-					<h1 class="title projecttype-background">
-						<a class="" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-							<?php the_title(); ?>
-						</a>
-					</h1>
+
+					<!-- Title background based on post type -->
+					<!-- <div class="title-container"> -->
+						<?php if ( get_post_type() == 'projects' ): ?>
+								<h1 class="entry-title single-title project-background" itemprop="headline"><?php the_title(); ?></h1>
+						<?php elseif ( get_post_type() == 'series' ): ?>
+								<h1 class="entry-title single-title series-background" itemprop="headline"><?php the_title(); ?></h1>
+						<?php elseif ( get_post_type() == 'post' ): ?>
+								<h1 class="entry-title single-title blog-background" itemprop="headline"><?php the_title(); ?></h1>
+						<?php endif; ?>
+					<!-- </div> -->
 			</div>
 		</section>
 

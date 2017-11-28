@@ -4947,11 +4947,22 @@ h1.entry-title.single-title,
     background-color: white;
     padding: 10px; }
   .article-hero-description h1 a {
-    background-color: #DDF6FF;
     padding: 10px; }
   .article-hero-description .byline-date {
     background: none;
     color: white; }
+
+.entry-title.project-background {
+  background-color: #DDF6FF;
+  padding: 2px; }
+
+.entry-title.series-background {
+  background-color: #D5FFF9;
+  padding: 2px; }
+
+.entry-title.blog-background {
+  background-color: #FFCDDD;
+  padding: 2px; }
 
 section.archive-grid.featured-image {
   background-position: center;
@@ -5102,11 +5113,12 @@ a:hover, a:focus {
       background-color: white;
       padding: 10px; }
     .frontpage-hero-section .frontpage-hero-description h1 a {
-      background-color: #DDF6FF;
       padding: 10px; }
     .frontpage-hero-section .frontpage-hero-description .byline-date {
       background: none;
       color: white; }
+    .frontpage-hero-section .frontpage-hero-description h1 a {
+      background-color: #DDF6FF; }
 
 .frontpage-section-header {
   display: block;

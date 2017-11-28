@@ -27,3 +27,16 @@ h1.entry-title.single-title,
   margin: 0 auto;
   text-align: center;
 }
+
+// .entry-title{
+//     display: inline-block;
+// }
+.entry-title.project-background{
+  @include project-title-background;
+}
+.entry-title.series-background{
+  @include series-title-background;
+}
+.entry-title.blog-background{
+  @include blog-title-background;
+}

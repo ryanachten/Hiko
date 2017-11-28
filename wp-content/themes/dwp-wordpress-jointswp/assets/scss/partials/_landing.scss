@@ -19,6 +19,9 @@
   // Styles for featured post description box
   .frontpage-hero-description{
     @include splash-hero-description;
+    h1 a{
+      background-color: $project-background;
+    }
   }
 }
 
