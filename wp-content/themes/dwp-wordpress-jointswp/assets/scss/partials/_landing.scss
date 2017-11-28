@@ -1,3 +1,5 @@
+@import 'global';
+
 // Styling of the front page sections
 .frontpage-sections{
   display: inline-block;
@@ -11,35 +13,12 @@
 
   // Featured post hero image
   .frontpage-hero-post{
-    @include featured-image(450px, 20px);
-    padding: 40px;
-    border-radius: 0px;
+    @include splash-hero-image;
   }
 
   // Styles for featured post description box
   .frontpage-hero-description{
-    text-align: left;
-    margin: 0px;
-    padding: 20px;
-    border-radius: 10px;
-
-    h6, h1{
-      margin-bottom: 20px;
-    }
-    h6, p{
-      display: inline-block;
-      background-color: $background-colour;
-      padding: 10px;
-    }
-    h1 a{
-      background-color: $project-background;
-      padding: 10px;
-      // line-height: 5rem;
-    }
-    .byline-date{
-      background: none;
-      color: $background-colour;
-    }
+    @include splash-hero-description;
   }
 }
 

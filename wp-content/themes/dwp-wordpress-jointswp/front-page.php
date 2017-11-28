@@ -13,7 +13,7 @@
 		if( $latest_posts ): foreach( $latest_posts as $post ):?>
 						<?php setup_postdata( $post ); ?>
 						<?php if( has_post_thumbnail() ): ?>
-							<section class="frontpage-hero-post featured-image"
+							<section class="frontpage-hero-post"
 							style="background-image: url('<?php
 								echo esc_url( get_the_post_thumbnail_url( $post->ID, 'medium') ); ?>');">
 

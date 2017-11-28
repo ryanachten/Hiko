@@ -4814,6 +4814,7 @@ a:hover, a:focus {
   width: 20px;
   margin: 0 10px 0 5px; }
 
+/* Splash / featured posts */
 /* Foundation Top-bar overrides
 TODO: this could probably be more elegantly achieved via altering the
 Foundation top bar sass vars */
@@ -4872,6 +4873,40 @@ div#topwidgets {
 .widgettitle {
   text-transform: lowercase; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Signika", sans-serif; }
+
+p {
+  font-family: "Roboto", sans-serif; }
+
+.button {
+  background-color: #999;
+  border-radius: 1px; }
+
+.button:hover, .button:focus {
+  background-color: #999;
+  border-radius: 1px;
+  background-color: #777; }
+
+.pagination .current {
+  background-color: #999;
+  border-radius: 1px; }
+
+a {
+  color: black; }
+
+a:hover, a:focus {
+  color: #777; }
+
+.byline-date {
+  color: #999;
+  font-size: 0.9rem; }
+
+.byline-typeicon {
+  width: 20px;
+  margin: 0 10px 0 5px; }
+
+/* Splash / featured posts */
 .article-header section.featured-image {
   background-position: center;
   background-repeat: no-repeat;
@@ -4888,23 +4923,35 @@ h1.entry-title.single-title,
   display: inline-block;
   margin: 0 10px; }
 
-body.single {
+.article-hero-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 450px;
+  padding: 40px;
+  border-radius: 0px; }
+
+.article-hero-description {
+  text-align: left;
+  margin: 0px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
   text-align: center; }
-  body.single .entry-title {
-    display: inline-block; }
-  body.single .entry-title.project-background {
+  .article-hero-description h6, .article-hero-description h1 {
+    margin-bottom: 20px; }
+  .article-hero-description h6, .article-hero-description p {
+    display: inline-block;
+    background-color: white;
+    padding: 10px; }
+  .article-hero-description h1 a {
     background-color: #DDF6FF;
-    padding: 2px; }
-  body.single .entry-title.series-background {
-    background-color: #D5FFF9;
-    padding: 2px; }
-  body.single .entry-title.blog-background {
-    background-color: #FFCDDD;
-    padding: 2px; }
-  body.single .coauthor-avatar {
-    margin-bottom: 10px; }
-  body.single .entry-content {
-    text-align: left; }
+    padding: 10px; }
+  .article-hero-description .byline-date {
+    background: none;
+    color: white; }
 
 section.archive-grid.featured-image {
   background-position: center;
@@ -4993,6 +5040,40 @@ body.single-series .archive-grid {
 body.single-series .article-thumbnail .article-title {
   text-align: left; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Signika", sans-serif; }
+
+p {
+  font-family: "Roboto", sans-serif; }
+
+.button {
+  background-color: #999;
+  border-radius: 1px; }
+
+.button:hover, .button:focus {
+  background-color: #999;
+  border-radius: 1px;
+  background-color: #777; }
+
+.pagination .current {
+  background-color: #999;
+  border-radius: 1px; }
+
+a {
+  color: black; }
+
+a:hover, a:focus {
+  color: #777; }
+
+.byline-date {
+  color: #999;
+  font-size: 0.9rem; }
+
+.byline-typeicon {
+  width: 20px;
+  margin: 0 10px 0 5px; }
+
+/* Splash / featured posts */
 .frontpage-sections {
   display: inline-block;
   vertical-align: top;
@@ -5073,6 +5154,7 @@ a:hover, a:focus {
   width: 20px;
   margin: 0 10px 0 5px; }
 
+/* Splash / featured posts */
 #login-logotype {
   font-family: "Signika", sans-serif;
   font-weight: bold;

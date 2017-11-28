@@ -85,3 +85,36 @@ a:hover, a:focus{
   width: 20px;
   margin: 0 10px 0 5px;
 }
+
+/* Splash / featured posts */
+// Full screen splash image used on front page and single posts
+@mixin splash-hero-image {
+  @include featured-image(450px, 20px);
+  padding: 40px;
+  border-radius: 0px;
+}
+// Overlay titles, metadata and description for splash posts
+@mixin splash-hero-description{
+  text-align: left;
+  margin: 0px;
+  padding: 20px;
+  border-radius: 10px;
+
+  h6, h1{
+    margin-bottom: 20px;
+  }
+  h6, p{
+    display: inline-block;
+    background-color: $background-colour;
+    padding: 10px;
+  }
+  h1 a{
+    background-color: $project-background;
+    padding: 10px;
+    // line-height: 5rem;
+  }
+  .byline-date{
+    background: none;
+    color: $background-colour;
+  }
+}

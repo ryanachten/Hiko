@@ -1,3 +1,5 @@
+@import "global";
+
 // Article grid loop styles
 .article-header section.featured-image{
   @include featured-image(400px, 20px);
@@ -14,26 +16,14 @@ h1.entry-title.single-title,
   margin: 0 10px;
 }
 
-body.single{
+// Featured post hero image
+.article-hero-image{
+  @include splash-hero-image;
+}
+
+// Styles for featured post description box
+.article-hero-description{
+  @include splash-hero-description;
+  margin: 0 auto;
   text-align: center;
-  .entry-title{
-      display: inline-block;
-  }
-  .entry-title.project-background{
-    @include project-title-background;
-  }
-  .entry-title.series-background{
-    @include series-title-background;
-  }
-  .entry-title.blog-background{
-    @include blog-title-background;
-  }
-
-  .coauthor-avatar{
-    margin-bottom: 10px;
-  }
-
-  .entry-content{
-    text-align: left;
-  }
 }

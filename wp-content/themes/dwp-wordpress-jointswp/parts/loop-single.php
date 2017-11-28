@@ -1,42 +1,27 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+<article id="post-<?php the_ID(); ?>" <?php post_class('frontpage-hero-section'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-	<header class="article-header">
+	<header>
 
-		<!-- If post has a thumnail, add to section bg-img -->
-		<?php if( has_post_thumbnail() ): ?>
-		  <section class="articleBody featured-image" itemprop="articleBody" style="background-image: url('<?php
-		    echo esc_url( get_the_post_thumbnail_url($post->ID, 'medium') );
-		  ?>');">
-		  </section> <!-- end article section -->
-		<?php endif; ?>
+		<!-- Splash image -->
+		<section class="article-hero-image"
+		style="background-image: url('<?php
+			echo esc_url( get_the_post_thumbnail_url( $post->ID, 'medium') ); ?>');">
 
-		<div class="title-container">
-			<?php if ( get_post_type() == 'projects' ): ?>
-					<h1 class="entry-title single-title project-background" itemprop="headline"><?php the_title(); ?></h1>
-			<?php elseif ( get_post_type() == 'series' ): ?>
-					<h1 class="entry-title single-title series-background" itemprop="headline"><?php the_title(); ?></h1>
-			<?php elseif ( get_post_type() == 'post' ): ?>
-					<h1 class="entry-title single-title blog-background" itemprop="headline"><?php the_title(); ?></h1>
-			<?php endif; ?>
-		</div>
+			<!-- Splash description -->
+			<div class="article-hero-description small-12 large-6 row">
+					<?php get_template_part( 'parts/content', 'byline' ); ?>
+					<h1 class="title projecttype-background">
+						<a class="" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+							<?php the_title(); ?>
+						</a>
+					</h1>
+			</div>
+		</section>
 
-		<?php
-			// If co-authors are present, pull in their avatars
-			if( function_exists( 'get_coauthors' ) ):
-				$coauthors = get_coauthors();
-				foreach( $coauthors as $coauthor): ?>
-					<div class="coauthor-avatar">
-						<?php echo coauthors_get_avatar( $coauthor, 65 ); ?>
-					</div>
-				<?php endforeach; else:
-					// If co-authors not are present, pull in author avatar
-					echo get_avatar( $post->post_author );
-				endif;
-		?>
-		<?php get_template_part( 'parts/content', 'byline' ); ?>
-    </header> <!-- end article header -->
+	</header>
 
-    <section class="entry-content" itemprop="articleBody">
+	<!-- Article content -->
+  <section class="entry-content small-12 medium-10 large-8 small-centered" itemprop="articleBody">
 
 		<?php the_content(); ?>
 	</section> <!-- end article section -->
