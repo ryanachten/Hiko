@@ -29,15 +29,7 @@
 
 	<!-- Article content -->
   <section class="entry-content small-11 medium-10 large-8 small-centered" itemprop="articleBody">
-
 		<?php the_content(); ?>
-	</section> <!-- end article section -->
-
-	<footer class="article-footer small-12 medium-10 large-8 small-centered">
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jointswp' ), 'after'  => '</div>' ) ); ?>
-		<p class="tags"><?php the_tags('<span class="tags-title">' . __( 'Tags:', 'jointswp' ) . '</span> ', ', ', ''); ?></p>
-	</footer> <!-- end article footer -->
-
-	<?php comments_template(); ?>
+	</section>
 
 </article> <!-- end article -->
