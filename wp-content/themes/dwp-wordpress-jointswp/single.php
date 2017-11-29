@@ -24,8 +24,6 @@
 
 </div> <!-- end #content -->
 
-<hr>
-
 <!-- Get metadata links -->
 <?php get_template_part( 'parts/single', 'metalinks' ); ?>
 

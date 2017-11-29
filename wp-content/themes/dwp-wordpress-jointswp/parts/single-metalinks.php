@@ -1,7 +1,7 @@
 <!-- Provides metadata links for single posts (blog/project/series) -->
 
 <!-- Article metadata section -->
-<section class="article-footer small-12 medium-10 large-8 small-centered">
+<section id="article-metacontainer" class="small-12 medium-10 large-8 small-centered">
 
 	<!-- Article tags -->
 	<p class="tags">
@@ -23,7 +23,7 @@
 		<?php $article_courses = get_the_terms( $post->ID, 'courses' ); //access ACF Taxonomy field
 			 if( !empty( $article_courses ) ): ?>
 				<h6 class="courses-title"><strong>Courses:</strong></h6>
-				<?php the_terms($post->ID, 'courses'); ?>
+				<?php the_terms($post->ID, 'courses', '', '<br>', '' ); ?>
 			<?php endif; ?>
 	</p>
 
