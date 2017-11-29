@@ -108,11 +108,11 @@ a:hover, a:focus{
     background-color: $background-colour;
     padding: 10px;
   }
-  h1 a{
-    // background-color: $project-background;
+  h1 a, h1{
     padding: 10px;
-    // line-height: 5rem;
+    line-height: 2em; //prevents padding overlapping on multiline titles etc
   }
+
   .byline-date{
     background: none;
     color: $background-colour;

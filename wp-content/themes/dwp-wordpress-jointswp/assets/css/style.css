@@ -4946,20 +4946,27 @@ h1.entry-title.single-title,
     display: inline-block;
     background-color: white;
     padding: 10px; }
-  .article-hero-description h1 a {
-    padding: 10px; }
+  .article-hero-description h1 a, .article-hero-description h1 {
+    padding: 10px;
+    line-height: 2em; }
   .article-hero-description .byline-date {
     background: none;
     color: white; }
+  .article-hero-description .byline {
+    margin-bottom: 0px;
+    margin-top: 20px; }
   .article-hero-description .entry-title.project-background {
     background-color: #DDF6FF;
-    padding: 2px; }
+    padding: 2px;
+    padding: 10px; }
   .article-hero-description .entry-title.series-background {
     background-color: #D5FFF9;
-    padding: 2px; }
+    padding: 2px;
+    padding: 10px; }
   .article-hero-description .entry-title.blog-background {
     background-color: #FFCDDD;
-    padding: 2px; }
+    padding: 2px;
+    padding: 10px; }
   .article-hero-description .entry-title {
     display: inline; }
 
@@ -5129,8 +5136,9 @@ a:hover, a:focus {
       display: inline-block;
       background-color: white;
       padding: 10px; }
-    .frontpage-hero-section .frontpage-hero-description h1 a {
-      padding: 10px; }
+    .frontpage-hero-section .frontpage-hero-description h1 a, .frontpage-hero-section .frontpage-hero-description h1 {
+      padding: 10px;
+      line-height: 2em; }
     .frontpage-hero-section .frontpage-hero-description .byline-date {
       background: none;
       color: white; }

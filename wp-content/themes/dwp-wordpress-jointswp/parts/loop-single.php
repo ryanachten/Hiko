@@ -10,8 +10,6 @@
 			<!-- Splash description -->
 			<div class="article-hero-description small-12 large-6 row">
 
-				<?php get_template_part( 'parts/content', 'byline' ); ?>
-
 				<div>
 					<!-- Title background based on post type -->
 					<?php if ( get_post_type() == 'projects' ): ?>
@@ -22,6 +20,8 @@
 							<h1 class="entry-title single-title blog-background" itemprop="headline"><?php the_title(); ?></h1>
 					<?php endif; ?>
 				</div>
+
+				<?php get_template_part( 'parts/content', 'byline' ); ?>
 			</div>
 		</section>
 

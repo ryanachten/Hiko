@@ -5,7 +5,7 @@
 
 	<!-- Article tags -->
 	<p class="tags">
-		<?php the_tags('<h6 class="tags-title"><strong>' . __( 'Tagged with:', 'jointswp' ) . '</strong></h6> ', ', ', ''); ?>
+		<?php the_tags('<h6 class="tags-title"><strong>' . __( 'Keywords:', 'jointswp' ) . '</strong></h6> ', ', ', ''); ?>
 	</p>
 
 	<!-- Article categories -->
@@ -13,7 +13,7 @@
 		<?php $article_categories = get_the_category();
 			// Prevent empty strings or simply 'Uncategorised' presenting category section
 			if( !empty( $article_categories && $article_categories[0]->name !== 'Uncategorised' ) ):?>
-				<h6 class="categories-title"><strong>Categorised under:</strong></h6>
+				<h6 class="categories-title"><strong>Categories:</strong></h6>
 				<?php the_category(', '); ?>
 			<?php endif; ?>
 	</p>
@@ -22,7 +22,7 @@
 	<p class="courses">
 		<?php $article_courses = get_the_terms( $post->ID, 'courses' ); //access ACF Taxonomy field
 			 if( !empty( $article_courses ) ): ?>
-				<h6 class="courses-title"><strong>Produced as part of the following courses:</strong></h6>
+				<h6 class="courses-title"><strong>Courses:</strong></h6>
 				<?php the_terms($post->ID, 'courses'); ?>
 			<?php endif; ?>
 	</p>

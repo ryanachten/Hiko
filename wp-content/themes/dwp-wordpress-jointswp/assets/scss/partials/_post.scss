@@ -27,15 +27,23 @@ h1.entry-title.single-title,
   margin: 0 auto;
   text-align: center;
 
+  .byline{
+    margin-bottom: 0px;
+    margin-top: 20px;
+
+  }
 
   .entry-title.project-background{
     @include project-title-background;
+    padding: 10px;
   }
   .entry-title.series-background{
     @include series-title-background;
+    padding: 10px;
   }
   .entry-title.blog-background{
     @include blog-title-background;
+    padding: 10px;
   }
 
   .entry-title{
