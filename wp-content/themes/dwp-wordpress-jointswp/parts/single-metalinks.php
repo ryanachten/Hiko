@@ -3,6 +3,8 @@
 <!-- Article metadata section -->
 <section id="article-metacontainer" class="small-12 medium-10 large-8 small-centered">
 
+	<h5>Article Information:</h5>
+
 	<!-- Article tags -->
 	<p class="tags">
 		<?php the_tags('<h6 class="tags-title"><strong>' . __( 'Keywords:', 'jointswp' ) . '</strong></h6> ', ', ', ''); ?>
@@ -47,7 +49,7 @@
 
 		<section id="article-relatedseries-container" class="small-10 small-centered">
 
-			<h4>Featured in the following Series:</h4>
+			<h5>Featured in the following <a href="<?php echo get_post_type_archive_link( 'series' ); ?>">Series</a> :</h5>
 
 				<?php foreach( $series as $series_post ): ?>
 					<a href="<?php echo get_permalink( $series_post->ID ); ?>">
