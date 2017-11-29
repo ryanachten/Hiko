@@ -28,8 +28,14 @@
 			</section>
 
 	</div> <!-- end #inner-content -->
-	<p style="text-align: center;">Template: single-series.php</p>
 
 </div> <!-- end #content -->
+
+<hr>
+
+<!-- Get metadata links -->
+<?php get_template_part( 'parts/single', 'metalinks' ); ?>
+
+<p style="text-align: center;">Template: single-series.php</p>
 
 <?php get_footer(); ?>
