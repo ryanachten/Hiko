@@ -4974,7 +4974,8 @@ h1.entry-title.single-title,
   text-align: center;
   padding: 20px;
   box-shadow: 0 0 5px #888888;
-  border-radius: 7px; }
+  border-radius: 7px;
+  max-width: 800px; }
 
 #article-relatedseries-container {
   text-align: center;

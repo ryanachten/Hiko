@@ -1,7 +1,7 @@
 <!-- Provides metadata links for single posts (blog/project/series) -->
 
 <!-- Article metadata section -->
-<section id="article-metacontainer" class="small-12 medium-10 large-8 small-centered">
+<section id="article-metacontainer" class="small-10 medium-10 large-8 small-centered">
 
 	<h5>Article Information:</h5>
 
