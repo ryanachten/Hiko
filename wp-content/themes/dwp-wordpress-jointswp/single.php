@@ -35,6 +35,6 @@
 <p style="text-align: center;">Template: single.php</p>
 
 <!-- Comments not allowed on frontend of site - uncomment if requirement changes -->
-<!-- <?php comments_template(); ?> -->
+<?php // comments_template(); ?>
 
 <?php get_footer(); ?>

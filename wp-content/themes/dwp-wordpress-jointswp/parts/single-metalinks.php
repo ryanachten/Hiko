@@ -27,25 +27,28 @@
 			<?php endif; ?>
 	</p>
 
+
+	<!-- Check to see if any Series are associated with Post/Project
+	via ACF Relationship reverse query -->
+	<?php $series = get_posts( array(
+		'post_type' => 'series',
+		'meta_query' => array(
+			array(
+				'key' => 'series_parts', //name of the ACF Relantionship
+				'value' => '"' . get_the_ID() . '"', //get ID of post as string
+				'compare' => 'LIKE' // use meta_query LIKE to to match ID against db value in serialized array
+			)
+		)
+	)); ?>
+
 	<!-- If the Post/Project is associated with a Series
 	link to the Series -->
-	<section id="article-relatedseries-container" class="small-10 small-centered">
+	<?php if( $series ): ?>
 
-		<!-- Check to see if any Series are associated with Post/Project
-		via ACF Relationship reverse query -->
-		<?php $series = get_posts( array(
-			'post_type' => 'series',
-			'meta_query' => array(
-				array(
-					'key' => 'series_parts', //name of the ACF Relantionship
-					'value' => '"' . get_the_ID() . '"', //get ID of post as string
-					'compare' => 'LIKE' // use meta_query LIKE to to match ID against db value in serialized array
-				)
-			)
-		)); ?>
+		<section id="article-relatedseries-container" class="small-10 small-centered">
 
-		<?php if( $series ): ?>
 			<h4>Featured in the following Series:</h4>
+
 				<?php foreach( $series as $series_post ): ?>
 					<a href="<?php echo get_permalink( $series_post->ID ); ?>">
 						<div class="article-relatedseries-thumb" style="background-image: url(<?php echo get_the_post_thumbnail_url($series_post->ID); ?>);">
@@ -55,7 +58,9 @@
 						</div>
 					</a>
 				<?php endforeach; ?>
-		<?php endif; ?>
-	</section>
+
+		</section>
+
+	<?php endif; ?>
 
 </section>
