@@ -28,7 +28,7 @@ require_once(get_template_directory().'/assets/translation/translation.php');
 // require_once(get_template_directory().'/assets/functions/disable-emoji.php');
 
 // Adds site styles to the WordPress editor
-// require_once(get_template_directory().'/assets/functions/editor-styles.php');
+require_once(get_template_directory().'/assets/functions/editor-styles.php');
 
 // Related post function - no need to rely on plugins
 // require_once(get_template_directory().'/assets/functions/related-posts.php');
@@ -246,3 +246,16 @@ if ( ! function_exists( 'cor_remove_personal_options' ) ) {
 }
 add_action( 'admin_head-user-edit.php', 'cor_profile_subject_start' );
 add_action( 'admin_footer-user-edit.php', 'cor_profile_subject_end' );
+
+
+function dashboard_restrict_menu(){
+	// Check user permissions (restrictions not applied to admin)
+	if( !current_user_can( 'manage_options' ) ){
+		remove_menu_page( 'upload.php' ); //media option
+		// Note: editors (lecturers/tutors lose ability for editing pages here)
+		remove_menu_page( 'edit.php?post_type=page' ); //pages option
+		remove_menu_page( 'edit-comments.php' ); //comments option
+		remove_menu_page( 'tools.php' ); //tools option
+	}
+}
+add_action( 'admin_menu', 'dashboard_restrict_menu' );
