@@ -1,0 +1,39 @@
+/* Default WP Admin Overrides */
+
+// Admin sidebar
+#adminmenu, .wp-submenu, #adminmenuback, #adminmenuwrap{
+  background-color: $background-colour;
+}
+
+// Admin sidebar menu options
+.wp-menu-name{
+  color: $primary-colour;
+}
+
+#adminmenu{
+
+  // Menu option hovers
+  li.menu-top:hover, li.opensub>a.menu-top, li>a.menu-top:focus{
+    background-color: $secondary-colour;
+    color: $background-colour;
+  }
+
+  // Admin sidebar submenus
+  .wp-submenu, .wp-submenu-wrap, .wp-has-current-submenu .wp-submenu{
+    background-color: $background-colour;
+  }
+  .wp-submenu{
+    a, li.current a{
+      color: $primary-colour;
+    }
+    li.current a:hover, a:hover, a:hover{
+      color: $primary-colour;
+    }
+  }
+
+  // Side icons
+  div.wp-menu-image:before{
+    color: $secondary-colour;
+  }
+
+}

@@ -5208,6 +5208,25 @@ a:hover, a:focus {
   letter-spacing: 6px;
   text-align: center; }
 
+/* Default WP Admin Overrides */
+#adminmenu, .wp-submenu, #adminmenuback, #adminmenuwrap {
+  background-color: white; }
+
+.wp-menu-name {
+  color: black; }
+
+#adminmenu li.menu-top:hover, #adminmenu li.opensub > a.menu-top, #adminmenu li > a.menu-top:focus {
+  background-color: #999;
+  color: white; }
+#adminmenu .wp-submenu, #adminmenu .wp-submenu-wrap, #adminmenu .wp-has-current-submenu .wp-submenu {
+  background-color: white; }
+#adminmenu .wp-submenu a, #adminmenu .wp-submenu li.current a {
+  color: black; }
+#adminmenu .wp-submenu li.current a:hover, #adminmenu .wp-submenu a:hover, #adminmenu .wp-submenu a:hover {
+  color: black; }
+#adminmenu div.wp-menu-image:before {
+  color: #999; }
+
 img.avatar {
   border-radius: 50%; }
 

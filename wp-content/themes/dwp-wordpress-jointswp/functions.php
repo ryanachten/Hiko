@@ -248,6 +248,8 @@ add_action( 'admin_head-user-edit.php', 'cor_profile_subject_start' );
 add_action( 'admin_footer-user-edit.php', 'cor_profile_subject_end' );
 
 
+/* Restrict admin/dashboard menus (both top and side)
+for simpler UI and efficient UX */
 function dashboard_restrict_sidemenu(){
 	// Check user permissions (restrictions not applied to admin)
 	if( !current_user_can( 'manage_options' ) ){
@@ -264,7 +266,14 @@ function dashboard_restrict_topmenu( $wp_admin_bar ){
 	// Check user permissions (restrictions not applied to admin)
 	if( !current_user_can( 'manage_options' ) ){
 		$wp_admin_bar->remove_node( 'comments' ); //comments option
-		$wp_admin_bar->remove_node( 'wp-logo' ); //comments option
+		$wp_admin_bar->remove_node( 'wp-logo' ); //wp logo option
 	}
 }
 add_action( 'admin_bar_menu', 'dashboard_restrict_topmenu', 999);
+
+
+function override_default_admin_styles(){
+	wp_register_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array(), time(), 'all' );
+  wp_enqueue_style( 'site-css' );
+}
+add_action( 'admin_enqueue_scripts', 'override_default_admin_styles');
