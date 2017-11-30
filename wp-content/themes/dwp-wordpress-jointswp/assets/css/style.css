@@ -5227,6 +5227,14 @@ a:hover, a:focus {
 #adminmenu div.wp-menu-image:before {
   color: #999; }
 
+/* Override default font icons with branding */
+.menu-icon-post .wp-menu-image:before, .menu-icon-projects .wp-menu-image:before, .menu-icon-series .wp-menu-image:before {
+  content: "";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px; }
+
 img.avatar {
   border-radius: 50%; }
 

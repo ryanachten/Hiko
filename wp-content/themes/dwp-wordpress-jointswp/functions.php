@@ -272,8 +272,27 @@ function dashboard_restrict_topmenu( $wp_admin_bar ){
 add_action( 'admin_bar_menu', 'dashboard_restrict_topmenu', 999);
 
 
+/* Enqueue main style sheet for access in admin pages */
 function override_default_admin_styles(){
 	wp_register_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array(), time(), 'all' );
   wp_enqueue_style( 'site-css' );
 }
 add_action( 'admin_enqueue_scripts', 'override_default_admin_styles');
+
+
+/* Override default icon set with branding where needed */
+function override_admin_menu_icons() {
+	$branding_asset_dir = get_template_directory_uri() . '/assets/images/branding-assets/';
+	echo '<style>
+   	.menu-icon-post div.wp-menu-image:before {
+   		background-image: url( ' . $branding_asset_dir . '/dwp_bloglogo_bg.svg);
+     }
+		.menu-icon-projects div.wp-menu-image:before {
+		 	background-image: url( ' . $branding_asset_dir . '/dwp_projectlogo_bg.svg);
+			}
+		.menu-icon-series div.wp-menu-image:before {
+			background-image: url( ' . $branding_asset_dir . '/dwp_serieslogo_bg.svg);
+		 }
+     </style>';
+}
+add_action( 'admin_head', 'override_admin_menu_icons', 999 );

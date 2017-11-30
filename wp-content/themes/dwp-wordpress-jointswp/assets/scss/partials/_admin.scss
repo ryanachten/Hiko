@@ -35,5 +35,19 @@
   div.wp-menu-image:before{
     color: $secondary-colour;
   }
+}
 
+/* Override default font icons with branding */
+// Reset to transition from font icons to bg-image icons
+@mixin admin-icon-patch {
+  content: "";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px;
+}
+.menu-icon-post, .menu-icon-projects, .menu-icon-series{
+  .wp-menu-image:before{
+    @include admin-icon-patch;
+  }
 }
