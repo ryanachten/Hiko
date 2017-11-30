@@ -248,7 +248,7 @@ add_action( 'admin_head-user-edit.php', 'cor_profile_subject_start' );
 add_action( 'admin_footer-user-edit.php', 'cor_profile_subject_end' );
 
 
-function dashboard_restrict_menu(){
+function dashboard_restrict_sidemenu(){
 	// Check user permissions (restrictions not applied to admin)
 	if( !current_user_can( 'manage_options' ) ){
 		remove_menu_page( 'upload.php' ); //media option
@@ -258,4 +258,13 @@ function dashboard_restrict_menu(){
 		remove_menu_page( 'tools.php' ); //tools option
 	}
 }
-add_action( 'admin_menu', 'dashboard_restrict_menu' );
+add_action( 'admin_menu', 'dashboard_restrict_sidemenu' );
+
+function dashboard_restrict_topmenu( $wp_admin_bar ){
+	// Check user permissions (restrictions not applied to admin)
+	if( !current_user_can( 'manage_options' ) ){
+		$wp_admin_bar->remove_node( 'comments' ); //comments option
+		$wp_admin_bar->remove_node( 'wp-logo' ); //comments option
+	}
+}
+add_action( 'admin_bar_menu', 'dashboard_restrict_topmenu', 999);
