@@ -285,14 +285,18 @@ function override_admin_menu_icons() {
 	$branding_asset_dir = get_template_directory_uri() . '/assets/images/branding-assets/';
 	echo '<style>
    	.menu-icon-post div.wp-menu-image:before {
-   		background-image: url( ' . $branding_asset_dir . '/dwp_bloglogo_bg.svg);
+   		background-image: url( ' . $branding_asset_dir . 'dwp_bloglogo_bg.svg);
      }
 		.menu-icon-projects div.wp-menu-image:before {
-		 	background-image: url( ' . $branding_asset_dir . '/dwp_projectlogo_bg.svg);
+		 	background-image: url( ' . $branding_asset_dir . 'dwp_projectlogo_bg.svg);
 			}
 		.menu-icon-series div.wp-menu-image:before {
-			background-image: url( ' . $branding_asset_dir . '/dwp_serieslogo_bg.svg);
+			background-image: url( ' . $branding_asset_dir . 'dwp_serieslogo_bg.svg);
 		 }
+
+		 #wpadminbar #wp-admin-bar-site-name > .ab-item:before {
+ 			background-image: url( ' . $branding_asset_dir . 'dwp_mainlogo.svg)!important;
+ 		 }
      </style>';
 }
 add_action( 'admin_head', 'override_admin_menu_icons', 999 );

@@ -37,6 +37,31 @@
   }
 }
 
+//Topbar style overrides
+#wpadminbar{
+  background-color: $background-colour;
+
+}
+#wpadminbar .ab-empty-item, #wpadminbar a.ab-item, #wpadminbar>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon {
+    color: $primary-colour;
+}
+// Topbar icon colours
+#wpadminbar{
+  #adminbarsearch:before, .ab-icon:before, .ab-item:before{
+    color: $secondary-colour;
+  }
+  // Topbar dropdown menus
+  .menupop .ab-sub-wrapper, .shortlink-input{
+    background-color: $secondary-colour;
+  }
+}
+#wpadminbar .ab-top-menu>li.hover>.ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus, #wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item, #wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus{
+  background: $secondary-colour;
+}
+#wpadminbar:not(.mobile)>#wp-toolbar a:focus span.ab-label, #wpadminbar:not(.mobile)>#wp-toolbar li:hover span.ab-label, #wpadminbar>#wp-toolbar li.hover span.ab-label{
+  color: $primary-colour;
+}
+
 /* Override default font icons with branding */
 // Reset to transition from font icons to bg-image icons
 @mixin admin-icon-patch {
@@ -50,4 +75,12 @@
   .wp-menu-image:before{
     @include admin-icon-patch;
   }
+}
+// Admin top bar menu home icon override
+.wp-admin #wpadminbar #wp-admin-bar-site-name>.ab-item:before {
+  @include admin-icon-patch;
+  margin: 3px 10px 0 0;
+  width: 20px;
+  height: 20px;
+  padding: 0px;
 }
