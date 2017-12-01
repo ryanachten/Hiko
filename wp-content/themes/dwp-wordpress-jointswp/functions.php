@@ -40,7 +40,7 @@ require_once(get_template_directory().'/assets/functions/editor-styles.php');
 require_once(get_template_directory().'/assets/functions/login.php');
 
 // Customize the WordPress admin
-// require_once(get_template_directory().'/assets/functions/admin.php');
+require_once(get_template_directory().'/assets/functions/admin.php');
 
 
 // Change the default length of excerpts to be shorter
@@ -246,57 +246,3 @@ if ( ! function_exists( 'cor_remove_personal_options' ) ) {
 }
 add_action( 'admin_head-user-edit.php', 'cor_profile_subject_start' );
 add_action( 'admin_footer-user-edit.php', 'cor_profile_subject_end' );
-
-
-/* Restrict admin/dashboard menus (both top and side)
-for simpler UI and efficient UX */
-function dashboard_restrict_sidemenu(){
-	// Check user permissions (restrictions not applied to admin)
-	if( !current_user_can( 'manage_options' ) ){
-		remove_menu_page( 'upload.php' ); //media option
-		// Note: editors (lecturers/tutors lose ability for editing pages here)
-		remove_menu_page( 'edit.php?post_type=page' ); //pages option
-		remove_menu_page( 'edit-comments.php' ); //comments option
-		remove_menu_page( 'tools.php' ); //tools option
-	}
-}
-add_action( 'admin_menu', 'dashboard_restrict_sidemenu' );
-
-function dashboard_restrict_topmenu( $wp_admin_bar ){
-	// Check user permissions (restrictions not applied to admin)
-	if( !current_user_can( 'manage_options' ) ){
-		$wp_admin_bar->remove_node( 'comments' ); //comments option
-		$wp_admin_bar->remove_node( 'wp-logo' ); //wp logo option
-	}
-}
-add_action( 'admin_bar_menu', 'dashboard_restrict_topmenu', 999);
-
-
-/* Enqueue main style sheet for access in admin pages */
-function override_default_admin_styles(){
-	wp_register_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array(), time(), 'all' );
-  wp_enqueue_style( 'site-css' );
-}
-add_action( 'admin_enqueue_scripts', 'override_default_admin_styles');
-
-
-/* Override default icon set with branding where needed */
-function override_admin_menu_icons() {
-	$branding_asset_dir = get_template_directory_uri() . '/assets/images/branding-assets/';
-	echo '<style>
-   	.menu-icon-post div.wp-menu-image:before {
-   		background-image: url( ' . $branding_asset_dir . 'dwp_bloglogo_bg.svg);
-     }
-		.menu-icon-projects div.wp-menu-image:before {
-		 	background-image: url( ' . $branding_asset_dir . 'dwp_projectlogo_bg.svg);
-			}
-		.menu-icon-series div.wp-menu-image:before {
-			background-image: url( ' . $branding_asset_dir . 'dwp_serieslogo_bg.svg);
-		 }
-
-		 #wpadminbar #wp-admin-bar-site-name > .ab-item:before {
- 			background-image: url( ' . $branding_asset_dir . 'dwp_mainlogo.svg)!important;
- 		 }
-     </style>';
-}
-add_action( 'admin_head', 'override_admin_menu_icons', 999 );

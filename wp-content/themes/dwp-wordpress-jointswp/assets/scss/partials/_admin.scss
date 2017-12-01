@@ -57,6 +57,7 @@
 }
 #wpadminbar .ab-top-menu>li.hover>.ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus, #wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item, #wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus{
   background: $secondary-colour;
+  color: $primary-colour;
 }
 #wpadminbar:not(.mobile)>#wp-toolbar a:focus span.ab-label, #wpadminbar:not(.mobile)>#wp-toolbar li:hover span.ab-label, #wpadminbar>#wp-toolbar li.hover span.ab-label{
   color: $primary-colour;
@@ -79,7 +80,7 @@
 // Admin top bar menu home icon override
 .wp-admin #wpadminbar #wp-admin-bar-site-name>.ab-item:before {
   @include admin-icon-patch;
-  margin: 3px 10px 0 0;
+  margin: 4px 10px 0 0;
   width: 20px;
   height: 20px;
   padding: 0px;
