@@ -5295,6 +5295,10 @@ a:hover, a:focus {
   display: block;
   margin: 0 auto 20px auto; }
 
+#dashboard_blogposts_widget h2, #dashboard_project_widget h2, #dashboard_series_widget h2 {
+  text-align: center;
+  font-size: 1.5em; }
+
 img.avatar {
   border-radius: 50%; }
 

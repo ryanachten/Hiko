@@ -41,8 +41,7 @@ function get_dashboard_recentposts($post_type, $post_status){
 function dashboard_blogposts_widget(){
 
 	// Blog Section Logo
-	echo "<div class='dashboard-post-widget'>
-					<img class='dashboard-post-widget-headerimg' src='".get_template_directory_uri()."/assets/images/branding-assets/dwp_bloglogo_bg.svg'>";
+	echo "<div class='dashboard-post-widget'>";
 
 	echo '<div class="dashboard-post-recentsection">
 	<h4>Recently Drafted</h4><ul>';
@@ -60,8 +59,7 @@ function dashboard_blogposts_widget(){
 function dashboard_project_widget(){
 
 	// Blog Section Logo
-	echo "<div class='dashboard-post-widget'>
-					<img class='dashboard-post-widget-headerimg' src='".get_template_directory_uri()."/assets/images/branding-assets/dwp_projectlogo_bg.svg'>";
+	echo "<div class='dashboard-post-widget'>";
 
 	echo '<div class="dashboard-post-recentsection">
 	<h4>Recently Drafted</h4><ul>';
@@ -84,8 +82,7 @@ function dashboard_project_widget(){
 function dashboard_series_widget(){
 
 	// Blog Section Logo
-	echo "<div class='dashboard-post-widget'>
-					<img class='dashboard-post-widget-headerimg' src='".get_template_directory_uri()."/assets/images/branding-assets/dwp_serieslogo_bg.svg'>";
+	echo "<div class='dashboard-post-widget'>";
 
 	echo '<div class="dashboard-post-recentsection">
 	<h4>Recently Drafted</h4><ul>';
@@ -201,3 +198,20 @@ function add_dashboard_header_logo(){
 		 </style>';
 }
 add_action( 'admin_head', 'add_dashboard_header_logo');
+
+/* Add logo to dashboard splash header */
+function add_widget_header_logos(){
+	$branding_asset_dir = get_template_directory_uri() . '/assets/images/branding-assets/';
+	echo '<style>
+   	#blogpost_widget_headerImg {
+   		background-image: url( ' . $branding_asset_dir . 'dwp_bloglogo_bg.svg);
+     }
+		 #project_widget_headerImg{
+			 background-image: url( ' . $branding_asset_dir . 'dwp_projectlogo_bg.svg);
+		 }
+		 #series_widget_headerImg{
+			 background-image: url( ' . $branding_asset_dir . 'dwp_serieslogo_bg.svg);
+		 }
+		 </style>';
+}
+add_action( 'admin_head', 'add_widget_header_logos');
