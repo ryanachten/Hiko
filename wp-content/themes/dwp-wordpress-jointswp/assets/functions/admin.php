@@ -22,43 +22,85 @@ For more information on creating Dashboard Widgets, view:
 http://digwp.com/2010/10/customize-wordpress-dashboard/
 */
 
+/* Returns a list of recent posts based on type and status */
+function get_dashboard_recentposts($post_type, $post_status){
+	$args = array(
+		'author' => get_the_author_meta('ID'), //TODO: account for multi author
+		'post_type' => $post_type,
+		'numberposts' => 3,
+		'post_status' => $post_status
+	);
+	$blogposts = get_posts($args);
+
+	foreach ($blogposts as $blogpost) {
+		echo '<li><a href="'. get_the_permalink($blogpost->ID).'">'.$blogpost->post_title.'</a></li>';
+	}
+	echo '</ul>';
+}
+
 function dashboard_blogposts_widget(){
 
 	// Blog Section Logo
 	echo "<div class='dashboard-post-widget'>
 					<img class='dashboard-post-widget-headerimg' src='".get_template_directory_uri()."/assets/images/branding-assets/dwp_bloglogo_bg.svg'>";
 
-	$args = array(
-		'author' => get_the_author_meta('ID'), //TODO: account for multi author
-		'post_type' => 'post',
-		'numberposts' => 3,
-		'post_status' => 'draft'
-	);
-	$blogposts_drafted = get_posts($args);
+	echo '<div class="dashboard-post-recentsection">
+	<h4>Recently Drafted</h4><ul>';
+		get_dashboard_recentposts('post', 'draft');
+	echo '</div>';
 
-	$args = array(
-		'author' => get_the_author_meta('ID'), //TODO: account for multi author
-		'post_type' => 'post',
-		'numberposts' => 3,
-		'post_status' => 'publish'
-	);
-	$blogposts_published = get_posts($args);
+	echo '<div class="dashboard-post-recentsection">
+	<h4>Recently Published</h4><ul>';
+		get_dashboard_recentposts('post', 'publish');
+	echo '</div>';
+
+	echo "</div>";
+}
+
+function dashboard_project_widget(){
+
+	// Blog Section Logo
+	echo "<div class='dashboard-post-widget'>
+					<img class='dashboard-post-widget-headerimg' src='".get_template_directory_uri()."/assets/images/branding-assets/dwp_projectlogo_bg.svg'>";
 
 	echo '<div class="dashboard-post-recentsection">
 	<h4>Recently Drafted</h4><ul>';
+		get_dashboard_recentposts('projects', 'draft');
+	echo '</div>';
 
-	foreach ($blogposts_drafted as $blogpost) {
-		echo '<li><a href="'. get_the_permalink($blogpost->ID).'">'.$blogpost->post_title.'</a></li>';
-	}
-	echo '</ul></div>
-	<div class="dashboard-post-recentsection">
+	echo '<div class="dashboard-post-recentsection">
+	<h4>Recently Submitted</h4><ul>';
+		get_dashboard_recentposts('projects', 'pending');
+	echo '</div>';
+
+	echo '<div class="dashboard-post-recentsection">
 	<h4>Recently Published</h4><ul>';
+		get_dashboard_recentposts('projects', 'publish');
+	echo '</div>';
 
-	foreach ($blogposts_published as $blogpost) {
-		echo '<li><a href="'. get_the_permalink($blogpost->ID).'">'.$blogpost->post_title.'</a></li>';
-	}
+	echo "</div>";
+}
 
-	echo '</ul></div>';
+function dashboard_series_widget(){
+
+	// Blog Section Logo
+	echo "<div class='dashboard-post-widget'>
+					<img class='dashboard-post-widget-headerimg' src='".get_template_directory_uri()."/assets/images/branding-assets/dwp_serieslogo_bg.svg'>";
+
+	echo '<div class="dashboard-post-recentsection">
+	<h4>Recently Drafted</h4><ul>';
+		get_dashboard_recentposts('series', 'draft');
+	echo '</div>';
+
+	echo '<div class="dashboard-post-recentsection">
+	<h4>Recently Submitted</h4><ul>';
+		get_dashboard_recentposts('series', 'pending');
+	echo '</div>';
+
+	echo '<div class="dashboard-post-recentsection">
+	<h4>Recently Published</h4><ul>';
+		get_dashboard_recentposts('series', 'publish');
+	echo '</div>';
 
 	echo "</div>";
 }
@@ -70,6 +112,10 @@ function joints_custom_dashboard_widgets() {
 	in this function and they will all load.
 	*/
 	wp_add_dashboard_widget('dashboard_blogposts_widget', __('Blog Posts', 'jointswp'), 'dashboard_blogposts_widget');
+
+	wp_add_dashboard_widget('dashboard_project_widget', __('Projects', 'jointswp'), 'dashboard_project_widget');
+
+	wp_add_dashboard_widget('dashboard_series_widget', __('Series', 'jointswp'), 'dashboard_series_widget');
 }
 // removing the dashboard widgets
 // adding any custom widgets
