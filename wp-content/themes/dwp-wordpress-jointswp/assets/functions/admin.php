@@ -24,8 +24,12 @@ http://digwp.com/2010/10/customize-wordpress-dashboard/
 
 /* Returns a list of recent posts based on type and status */
 function get_dashboard_recentposts($post_type, $post_status){
+
+	$current_user = wp_get_current_user();
+
 	$args = array(
-		'author' => get_the_author_meta('ID'), //TODO: account for multi author
+		// use user_login to get posts assigned via Co Author plugin
+		'author_name' => $current_user->user_login, //TODO: account for multi author
 		'post_type' => $post_type,
 		'numberposts' => 3,
 		'post_status' => $post_status
