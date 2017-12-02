@@ -44,6 +44,12 @@ function joints_rss_dashboard_widget() {
 	<?php }
 }
 
+function dashboard_welcome_splash(){
+	echo "<div>
+					<p>testing</p>
+				</div>";
+}
+
 // Calling all custom dashboard widgets
 function joints_custom_dashboard_widgets() {
 	wp_add_dashboard_widget('joints_rss_dashboard_widget', __('Custom RSS Feed (Customize in admin.php)', 'jointswp'), 'joints_rss_dashboard_widget');
@@ -51,10 +57,12 @@ function joints_custom_dashboard_widgets() {
 	Be sure to drop any other created Dashboard Widgets
 	in this function and they will all load.
 	*/
+	wp_add_dashboard_widget('dashboard_welcome_splash', __('Welome splash', 'jointswp'), 'dashboard_welcome_splash');
 }
 // removing the dashboard widgets
 // adding any custom widgets
 add_action('wp_dashboard_setup', 'joints_custom_dashboard_widgets');
+
 
 /************* CUSTOMIZE ADMIN *******************/
 // Custom Backend Footer
@@ -95,6 +103,11 @@ add_action( 'admin_bar_menu', 'dashboard_restrict_topmenu', 999);
 function override_default_admin_styles(){
 	wp_register_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array(), time(), 'all' );
   wp_enqueue_style( 'site-css' );
+
+	// User to setup dashboard custom elements using jQuery
+	wp_register_script( 'dashboard_custom_setup',  get_template_directory_uri() . '/assets/js/scripts/admin_customsetup.js', array(), time(), false);
+	wp_enqueue_script('dashboard_custom_setup');
+
 }
 add_action( 'admin_enqueue_scripts', 'override_default_admin_styles');
 
@@ -119,3 +132,14 @@ function override_admin_menu_icons() {
      </style>';
 }
 add_action( 'admin_head', 'override_admin_menu_icons', 999 );
+
+/* Add logo to dashboard splash header */
+function add_dashboard_header_logo(){
+	$branding_asset_dir = get_template_directory_uri() . '/assets/images/branding-assets/';
+	echo '<style>
+   	#dashboard_splashHeaderImg {
+   		background-image: url( ' . $branding_asset_dir . 'dwp_mainlogo.svg);
+     }
+		 </style>';
+}
+add_action( 'admin_head', 'add_dashboard_header_logo');

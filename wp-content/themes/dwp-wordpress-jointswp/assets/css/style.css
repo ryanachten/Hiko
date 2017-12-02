@@ -5264,6 +5264,19 @@ a:hover, a:focus {
   height: 20px;
   padding: 0px; }
 
+/* Admin Custom styles */
+.wrap > h1 {
+  text-align: center;
+  font-size: 1.5rem; }
+
+#dashboard_splashHeaderImg {
+  height: 85px;
+  width: 85px;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 img.avatar {
   border-radius: 50%; }
 
