@@ -5277,6 +5277,24 @@ a:hover, a:focus {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.postbox-container {
+  width: 100% !important; }
+
+.dashboard-post-widget {
+  text-align: center; }
+
+.dashboard-post-recentsection {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left; }
+
+.dashboard-post-widget-headerimg {
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: 0 auto 20px auto; }
+
 img.avatar {
   border-radius: 50%; }
 

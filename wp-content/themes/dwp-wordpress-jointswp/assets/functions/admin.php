@@ -22,42 +22,54 @@ For more information on creating Dashboard Widgets, view:
 http://digwp.com/2010/10/customize-wordpress-dashboard/
 */
 
-// RSS Dashboard Widget
-function joints_rss_dashboard_widget() {
-	if(function_exists('fetch_feed')) {
-		include_once(ABSPATH . WPINC . '/feed.php');               // include the required file
-		$feed = fetch_feed('http://jointswp.com/feed/rss/');        // specify the source feed
-		$limit = $feed->get_item_quantity(5);                      // specify number of items
-		$items = $feed->get_items(0, $limit);                      // create an array of items
+function dashboard_blogposts_widget(){
+
+	// Blog Section Logo
+	echo "<div class='dashboard-post-widget'>
+					<img class='dashboard-post-widget-headerimg' src='".get_template_directory_uri()."/assets/images/branding-assets/dwp_bloglogo_bg.svg'>";
+
+	$args = array(
+		'author' => get_the_author_meta('ID'), //TODO: account for multi author
+		'post_type' => 'post',
+		'numberposts' => 3,
+		'post_status' => 'draft'
+	);
+	$blogposts_drafted = get_posts($args);
+
+	$args = array(
+		'author' => get_the_author_meta('ID'), //TODO: account for multi author
+		'post_type' => 'post',
+		'numberposts' => 3,
+		'post_status' => 'publish'
+	);
+	$blogposts_published = get_posts($args);
+
+	echo '<div class="dashboard-post-recentsection">
+	<h4>Recently Drafted</h4><ul>';
+
+	foreach ($blogposts_drafted as $blogpost) {
+		echo '<li><a href="'. get_the_permalink($blogpost->ID).'">'.$blogpost->post_title.'</a></li>';
 	}
-	if ($limit == 0) echo '<div>' . __( 'The RSS Feed is either empty or unavailable.', 'jointswp' ) . '</div>';   // fallback message
-	else foreach ($items as $item) { ?>
+	echo '</ul></div>
+	<div class="dashboard-post-recentsection">
+	<h4>Recently Published</h4><ul>';
 
-	<h4 style="margin-bottom: 0;">
-		<a href="<?php echo $item->get_permalink(); ?>" title="<?php echo mysql2date(__('j F Y @ g:i a', 'jointswp'), $item->get_date('Y-m-d H:i:s')); ?>" target="_blank">
-			<?php echo $item->get_title(); ?>
-		</a>
-	</h4>
-	<p style="margin-top: 0.5em;">
-		<?php echo substr($item->get_description(), 0, 200); ?>
-	</p>
-	<?php }
-}
+	foreach ($blogposts_published as $blogpost) {
+		echo '<li><a href="'. get_the_permalink($blogpost->ID).'">'.$blogpost->post_title.'</a></li>';
+	}
 
-function dashboard_welcome_splash(){
-	echo "<div>
-					<p>testing</p>
-				</div>";
+	echo '</ul></div>';
+
+	echo "</div>";
 }
 
 // Calling all custom dashboard widgets
 function joints_custom_dashboard_widgets() {
-	wp_add_dashboard_widget('joints_rss_dashboard_widget', __('Custom RSS Feed (Customize in admin.php)', 'jointswp'), 'joints_rss_dashboard_widget');
 	/*
 	Be sure to drop any other created Dashboard Widgets
 	in this function and they will all load.
 	*/
-	wp_add_dashboard_widget('dashboard_welcome_splash', __('Welome splash', 'jointswp'), 'dashboard_welcome_splash');
+	wp_add_dashboard_widget('dashboard_blogposts_widget', __('Blog Posts', 'jointswp'), 'dashboard_blogposts_widget');
 }
 // removing the dashboard widgets
 // adding any custom widgets
