@@ -117,19 +117,24 @@ body.dashboard {
     background-repeat: no-repeat;
     background-size: cover; }
   body.dashboard .postbox-container {
-    width: 100% !important; }
+    width: 100% !important;
+    max-width: 1200px;
+    margin: 20px auto;
+    float: none !important; }
   body.dashboard .dashboard-post-widget {
     text-align: center; }
   body.dashboard .dashboard-post-recentsection {
     width: 30%;
+    min-width: 250px;
+    height: 100px;
     display: inline-block;
     vertical-align: top;
-    text-align: left; }
+    text-align: center; }
   body.dashboard .dashboard-post-widget-headerimg {
     height: 50px;
     width: 50px;
     display: block;
-    margin: 0 auto 20px auto; }
+    margin: 10px auto 10px auto; }
   body.dashboard #dashboard_blogposts_widget h2, body.dashboard #dashboard_project_widget h2, body.dashboard #dashboard_series_widget h2 {
     text-align: center;
     font-size: 1.5em; }
