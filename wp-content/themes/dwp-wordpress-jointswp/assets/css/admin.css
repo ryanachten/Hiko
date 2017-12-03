@@ -79,7 +79,17 @@ https://code.tutsplus.com/articles/customizing-the-wordpress-admin-adding-stylin
   color: black; }
 
 #wpadminbar:not(.mobile) > #wp-toolbar a:focus span.ab-label, #wpadminbar:not(.mobile) > #wp-toolbar li:hover span.ab-label, #wpadminbar > #wp-toolbar li.hover span.ab-label {
-  color: black; }
+  color: white; }
+
+.wp-responsive-open #wpadminbar #wp-admin-bar-menu-toggle a {
+  background: white; }
+
+#wpadminbar #wp-admin-bar-site-name > a.ab-item {
+  font-family: "Signika", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px; }
 
 /* Override default font icons with branding */
 .menu-icon-post .wp-menu-image:before, .menu-icon-projects .wp-menu-image:before, .menu-icon-series .wp-menu-image:before {

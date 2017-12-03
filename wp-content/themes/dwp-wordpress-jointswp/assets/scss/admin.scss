@@ -109,9 +109,20 @@ https://code.tutsplus.com/articles/customizing-the-wordpress-admin-adding-stylin
   color: $primary-colour;
 }
 #wpadminbar:not(.mobile)>#wp-toolbar a:focus span.ab-label, #wpadminbar:not(.mobile)>#wp-toolbar li:hover span.ab-label, #wpadminbar>#wp-toolbar li.hover span.ab-label{
-  color: $primary-colour;
+  color: $background-colour;
 }
-
+// Mobile top bar
+.wp-responsive-open #wpadminbar #wp-admin-bar-menu-toggle a{
+  background: $background-colour;
+}
+// Topbar admin logotype
+#wpadminbar #wp-admin-bar-site-name > a.ab-item{
+  font-family: "Signika", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
 
 /* Override default font icons with branding */
 // Reset to transition from font icons to bg-image icons
