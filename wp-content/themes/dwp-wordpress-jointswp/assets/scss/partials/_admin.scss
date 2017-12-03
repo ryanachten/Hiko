@@ -63,6 +63,7 @@
   color: $primary-colour;
 }
 
+
 /* Override default font icons with branding */
 // Reset to transition from font icons to bg-image icons
 @mixin admin-icon-patch {
@@ -86,43 +87,67 @@
   padding: 0px;
 }
 
+body.dashboard{
 
-/* Admin Custom styles */
-.wrap>h1{
-  text-align: center;
-  font-size: 1.5rem;
-}
-// Styles for dashboard header logo
-#dashboard_splashHeaderImg{
-  height: 85px;
-  width: 85px;
-  margin: 0 auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.postbox-container{
-  width: 100% !important; //override 50% widget width
-}
-// Styles for dashboard post widgets
-.dashboard-post-widget{
-  text-align: center;
-}
-.dashboard-post-recentsection{
-  width: 30%;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-}
-.dashboard-post-widget-headerimg{
-  height: 50px;
-  width: 50px;
-  display: block;
-  margin: 0 auto 20px auto;
-}
-#dashboard_blogposts_widget, #dashboard_project_widget, #dashboard_series_widget{
-  h2{
+  /* Admin Custom styles */
+  .wrap>h1{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
+  // Styles for dashboard header logo
+  #dashboard_splashHeaderImg{
+    height: 85px;
+    width: 85px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .postbox-container{
+    width: 100% !important; //override 50% widget width
+  }
+  // Styles for dashboard post widgets
+  .dashboard-post-widget{
+    text-align: center;
+  }
+  .dashboard-post-recentsection{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+  }
+  .dashboard-post-widget-headerimg{
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  #dashboard_blogposts_widget, #dashboard_project_widget, #dashboard_series_widget{
+    h2{
+      text-align: center;
+      font-size: 1.5em;
+    }
+  }
+}
+
+/* Add New Post bug patches */
+// Title header
+#title-prompt-text{
+  font-size: 0.875rem !important;
+}
+// Course instruction labels
+#acf-course .label{
+  background: none;
+}
+// Category tabs
+.tabs::before, .tabs::after{
+  display: inline;
+}
+// Category select options
+#category-all{
+  display: block;
+}
+.categorychecklist{
+  margin-left: 0;
+  list-style-type: none;
 }

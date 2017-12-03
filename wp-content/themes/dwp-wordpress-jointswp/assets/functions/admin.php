@@ -1,6 +1,20 @@
 <?php
 // This file handles the admin area and functions - You can use this file to make changes to the dashboard.
 
+function dashboard_class_check(){
+	$current_screen = get_current_screen();
+	if($current_screen->id == 'dashboard'){
+		echo '<script>
+						jQuery(document).ready(function(){
+							console.log("testing");
+							jQuery(document.body).addClass("dashboard");
+						});
+
+					</script>';
+	}
+}
+add_action( 'admin_head', 'dashboard_class_check' );
+
 /************* DASHBOARD WIDGETS *****************/
 // Disable default dashboard widgets
 function remove_dashboard_widgets() {
@@ -29,7 +43,7 @@ function get_dashboard_recentposts($post_type, $post_status){
 
 	$args = array(
 		// use user_login to get posts assigned via Co Author plugin
-		'author_name' => $current_user->user_login, //TODO: account for multi author
+		'author_name' => $current_user->user_login,
 		'post_type' => $post_type,
 		'numberposts' => 3,
 		'post_status' => $post_status

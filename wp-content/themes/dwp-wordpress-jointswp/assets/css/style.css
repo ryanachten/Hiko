@@ -5264,40 +5264,52 @@ a:hover, a:focus {
   height: 20px;
   padding: 0px; }
 
-/* Admin Custom styles */
-.wrap > h1 {
-  text-align: center;
-  font-size: 1.5rem; }
+body.dashboard {
+  /* Admin Custom styles */ }
+  body.dashboard .wrap > h1 {
+    text-align: center;
+    font-size: 1.5rem; }
+  body.dashboard #dashboard_splashHeaderImg {
+    height: 85px;
+    width: 85px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  body.dashboard .postbox-container {
+    width: 100% !important; }
+  body.dashboard .dashboard-post-widget {
+    text-align: center; }
+  body.dashboard .dashboard-post-recentsection {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left; }
+  body.dashboard .dashboard-post-widget-headerimg {
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto 20px auto; }
+  body.dashboard #dashboard_blogposts_widget h2, body.dashboard #dashboard_project_widget h2, body.dashboard #dashboard_series_widget h2 {
+    text-align: center;
+    font-size: 1.5em; }
 
-#dashboard_splashHeaderImg {
-  height: 85px;
-  width: 85px;
-  margin: 0 auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+/* Add New Post bug patches */
+#title-prompt-text {
+  font-size: 0.875rem !important; }
 
-.postbox-container {
-  width: 100% !important; }
+#acf-course .label {
+  background: none; }
 
-.dashboard-post-widget {
-  text-align: center; }
+.tabs::before, .tabs::after {
+  display: inline; }
 
-.dashboard-post-recentsection {
-  width: 30%;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left; }
+#category-all {
+  display: block; }
 
-.dashboard-post-widget-headerimg {
-  height: 50px;
-  width: 50px;
-  display: block;
-  margin: 0 auto 20px auto; }
-
-#dashboard_blogposts_widget h2, #dashboard_project_widget h2, #dashboard_series_widget h2 {
-  text-align: center;
-  font-size: 1.5em; }
+.categorychecklist {
+  margin-left: 0;
+  list-style-type: none; }
 
 img.avatar {
   border-radius: 50%; }
