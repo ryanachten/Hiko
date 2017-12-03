@@ -141,19 +141,22 @@ https://code.tutsplus.com/articles/customizing-the-wordpress-admin-adding-stylin
 body.dashboard{
 
   /* Admin Custom styles */
-  .wrap>h1{
-    text-align: center;
-    font-size: 1.5rem;
-  }
+
   // Styles for dashboard header logo
   #dashboard_splashHeaderImg{
     height: 85px;
     width: 85px;
-    margin: 0 auto;
+    margin: 20px auto 10px auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+  // Dashboard header title
+  .wrap>h1{
+    text-align: center;
+    font-size: 3em;
+  }
+
   .postbox-container{
     width: 100% !important; //override 50% widget width
     max-width: 1200px;
@@ -164,13 +167,14 @@ body.dashboard{
   .dashboard-post-widget{
     text-align: center;
   }
-  .dashboard-post-recentsection{
-    width: 30%;
-    min-width: 250px;
-    height: 100px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
+  #dashboard_blogposts_widget, #dashboard_project_widget, #dashboard_series_widget{
+    h2{
+      text-align: center;
+      font-size: 1.5em;
+      letter-spacing: 2px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
   }
   .dashboard-post-widget-headerimg{
     height: 50px;
@@ -178,10 +182,16 @@ body.dashboard{
     display: block;
     margin: 10px auto 10px auto;
   }
-  #dashboard_blogposts_widget, #dashboard_project_widget, #dashboard_series_widget{
-    h2{
-      text-align: center;
-      font-size: 1.5em;
+  .dashboard-post-recentsection{
+    width: 30%;
+    min-width: 250px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+
+    h4{
+      font-size: 1.25em !important;
     }
   }
 }

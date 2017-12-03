@@ -106,16 +106,16 @@ https://code.tutsplus.com/articles/customizing-the-wordpress-admin-adding-stylin
 
 body.dashboard {
   /* Admin Custom styles */ }
-  body.dashboard .wrap > h1 {
-    text-align: center;
-    font-size: 1.5rem; }
   body.dashboard #dashboard_splashHeaderImg {
     height: 85px;
     width: 85px;
-    margin: 0 auto;
+    margin: 20px auto 10px auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
+  body.dashboard .wrap > h1 {
+    text-align: center;
+    font-size: 3em; }
   body.dashboard .postbox-container {
     width: 100% !important;
     max-width: 1200px;
@@ -123,6 +123,17 @@ body.dashboard {
     float: none !important; }
   body.dashboard .dashboard-post-widget {
     text-align: center; }
+  body.dashboard #dashboard_blogposts_widget h2, body.dashboard #dashboard_project_widget h2, body.dashboard #dashboard_series_widget h2 {
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-transform: uppercase; }
+  body.dashboard .dashboard-post-widget-headerimg {
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 10px auto 10px auto; }
   body.dashboard .dashboard-post-recentsection {
     width: 30%;
     min-width: 250px;
@@ -130,13 +141,7 @@ body.dashboard {
     display: inline-block;
     vertical-align: top;
     text-align: center; }
-  body.dashboard .dashboard-post-widget-headerimg {
-    height: 50px;
-    width: 50px;
-    display: block;
-    margin: 10px auto 10px auto; }
-  body.dashboard #dashboard_blogposts_widget h2, body.dashboard #dashboard_project_widget h2, body.dashboard #dashboard_series_widget h2 {
-    text-align: center;
-    font-size: 1.5em; }
+    body.dashboard .dashboard-post-recentsection h4 {
+      font-size: 1.25em !important; }
 
 /*# sourceMappingURL=admin.css.map */
