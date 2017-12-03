@@ -5,23 +5,63 @@ p {
   font-family: "Roboto", sans-serif; }
 
 /* Default WP Admin Overrides */
-#adminmenu, .wp-submenu, #adminmenuback, #adminmenuwrap {
-  background-color: white; }
-
-.wp-menu-name {
-  color: black; }
+/* styling for admin menu - more information here:
+https://code.tutsplus.com/articles/customizing-the-wordpress-admin-adding-styling--wp-33530 */
+/* background and text color */
+#adminmenuback, #adminmenuwrap, #adminmenu {
+  background-color: white;
+  border: none; }
 
 #adminmenu li.menu-top:hover, #adminmenu li.opensub > a.menu-top, #adminmenu li > a.menu-top:focus {
-  background-color: #999;
-  color: white; }
-#adminmenu .wp-submenu, #adminmenu .wp-submenu-wrap, #adminmenu .wp-has-current-submenu .wp-submenu {
+  background-color: white;
+  color: black;
+  text-shadow: none; }
+
+#adminmenu li.wp-menu-separator {
+  background: white;
+  border: none; }
+
+/* links in admin menu */
+#adminmenu a,
+#adminmenu li.menu-top:hover,
+#adminmenu li.opensub > a.menu-top,
+#adminmenu li > a.menu-top:focus {
+  color: black; }
+
+#adminmenu a:hover,
+#adminmenu a:active {
+  color: black;
+  text-decoration: underline; }
+
+#adminmenu .wp-submenu a {
+  color: black; }
+
+/* change color of arrow to submenus */
+#adminmenu li.wp-not-current-submenu .wp-menu-arrow,
+#adminmenu li.wp-not-current-submenu .wp-menu-arrow div {
+  background: #999; }
+
+/* active screen as seen in menu - change the background and arrow colour */
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+#adminmenu li.current a.menu-top,
+.folded #adminmenu li.wp-has-current-submenu,
+.folded #adminmenu li.current.menu-top,
+#adminmenu .wp-menu-arrow,
+#adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head {
+  background: #999; }
+
+#adminmenu li.wp-has-current-submenu .wp-menu-arrow,
+#adminmenu li.wp-has-current-submenu .wp-menu-arrow div {
+  background: #999; }
+
+#adminmenu .wp-has-current-submenu .wp-submenu, #adminmenu .wp-has-current-submenu .wp-submenu.sub-open, #adminmenu .wp-has-current-submenu.opensub .wp-submenu, #adminmenu a.wp-has-current-submenu:focus + .wp-submenu, .no-js li.wp-has-current-submenu:hover .wp-submenu {
+  background: #999; }
+
+#adminmenu .wp-submenu, .folded #adminmenu .wp-has-current-submenu .wp-submenu, .folded #adminmenu a.wp-has-current-submenu:focus + .wp-submenu {
   background-color: white; }
-#adminmenu .wp-submenu a, #adminmenu .wp-submenu li.current a {
-  color: black; }
-#adminmenu .wp-submenu li.current a:hover, #adminmenu .wp-submenu a:hover, #adminmenu .wp-submenu a:hover {
-  color: black; }
+
 #adminmenu div.wp-menu-image:before {
-  color: #999; }
+  color: #777; }
 
 #wpadminbar {
   background-color: white; }
