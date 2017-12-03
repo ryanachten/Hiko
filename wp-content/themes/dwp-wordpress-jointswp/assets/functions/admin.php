@@ -1,6 +1,26 @@
 <?php
 // This file handles the admin area and functions - You can use this file to make changes to the dashboard.
 
+
+/* Enqueue main style sheet for access in admin pages */
+function override_default_admin_styles(){
+	//  Load Google Fonts
+	wp_enqueue_style('google-fonts', "https://fonts.googleapis.com/css?family=Exo+2|Roboto|Roboto+Slab|Signika", array(), time('google-fonts'), 'all');
+
+	wp_register_style( 'site-css', get_template_directory_uri() . '/assets/css/admin.css', array(), time(), 'all' );
+  wp_enqueue_style( 'site-css' );
+
+	// User to setup dashboard custom elements using jQuery
+	wp_register_script( 'dashboard_custom_setup',  get_template_directory_uri() . '/assets/js/scripts/admin_customsetup.js', array(), time(), false);
+	wp_enqueue_script('dashboard_custom_setup');
+
+}
+add_action( 'admin_enqueue_scripts', 'override_default_admin_styles');
+
+
+
+// Adds .dashboard to body to allow making style changes to just
+// dashboard
 function dashboard_class_check(){
 	$current_screen = get_current_screen();
 	if($current_screen->id == 'dashboard'){
@@ -170,19 +190,6 @@ function dashboard_restrict_topmenu( $wp_admin_bar ){
 	}
 }
 add_action( 'admin_bar_menu', 'dashboard_restrict_topmenu', 999);
-
-
-/* Enqueue main style sheet for access in admin pages */
-function override_default_admin_styles(){
-	wp_register_style( 'site-css', get_template_directory_uri() . '/assets/css/admin.css', array(), time(), 'all' );
-  wp_enqueue_style( 'site-css' );
-
-	// User to setup dashboard custom elements using jQuery
-	wp_register_script( 'dashboard_custom_setup',  get_template_directory_uri() . '/assets/js/scripts/admin_customsetup.js', array(), time(), false);
-	wp_enqueue_script('dashboard_custom_setup');
-
-}
-add_action( 'admin_enqueue_scripts', 'override_default_admin_styles');
 
 
 /* Override default icon set with branding where needed */
