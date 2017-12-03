@@ -41,7 +41,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 5px; }
+  margin: 5px;
+  margin: 7px;
+  padding: 0px; }
 
 .wp-admin #wpadminbar #wp-admin-bar-site-name > .ab-item:before {
   content: "";
@@ -49,6 +51,8 @@
   background-position: center;
   background-repeat: no-repeat;
   margin: 5px;
+  margin: 7px;
+  padding: 0px;
   margin: 4px 10px 0 0;
   width: 20px;
   height: 20px;

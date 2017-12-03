@@ -1,4 +1,4 @@
-// Colour scheme
+// Colour scheme - copied from global.scss
 $primary-colour: black;
 $secondary-colour: #999; //matches Foundation subheader colour
 $tertiary-colour: #777;
@@ -8,7 +8,6 @@ $series-background: #D5FFF9;
 $blog-background: #FFCDDD;
 
 /* Default WP Admin Overrides */
-
 // Admin sidebar
 #adminmenu, .wp-submenu, #adminmenuback, #adminmenuwrap{
   background-color: $background-colour;
@@ -81,6 +80,8 @@ $blog-background: #FFCDDD;
   background-position: center;
   background-repeat: no-repeat;
   margin: 5px;
+  margin: 7px;
+  padding: 0px;
 }
 .menu-icon-post, .menu-icon-projects, .menu-icon-series{
   .wp-menu-image:before{
