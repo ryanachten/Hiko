@@ -130,7 +130,7 @@ body.dashboard{
   }
 }
 
-/* Add New Post bug patches */
+/* Add New Post and Add New Project bug patches */
 // Title header
 #title-prompt-text{
   font-size: 0.875rem !important;
@@ -150,4 +150,9 @@ body.dashboard{
 .categorychecklist{
   margin-left: 0;
   list-style-type: none;
+}
+
+/* Add New Project bug patches */
+#acf-series_parts p.label{
+    background: none;
 }
