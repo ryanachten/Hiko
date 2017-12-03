@@ -1,3 +1,12 @@
+// Colour scheme
+$primary-colour: black;
+$secondary-colour: #999; //matches Foundation subheader colour
+$tertiary-colour: #777;
+$background-colour: white;
+$project-background: #DDF6FF;
+$series-background: #D5FFF9;
+$blog-background: #FFCDDD;
+
 /* Default WP Admin Overrides */
 
 // Admin sidebar
@@ -128,45 +137,4 @@ body.dashboard{
       font-size: 1.5em;
     }
   }
-}
-
-/* Add New Post and Add New Project bug patches */
-// Title header
-#title-prompt-text{
-  font-size: 0.875rem !important;
-}
-// Course instruction labels
-#acf-course .label{
-  background: none;
-}
-// Category tabs
-.tabs::before, .tabs::after{
-  display: inline;
-}
-// Category select options
-#category-all{
-  display: block;
-}
-.categorychecklist{
-  margin-left: 0;
-  list-style-type: none;
-}
-
-/* Add New Project bug patches */
-#acf-series_parts p.label{
-    background: none;
-}
-
-/* All Posts bug patches */
-// Pagination buttons
-.tablenav-pages .current-page{
-  width: 30px;
-  height: 100%;
-  display: inline;
-}
-.paging-input, .pagination-links{
-  box-sizing: initial;
-}
-.tablenav-pages-navspan, .next-page, .last-page{
-  vertical-align: top;
 }

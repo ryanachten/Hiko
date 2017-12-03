@@ -174,7 +174,7 @@ add_action( 'admin_bar_menu', 'dashboard_restrict_topmenu', 999);
 
 /* Enqueue main style sheet for access in admin pages */
 function override_default_admin_styles(){
-	wp_register_style( 'site-css', get_template_directory_uri() . '/assets/css/style.css', array(), time(), 'all' );
+	wp_register_style( 'site-css', get_template_directory_uri() . '/assets/css/admin.css', array(), time(), 'all' );
   wp_enqueue_style( 'site-css' );
 
 	// User to setup dashboard custom elements using jQuery

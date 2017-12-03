@@ -5315,6 +5315,18 @@ body.dashboard {
 #acf-series_parts p.label {
   background: none; }
 
+/* All Posts bug patches */
+.tablenav-pages .current-page {
+  width: 30px;
+  height: 100%;
+  display: inline; }
+
+.paging-input, .pagination-links {
+  box-sizing: initial; }
+
+.tablenav-pages-navspan, .next-page, .last-page {
+  vertical-align: top; }
+
 img.avatar {
   border-radius: 50%; }
 

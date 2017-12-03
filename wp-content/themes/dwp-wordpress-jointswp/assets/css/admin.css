@@ -1,0 +1,87 @@
+/* Default WP Admin Overrides */
+#adminmenu, .wp-submenu, #adminmenuback, #adminmenuwrap {
+  background-color: white; }
+
+.wp-menu-name {
+  color: black; }
+
+#adminmenu li.menu-top:hover, #adminmenu li.opensub > a.menu-top, #adminmenu li > a.menu-top:focus {
+  background-color: #999;
+  color: white; }
+#adminmenu .wp-submenu, #adminmenu .wp-submenu-wrap, #adminmenu .wp-has-current-submenu .wp-submenu {
+  background-color: white; }
+#adminmenu .wp-submenu a, #adminmenu .wp-submenu li.current a {
+  color: black; }
+#adminmenu .wp-submenu li.current a:hover, #adminmenu .wp-submenu a:hover, #adminmenu .wp-submenu a:hover {
+  color: black; }
+#adminmenu div.wp-menu-image:before {
+  color: #999; }
+
+#wpadminbar {
+  background-color: white; }
+
+#wpadminbar .ab-empty-item, #wpadminbar a.ab-item, #wpadminbar > #wp-toolbar span.ab-label, #wpadminbar > #wp-toolbar span.noticon {
+  color: black; }
+
+#wpadminbar #adminbarsearch:before, #wpadminbar .ab-icon:before, #wpadminbar .ab-item:before {
+  color: #999; }
+#wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input {
+  background-color: #999; }
+
+#wpadminbar .ab-top-menu > li.hover > .ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus, #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item, #wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus {
+  background: #999;
+  color: black; }
+
+#wpadminbar:not(.mobile) > #wp-toolbar a:focus span.ab-label, #wpadminbar:not(.mobile) > #wp-toolbar li:hover span.ab-label, #wpadminbar > #wp-toolbar li.hover span.ab-label {
+  color: black; }
+
+/* Override default font icons with branding */
+.menu-icon-post .wp-menu-image:before, .menu-icon-projects .wp-menu-image:before, .menu-icon-series .wp-menu-image:before {
+  content: "";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px; }
+
+.wp-admin #wpadminbar #wp-admin-bar-site-name > .ab-item:before {
+  content: "";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5px;
+  margin: 4px 10px 0 0;
+  width: 20px;
+  height: 20px;
+  padding: 0px; }
+
+body.dashboard {
+  /* Admin Custom styles */ }
+  body.dashboard .wrap > h1 {
+    text-align: center;
+    font-size: 1.5rem; }
+  body.dashboard #dashboard_splashHeaderImg {
+    height: 85px;
+    width: 85px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  body.dashboard .postbox-container {
+    width: 100% !important; }
+  body.dashboard .dashboard-post-widget {
+    text-align: center; }
+  body.dashboard .dashboard-post-recentsection {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left; }
+  body.dashboard .dashboard-post-widget-headerimg {
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto 20px auto; }
+  body.dashboard #dashboard_blogposts_widget h2, body.dashboard #dashboard_project_widget h2, body.dashboard #dashboard_series_widget h2 {
+    text-align: center;
+    font-size: 1.5em; }
+
+/*# sourceMappingURL=admin.css.map */
