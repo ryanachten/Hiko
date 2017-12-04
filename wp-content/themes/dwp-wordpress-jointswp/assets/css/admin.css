@@ -70,7 +70,7 @@ https://code.tutsplus.com/articles/customizing-the-wordpress-admin-adding-stylin
   color: black; }
 
 #wpadminbar #adminbarsearch:before, #wpadminbar .ab-icon:before, #wpadminbar .ab-item:before {
-  color: #999; }
+  color: #777; }
 #wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input {
   background-color: #999; }
 
@@ -106,7 +106,8 @@ https://code.tutsplus.com/articles/customizing-the-wordpress-admin-adding-stylin
 
 .wp-admin #wpadminbar #wp-admin-bar-site-name > .ab-item:before {
   font-family: 'dwp_branding';
-  content: '\0041'; }
+  content: '\0041';
+  color: #777; }
 
 body.dashboard {
   /* Admin Custom styles */ }

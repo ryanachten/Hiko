@@ -97,7 +97,7 @@ https://code.tutsplus.com/articles/customizing-the-wordpress-admin-adding-stylin
 // Topbar icon colours
 #wpadminbar{
   #adminbarsearch:before, .ab-icon:before, .ab-item:before{
-    color: $secondary-colour;
+    color: $tertiary-colour;
   }
   // Topbar dropdown menus
   .menupop .ab-sub-wrapper, .shortlink-input{
@@ -126,15 +126,6 @@ https://code.tutsplus.com/articles/customizing-the-wordpress-admin-adding-stylin
 
 /* Override default font icons with branding */
 // Reset to transition from font icons to bg-image icons
-@mixin admin-icon-patch {
-  content: "";
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 5px;
-  margin: 7px;
-  padding: 0px;
-}
 .menu-icon-post .wp-menu-image:before{
   font-family: 'dwp_branding';
   content: '\0042';
@@ -142,6 +133,7 @@ https://code.tutsplus.com/articles/customizing-the-wordpress-admin-adding-stylin
  .menu-icon-projects .wp-menu-image:before{
    font-family: 'dwp_branding';
    content: '\0043';
+
  }.menu-icon-series .wp-menu-image:before{
    font-family: 'dwp_branding';
    content: '\0044';
@@ -150,6 +142,7 @@ https://code.tutsplus.com/articles/customizing-the-wordpress-admin-adding-stylin
 .wp-admin #wpadminbar #wp-admin-bar-site-name>.ab-item:before {
   font-family: 'dwp_branding';
   content: '\0041';
+  color: $tertiary-colour;
 }
 
 body.dashboard{
