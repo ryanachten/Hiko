@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="frontpage-hero-section small-12 small-centered columns" >
+<!-- <section class="frontpage-hero-section small-12 small-centered columns" > -->
 
 	<?php
 		$args = array(
@@ -33,7 +33,7 @@
 	<?php endif; ?>
 
 
-</section>
+<!-- </section> -->
 
 	<div id="content">
 

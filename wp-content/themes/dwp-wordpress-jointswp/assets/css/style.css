@@ -5115,7 +5115,7 @@ a:hover, a:focus {
   vertical-align: top;
   margin-bottom: 20px; }
 
-.frontpage-hero-section .frontpage-hero-post {
+.frontpage-hero-post {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5126,23 +5126,24 @@ a:hover, a:focus {
   min-height: 450px;
   padding: 20px;
   border-radius: 0px; }
-.frontpage-hero-section .frontpage-hero-description {
+
+.frontpage-hero-description {
   text-align: center;
   padding: 20px;
   border-radius: 10px; }
-  .frontpage-hero-section .frontpage-hero-description h6, .frontpage-hero-section .frontpage-hero-description h1 {
+  .frontpage-hero-description h6, .frontpage-hero-description h1 {
     margin-bottom: 20px; }
-  .frontpage-hero-section .frontpage-hero-description h6, .frontpage-hero-section .frontpage-hero-description p {
+  .frontpage-hero-description h6, .frontpage-hero-description p {
     display: inline-block;
     background-color: white;
     padding: 10px; }
-  .frontpage-hero-section .frontpage-hero-description h1 a, .frontpage-hero-section .frontpage-hero-description h1 {
+  .frontpage-hero-description h1 a, .frontpage-hero-description h1 {
     padding: 10px;
     line-height: 2em; }
-  .frontpage-hero-section .frontpage-hero-description .byline-date {
+  .frontpage-hero-description .byline-date {
     background: none;
     color: white; }
-  .frontpage-hero-section .frontpage-hero-description h1 a {
+  .frontpage-hero-description h1 a {
     background-color: #DDF6FF; }
 
 .frontpage-section-header {
