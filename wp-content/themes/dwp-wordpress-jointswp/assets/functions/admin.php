@@ -175,9 +175,8 @@ for simpler UI and efficient UX */
 function dashboard_restrict_sidemenu(){
 	// Check user permissions (restrictions not applied to admin)
 	if( !current_user_can( 'manage_options' ) ){
-		remove_menu_page( 'upload.php' ); //media option
-		// Note: editors (lecturers/tutors lose ability for editing pages here)
-		remove_menu_page( 'edit.php?post_type=page' ); //pages option
+		// remove_menu_page( 'upload.php' ); //media option
+		remove_menu_page( 'edit.php?post_type=page' ); //pages option - Note: editors (lecturers/tutors lose ability for editing pages here)
 		remove_menu_page( 'edit-comments.php' ); //comments option
 		remove_menu_page( 'tools.php' ); //tools option
 	}
@@ -193,6 +192,22 @@ function dashboard_restrict_topmenu( $wp_admin_bar ){
 }
 add_action( 'admin_bar_menu', 'dashboard_restrict_topmenu', 999);
 
+/* Reorder side menu */
+function custom_side_menu_order(){
+	return array(
+			'index.php', //dashboard
+			'separator1', // *space*
+			'edit.php', //blog posts
+			'edit.php?post_type=projects', //project posts?
+			'edit.php?post_type=series', //series posts?
+			'separator2', // *space*
+			'upload.php', //media
+			'profile.php', //profile
+			'users.php', //users
+	 );
+}
+add_filter( 'custom_menu_order', 'custom_side_menu_order' );
+add_filter( 'menu_order', 'custom_side_menu_order' );
 
 /* Add logo to dashboard splash header */
 function add_dashboard_header_logo(){
