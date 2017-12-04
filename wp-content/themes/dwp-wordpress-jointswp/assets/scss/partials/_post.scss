@@ -16,38 +16,30 @@ h1.entry-title.single-title,
   margin: 0 10px;
 }
 
-// Featured post hero image
-.article-hero-image{
-  @include splash-hero-image;
-}
+// Top of page hero section
+.article-hero-section{
 
-// Styles for featured post description box
-.article-hero-description{
-  @include splash-hero-description;
-  margin: 0 auto;
-  text-align: center;
-
-  .byline{
-    margin-bottom: 0px;
-    margin-top: 20px;
-
+  // Featured post hero image
+  .article-hero-image{
+    @include splash-hero-image;
   }
 
-  .entry-title.project-background{
-    @include project-title-background;
-    padding: 10px;
-  }
-  .entry-title.series-background{
-    @include series-title-background;
-    padding: 10px;
-  }
-  .entry-title.blog-background{
-    @include blog-title-background;
-    padding: 10px;
-  }
+  // Styles for featured post description box
+  .article-hero-description{
+    @include splash-hero-description;
 
-  .entry-title{
-    display: inline;
+    .entry-title.project-background a{
+      @include project-title-background;
+      padding: 10px;
+    }
+    .entry-title.series-background a{
+      @include series-title-background;
+      padding: 10px;
+    }
+    .entry-title.blog-background a{
+      @include blog-title-background;
+      padding: 10px;
+    }
   }
 }
 

@@ -19,8 +19,8 @@
 
 								<div class="frontpage-hero-description small-centered small-11 large-11 row">
 										<?php get_template_part( 'parts/content', 'byline' ); ?>
-										<h1 class="title projecttype-background">
-											<a class="" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+										<h1 class="title">
+											<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 												<?php the_title(); ?>
 											</a>
 										</h1>

@@ -4923,7 +4923,7 @@ h1.entry-title.single-title,
   display: inline-block;
   margin: 0 10px; }
 
-.article-hero-image {
+.article-hero-section .article-hero-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4934,42 +4934,34 @@ h1.entry-title.single-title,
   min-height: 450px;
   padding: 20px;
   border-radius: 0px; }
-
-.article-hero-description {
+.article-hero-section .article-hero-description {
   text-align: center;
   padding: 20px;
-  border-radius: 10px;
-  margin: 0 auto;
-  text-align: center; }
-  .article-hero-description h6, .article-hero-description h1 {
+  border-radius: 10px; }
+  .article-hero-section .article-hero-description h6, .article-hero-section .article-hero-description h1 {
     margin-bottom: 20px; }
-  .article-hero-description h6, .article-hero-description p {
+  .article-hero-section .article-hero-description h6, .article-hero-section .article-hero-description p {
     display: inline-block;
     background-color: white;
     padding: 10px; }
-  .article-hero-description h1 a, .article-hero-description h1 {
+  .article-hero-section .article-hero-description h1 a, .article-hero-section .article-hero-description h1 {
     padding: 10px;
     line-height: 2em; }
-  .article-hero-description .byline-date {
+  .article-hero-section .article-hero-description .byline-date {
     background: none;
     color: white; }
-  .article-hero-description .byline {
-    margin-bottom: 0px;
-    margin-top: 20px; }
-  .article-hero-description .entry-title.project-background {
+  .article-hero-section .article-hero-description .entry-title.project-background a {
     background-color: #DDF6FF;
     padding: 2px;
     padding: 10px; }
-  .article-hero-description .entry-title.series-background {
+  .article-hero-section .article-hero-description .entry-title.series-background a {
     background-color: #D5FFF9;
     padding: 2px;
     padding: 10px; }
-  .article-hero-description .entry-title.blog-background {
+  .article-hero-section .article-hero-description .entry-title.blog-background a {
     background-color: #FFCDDD;
     padding: 2px;
     padding: 10px; }
-  .article-hero-description .entry-title {
-    display: inline; }
 
 #article-metacontainer {
   text-align: center;
@@ -5123,37 +5115,35 @@ a:hover, a:focus {
   vertical-align: top;
   margin-bottom: 20px; }
 
-.frontpage-hero-section {
-  padding: 0px; }
-  .frontpage-hero-section .frontpage-hero-post {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    height: 450px;
-    height: auto;
-    min-height: 450px;
-    padding: 20px;
-    border-radius: 0px; }
-  .frontpage-hero-section .frontpage-hero-description {
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px; }
-    .frontpage-hero-section .frontpage-hero-description h6, .frontpage-hero-section .frontpage-hero-description h1 {
-      margin-bottom: 20px; }
-    .frontpage-hero-section .frontpage-hero-description h6, .frontpage-hero-section .frontpage-hero-description p {
-      display: inline-block;
-      background-color: white;
-      padding: 10px; }
-    .frontpage-hero-section .frontpage-hero-description h1 a, .frontpage-hero-section .frontpage-hero-description h1 {
-      padding: 10px;
-      line-height: 2em; }
-    .frontpage-hero-section .frontpage-hero-description .byline-date {
-      background: none;
-      color: white; }
-    .frontpage-hero-section .frontpage-hero-description h1 a {
-      background-color: #DDF6FF; }
+.frontpage-hero-section .frontpage-hero-post {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 450px;
+  height: auto;
+  min-height: 450px;
+  padding: 20px;
+  border-radius: 0px; }
+.frontpage-hero-section .frontpage-hero-description {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px; }
+  .frontpage-hero-section .frontpage-hero-description h6, .frontpage-hero-section .frontpage-hero-description h1 {
+    margin-bottom: 20px; }
+  .frontpage-hero-section .frontpage-hero-description h6, .frontpage-hero-section .frontpage-hero-description p {
+    display: inline-block;
+    background-color: white;
+    padding: 10px; }
+  .frontpage-hero-section .frontpage-hero-description h1 a, .frontpage-hero-section .frontpage-hero-description h1 {
+    padding: 10px;
+    line-height: 2em; }
+  .frontpage-hero-section .frontpage-hero-description .byline-date {
+    background: none;
+    color: white; }
+  .frontpage-hero-section .frontpage-hero-description h1 a {
+    background-color: #DDF6FF; }
 
 .frontpage-section-header {
   display: block;
