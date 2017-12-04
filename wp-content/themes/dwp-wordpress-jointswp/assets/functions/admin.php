@@ -221,3 +221,27 @@ function add_widget_header_logos(){
 		 </style>';
 }
 add_action( 'admin_head', 'add_widget_header_logos');
+
+
+/* Remove 'Personal Options' section from user profile admin
+i.e. visual editor, colour scheme, keyboard shortcuts, toolbar, language */
+if ( ! function_exists( 'cor_remove_personal_options' ) ) {
+	remove_action( 'admin_color_scheme_picker', 'admin_color_scheme_picker' );
+
+	//Removes the leftover 'Visual Editor', 'Keyboard Shortcuts' and 'Toolbar' options.
+	add_action( 'admin_head', function () {
+
+			ob_start( function( $subject ) {
+
+					$subject = preg_replace( '#<h[0-9]>'.__("Personal Options").'</h[0-9]>.+?/table>#s', '', $subject, 1 );
+					return $subject;
+			});
+	});
+
+	add_action( 'admin_footer', function(){
+
+			ob_end_flush();
+	});
+}
+add_action( 'admin_head-user-edit.php', 'cor_profile_subject_start' );
+add_action( 'admin_footer-user-edit.php', 'cor_profile_subject_end' );

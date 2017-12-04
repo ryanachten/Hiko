@@ -224,25 +224,18 @@ function remove_author_publish_cap(){
 add_action( 'admin_init', 'remove_author_publish_cap' );
 
 
-/* Remove 'Personal Options' section from user profile admin
-i.e. visual editor, colour scheme, keyboard shortcuts, toolbar, language */
-if ( ! function_exists( 'cor_remove_personal_options' ) ) {
-	remove_action( 'admin_color_scheme_picker', 'admin_color_scheme_picker' );
+function show_current_user_attachments( $query = array() ) {
 
-	//Removes the leftover 'Visual Editor', 'Keyboard Shortcuts' and 'Toolbar' options.
-	add_action( 'admin_head', function () {
+	// Checks to see if user role is lower than editor
+	if( !current_user_can('edit_others_pages') ){
 
-			ob_start( function( $subject ) {
+		// Alters media query to only those associated w/ user id
+		$user_id = get_current_user_id();
+    if( $user_id ) {
+        $query['author'] = $user_id;
+    }
+	}
 
-					$subject = preg_replace( '#<h[0-9]>'.__("Personal Options").'</h[0-9]>.+?/table>#s', '', $subject, 1 );
-					return $subject;
-			});
-	});
-
-	add_action( 'admin_footer', function(){
-
-			ob_end_flush();
-	});
+  return $query;
 }
-add_action( 'admin_head-user-edit.php', 'cor_profile_subject_start' );
-add_action( 'admin_footer-user-edit.php', 'cor_profile_subject_end' );
+add_filter( 'ajax_query_attachments_args', 'show_current_user_attachments', 10, 1 );
