@@ -135,18 +135,21 @@ https://code.tutsplus.com/articles/customizing-the-wordpress-admin-adding-stylin
   margin: 7px;
   padding: 0px;
 }
-.menu-icon-post, .menu-icon-projects, .menu-icon-series{
-  .wp-menu-image:before{
-    @include admin-icon-patch;
-  }
+.menu-icon-post .wp-menu-image:before{
+  font-family: 'dwp_branding';
+  content: '\0042';
+}
+ .menu-icon-projects .wp-menu-image:before{
+   font-family: 'dwp_branding';
+   content: '\0043';
+ }.menu-icon-series .wp-menu-image:before{
+   font-family: 'dwp_branding';
+   content: '\0044';
 }
 // Admin top bar menu home icon override
 .wp-admin #wpadminbar #wp-admin-bar-site-name>.ab-item:before {
-  @include admin-icon-patch;
-  margin: 4px 10px 0 0;
-  width: 20px;
-  height: 20px;
-  padding: 0px;
+  font-family: 'dwp_branding';
+  content: '\0041';
 }
 
 body.dashboard{

@@ -5,9 +5,11 @@
 /* Enqueue main style sheet for access in admin pages */
 function override_default_admin_styles(){
 	//  Load Google Fonts
-	wp_enqueue_style('google-fonts', "https://fonts.googleapis.com/css?family=Exo+2|Roboto|Roboto+Slab|Signika", array(), time('google-fonts'), 'all');
+	wp_enqueue_style('google-fonts', "https://fonts.googleapis.com/css?family=Exo+2|Roboto|Roboto+Slab|Signika", array(), time(), 'all');
 
-	wp_register_style( 'site-css', get_template_directory_uri() . '/assets/css/admin.css', array(), time(), 'all' );
+	wp_register_style( 'dwp-font', get_template_directory_uri() . '/assets/css/dwp-branding-font/css/dwp_branding.css', array(), time(), 'all' );
+
+	wp_register_style( 'site-css', get_template_directory_uri() . '/assets/css/admin.css', array('google-fonts', 'dwp-font'), time(), 'all' );
   wp_enqueue_style( 'site-css' );
 
 	// User to setup dashboard custom elements using jQuery
@@ -191,27 +193,6 @@ function dashboard_restrict_topmenu( $wp_admin_bar ){
 }
 add_action( 'admin_bar_menu', 'dashboard_restrict_topmenu', 999);
 
-
-/* Override default icon set with branding where needed */
-function override_admin_menu_icons() {
-	$branding_asset_dir = get_template_directory_uri() . '/assets/images/branding-assets/';
-	echo '<style>
-   	.menu-icon-post div.wp-menu-image:before {
-   		background-image: url( ' . $branding_asset_dir . 'dwp_bloglogo_bg.svg);
-     }
-		.menu-icon-projects div.wp-menu-image:before {
-		 	background-image: url( ' . $branding_asset_dir . 'dwp_projectlogo_bg.svg);
-			}
-		.menu-icon-series div.wp-menu-image:before {
-			background-image: url( ' . $branding_asset_dir . 'dwp_serieslogo_bg.svg);
-		 }
-
-		 #wpadminbar #wp-admin-bar-site-name > .ab-item:before {
- 			background-image: url( ' . $branding_asset_dir . 'dwp_mainlogo.svg)!important;
- 		 }
-     </style>';
-}
-add_action( 'admin_head', 'override_admin_menu_icons', 999 );
 
 /* Add logo to dashboard splash header */
 function add_dashboard_header_logo(){
