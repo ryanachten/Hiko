@@ -4930,12 +4930,13 @@ h1.entry-title.single-title,
   border-radius: 5px;
   margin-bottom: 20px;
   height: 450px;
-  padding: 40px;
+  height: auto;
+  min-height: 450px;
+  padding: 20px;
   border-radius: 0px; }
 
 .article-hero-description {
-  text-align: left;
-  margin: 0px;
+  text-align: center;
   padding: 20px;
   border-radius: 10px;
   margin: 0 auto;
@@ -5131,11 +5132,12 @@ a:hover, a:focus {
     border-radius: 5px;
     margin-bottom: 20px;
     height: 450px;
-    padding: 40px;
+    height: auto;
+    min-height: 450px;
+    padding: 20px;
     border-radius: 0px; }
   .frontpage-hero-section .frontpage-hero-description {
-    text-align: left;
-    margin: 0px;
+    text-align: center;
     padding: 20px;
     border-radius: 10px; }
     .frontpage-hero-section .frontpage-hero-description h6, .frontpage-hero-section .frontpage-hero-description h1 {
