@@ -224,6 +224,7 @@ function remove_author_publish_cap(){
 add_action( 'admin_init', 'remove_author_publish_cap' );
 
 
+/* Restrict Authors to only be able to access media which they have uploaded */
 function show_current_user_attachments( $query = array() ) {
 
 	// Checks to see if user role is lower than editor
@@ -235,7 +236,6 @@ function show_current_user_attachments( $query = array() ) {
         $query['author'] = $user_id;
     }
 	}
-
   return $query;
 }
 add_filter( 'ajax_query_attachments_args', 'show_current_user_attachments', 10, 1 );
