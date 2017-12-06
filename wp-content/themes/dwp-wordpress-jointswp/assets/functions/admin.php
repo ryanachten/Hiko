@@ -73,7 +73,7 @@ function get_dashboard_recentposts($post_type, $post_status){
 	$blogposts = get_posts($args);
 
 	foreach ($blogposts as $blogpost) {
-		echo '<li><a href="'. get_the_permalink($blogpost->ID).'">'.$blogpost->post_title.'</a></li>';
+		echo '<li><a href="'. get_the_permalink($blogpost->ID).'">'.esc_html( $blogpost->post_title ).'</a></li>';
 	}
 	echo '</ul>';
 }
