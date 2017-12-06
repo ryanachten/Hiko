@@ -29,7 +29,7 @@ add_action( 'login_enqueue_scripts', 'customise_login_styles' );
 /* Add logotype underneath logo */
 function the_login_message( $message ) {
     if ( empty($message) ){
-        return "<p id='login-logotype'>Hiko</p>";
+        return "<p id='login-logotype'>". get_bloginfo( 'name' ) ."</p>";
     } else {
         return $message;
     }
