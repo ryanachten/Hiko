@@ -18,3 +18,17 @@ body.single-series{
     }
   }
 }
+#series-parts-container{
+  margin-top: 40px;
+  text-align: center;
+
+  #series-parts-title{
+    text-align: center;
+    background-color: $series-background;
+    padding: 5px;
+    display: inline-block;
+  }
+  .subheader{
+    margin-bottom: 20px;
+  }
+}
