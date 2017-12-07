@@ -7,18 +7,18 @@
 		<header class="archive-header medium-10 large-10 small-centered columns" >
 			<?php echo get_avatar( $post->post_author ); ?>
 			<h1 class="page-title">
-				<?php the_author_meta( 'display_name', $post->post_author ); ?>
+				<?php esc_html_e( the_author_meta( 'display_name', $post->post_author ) ); ?>
 			</h1>
 			<div class="taxonomy-description">
-				<?php the_author_meta( 'description', $post->post_author ); ?>
+				<?php esc_html_e( the_author_meta( 'description', $post->post_author ) ); ?>
 			</div>
 			<div class="author-social-container">
 					<a class="author-social-icon" href="mailto:<?php
-					the_author_meta( 'user_email', $post->post_author ); ?>">
+					esc_url( the_author_meta( 'user_email', $post->post_author ) ); ?>">
 						<i class="fi-mail"></i>
 					</a>
 					<?php
-						$author_web = get_the_author_meta( 'url', $post->post_author );
+						$author_web = esc_url( get_the_author_meta( 'url', $post->post_author ) );
 						if( !empty($author_web) ): ?>
 							<a class="author-social-icon" href="<?php
 							the_author_meta( 'url', $post->post_author ); ?>">
