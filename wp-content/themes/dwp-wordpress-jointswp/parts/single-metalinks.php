@@ -3,6 +3,8 @@
 <?php
 $article_categories = get_the_category();
 $article_courses = get_the_terms( $post->ID, 'courses' );
+//Check to see if any Series are associated with Post/Project
+//via ACF Relationship reverse query
 $series = get_posts( array(
 	'post_type' => 'series',
 	'meta_query' => array(
@@ -34,7 +36,7 @@ if( !empty( $article_categories ) ||
 			<?php
 				// Prevent empty strings or simply 'Uncategorised' presenting category section
 				if( !empty( $article_categories ) && $article_categories[0]->name !== 'Uncategorised' ):?>
-					<h6 class="categories-title"><strong>Categories:</strong></h6>
+					<h6 class="categories-title"><strong><?php _e('Categories:'); ?></strong></h6>
 					<?php the_category(', '); ?>
 				<?php endif; ?>
 		</p>
@@ -43,14 +45,10 @@ if( !empty( $article_categories ) ||
 		<p class="courses">
 			<?php  //access ACF Taxonomy field
 				 if( !empty( $article_courses ) ): ?>
-					<h6 class="courses-title"><strong>Courses:</strong></h6>
+					<h6 class="courses-title"><strong><?php _e('Courses:');?></strong></h6>
 					<?php the_terms($post->ID, 'courses', '', '<br>', '' ); ?>
 				<?php endif; ?>
 		</p>
-
-
-		<!-- Check to see if any Series are associated with Post/Project
-		via ACF Relationship reverse query -->
 
 		<!-- If the Post/Project is associated with a Series
 		link to the Series -->
@@ -58,13 +56,13 @@ if( !empty( $article_categories ) ||
 
 			<section id="article-relatedseries-container" class="small-10 small-centered">
 
-				<h5>Featured in the following <a href="<?php echo get_post_type_archive_link( 'series' ); ?>">Series</a> :</h5>
+				<h5><?php _e('Featured in the following'); ?> <a href="<?php echo get_post_type_archive_link( 'series' ); ?>"><?php _e('Series') ?></a>:</h5>
 
 					<?php foreach( $series as $series_post ): ?>
 						<a href="<?php echo get_permalink( $series_post->ID ); ?>">
 							<div class="article-relatedseries-thumb" style="background-image: url(<?php echo get_the_post_thumbnail_url($series_post->ID); ?>);">
 
-								<h5 class="article-relatedseries-title"><?php echo get_the_title( $series_post->ID ); ?></h5>
+								<h5 class="article-relatedseries-title"><?php esc_html_e( get_the_title( $series_post->ID ) ); ?></h5>
 
 							</div>
 						</a>
@@ -75,5 +73,5 @@ if( !empty( $article_categories ) ||
 		<?php endif; ?>
 
 	</section>
-	
+
 <?php endif; ?>
