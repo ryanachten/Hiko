@@ -8,10 +8,10 @@
 
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-						<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/WebPage">
+						<article id="post-<?php the_ID(); ?>" <?php esc_attr( post_class('') ); ?> role="article" itemscope itemtype="http://schema.org/WebPage">
 
 							<header class="article-header">
-								<h1 class="page-title text-center"><?php the_title(); ?></h1>
+								<h1 class="page-title text-center"><?php esc_html_e( the_title() ); ?></h1>
 							</header> <!-- end article header -->
 
 							<section class="entry-content" itemprop="articleBody">
