@@ -3,6 +3,7 @@
 <?php
 $article_categories = get_the_category();
 $article_courses = get_the_terms( $post->ID, 'courses' );
+$article_tags = get_the_tags();
 //Check to see if any Series are associated with Post/Project
 //via ACF Relationship reverse query
 $series = get_posts( array(
@@ -16,8 +17,15 @@ $series = get_posts( array(
 	)
 ));
 
+
+$categoriesToShow = false;
+if (!empty( $article_categories ) && $article_categories[0]->name !== 'Uncategorised') {
+	$categoriesToShow = true;
+}
+
 // Prevents the metadata box being present if there is no metadata to show
-if( !empty( $article_categories ) ||
+if( $categoriesToShow ||
+		!empty( $article_tags ) ||
 		!empty( $article_courses ) ||
 		!empty( $series )): ?>
 
