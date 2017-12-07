@@ -19,4 +19,4 @@
 </h6>
 
 <!-- Article date -->
-<p class="byline-date"><?php the_time('F j, Y') ?></p>
+<p class="byline-date"><?php _e( the_time('F j, Y') );?></p>
