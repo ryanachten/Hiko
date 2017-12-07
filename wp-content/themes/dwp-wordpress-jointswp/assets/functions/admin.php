@@ -20,7 +20,6 @@ function override_default_admin_styles(){
 add_action( 'admin_enqueue_scripts', 'override_default_admin_styles');
 
 
-
 // Adds .dashboard to body to allow making style changes to just
 // dashboard
 function dashboard_class_check(){
@@ -159,17 +158,6 @@ function joints_custom_dashboard_widgets() {
 add_action('wp_dashboard_setup', 'joints_custom_dashboard_widgets');
 
 
-/************* CUSTOMIZE ADMIN *******************/
-// Custom Backend Footer
-function joints_custom_admin_footer() {
-	_e('<span id="footer-thankyou">Developed by <a href="#" target="_blank">Your Site Name</a></span>.', 'jointswp');
-}
-
-// adding it to the admin area
-add_filter('admin_footer_text', 'joints_custom_admin_footer');
-
-
-
 /* Restrict admin/dashboard menus (both top and side)
 for simpler UI and efficient UX */
 function dashboard_restrict_sidemenu(){
@@ -192,6 +180,7 @@ function dashboard_restrict_topmenu( $wp_admin_bar ){
 }
 add_action( 'admin_bar_menu', 'dashboard_restrict_topmenu', 999);
 
+
 /* Reorder side menu */
 function custom_side_menu_order(){
 	return array(
@@ -209,6 +198,7 @@ function custom_side_menu_order(){
 add_filter( 'custom_menu_order', 'custom_side_menu_order' );
 add_filter( 'menu_order', 'custom_side_menu_order' );
 
+
 /* Add logo to dashboard splash header */
 function add_dashboard_header_logo(){
 	$branding_asset_dir = get_template_directory_uri() . '/assets/images/branding-assets/';
@@ -219,6 +209,7 @@ function add_dashboard_header_logo(){
 		 </style>';
 }
 add_action( 'admin_head', 'add_dashboard_header_logo');
+
 
 /* Add logo to dashboard splash header */
 function add_widget_header_logos(){
@@ -237,6 +228,8 @@ function add_widget_header_logos(){
 }
 add_action( 'admin_head', 'add_widget_header_logos');
 
+
+/************* PROFILE *******************/
 
 /* Remove 'Personal Options' section from user profile admin
 i.e. visual editor, colour scheme, keyboard shortcuts, toolbar, language */
@@ -260,3 +253,16 @@ if ( ! function_exists( 'cor_remove_personal_options' ) ) {
 }
 add_action( 'admin_head-user-edit.php', 'cor_profile_subject_start' );
 add_action( 'admin_footer-user-edit.php', 'cor_profile_subject_end' );
+
+
+/************* POSTS *******************/
+
+/* Removes unnecessary metaboxes from post scenes */
+function remove_post_metaboxes(){
+
+	// Removes discussion section
+	remove_meta_box('commentstatusdiv', 'post', 'normal');
+	// Removes comment section
+	remove_meta_box('commentsdiv', 'post', 'normal');
+}
+add_action( 'admin_menu', 'remove_post_metaboxes' );
