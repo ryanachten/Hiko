@@ -1,13 +1,12 @@
+<!-- Template used for displaying search queries -->
+
 <?php get_header(); ?>
 
 	<div id="content">
 
 		<header class="archive-header medium-10 large-10 small-centered columns" >
-			<!-- Title formatting for Course archive -->
-			<h3 class="page-title">Search</h3>
-			<h2 class="subheader">Showing results for: <em>'<?php echo esc_attr(get_search_query()); ?>'</em></h2>
-
-		<?php the_archive_description('<div class="taxonomy-description">', '</div>');?>
+			<h3 class="page-title"><?php _e('Search'); ?></h3>
+			<h2 class="subheader"> <?php _e('Showing results for:'); ?> <em>'<?php esc_attr_e( get_search_query() ); ?>'</em></h2>
 		</header>
 
 		<?php get_sidebar(); ?>
@@ -23,19 +22,17 @@
 					<!-- To see additional archive styles, visit the /parts directory -->
 					<?php get_template_part( 'parts/loop', 'archive-grid' ); ?>
 
-				<?php endwhile; ?>
+					<?php endwhile; ?>
 
-					<?php joints_page_navi(); ?>
+						<?php joints_page_navi(); ?>
 
-				<?php else : ?>
+					<?php else : ?>
 
-					<?php get_template_part( 'parts/content', 'missing' ); ?>
+						<?php get_template_part( 'parts/content', 'missing' ); ?>
 
-				<?php endif; ?>
+					<?php endif; ?>
 
-			</main> <!-- end #main -->
-
-
+				</main> <!-- end #main -->
 
 	    </div> <!-- end #inner-content -->
 
