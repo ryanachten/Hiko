@@ -4974,6 +4974,13 @@ h1.entry-title.single-title,
   text-align: center;
   margin-top: 30px; }
 
+#article-citecontainer {
+  padding: 20px;
+  max-width: 800px;
+  word-wrap: break-word; }
+  #article-citecontainer #article-citetitle {
+    text-align: center; }
+
 .article-relatedseries-thumb {
   display: inline-block;
   background-size: cover;

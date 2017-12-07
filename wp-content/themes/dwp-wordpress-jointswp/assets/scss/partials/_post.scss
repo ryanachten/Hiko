@@ -42,7 +42,7 @@ h1.entry-title.single-title,
     }
   }
 }
-
+// Metadata container
 #article-metacontainer{
   text-align: center;
   padding: 20px;
@@ -50,11 +50,21 @@ h1.entry-title.single-title,
   border-radius: 7px;
   max-width: 800px;
 }
-
 // Related series articles
 #article-relatedseries-container{
   text-align: center;
   margin-top: 30px;
+}
+
+// Citation container
+#article-citecontainer{
+  padding: 20px;
+  max-width: 800px;
+  word-wrap: break-word;
+
+  #article-citetitle{
+    text-align: center;
+  }
 }
 
 // Related series thumbnails

@@ -30,4 +30,16 @@
 		<?php _e( the_content() ); ?>
 	</section>
 
+
+	<?php $article_citations = get_field('citations', $post->ID );
+		if( $article_citations ):?>
+			<hr>
+			<section id="article-citecontainer" class="small-10 medium-10 large-8 small-centered">
+
+				<h5 id="article-citetitle">References &amp; Citations:</h5>
+				<?php	echo $article_citations; ?>
+
+		 </section>
+	<?php endif; ?>
+
 </article> <!-- end article -->
