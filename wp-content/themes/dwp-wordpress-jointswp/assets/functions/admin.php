@@ -266,3 +266,33 @@ function remove_post_metaboxes(){
 	remove_meta_box('commentsdiv', 'post', 'normal');
 }
 add_action( 'admin_menu', 'remove_post_metaboxes' );
+
+/* Rearranges order of metaboxes */
+function reorder_post_metaboxes( $order ){
+
+	return array(
+				// normal (full width) metaboxes
+        'normal' => join(
+            ",",
+            array(
+							'postexcerpt', // Excerpt
+							'acf_1378', // Series components
+							'acf_1500', // Citations
+							'revisionsdiv', // Revisions
+							'coauthorsdiv', // Authors
+            )
+        ),
+				// sidebar metaboxes
+				'side' => join(
+						",",
+						array(
+							'submitdiv', // Publish status box
+							'postimagediv', // Featured image
+							'acf_1384', // Courses
+						)
+				)
+    );
+}
+add_filter( 'get_user_option_meta-box-order_post', 'reorder_post_metaboxes' );
+add_filter( 'get_user_option_meta-box-order_projects', 'reorder_post_metaboxes' );
+add_filter( 'get_user_option_meta-box-order_series', 'reorder_post_metaboxes' );
