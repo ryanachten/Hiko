@@ -15,7 +15,7 @@
 							</header> <!-- end article header -->
 
 							<section class="entry-content" itemprop="articleBody">
-								<?php the_content(); ?>
+								<?php esc_html_e( the_content() ); ?>
 							</section> <!-- end article section -->
 
 							<footer class="article-footer">
