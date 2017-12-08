@@ -22,7 +22,7 @@
 			 <section id="series-parts-container" class="medium-12 large-12 small-centered columns">
 
 				<h3 id="series-parts-title">Series Parts</h3>
-				<h4 class="subheader">Check out that articles which make up this series:</h4>
+				<h4 class="subheader">Check out the articles which make up this series:</h4>
 				<!-- get posts for series parts and loop through posts
 			 		defined in functions.php-->
 				<?php	loop_custom_grid( 'series_parts', false, 4 ); ?>

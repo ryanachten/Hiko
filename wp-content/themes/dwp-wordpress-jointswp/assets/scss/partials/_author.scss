@@ -1,7 +1,21 @@
 
-// HACK: competes with the custom-grid / archive-grid approach
-//clean up with more elegant solution
 body.author{
+  .author-header{
+    padding: 10px;
+    padding-top: 20px;
+    box-shadow: 0 0 5px #888888;
+    border-radius: 7px;
+  }
+  .author-name{
+    margin-bottom: 0px;
+  }
+  .author-social-container{
+    margin-bottom: 10px;
+  }
+
+
+  // HACK: competes with the custom-grid / archive-grid approach
+  //clean up with more elegant solution
   .featured-article{
     box-sizing: content-box;
   }
@@ -14,4 +28,5 @@ body.author{
   .article-thumbnail{
     min-width: 300px;
   }
+
 }

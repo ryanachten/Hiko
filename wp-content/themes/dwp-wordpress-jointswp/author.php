@@ -4,14 +4,11 @@
 
 	<div id="content" class="row">
 
-		<header class="archive-header medium-10 large-10 small-centered columns" >
+		<header class="author-header archive-header medium-10 large-10 small-centered columns" >
 			<?php echo get_avatar( $post->post_author ); ?>
-			<h1 class="page-title">
+			<h1 class="author-name">
 				<?php esc_html_e( the_author_meta( 'display_name', $post->post_author ) ); ?>
 			</h1>
-			<div class="taxonomy-description">
-				<?php esc_html_e( the_author_meta( 'description', $post->post_author ) ); ?>
-			</div>
 			<div class="author-social-container">
 					<a class="author-social-icon" href="mailto:<?php
 					esc_url( the_author_meta( 'user_email', $post->post_author ) ); ?>">
@@ -26,9 +23,10 @@
 							</a>
 					<?php endif; ?>
 			</div>
+			<div class="taxonomy-description">
+				<?php esc_html_e( the_author_meta( 'description', $post->post_author ) ); ?>
+			</div>
 		</header>
-
-		<hr>
 
 		<div id="inner-content" class="row">
 
