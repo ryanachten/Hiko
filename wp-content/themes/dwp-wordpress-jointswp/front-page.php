@@ -1,39 +1,31 @@
 <?php get_header(); ?>
 
-<!-- <section class="frontpage-hero-section small-12 small-centered columns" > -->
+	<!-- Gets post assigned via ACF Relationship field -->
+	<?php	$featured_article = get_field('landing_featured_article');
+		if( $featured_article ): ?>
+			<!-- assign featured post to post global -->
+			<?php $post = $featured_article[0];
+				setup_postdata( $post ); ?>
 
-	<?php
-		$args = array(
-			'numberposts' => 1,
-			'post_type'   => 'projects'
-			);
+				<section class="frontpage-hero-post"
+				style="background-image: url('<?php
+					echo esc_url( get_the_post_thumbnail_url( $post->ID, 'medium') ); ?>');">
 
-		$latest_posts = get_posts( $args );
+					<div class="frontpage-hero-description small-centered small-11 large-11 row">
+							<?php get_template_part( 'parts/content', 'byline' ); ?>
+							<h1 class="title">
+								<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+									<?php esc_html_e(	the_title(), 'jointswp' ); ?>
+								</a>
+							</h1>
+							<?php esc_html_e( the_excerpt(), 'jointswp' ); ?>
+					</div>
 
-		if( $latest_posts ): foreach( $latest_posts as $post ):?>
-						<?php setup_postdata( $post ); ?>
-						<?php if( has_post_thumbnail() ): ?>
-							<section class="frontpage-hero-post"
-							style="background-image: url('<?php
-								echo esc_url( get_the_post_thumbnail_url( $post->ID, 'medium') ); ?>');">
+				</section>
 
-								<div class="frontpage-hero-description small-centered small-11 large-11 row">
-										<?php get_template_part( 'parts/content', 'byline' ); ?>
-										<h1 class="title">
-											<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-												<?php esc_html_e(	the_title(), 'jointswp' ); ?>
-											</a>
-										</h1>
-										<?php esc_html_e( the_excerpt(), 'jointswp' ); ?>
-								</div>
-							</section>
-						<?php endif; ?>
-					<?php endforeach;?>
-				<?php wp_reset_postdata();  ?>
+			<?php wp_reset_postdata();  ?>
 	<?php endif; ?>
 
-
-<!-- </section> -->
 
 	<div id="content">
 

@@ -26,7 +26,7 @@ Based on loop-archive-grid -->
 					<?php elseif( get_post_type() == 'post'):  ?>
 						<h4 class="article-title blog-background">
 					<?php endif; ?>
-						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php esc_html_e( the_title() ); ?></a></h4>
+						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php esc_html_e( the_title(), 'jointswp' ); ?></a></h4>
 					<?php get_template_part( 'parts/content', 'byline' ); ?>
 				</header> <!-- end article header -->
 
