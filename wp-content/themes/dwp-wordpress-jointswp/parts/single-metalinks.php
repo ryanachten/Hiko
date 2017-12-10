@@ -44,7 +44,7 @@ if( $categoriesToShow ||
 			<?php
 				// Prevent empty strings or simply 'Uncategorised' presenting category section
 				if( !empty( $article_categories ) && $article_categories[0]->name !== 'Uncategorised' ):?>
-					<h6 class="categories-title"><strong><?php _e('Categories:'); ?></strong></h6>
+					<h6 class="categories-title"><strong><?php _e('Categories:', 'jointswp'); ?></strong></h6>
 					<?php the_category(', '); ?>
 				<?php endif; ?>
 		</p>
@@ -53,7 +53,7 @@ if( $categoriesToShow ||
 		<p class="courses">
 			<?php  //access ACF Taxonomy field
 				 if( !empty( $article_courses ) ): ?>
-					<h6 class="courses-title"><strong><?php _e('Courses:');?></strong></h6>
+					<h6 class="courses-title"><strong><?php _e('Courses:', 'jointswp');?></strong></h6>
 					<?php the_terms($post->ID, 'courses', '', '<br>', '' ); ?>
 				<?php endif; ?>
 		</p>
@@ -64,13 +64,13 @@ if( $categoriesToShow ||
 
 			<section id="article-relatedseries-container" class="small-10 small-centered">
 
-				<h5><?php _e('Featured in the following'); ?> <a href="<?php echo get_post_type_archive_link( 'series' ); ?>"><?php _e('Series') ?></a>:</h5>
+				<h5><?php _e('Featured in the following', 'jointswp'); ?> <a href="<?php echo get_post_type_archive_link( 'series' ); ?>"><?php _e('Series') ?></a>:</h5>
 
 					<?php foreach( $series as $series_post ): ?>
 						<a href="<?php echo get_permalink( $series_post->ID ); ?>">
 							<div class="article-relatedseries-thumb" style="background-image: url(<?php echo get_the_post_thumbnail_url($series_post->ID); ?>);">
 
-								<h5 class="article-relatedseries-title"><?php esc_html_e( get_the_title( $series_post->ID ) ); ?></h5>
+								<h5 class="article-relatedseries-title"><?php esc_html_e( get_the_title( $series_post->ID ), 'jointswp' ); ?></h5>
 
 							</div>
 						</a>

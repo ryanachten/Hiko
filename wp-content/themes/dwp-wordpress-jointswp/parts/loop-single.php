@@ -18,7 +18,7 @@
 		      <?php elseif ( get_post_type() == 'post' ): ?>
 	          <h1 class="entry-title single-title blog-background" itemprop="headline">
 		      <?php endif; ?>
-							<a href="<?php the_permalink() ?>"><?php esc_html_e( the_title() ); ?></a>
+							<a href="<?php the_permalink() ?>"><?php esc_html_e( the_title(), 'jointswp' ); ?></a>
 						</h1>
 					<?php esc_html_e( the_excerpt() ); ?>
 			</div>
@@ -28,6 +28,6 @@
 	<!-- Article content -->
   <section class="entry-content small-11 medium-10 large-8 small-centered" itemprop="articleBody">
 		<?php _e( the_content() ); ?>
-	</section>	
+	</section>
 
 </article> <!-- end article -->
