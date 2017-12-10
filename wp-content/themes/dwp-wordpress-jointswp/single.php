@@ -30,7 +30,7 @@
 		<hr>
 		<section id="article-citecontainer" class="small-10 medium-10 large-8 small-centered">
 
-			<h5 id="article-citetitle">References &amp; Citations:</h5>
+			<h5 id="article-citetitle"><?php _e( 'References &amp; Citations', 'jointswp'); ?>:</h5>
 			<?php	echo $article_citations; ?>
 
 	 </section>

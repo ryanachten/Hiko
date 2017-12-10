@@ -5,10 +5,10 @@
 		<header class="archive-header medium-10 large-10 small-centered columns" >
 			<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_serieslogo_bg.svg'?>" alt="series page">
 			<h3 class="page-title">
-				<?php	esc_html_e( post_type_archive_title() ); ?>
+				<?php	esc_html_e( post_type_archive_title(), 'jointswp' ); ?>
 			</h3>
 			<div class="taxonomy-description series-background">
-				<p><?php echo esc_html_e( get_post_type_object( 'series' )->description ); ?></p>
+				<p><?php echo esc_html_e( get_post_type_object( 'series' )->description, 'jointswp' ); ?></p>
 		</div>
 		</header>
 

@@ -11,11 +11,11 @@
 						<article id="post-<?php the_ID(); ?>" <?php esc_attr( post_class('') ); ?> role="article" itemscope itemtype="http://schema.org/WebPage">
 
 							<header class="article-header">
-								<h1 class="page-title text-center"><?php esc_html_e( the_title() ); ?></h1>
+								<h1 class="page-title text-center"><?php esc_html_e( the_title(), 'jointswp' ); ?></h1>
 							</header> <!-- end article header -->
 
 							<section class="entry-content" itemprop="articleBody">
-								<?php esc_html_e( the_content() ); ?>
+								<?php esc_html_e( the_content(), 'jointswp' ); ?>
 							</section> <!-- end article section -->
 
 							<footer class="article-footer">

@@ -7,7 +7,7 @@
 		<header class="author-header archive-header medium-10 large-10 small-centered columns" >
 			<?php echo get_avatar( $post->post_author ); ?>
 			<h1 class="author-name">
-				<?php esc_html_e( the_author_meta( 'display_name', $post->post_author ) ); ?>
+				<?php esc_html_e( the_author_meta( 'display_name', $post->post_author ), 'jointswp' ); ?>
 			</h1>
 			<div class="author-social-container">
 					<a class="author-social-icon" href="mailto:<?php
@@ -24,7 +24,7 @@
 					<?php endif; ?>
 			</div>
 			<div class="taxonomy-description">
-				<?php esc_html_e( the_author_meta( 'description', $post->post_author ) ); ?>
+				<?php esc_html_e( the_author_meta( 'description', $post->post_author ), 'jointswp' ); ?>
 			</div>
 		</header>
 

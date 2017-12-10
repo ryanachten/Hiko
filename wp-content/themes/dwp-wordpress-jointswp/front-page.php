@@ -21,10 +21,10 @@
 										<?php get_template_part( 'parts/content', 'byline' ); ?>
 										<h1 class="title">
 											<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-												<?php esc_html_e(	the_title() ); ?>
+												<?php esc_html_e(	the_title(), 'jointswp' ); ?>
 											</a>
 										</h1>
-										<?php esc_html_e( the_excerpt() ); ?>
+										<?php esc_html_e( the_excerpt(), 'jointswp' ); ?>
 								</div>
 							</section>
 						<?php endif; ?>
@@ -48,7 +48,7 @@
 							<!-- Link to blog archive page -->
 							<a href="<?php echo get_post_type_archive_link( 'post' ); ?>">
 								<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_bloglogo_bg.svg'?>" alt="projects page">
-								<h4 class="section-title"><?php _e('Blog'); ?></h4>
+								<h4 class="section-title"><?php _e('Blog', 'jointswp'); ?></h4>
 							</a>
 						</div>
 
@@ -77,7 +77,7 @@
 							<!-- Link to project archive page -->
 							<a href="<?php echo get_post_type_archive_link( 'projects' ); ?>">
 								<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_projectlogo_bg.svg'?>" alt="projects page">
-								<h4 class="section-title"><?php _e('Projects'); ?></h4>
+								<h4 class="section-title"><?php _e('Projects', 'jointswp'); ?></h4>
 							</a>
 						</div>
 
@@ -105,7 +105,7 @@
 							<!-- Link to series archive page -->
 							<a href="<?php echo get_post_type_archive_link( 'series' ); ?>">
 								<img src="<?php echo get_template_directory_uri() . '/assets/images/branding-assets/dwp_serieslogo_bg.svg'?>" alt="">
-								<h4 class="section-title"><?php _e('Series');?></h4>
+								<h4 class="section-title"><?php _e('Series', 'jointswp');?></h4>
 							</a>
 						</div>
 

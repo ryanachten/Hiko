@@ -5,8 +5,8 @@
 	<div id="content">
 
 		<header class="archive-header medium-10 large-10 small-centered columns" >
-			<h3 class="page-title"><?php _e('Search'); ?></h3>
-			<h2 class="subheader"> <?php _e('Showing results for:'); ?> <em>'<?php esc_attr_e( get_search_query() ); ?>'</em></h2>
+			<h3 class="page-title"><?php _e('Search', 'jointswp'); ?></h3>
+			<h2 class="subheader"> <?php _e('Showing results for:', 'jointswp'); ?> <em>'<?php esc_attr_e( get_search_query() ); ?>'</em></h2>
 		</header>
 
 		<?php get_sidebar(); ?>

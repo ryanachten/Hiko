@@ -5,27 +5,27 @@
 		<header class="archive-header medium-10 large-10 small-centered columns" >
 			<!-- Title formatting for Course archive -->
 			<?php if ( is_tax( 'courses' ) ): ?>
-					<h3 class="page-title"><?php _e( 'Course:'); ?></h3>
+					<h3 class="page-title"><?php _e( 'Course:', 'jointswp' ); ?></h3>
 					<h2 class="subheader"><?php esc_html_e( single_term_title() );?></h2>
 			<!-- Title formatting for Date archive -->
 			<?php elseif ( is_date() ): ?>
-					<h3 class="page-title"><?php _e( 'Date Archive:'); ?></h3>
+					<h3 class="page-title"><?php _e( 'Date Archive:', 'jointswp' ); ?></h3>
 					<h2 class="subheader"><?php esc_html_e( get_the_date( 'F, Y' ) );?></h2>
 			<!-- Title formatting for Category archive -->
 			<?php elseif ( is_category() ): ?>
-						<h3 class="page-title"><?php _e( 'Category:'); ?></h3>
+						<h3 class="page-title"><?php _e( 'Category:', 'jointswp' ); ?></h3>
 						<h2 class="subheader"><?php esc_html_e( single_term_title() ); ?></h2>
 			<!-- Title formatting for Tag archive -->
 		<?php elseif ( is_tag() ): ?>
-						<h3 class="page-title"><?php _e( 'Articles Tagged With:'); ?></h3>
-						<h2 class="subheader"><?php esc_html_e( single_term_title() ); ?></h2>
+						<h3 class="page-title"><?php _e( 'Articles Tagged With:', 'jointswp' ); ?></h3>
+						<h2 class="subheader"><?php esc_html_e( single_term_title(), 'jointswp' ); ?></h2>
 			<!-- Fallback for other stuff -->
 			<?php else: ?>
-				<h2><?php _e( the_archive_title() ); ?></h2>
+				<h2><?php _e( the_archive_title(), 'jointswp' ); ?></h2>
 			<?php endif; ?>
 
 
-		<?php _e( the_archive_description('<div class="taxonomy-description">', '</div>') );?>
+		<?php _e( the_archive_description('<div class="taxonomy-description">', '</div>'), 'jointswp' );?>
 		</header>
 
 		<?php get_sidebar(); ?>
