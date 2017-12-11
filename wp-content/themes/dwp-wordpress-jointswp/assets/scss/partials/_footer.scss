@@ -1,0 +1,18 @@
+@import 'global';
+
+.footer-container{
+  margin: 0 auto;
+}
+
+.footer-nav{
+  display: inline-block;
+  float: left;
+}
+
+.footer-copy{
+  display: inline-block;
+  float: right;
+}
+.footer-logotype{
+  @include main-logotype(16px, 3px);
+}

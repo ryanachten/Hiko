@@ -4815,6 +4815,58 @@ a:hover, a:focus {
   margin: 0 10px 0 5px; }
 
 /* Splash / featured posts */
+.footer-container {
+  margin: 0 auto; }
+
+.footer-nav {
+  display: inline-block;
+  float: left; }
+
+.footer-copy {
+  display: inline-block;
+  float: right; }
+
+.footer-logotype {
+  font-family: "Signika", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 3px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Signika", sans-serif; }
+
+p {
+  font-family: "Roboto", sans-serif; }
+
+.button {
+  background-color: #999;
+  border-radius: 1px; }
+
+.button:hover, .button:focus {
+  background-color: #999;
+  border-radius: 1px;
+  background-color: #777; }
+
+.pagination .current {
+  background-color: #999;
+  border-radius: 1px; }
+
+a {
+  color: black; }
+
+a:hover, a:focus {
+  color: #777; }
+
+.byline-date {
+  color: #999;
+  font-size: 0.9rem; }
+
+.byline-typeicon {
+  width: 20px;
+  margin: 0 10px 0 5px; }
+
+/* Splash / featured posts */
 /* Foundation Top-bar overrides
 TODO: this could probably be more elegantly achieved via altering the
 Foundation top bar sass vars */

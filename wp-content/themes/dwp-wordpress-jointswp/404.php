@@ -27,8 +27,6 @@
 
 		</div> <!-- end #inner-content -->
 
-		<hr>
-
 	</div> <!-- end #content -->
 
 <?php get_footer(); ?>
