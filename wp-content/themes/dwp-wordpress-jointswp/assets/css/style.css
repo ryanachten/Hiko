@@ -4863,6 +4863,15 @@ Foundation top bar sass vars */
     .footer nav .menu-item a {
       font-size: 0.8rem; }
 
+.attachment-container {
+  text-align: center; }
+
+.attachment_metainfo {
+  display: inline-block; }
+  .attachment_metainfo p {
+    margin: 0;
+    text-align: left; }
+
 div#topwidgets {
   text-align: center; }
 
