@@ -45,7 +45,7 @@
 							<?php foreach ($attachment_meta['image_meta'] as $key => $value) {
 								// will only display info if the data isn't an array or empty
 								if ( !is_array( $value ) && (int)$value !== 0 ) {
-									echo '<strong>' . ucfirst( $key ) . ':</strong> ' . $value . '<br>';
+									echo '<p><strong>' . ucfirst( $key ) . ':</strong> ' . $value . '</p><br>';
 								}
 							} ?>
 

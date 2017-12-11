@@ -8,12 +8,12 @@
 
 				<article id="content-not-found">
 
-					<header class="article-header">
+					<header class="fourofour-header">
 						<h1 class="text-center"><?php _e( 'Epic 404 - Article Not Found', 'jointswp' ); ?></h1>
 					</header> <!-- end article header -->
 
-					<section class="entry-content text-center">
-						<p><?php _e( 'The article you were looking for was not found, but maybe try looking again!', 'jointswp' ); ?></p>
+					<section class="fourofour-content text-center">
+						<h3 class="subheader"><?php _e( 'The article you were looking for was not found, but maybe try looking again!', 'jointswp' ); ?></h3>
 					</section> <!-- end article section -->
 
 					<section class="search">
@@ -26,6 +26,8 @@
 			</main> <!-- end #main -->
 
 		</div> <!-- end #inner-content -->
+
+		<hr>
 
 	</div> <!-- end #content -->
 
