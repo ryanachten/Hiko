@@ -4935,7 +4935,8 @@ Foundation top bar sass vars */
     text-align: left; }
 
 div#topwidgets {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 10px; }
 
 #topwidgets .widget {
   display: inline-block;

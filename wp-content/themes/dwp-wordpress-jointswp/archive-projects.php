@@ -14,7 +14,6 @@
 
 		<?php get_sidebar(); ?>
 
-		<hr>
 
 		<div id="inner-content">
 

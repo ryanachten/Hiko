@@ -33,12 +33,11 @@
 
 </div> <!-- end #content -->
 
-<hr>
 
 <!-- Check to see if there are article Citations -->
 <?php $article_citations = get_field('citations', $post->ID );
 	if( $article_citations ):?>
-		<!-- <hr> -->
+		<hr>
 		<section id="article-citecontainer" class="small-10 medium-10 large-8 small-centered">
 
 			<h5 id="article-citetitle"><?php _e( 'References &amp; Citations', 'jointswp'); ?>:</h5>
