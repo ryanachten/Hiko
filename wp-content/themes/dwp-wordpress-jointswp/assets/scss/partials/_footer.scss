@@ -9,8 +9,20 @@
   float: left;
 }
 
+// Forces footer parent to be high enough w/ enough
+// padding to account for the footer
+.off-canvas-content{
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
 /* Footer navigation */
 .footer{
+  // Keeps the footer at the bottom of the page
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 
   nav{
     text-align: center;

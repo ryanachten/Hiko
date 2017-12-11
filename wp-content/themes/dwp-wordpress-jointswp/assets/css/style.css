@@ -4822,15 +4822,24 @@ a:hover, a:focus {
   display: inline-block;
   float: left; }
 
+.off-canvas-content {
+  min-height: 100vh;
+  padding-bottom: 100px; }
+
 /* Footer navigation */
-.footer nav {
-  text-align: center;
-  margin-bottom: 20px; }
-  .footer nav .menu-item {
-    display: inline-block; }
-    .footer nav .menu-item a {
-      font-size: 0.8rem;
-      padding: 0.7rem 0.5rem; }
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .footer nav {
+    text-align: center;
+    margin-bottom: 20px; }
+    .footer nav .menu-item {
+      display: inline-block; }
+      .footer nav .menu-item a {
+        font-size: 0.8rem;
+        padding: 0.7rem 0.5rem; }
 
 .footer-logo {
   display: inline-block;

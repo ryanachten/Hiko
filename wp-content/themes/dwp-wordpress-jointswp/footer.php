@@ -5,7 +5,7 @@
 							<nav class="footer-nav" role="navigation">
     						<?php joints_footer_links(); ?>
     					</nav>
-							<a class="footer-copy" href="<?php echo home_url(); ?>"><span class="footer-logotype"><?php bloginfo('name'); ?></span></a>
+							<a class="footer-logo" href="<?php echo home_url(); ?>"><span class="footer-logotype"><?php bloginfo('name'); ?></span></a>
     				</div>
 					</div> <!-- end #inner-footer -->
 				</footer> <!-- end .footer -->
