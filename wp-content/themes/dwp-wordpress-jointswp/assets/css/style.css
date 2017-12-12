@@ -5073,6 +5073,8 @@ h1.entry-title.single-title,
 
 .fourofour-content {
   margin: 30px 20px 30px 20px; }
+  .fourofour-content h3 {
+    margin: 20px auto; }
 
 section.archive-grid.featured-image {
   background-position: center;

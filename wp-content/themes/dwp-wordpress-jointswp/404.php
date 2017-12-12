@@ -4,7 +4,7 @@
 
 		<div id="inner-content" class="row">
 
-			<main id="main" class="large-10 medium-10 columns small-centered" role="main">
+			<main id="main" class="large-12 medium-10 columns small-centered" role="main">
 
 				<article id="content-not-found">
 
@@ -14,12 +14,29 @@
 
 					<section class="fourofour-content text-center">
 						<h3 class="subheader"><?php _e( 'Sorry! The page you were looking for was not found, how about searching for it below?', 'jointswp' ); ?></h3>
+						<?php get_sidebar(); ?>
 					</section> <!-- end article section -->
 
-					<section class="search">
-					    <!-- <p><?php //get_search_form(); ?></p> -->
-							<?php get_sidebar(); ?>
-					</section> <!-- end search section -->
+					<!-- Provides latest article thumbnails -->
+					<section class="fourofour-content">
+						<h3 class="subheader text-center"><?php _e( '...Or check out one of these articles:', 'jointswp' ); ?></h3>
+						<?php
+							$args = array(
+								'numberposts' => 4,
+								'post_type'   => ['post','projects','series']
+								);
+
+							$latest_projects = get_posts( $args );
+
+							if($latest_projects){
+									foreach ( $latest_projects as $post ){
+											setup_postdata( $post );
+											get_template_part( 'parts/loop', 'custom-grid' );
+										}
+									wp_reset_postdata();
+							}
+						?>
+					</section>
 
 				</article> <!-- end article -->
 
