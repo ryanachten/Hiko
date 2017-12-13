@@ -5243,9 +5243,15 @@ a:hover, a:focus {
   .frontpage-hero-description .byline-date {
     background: none;
     color: white; }
-  .frontpage-hero-description h1 a {
+  .frontpage-hero-description .blog-title a {
+    background-color: #FFCDDD;
+    box-shadow: 0px 0px 0px 10px #FFCDDD; }
+  .frontpage-hero-description .project-title a {
     background-color: #DDF6FF;
     box-shadow: 0px 0px 0px 10px #DDF6FF; }
+  .frontpage-hero-description .series-title a {
+    background-color: #D5FFF9;
+    box-shadow: 0px 0px 0px 10px #D5FFF9; }
 
 .frontpage-section-header {
   display: block;

@@ -17,8 +17,14 @@
   // Styles for featured post description box
   .frontpage-hero-description{
     @include splash-hero-description;
-    h1 a{
-      @include highlighter-effect( $project-background, 10px); //TODO: this needs to be a conditional
+    .blog-title a{
+      @include highlighter-effect( $blog-background, 10px);
+    }
+    .project-title a{
+      @include highlighter-effect( $project-background, 10px);
+    }
+    .series-title a{
+      @include highlighter-effect( $series-background, 10px);
     }
   }
 

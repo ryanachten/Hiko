@@ -13,7 +13,15 @@
 
 					<div class="frontpage-hero-description small-centered small-11 large-11 row">
 							<?php get_template_part( 'parts/content', 'byline' ); ?>
-							<h1 class="title">
+
+						<!-- Style title based on post type -->
+						<?php if (get_post_type() == 'post'): ?>
+							<h1 class="blog-title">
+						<?php elseif (get_post_type() == 'projects'): ?>
+							<h1 class="project-title">
+						<?php elseif (get_post_type() == 'series'): ?>
+							<h1 class="series-title">
+						<?php endif; ?>
 								<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 									<?php esc_html_e(	the_title(), 'jointswp' ); ?>
 								</a>
