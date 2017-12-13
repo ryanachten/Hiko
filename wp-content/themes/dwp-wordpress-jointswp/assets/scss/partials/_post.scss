@@ -28,17 +28,15 @@ h1.entry-title.single-title,
   .article-hero-description{
     @include splash-hero-description;
 
+    .entry-title.blog-background a{
+      @include highlighter-effect($blog-background, 10px);
+    }
+
     .entry-title.project-background a{
-      @include project-title-background;
-      padding: 10px;
+      @include highlighter-effect($project-background, 10px);
     }
     .entry-title.series-background a{
-      @include series-title-background;
-      padding: 10px;
-    }
-    .entry-title.blog-background a{
-      @include blog-title-background;
-      padding: 10px;
+      @include highlighter-effect($series-background, 10px);
     }
   }
 }
@@ -80,8 +78,7 @@ h1.entry-title.single-title,
   vertical-align: top;
 
   .article-relatedseries-title{
-    background-color: $background-colour;
+    @include highlighter-effect($background-colour, 4px);
     display: inline;
-    padding: 2px;
   }
 }

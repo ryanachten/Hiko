@@ -5017,23 +5017,19 @@ h1.entry-title.single-title,
     background-color: white;
     padding: 10px; }
   .article-hero-section .article-hero-description h1 a, .article-hero-section .article-hero-description h1 {
-    padding: 10px;
     line-height: 2em; }
   .article-hero-section .article-hero-description .byline-date {
     background: none;
     color: white; }
-  .article-hero-section .article-hero-description .entry-title.project-background a {
-    background-color: #DDF6FF;
-    padding: 2px;
-    padding: 10px; }
-  .article-hero-section .article-hero-description .entry-title.series-background a {
-    background-color: #D5FFF9;
-    padding: 2px;
-    padding: 10px; }
   .article-hero-section .article-hero-description .entry-title.blog-background a {
     background-color: #FFCDDD;
-    padding: 2px;
-    padding: 10px; }
+    box-shadow: 0px 0px 0px 10px #FFCDDD; }
+  .article-hero-section .article-hero-description .entry-title.project-background a {
+    background-color: #DDF6FF;
+    box-shadow: 0px 0px 0px 10px #DDF6FF; }
+  .article-hero-section .article-hero-description .entry-title.series-background a {
+    background-color: #D5FFF9;
+    box-shadow: 0px 0px 0px 10px #D5FFF9; }
 
 #article-metacontainer {
   text-align: center;
@@ -5065,8 +5061,8 @@ h1.entry-title.single-title,
   vertical-align: top; }
   .article-relatedseries-thumb .article-relatedseries-title {
     background-color: white;
-    display: inline;
-    padding: 2px; }
+    box-shadow: 0px 0px 0px 4px white;
+    display: inline; }
 
 .fourofour-header {
   margin: 30px auto; }
@@ -5102,13 +5098,13 @@ section.archive-grid.featured-image {
       display: inline-block; }
   .archive-header .taxonomy-description.project-background p {
     background-color: #DDF6FF;
-    padding: 2px; }
+    box-shadow: 0px 0px 0px 5px #DDF6FF; }
   .archive-header .taxonomy-description.series-background p {
     background-color: #D5FFF9;
-    padding: 2px; }
+    box-shadow: 0px 0px 0px 5px #D5FFF9; }
   .archive-header .taxonomy-description.blog-background p {
     background-color: #FFCDDD;
-    padding: 2px; }
+    box-shadow: 0px 0px 0px 5px #FFCDDD; }
 
 .article-header {
   padding: 0 10px;
@@ -5118,13 +5114,13 @@ section.archive-grid.featured-image {
     margin: 10px 0 20px 0; }
   .article-header .article-title.project-background a {
     background-color: #DDF6FF;
-    padding: 2px; }
+    box-shadow: 0px 0px 0px 5px #DDF6FF; }
   .article-header .article-title.series-background a {
     background-color: #D5FFF9;
-    padding: 2px; }
+    box-shadow: 0px 0px 0px 5px #D5FFF9; }
   .article-header .article-title.blog-background a {
     background-color: #FFCDDD;
-    padding: 2px; }
+    box-shadow: 0px 0px 0px 5px #FFCDDD; }
 
 .article-header .title > a,
 .entry-content p {
@@ -5169,8 +5165,6 @@ body.single-series .archive-grid {
   justify-content: center;
   display: flex;
   flex-wrap: wrap; }
-body.single-series .article-thumbnail .article-title {
-  text-align: left; }
 
 #series-parts-container {
   margin-top: 40px;
@@ -5178,7 +5172,7 @@ body.single-series .article-thumbnail .article-title {
   #series-parts-container #series-parts-title {
     text-align: center;
     background-color: #D5FFF9;
-    padding: 5px;
+    box-shadow: 0px 0px 0px 5px #D5FFF9;
     display: inline-block; }
   #series-parts-container .subheader {
     margin-bottom: 20px; }
@@ -5245,13 +5239,13 @@ a:hover, a:focus {
     background-color: white;
     padding: 10px; }
   .frontpage-hero-description h1 a, .frontpage-hero-description h1 {
-    padding: 10px;
     line-height: 2em; }
   .frontpage-hero-description .byline-date {
     background: none;
     color: white; }
   .frontpage-hero-description h1 a {
-    background-color: #DDF6FF; }
+    background-color: #DDF6FF;
+    box-shadow: 0px 0px 0px 10px #DDF6FF; }
 
 .frontpage-section-header {
   display: block;

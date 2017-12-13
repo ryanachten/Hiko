@@ -18,7 +18,7 @@
   .frontpage-hero-description{
     @include splash-hero-description;
     h1 a{
-      background-color: $project-background;
+      @include highlighter-effect( $project-background, 10px); //TODO: this needs to be a conditional
     }
   }
 

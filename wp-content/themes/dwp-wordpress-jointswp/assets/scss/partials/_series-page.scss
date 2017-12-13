@@ -11,12 +11,6 @@ body.single-series{
 
     flex-wrap: wrap;
   }
-  .article-thumbnail{
-
-    .article-title{
-      text-align: left;
-    }
-  }
 }
 #series-parts-container{
   margin-top: 40px;
@@ -24,8 +18,9 @@ body.single-series{
 
   #series-parts-title{
     text-align: center;
-    background-color: $series-background;
-    padding: 5px;
+    @include highlighter-effect($series-background, 5px);
+    // background-color: $series-background;
+    // padding: 5px;
     display: inline-block;
   }
   .subheader{
