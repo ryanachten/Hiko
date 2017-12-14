@@ -5,13 +5,6 @@
 $header-font: 'Signika', sans-serif;//'Exo 2', sans-serif;
 $body-font: 'Roboto', sans-serif; //'Roboto Slab', serif;
 
-h1, h2, h3, h4, h5, h6{
-  font-family: $header-font;
-}
-p{
-  font-family: $body-font;
-}
-
 // Main logotype
 @mixin main-logotype($font-size, $letter-spacing){
   font-family: $header-font;
@@ -21,9 +14,16 @@ p{
   letter-spacing: $letter-spacing;
 }
 
+h1, h2, h3, h4, h5, h6{
+  font-family: $header-font;
+}
+p{
+  font-family: $body-font;
+}
+
 // Colour scheme
 $primary-colour: black;
-$secondary-colour: #999; //matches Foundation subheader colour
+$secondary-colour: #616161; //#999(failed aXe); //matches Foundation subheader colour
 $tertiary-colour: #777;
 $background-colour: white;
 $project-background: #DDF6FF;
@@ -81,6 +81,9 @@ a:hover, a:focus{
 }
 
 // Byline used in thumbs and posts
+.byline{
+  color: $secondary-colour;
+}
 .byline-date{
   color: $secondary-colour;
   font-size: 0.9rem;
@@ -88,6 +91,10 @@ a:hover, a:focus{
 .byline-typeicon{
   width: 20px;
   margin: 0 10px 0 5px;
+}
+
+blockquote, blockquote p{
+  color: $secondary-colour;
 }
 
 /* Splash / featured posts */
@@ -120,6 +127,6 @@ a:hover, a:focus{
 
   .byline-date{
     background: none;
-    color: $background-colour;
+    margin-bottom: 0px;
   }
 }

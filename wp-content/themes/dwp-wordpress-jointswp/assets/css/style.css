@@ -4788,16 +4788,16 @@ p {
   font-family: "Roboto", sans-serif; }
 
 .button {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px; }
 
 .button:hover, .button:focus {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px;
   background-color: #777; }
 
 .pagination .current {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px; }
 
 a {
@@ -4806,13 +4806,19 @@ a {
 a:hover, a:focus {
   color: #777; }
 
+.byline {
+  color: #616161; }
+
 .byline-date {
-  color: #999;
+  color: #616161;
   font-size: 0.9rem; }
 
 .byline-typeicon {
   width: 20px;
   margin: 0 10px 0 5px; }
+
+blockquote, blockquote p {
+  color: #616161; }
 
 /* Splash / featured posts */
 .footer {
@@ -4865,16 +4871,16 @@ p {
   font-family: "Roboto", sans-serif; }
 
 .button {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px; }
 
 .button:hover, .button:focus {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px;
   background-color: #777; }
 
 .pagination .current {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px; }
 
 a {
@@ -4883,13 +4889,19 @@ a {
 a:hover, a:focus {
   color: #777; }
 
+.byline {
+  color: #616161; }
+
 .byline-date {
-  color: #999;
+  color: #616161;
   font-size: 0.9rem; }
 
 .byline-typeicon {
   width: 20px;
   margin: 0 10px 0 5px; }
+
+blockquote, blockquote p {
+  color: #616161; }
 
 /* Splash / featured posts */
 /* Foundation Top-bar overrides
@@ -4922,7 +4934,7 @@ Foundation top bar sass vars */
   font-weight: normal; }
 
 .menu .active a {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px; }
 
 .header {
@@ -4958,16 +4970,16 @@ p {
   font-family: "Roboto", sans-serif; }
 
 .button {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px; }
 
 .button:hover, .button:focus {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px;
   background-color: #777; }
 
 .pagination .current {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px; }
 
 a {
@@ -4976,13 +4988,19 @@ a {
 a:hover, a:focus {
   color: #777; }
 
+.byline {
+  color: #616161; }
+
 .byline-date {
-  color: #999;
+  color: #616161;
   font-size: 0.9rem; }
 
 .byline-typeicon {
   width: 20px;
   margin: 0 10px 0 5px; }
+
+blockquote, blockquote p {
+  color: #616161; }
 
 /* Splash / featured posts */
 .article-header section.featured-image {
@@ -5026,7 +5044,7 @@ h1.entry-title.single-title,
     line-height: 2em; }
   .article-hero-section .article-hero-description .byline-date {
     background: none;
-    color: white; }
+    margin-bottom: 0px; }
   .article-hero-section .article-hero-description .entry-title.blog-background a {
     background-color: #FFCDDD;
     box-shadow: 0px 0px 0px 10px #FFCDDD; }
@@ -5190,16 +5208,16 @@ p {
   font-family: "Roboto", sans-serif; }
 
 .button {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px; }
 
 .button:hover, .button:focus {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px;
   background-color: #777; }
 
 .pagination .current {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px; }
 
 a {
@@ -5208,13 +5226,19 @@ a {
 a:hover, a:focus {
   color: #777; }
 
+.byline {
+  color: #616161; }
+
 .byline-date {
-  color: #999;
+  color: #616161;
   font-size: 0.9rem; }
 
 .byline-typeicon {
   width: 20px;
   margin: 0 10px 0 5px; }
+
+blockquote, blockquote p {
+  color: #616161; }
 
 /* Splash / featured posts */
 .frontpage-sections {
@@ -5248,7 +5272,7 @@ a:hover, a:focus {
     line-height: 2em; }
   .frontpage-hero-description .byline-date {
     background: none;
-    color: white; }
+    margin-bottom: 0px; }
   .frontpage-hero-description .blog-title a {
     background-color: #FFCDDD;
     box-shadow: 0px 0px 0px 10px #FFCDDD; }
@@ -5279,16 +5303,16 @@ p {
   font-family: "Roboto", sans-serif; }
 
 .button {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px; }
 
 .button:hover, .button:focus {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px;
   background-color: #777; }
 
 .pagination .current {
-  background-color: #999;
+  background-color: #616161;
   border-radius: 1px; }
 
 a {
@@ -5297,13 +5321,19 @@ a {
 a:hover, a:focus {
   color: #777; }
 
+.byline {
+  color: #616161; }
+
 .byline-date {
-  color: #999;
+  color: #616161;
   font-size: 0.9rem; }
 
 .byline-typeicon {
   width: 20px;
   margin: 0 10px 0 5px; }
+
+blockquote, blockquote p {
+  color: #616161; }
 
 /* Splash / featured posts */
 #login-logotype {

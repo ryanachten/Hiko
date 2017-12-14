@@ -17,7 +17,7 @@ $grid_columns = 4; ?>
 
 				<!-- If post has a thumnail, add to section bg-img -->
 				<?php if( has_post_thumbnail() ): ?>
-					<a class="article-thumb-link" href="<?php the_permalink(); ?>">
+					<a class="article-thumb-link" href="<?php the_permalink(); ?>" aria-label="Click to read article">
 						<section class="archive-grid featured-image" itemprop="articleBody" style="background-image: url('<?php
 							echo esc_url( get_the_post_thumbnail_url($post->ID, 'medium') );
 						?>');">

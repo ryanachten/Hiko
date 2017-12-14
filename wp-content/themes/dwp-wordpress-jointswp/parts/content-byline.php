@@ -16,7 +16,7 @@
 		}else{
 			the_author_posts_link();
 		}	?>
-</h6>
 
-<!-- Article date -->
-<p class="byline-date"><?php _e( the_time('F j, Y'), 'jointswp' );?></p>
+		<!-- Article date -->
+		<p class="byline-date"><?php _e( the_time('F j, Y'), 'jointswp' );?></p>
+</h6>
