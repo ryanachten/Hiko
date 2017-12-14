@@ -3,7 +3,7 @@ Digital publishing platform for Victoria University of Wellington. Built on top 
 
 DWP runs on a custom Wordpress setup, comprised primarily of a theme and a number of plugins.
 
-The theme is built on top of [JoitnsWP](http://jointswp.com/), which uses the [Foundation 6](https://foundation.zurb.com/) frontend framework. Foundation’s grid system was used prominently throughout the site.
+The theme is built on top of [JointsWP](http://jointswp.com/), which uses the [Foundation 6](https://foundation.zurb.com/) frontend framework. Foundation’s grid system was used prominently throughout the site.
 
 The plugins used by the site include:
 * [Advanced Custom Fields](https://wordpress.org/plugins/advanced-custom-fields/) - for custom metadata fields and relationships
