@@ -13,3 +13,5 @@ The plugins used by the site include:
 * [Jetpack Markdown](https://wordpress.org/plugins/jetpack-markdown/) - to enable authorship using markdown
 
 The custom backend for the site uses JavaScript and jQuery for various DOM manipulation requirements - please make sure your uses have JS enabled on their browsers for best performance.
+
+Accessibility testing conducted using the [aXe](https://www.axe-core.org/) accessibility engine.
