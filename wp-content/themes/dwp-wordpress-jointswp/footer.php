@@ -1,6 +1,6 @@
 				<footer class="footer" role="contentinfo">
-					<hr>
-					<div id="inner-footer" class="large-8 medium-8 columns row">
+					<hr class="footer-divider">
+					<div id="inner-footer" class="small-12">
 						<div class="footer-container">
 							<nav class="footer-nav" role="navigation">
     						<?php joints_footer_links(); ?>

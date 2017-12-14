@@ -4815,6 +4815,12 @@ a:hover, a:focus {
   margin: 0 10px 0 5px; }
 
 /* Splash / featured posts */
+.footer {
+  padding: 0 20px; }
+
+.footer-divider {
+  max-width: 100%; }
+
 .footer-container {
   margin: 0 auto; }
 
