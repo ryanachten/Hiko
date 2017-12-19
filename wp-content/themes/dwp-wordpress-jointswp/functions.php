@@ -62,16 +62,16 @@ function init_series_markdown_support(){
 
 
 // Change default query to include custom page types
-add_action( 'pre_get_posts', function( $query )
-{
-		if(	!is_admin() // Only target front end queries
-				&& $query->is_main_query() // Only target the main query
-				&& !$query->is_post_type_archive([ 'projects', 'series' ]) // Don't apply modified query to CPT archives
-				&& is_archive() // Restrict custom query to only archive pages
-		 ){
-			 $query->set( 'post_type', [ 'post', 'projects', 'series' ] );
-		 }
-});
+// add_action( 'pre_get_posts', function( $query )
+// {
+// 		if(	!is_admin() // Only target front end queries
+// 				&& $query->is_main_query() // Only target the main query
+// 				&& !$query->is_post_type_archive([ 'projects', 'series' ]) // Don't apply modified query to CPT archives
+// 				&& is_archive() // Restrict custom query to only archive pages
+// 		 ){
+// 			 $query->set( 'post_type', [ 'post', 'projects', 'series' ] );
+// 		 }
+// });
 
 /* Series Advanced Custom Field Relationship query
 only make available posts / projects owned by the current user */
@@ -239,3 +239,82 @@ function show_current_user_attachments( $query = array() ) {
   return $query;
 }
 add_filter( 'ajax_query_attachments_args', 'show_current_user_attachments', 10, 1 );
+
+
+// ****POTENTIAL BULLSHIT*****
+function register_search_query_vars( $vars ){
+	 $vars[] = 'date'; //register 'date' to be accessible via url
+	 $vars[] = 'post_type';
+
+	 return $vars;
+}
+add_filter( 'query_vars', 'register_search_query_vars');
+
+
+// might conflict with the other pre_query I have here
+function search_pre_get_posts( $query ){
+
+	// global $wp_query;
+	// var_dump($wp_query->query_vars);
+
+
+	// if(	!is_admin() // Only target front end queries
+	// 		&& $query->is_main_query() // Only target the main query
+	// 		&& !$query->is_post_type_archive([ 'projects', 'series' ]) // Don't apply modified query to CPT archives
+	// 		&& is_archive() // Restrict custom query to only archive pages
+	//  ){
+	// 	 $query->set( 'post_type', [ 'post', 'projects', 'series' ] );
+	//  }
+
+	// exit query if user is requesting admin
+	if ( is_admin() ||
+	// or query if it is not main query
+		!$query->is_main_query() )
+		{
+			return;
+		}
+
+	// $post_type = get_query_var('post_type');
+	// if ($post_type) {
+	//
+	// 	echo $post_type;
+	//
+	// 	// $query->set( 'post_type', array('projects'));
+	// }
+
+
+	$courses = get_query_var('courses');
+	if ($courses) {
+		echo 'Courses: ' . $courses .'<br>';
+		$query->set('tax_query', array(
+					array(
+						'taxonomy' => 'courses',
+						'field'    => 'slug',
+						'terms'    => $courses,
+					),
+				)
+			);
+	}
+
+	$date = get_query_var('date');
+	if ($date) {
+		$date = explode(' ', $date);
+		$month = date('n', strtotime($date[0])); //
+		$year = $date[1];
+		echo 'Month: ' . $month . ' Year: ' . $year .'<br>';
+		$query->set('date_query', array(
+				array(
+					'year'  => $year,
+					'month' => $month
+				),
+			));
+	}
+
+	$category = get_query_var('category_name');
+	if ($category) {
+		echo 'category: ' . $category .'<br>';
+		$query->set('category_name', $category);
+	}
+
+}
+add_action( 'pre_get_posts', 'search_pre_get_posts', 999 );

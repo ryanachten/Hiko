@@ -9,7 +9,7 @@
 			<h2 class="subheader"> <?php _e('Showing results for:', 'jointswp'); ?> <em>'<?php esc_attr_e( get_search_query() ); ?>'</em></h2>
 		</header>
 
-		<?php get_sidebar(); ?>
+		<?php get_search_form(); ?>
 
 		<hr>
 
@@ -37,6 +37,6 @@
 	    </div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
-	<p style="clear: both; text-align: center;">Template: archive.php</p>
+	<p style="clear: both; text-align: center;">Template: search.php</p>
 
 <?php get_footer(); ?>
