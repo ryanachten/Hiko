@@ -2,13 +2,6 @@
 
 	<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 
-
-		<!-- Tag archive select -->
-		<!-- <div class=" small-centered columns">
-
-			<input type="text" name="keyword" placeholder="keyword" value="<?php echo get_search_query() ?>">
-		</div> -->
-
 		<!-- Post type archive select -->
 		<div class="filter-mode small-10 medium-3 small-centered columns">
 			<h4>Type</h4>
@@ -109,8 +102,11 @@
 			<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search...', 'jointswp' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'jointswp' ) ?>" />
 		</div>
 
+		<!-- Filter submission -->
+		<div class="">
+				<input type="submit" class="search-submit button" value="<?php echo esc_attr_x( 'Search', 'jointswp' ) ?>" />
+		</div>
 
-		<input type="submit" class="search-submit button" value="<?php echo esc_attr_x( 'Search', 'jointswp' ) ?>" />
 
 	</form>
 </div>

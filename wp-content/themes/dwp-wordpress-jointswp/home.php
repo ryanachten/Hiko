@@ -12,7 +12,7 @@ Blog archive page (as per WP template architecture), not the front-page
 			<?php esc_html_e( the_archive_description('<div class="taxonomy-description">', '</div>'), 'jointswp');?>
 		</header>
 
-		<?php get_sidebar(); ?>
+		<?php get_search_form(); ?>
 
 		<hr>
 

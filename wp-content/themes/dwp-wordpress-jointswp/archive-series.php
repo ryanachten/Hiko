@@ -12,8 +12,7 @@
 		</div>
 		</header>
 
-		<?php get_sidebar(); ?>
-		
+		<?php get_search_form(); ?>
 
 		<div id="inner-content">
 

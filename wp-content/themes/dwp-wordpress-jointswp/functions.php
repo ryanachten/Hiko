@@ -258,25 +258,15 @@ function search_pre_get_posts( $query ){
 	// var_dump($wp_query->query_vars);
 
 
-	// if(	!is_admin() // Only target front end queries
-	// 		&& $query->is_main_query() // Only target the main query
-	// 		&& !$query->is_post_type_archive([ 'projects', 'series' ]) // Don't apply modified query to CPT archives
-	// 		&& is_archive() // Restrict custom query to only archive pages
-	//  ){
-	// 	 $query->set( 'post_type', [ 'post', 'projects', 'series' ] );
-	//  }
-
 	// exit query if user is requesting admin
 	if ( is_admin() ||
-	// or query if it is not main query
+		// or query if it is not main query
 		!$query->is_main_query() )
 		{
 			return;
 		}
 
 		// For general filter results, exclude irrelavant types such as pages
-		// $query->set( 'post_type', [ 'post', 'projects', 'series' ] );
-		// if post type is set in filter
 		// TODO: add extra conditions for type archives
 		$cur_post_type = get_query_var('post_type');
 		if ($cur_post_type) {
@@ -299,7 +289,12 @@ function search_pre_get_posts( $query ){
 					$query->set( 'post_type', [ 'post', 'projects', 'series' ] );
 					break;
 			}
-		}else{
+		// If on the blog archive page, set to only posts
+		}else if (is_home() ) {
+			$query->set( 'post_type', ['post'] );
+		}
+
+		else{
 			$query->set( 'post_type', [ 'post', 'projects', 'series' ] );
 		}
 
