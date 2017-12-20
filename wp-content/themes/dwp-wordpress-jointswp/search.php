@@ -1,23 +1,28 @@
 <!-- Template used for displaying search queries -->
 
+<title><?php
+	// Overrides the default title tag which doesn't work for custom filter
+	echo wp_title('', false) . '&ndash; ' . get_bloginfo( 'name' ); ?>
+</title>
+
 <?php get_header(); ?>
 
 	<div id="content">
 
 		<header class="archive-header medium-10 large-10 small-centered columns" >
-			<h3 class="page-title"><?php _e('Search', 'jointswp'); ?></h3>
-			<h2 class="subheader"> <?php _e('Showing results for:', 'jointswp'); ?> <em>'<?php esc_attr_e( get_search_query() ); ?>'</em></h2>
+			<h2><?php _e('Showing results for:', 'jointswp'); ?></h2>
 		</header>
 
 		<?php get_search_form(); ?>
 
-		<hr>
 
 		<div id="inner-content">
 
 		    <main id="main" class="medium-12 large-12 small-centered columns" role="main">
 
-		    	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		    	<?php if (have_posts()) : ?>
+					<hr>
+					<?php while (have_posts()) : the_post(); ?>
 
 					<!-- To see additional archive styles, visit the /parts directory -->
 					<?php get_template_part( 'parts/loop', 'archive-grid' ); ?>

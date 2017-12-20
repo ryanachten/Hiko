@@ -9,10 +9,10 @@
 				<?php // See if post type search term exists in url
 				$selected_posttype = get_query_var('post_type');?>
 				<option value="" <?php //if postype hasn't been defined in query, it will return an array of 3 types
-				if ( count($selected_posttype) > 1) { echo 'selected'; } ?> >--</option>
-				<option value="post" <?php if ($selected_posttype[0] === "post") { echo "selected"; } ?>>Blog Post</option>
-				<option value="projects" <?php if ($selected_posttype[0] === "projects") { echo "selected"; } ?>>Project</option>
-				<option value="series"<?php if ($selected_posttype[0] === "series") { echo "selected"; } ?>>Series</option>
+				if ( !is_array($selected_posttype) || count($selected_posttype) > 1) { echo 'selected'; } ?> >--</option>
+				<option value="post" <?php if (is_array($selected_posttype) && $selected_posttype[0] === "post") { echo "selected"; } ?>>Blog Post</option>
+				<option value="projects" <?php if (is_array($selected_posttype) && $selected_posttype[0] === "projects") { echo "selected"; } ?>>Project</option>
+				<option value="series"<?php if (is_array($selected_posttype) && $selected_posttype[0] === "series") { echo "selected"; } ?>>Series</option>
 			</select>
 		</div>
 
@@ -98,7 +98,7 @@
 		<!-- Keyword search field  -->
 		<div class="filter-mode small-10 medium-3">
 
-			<h4>Keyword(s)</h4>
+			<h4>Keyword</h4>
 			<input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Search...', 'jointswp' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'jointswp' ) ?>" />
 		</div>
 

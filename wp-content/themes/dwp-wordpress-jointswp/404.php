@@ -14,7 +14,7 @@
 
 					<section class="fourofour-content text-center">
 						<h3 class="subheader"><?php _e( 'Sorry! The page you were looking for was not found, how about searching for it below?', 'jointswp' ); ?></h3>
-						<?php get_sidebar(); ?>
+						<?php get_search_form() ?>
 					</section> <!-- end article section -->
 
 					<!-- Provides latest article thumbnails -->
