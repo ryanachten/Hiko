@@ -274,13 +274,34 @@ function search_pre_get_posts( $query ){
 			return;
 		}
 
-	// $post_type = get_query_var('post_type');
-	// if ($post_type) {
-	//
-	// 	echo $post_type;
-	//
-	// 	// $query->set( 'post_type', array('projects'));
-	// }
+		// For general filter results, exclude irrelavant types such as pages
+		// $query->set( 'post_type', [ 'post', 'projects', 'series' ] );
+		// if post type is set in filter
+		// TODO: add extra conditions for type archives
+		$cur_post_type = get_query_var('post_type');
+		if ($cur_post_type) {
+			echo "post_type" . $cur_post_type;
+			switch ($cur_post_type) {
+				case 'post':
+					echo "type: post";
+					$query->set( 'post_type', ['post'] );
+					break;
+				case 'projects':
+					echo "type: projects";
+					$query->set( 'post_type', ['projects'] );
+					break;
+				case 'series':
+					echo "type: series";
+					$query->set( 'post_type', ['series'] );
+					break;
+
+				default:
+					$query->set( 'post_type', [ 'post', 'projects', 'series' ] );
+					break;
+			}
+		}else{
+			$query->set( 'post_type', [ 'post', 'projects', 'series' ] );
+		}
 
 
 	$courses = get_query_var('courses');
@@ -299,7 +320,7 @@ function search_pre_get_posts( $query ){
 	$date = get_query_var('date');
 	if ($date) {
 		$date = explode(' ', $date);
-		$month = date('n', strtotime($date[0])); //
+		$month = date('n', strtotime($date[0])); //convert month from string to number (no 0's preceding)
 		$year = $date[1];
 		echo 'Month: ' . $month . ' Year: ' . $year .'<br>';
 		$query->set('date_query', array(
