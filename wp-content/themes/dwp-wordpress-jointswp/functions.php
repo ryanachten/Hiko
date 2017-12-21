@@ -263,11 +263,13 @@ function search_pre_get_posts( $query ){
 		// or query if it is not main query
 		!$query->is_main_query() ||
 		// or if it is not an archive page
-		!is_archive() ||
+		// !is_archive() ||
 		// or if it is not an cpt archive page
-		!is_post_type_archive([ 'projects', 'series' ]) ||
+		// !is_post_type_archive([ 'projects', 'series' ]) ||
 		// or if it is not the blog archive
-		!is_home() )
+		// !is_home() ||
+		// or if it is not thr search page being displayed
+		!is_search() )
 		{
 			return;
 		}
@@ -276,7 +278,6 @@ function search_pre_get_posts( $query ){
 		// TODO: add extra conditions for type archives
 		$cur_post_type = get_query_var('post_type');
 		if ($cur_post_type) {
-			// echo "post_type" . $cur_post_type;
 			switch ($cur_post_type) {
 				case 'post':
 					// echo "type: post";
@@ -299,11 +300,9 @@ function search_pre_get_posts( $query ){
 		}else if (is_home() ) {
 			$query->set( 'post_type', ['post'] );
 		}
-
 		else{
 			$query->set( 'post_type', [ 'post', 'projects', 'series' ] );
 		}
-
 
 	$courses = get_query_var('courses');
 	if ($courses) {

@@ -10,9 +10,18 @@
 				$selected_posttype = get_query_var('post_type');?>
 				<option value="" <?php //if postype hasn't been defined in query, it will return an array of 3 types
 				if ( !is_array($selected_posttype) || count($selected_posttype) > 1) { echo 'selected'; } ?> >--</option>
-				<option value="post" <?php if (is_array($selected_posttype) && $selected_posttype[0] === "post") { echo "selected"; } ?>>Blog Post</option>
-				<option value="projects" <?php if (is_array($selected_posttype) && $selected_posttype[0] === "projects") { echo "selected"; } ?>>Project</option>
-				<option value="series"<?php if (is_array($selected_posttype) && $selected_posttype[0] === "series") { echo "selected"; } ?>>Series</option>
+				<option value="post" <?php if (is_array($selected_posttype)
+					&& $selected_posttype[0] === "post"
+					&& count($selected_posttype) === 1)
+					{ echo "selected"; } ?>>Blog Post</option>
+				<option value="projects" <?php if (is_array($selected_posttype)
+					&& $selected_posttype[0] === "projects"
+					&& count($selected_posttype) === 1)
+				{ echo "selected"; } ?>>Project</option>
+				<option value="series"<?php if (is_array($selected_posttype)
+				&& $selected_posttype[0] === "series"
+				&& count($selected_posttype) === 1)
+				{ echo "selected"; } ?>>Series</option>
 			</select>
 		</div>
 
@@ -25,15 +34,29 @@
 				<option value="" <?php //If no course is in the url, set empty a selected
 				if (empty($selected_date)) { echo 'selected';	} ?>>--</option>
 				<?php
-					// wp_get_archives as an array workaround
-					$args = array( 'format' => 'custom',
-				 					'before' => '', 'after' => ',', 'echo'=> false);
-					$dates = wp_get_archives( $args );
-					// splits the string result on the , separator
-					$dates = explode(',', $dates);
+					// Get list of months outside of using date_archive (which can only account for one post type at a time)
+					function echoDate( $start, $end ){
+
+						$current = $start;
+						$ret = array();
+
+						// date iteration method via: https://gist.github.com/daithi-coombes/9779776
+						while( $current<$end ){
+							$next = date('Y-M-01', $current) . "+1 month";
+							$current = strtotime($next);
+							$ret[] = $current;
+						}
+						$ret = array_reverse($ret);
+
+						// convert timestamp into expected date format array
+						foreach ($ret as $key => $value) {
+							$ret[$key] = date('F Y', $value);
+						}
+						return $ret;
+					}
+					$dates = echoDate(strtotime('Nov 2012'), strtotime("-1 month")); //TODO: change this to something more practical before deployment
 
 					foreach ($dates as $date):?>
-						<?php $date = sanitize_text_field($date) ?>
 						<?php //exclude the empty val at the end of array
 						if (!empty($date)) :?>
 							<option <?php if ($date === $selected_date) {
