@@ -245,6 +245,7 @@ add_filter( 'ajax_query_attachments_args', 'show_current_user_attachments', 10, 
 function register_search_query_vars( $vars ){
 	 $vars[] = 'date'; //register 'date' to be accessible via url
 	 $vars[] = 'post_type';
+	 $vars[] = 'course-check';
 
 	 return $vars;
 }
@@ -304,17 +305,17 @@ function search_pre_get_posts( $query ){
 			$query->set( 'post_type', [ 'post', 'projects', 'series' ] );
 		}
 
-	$courses = get_query_var('courses');
+	$courses = get_query_var('course-check');
 	if ($courses) {
 		echo 'Courses: ' . $courses .'<br>';
-		$query->set('tax_query', array(
-					array(
-						'taxonomy' => 'courses',
-						'field'    => 'slug',
-						'terms'    => $courses,
-					),
-				)
-			);
+		$query->set('meta_query', array(
+				array(
+					'key' => 'course_check',
+					'value' => '"'.$courses.'"', //i.e mdia-403
+					'compare' => 'LIKE'
+				),
+			)
+		);
 	}
 
 	$date = get_query_var('date');
@@ -333,9 +334,11 @@ function search_pre_get_posts( $query ){
 
 	$category = get_query_var('category_name');
 	if ($category) {
-		// echo 'category: ' . $category .'<br>';
+		echo 'category: ' . $category .'<br>';
 		$query->set('category_name', $category);
 	}
+
+	// print_r($query);
 
 }
 add_action( 'pre_get_posts', 'search_pre_get_posts', 999 );
