@@ -5,7 +5,7 @@
 		<!-- Post type archive select -->
 		<div class="filter-mode small-10 medium-3 small-centered columns">
 			<h4>Type</h4>
-			<select class="" name="post_type">
+			<select aria-label="type" name="post_type">
 				<?php // See if post type search term exists in url
 				$selected_posttype = get_query_var('post_type');?>
 				<option value="" <?php //if postype hasn't been defined in query, it will return an array of 3 types
@@ -28,7 +28,7 @@
 		<!-- Date archive select -->
 		<div class="filter-mode small-10 medium-3 small-centered columns">
 			<h4>Date</h4>
-			<select class="" name="date">
+			<select aria-label="date" name="date">
 				<?php // See if date search term exists in url
 				$selected_date = sanitize_text_field( get_query_var('date') ); ?>
 				<option value="" <?php //If no course is in the url, set empty a selected
@@ -53,7 +53,7 @@
 		<!-- Course archive select -->
 		<div class="filter-mode small-10 medium-3 small-centered columns">
 			<h4>Course</h4>
-			<select class="" name="course-check">
+			<select aria-label="course" name="course-check">
 				<?php
 				// See if course search term exists in url
 				$selected_course = get_query_var('course-check');?>
@@ -75,7 +75,7 @@
 		<!-- Category archive select -->
 		<div class="filter-mode small-10 medium-3 small-centered columns">
 			<h4>Category</h4>
-			<select class="" name="category_name">
+			<select aria-label="category" name="category_name">
 				<?php // See if cat search term exists in url
 				$selected_cat = sanitize_text_field( get_query_var('category_name') );	?>
 				<option value=""
