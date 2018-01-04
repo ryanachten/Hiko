@@ -28,7 +28,7 @@
 		<?php _e( the_archive_description('<div class="taxonomy-description">', '</div>'), 'jointswp' );?>
 		</header>
 
-		<?php get_sidebar(); ?>
+		<?php //get_search_form(); ?>
 
 		<hr>
 
@@ -53,9 +53,7 @@
 
 			</main> <!-- end #main -->
 
-
-
-	    </div> <!-- end #inner-content -->
+	  </div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
 	<p style="clear: both; text-align: center;">Template: archive.php</p>
