@@ -255,28 +255,35 @@ add_filter( 'query_vars', 'register_search_query_vars');
 // might conflict with the other pre_query I have here
 function search_pre_get_posts( $query ){
 
-	// global $wp_query;
-	// var_dump($wp_query->query_vars);
+	// // exit query if user is requesting admin page
+	// if ( is_admin() ||
+	// 	// or query if it is not main query
+	// 	!$query->is_main_query() ||
+	// 	// or if it is not the search page being displayed
+	// 	!is_search() )
+	// 	{
+	// 		return;
+	// 	}
 
-
-	// exit query if user is requesting admin page
-	if ( is_admin() ||
-		// or query if it is not main query
-		!$query->is_main_query() ||
-		// or if it is not an archive page
-		// !is_archive() ||
-		// or if it is not an cpt archive page
-		// !is_post_type_archive([ 'projects', 'series' ]) ||
-		// or if it is not the blog archive
-		// !is_home() ||
-		// or if it is not thr search page being displayed
-		!is_search() )
+	// If user is not requesting admin page
+	if ( !is_admin() &&
+		// and if it is the main query
+		$query->is_main_query() &&
+		// and if it is the search page being displayed
+		is_search() ||
+		// ...or the tag archive page
+		is_tag() ||
+		// ...or the category archive page
+		is_category() )
 		{
+			// continue with query
+		}
+		else{
+			// Otherwise, exit
 			return;
 		}
 
 		// For general filter results, exclude irrelavant types such as pages
-		// TODO: add extra conditions for type archives
 		$cur_post_type = get_query_var('post_type');
 		if ($cur_post_type) {
 			switch ($cur_post_type) {
