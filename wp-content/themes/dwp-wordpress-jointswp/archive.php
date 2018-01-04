@@ -28,7 +28,7 @@
 		<?php _e( the_archive_description('<div class="taxonomy-description">', '</div>'), 'jointswp' );?>
 		</header>
 
-		<?php //get_search_form(); ?>
+		<?php get_search_form(); ?>
 
 		<hr>
 

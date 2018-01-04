@@ -4,7 +4,6 @@
 
 		<?php dynamic_sidebar( 'topwidgets' ); ?>
 
-	
 
 
 	<?php else : ?>

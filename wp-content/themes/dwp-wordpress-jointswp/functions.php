@@ -342,3 +342,29 @@ function search_pre_get_posts( $query ){
 
 }
 add_action( 'pre_get_posts', 'search_pre_get_posts', 999 );
+
+
+/* Get list of months outside of using date_archive (which can only account for one post type at a time).
+Used in the searchform date filter.
+$start - start date of range
+$end - end date of range
+$ret - return array of date strings */
+function getMonthRange( $start, $end ){
+
+	$current = $start;
+	$ret = array();
+
+	// date iteration method via: https://gist.github.com/daithi-coombes/9779776
+	while( $current<$end ){
+		$next = date('Y-M-01', $current) . "+1 month";
+		$current = strtotime($next);
+		$ret[] = $current;
+	}
+	$ret = array_reverse($ret);
+
+	// convert timestamp into expected date format array
+	foreach ($ret as $key => $value) {
+		$ret[$key] = date('F Y', $value);
+	}
+	return $ret;
+}

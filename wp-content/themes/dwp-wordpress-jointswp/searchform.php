@@ -34,27 +34,9 @@
 				<option value="" <?php //If no course is in the url, set empty a selected
 				if (empty($selected_date)) { echo 'selected';	} ?>>--</option>
 				<?php
-					// Get list of months outside of using date_archive (which can only account for one post type at a time)
-					function echoDate( $start, $end ){
 
-						$current = $start;
-						$ret = array();
-
-						// date iteration method via: https://gist.github.com/daithi-coombes/9779776
-						while( $current<$end ){
-							$next = date('Y-M-01', $current) . "+1 month";
-							$current = strtotime($next);
-							$ret[] = $current;
-						}
-						$ret = array_reverse($ret);
-
-						// convert timestamp into expected date format array
-						foreach ($ret as $key => $value) {
-							$ret[$key] = date('F Y', $value);
-						}
-						return $ret;
-					}
-					$dates = echoDate(strtotime('Nov 2012'), strtotime("-1 month")); //TODO: change this to something more practical before deployment
+					// getMonthRange declared in Functions.php
+					$dates = getMonthRange(strtotime('Nov 2012'), strtotime("-1 month")); //TODO: change this to something more practical before deployment
 
 					foreach ($dates as $date):?>
 						<?php //exclude the empty val at the end of array
