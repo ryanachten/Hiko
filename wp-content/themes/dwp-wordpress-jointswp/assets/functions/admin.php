@@ -83,12 +83,12 @@ function dashboard_blogposts_widget(){
 	echo "<div class='dashboard-post-widget'>";
 
 	echo '<div class="dashboard-post-recentsection">
-	<h4>'. __('Recently Drafted', 'jointswp').'</h4><ul>';
+	<h4>'. __('Drafted', 'jointswp').'</h4><ul>';
 		get_dashboard_recentposts('post', 'draft');
 	echo '</div>';
 
 	echo '<div class="dashboard-post-recentsection">
-	<h4>'. __('Recently Published', 'jointswp').'</h4><ul>';
+	<h4>'. __('Published', 'jointswp').'</h4><ul>';
 		get_dashboard_recentposts('post', 'publish');
 	echo '</div>';
 
@@ -101,17 +101,17 @@ function dashboard_project_widget(){
 	echo "<div class='dashboard-post-widget'>";
 
 	echo '<div class="dashboard-post-recentsection">
-	<h4>'. __('Recently Drafted', 'jointswp').'</h4><ul>';
+	<h4>'. __('Drafted', 'jointswp').'</h4><ul>';
 		get_dashboard_recentposts('projects', 'draft');
 	echo '</div>';
 
 	echo '<div class="dashboard-post-recentsection">
-	<h4>'. __('Recently Submitted', 'jointswp').'</h4><ul>';
+	<h4>'. __('Pending', 'jointswp').'</h4><ul>';
 		get_dashboard_recentposts('projects', 'pending');
 	echo '</div>';
 
 	echo '<div class="dashboard-post-recentsection">
-	<h4>'. __('Recently Published', 'jointswp').'</h4><ul>';
+	<h4>'. __('Published', 'jointswp').'</h4><ul>';
 		get_dashboard_recentposts('projects', 'publish');
 	echo '</div>';
 
@@ -124,17 +124,17 @@ function dashboard_series_widget(){
 	echo "<div class='dashboard-post-widget'>";
 
 	echo '<div class="dashboard-post-recentsection">
-	<h4>'. __('Recently Drafted', 'jointswp').'</h4><ul>';
+	<h4>'. __('Drafted', 'jointswp').'</h4><ul>';
 		get_dashboard_recentposts('series', 'draft');
 	echo '</div>';
 
 	echo '<div class="dashboard-post-recentsection">
-	<h4>'. __('Recently Submitted', 'jointswp').'</h4><ul>';
+	<h4>'. __('Pending', 'jointswp').'</h4><ul>';
 		get_dashboard_recentposts('series', 'pending');
 	echo '</div>';
 
 	echo '<div class="dashboard-post-recentsection">
-	<h4>'. __('Recently Published', 'jointswp').'</h4><ul>';
+	<h4>'. __('Published', 'jointswp').'</h4><ul>';
 		get_dashboard_recentposts('series', 'publish');
 	echo '</div>';
 
