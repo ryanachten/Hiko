@@ -17,9 +17,9 @@
 						<?php get_search_form() ?>
 					</section> <!-- end article section -->
 
+					<h3 class="subheader text-center"><?php _e( '...Or check out one of these articles:', 'jointswp' ); ?></h3>
 					<!-- Provides latest article thumbnails -->
-					<section class="fourofour-content">
-						<h3 class="subheader text-center"><?php _e( '...Or check out one of these articles:', 'jointswp' ); ?></h3>
+					<section class="fourofour-content archive-thumb-container">
 						<?php
 							$args = array(
 								'numberposts' => 4,

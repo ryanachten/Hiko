@@ -115,22 +115,28 @@ function loop_custom_grid( $field, $user_field, $grid_columns ){
 		$posts = get_field( $field );
 	}
 
-	if( $posts ){
+	if ($posts) {
+		foreach ($posts as $post){
+			setup_postdata($post);
+
+			get_template_part( 'parts/loop', 'custom-grid' );
+		}		
+	}
+
+	/*if( $posts ){
 		// Need custom index tracker since this doesn't work
 		// work directly with wp_query->current_index
 		// process below based on loop-archive-grid.php
 		$current_index = 0;
 
-		foreach ($posts as $post){
+
 
 			// Check for the start of new row
 			if( 0 === ( $current_index  ) % $grid_columns ){
 				echo '<div class="row archive-grid" data-equalizer>';
 			}
 
-			setup_postdata($post);
 
-			get_template_part( 'parts/loop', 'custom-grid' );
 
 			// If the next post exceeds the grid_columns or at the end of the posts, close off the row
 			if( 0 === ( $current_index + 1 ) % $grid_columns
@@ -142,6 +148,7 @@ function loop_custom_grid( $field, $user_field, $grid_columns ){
 		}
 		wp_reset_postdata();
 	}
+	*/
 }
 
 

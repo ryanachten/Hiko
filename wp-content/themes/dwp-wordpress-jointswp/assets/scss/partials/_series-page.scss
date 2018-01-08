@@ -15,6 +15,9 @@ body.single-series{
 #series-parts-container{
   margin-top: 40px;
   text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 
   #series-parts-title{
     text-align: center;
@@ -25,5 +28,6 @@ body.single-series{
   }
   .subheader{
     margin-bottom: 20px;
+    width: 100%;
   }
 }

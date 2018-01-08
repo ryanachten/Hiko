@@ -4982,6 +4982,9 @@ div#topwidgets {
   .search-noresults-header h1 {
     text-align: center; }
 
+.search__divider {
+  width: 100%; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Signika", sans-serif; }
 
@@ -5161,19 +5164,26 @@ section.archive-grid.featured-image {
 .entry-content p {
   word-wrap: break-word; }
 
+.archive-thumb-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
 .article-thumbnail {
-  margin-bottom: 20px; }
-  .article-thumbnail article {
-    padding: 10px;
-    box-shadow: 0 0 5px #888888;
-    border-radius: 7px; }
+  margin-bottom: 20px;
+  width: 20%;
+  min-width: 300px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 0 5px #888888;
+  border-radius: 7px; }
 
 .article-body {
   padding: 0 10px; }
 
 .page-navigation {
-  clear: both;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 body.author .author-header {
   padding: 10px;
@@ -5203,14 +5213,18 @@ body.single-series .archive-grid {
 
 #series-parts-container {
   margin-top: 40px;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
   #series-parts-container #series-parts-title {
     text-align: center;
     background-color: #D5FFF9;
     box-shadow: 0px 0px 0px 5px #D5FFF9;
     display: inline-block; }
   #series-parts-container .subheader {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    width: 100%; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Signika", sans-serif; }
@@ -5253,8 +5267,9 @@ blockquote, blockquote p {
 
 /* Splash / featured posts */
 .frontpage-sections {
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   margin-bottom: 20px; }
 
 .frontpage-hero-post {
@@ -5296,7 +5311,8 @@ blockquote, blockquote p {
 
 .frontpage-section-header {
   display: block;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
   .frontpage-section-header a img {
     margin-bottom: 10px; }
   .frontpage-section-header a .section-title {

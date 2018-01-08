@@ -18,10 +18,10 @@
 
 		<div id="inner-content">
 
-		    <main id="main" class="medium-12 large-12 small-centered columns" role="main">
+		    <main id="main" class="medium-12 large-12 small-centered columns archive-thumb-container" role="main">
 
 		    	<?php if (have_posts()) : ?>
-					<hr>
+					<hr class="search__divider">
 					<?php while (have_posts()) : the_post(); ?>
 
 					<!-- To see additional archive styles, visit the /parts directory -->

@@ -2,8 +2,9 @@
 
 // Styling of the front page sections
 .frontpage-sections{
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
@@ -32,6 +33,7 @@
 .frontpage-section-header{
   display: block;
   text-align: center;
+  width: 100%;
 
   a{
     img{

@@ -1,19 +1,5 @@
-<?php
-// Adjust the amount of rows in the grid
-$grid_columns = 4; ?>
-
-<?php if( 0 === ( $wp_query->current_post  )  % $grid_columns ): ?>
-
-    <div class="archive-grid" data-equalizer> <!--Begin Row:-->
-
-<?php endif; ?>
-
 		<!--Item: -->
-		<div class="article-thumbnail large-3 medium-6 columns panel" data-equalizer-watch>
-
-
-
-			<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article">
+			<article id="post-<?php the_ID(); ?>" class="article-thumbnail" role="article">
 
 				<!-- If post has a thumnail, add to section bg-img -->
 				<?php if( has_post_thumbnail() ): ?>
@@ -43,11 +29,3 @@ $grid_columns = 4; ?>
 				</section> <!-- end article section -->
 
 			</article> <!-- end article -->
-
-		</div>
-
-<?php if( 0 === ( $wp_query->current_post + 1 )  % $grid_columns ||  ( $wp_query->current_post + 1 ) ===  $wp_query->post_count ): ?>
-
-   </div>  <!--End Row: -->
-
-<?php endif; ?>

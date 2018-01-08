@@ -64,15 +64,22 @@ section.archive-grid.featured-image{
   word-wrap: break-word;
 }
 
+.archive-thumb-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 .article-thumbnail{
   margin-bottom: 20px;
+  width: 20%;
+  min-width: 300px;
+  margin: 20px;
 
-  // Article thumb container
-  article{
-    padding: 10px;
-    box-shadow: 0 0 5px #888888;
-    border-radius: 7px;
-  }
+  padding: 10px;
+  box-shadow: 0 0 5px #888888;
+  border-radius: 7px;
+
 }
 
 .article-body{
@@ -81,6 +88,6 @@ section.archive-grid.featured-image{
 
 // Pagination links
 .page-navigation{
-  clear: both; //prevent aligning with project thumbs
   text-align: center;
+  width: 100%; //prevent aligning with project thumbs
 }

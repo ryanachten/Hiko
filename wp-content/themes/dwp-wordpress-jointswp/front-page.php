@@ -42,7 +42,7 @@
 		    <main id="main" class="small-12 small-centered columns frontpage-content" role="main">
 
 					<!-- Start of latest blog post section -->
-					<section class="frontpage-sections small-12 columns" data-equalizer>
+					<section class="frontpage-sections small-12" data-equalizer>
 
 						<div class="frontpage-section-header">
 							<!-- Link to blog archive page -->
