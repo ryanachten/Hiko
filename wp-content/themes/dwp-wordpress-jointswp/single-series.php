@@ -23,19 +23,22 @@
 
 				<h3 id="series-parts-title">Series Parts</h3>
 				<h4 class="subheader">Check out the articles which make up this series:</h4>
-				<!-- get posts for series parts and loop through posts
-			 		defined in functions.php-->
-				<?php	loop_custom_grid( 'series_parts', false, 4 ); ?>
+
+				<?php	//get posts for series parts and loop through posts defined in functions.php
+				loop_custom_grid( 'series_parts', false, 4 ); ?>
 
 			</section>
+
+			<?php	// reset post data before retrieving metadata to avoid conflicts
+			wp_reset_postdata(); ?>
 
 	</div> <!-- end #inner-content -->
 
 </div> <!-- end #content -->
 
 
-<!-- Check to see if there are article Citations -->
-<?php $article_citations = get_field('citations', $post->ID );
+<?php //Check to see if there are article Citations
+	$article_citations = get_field('citations', $post->ID );
 	if( $article_citations ):?>
 		<hr>
 		<section id="article-citecontainer" class="small-10 medium-10 large-8 small-centered">
@@ -45,6 +48,7 @@
 
 	 </section>
 <?php endif; ?>
+
 
 <!-- Get metadata links -->
 <?php get_template_part( 'parts/single', 'metalinks' ); ?>
