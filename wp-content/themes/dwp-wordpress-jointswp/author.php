@@ -30,7 +30,7 @@
 
 		<div id="inner-content" class="row">
 
-		    <section id="featured-posts" class="featured-article medium-10 large-10 small-centered columns" role="region">
+		    <section id="featured-posts" class="featured-article archive-thumb-container" role="region">
 
 					<h3 class="text-center">Featured Posts</h3>
 
@@ -40,7 +40,7 @@
 
 				<hr>
 
-				<section id="featured-projects" class="featured-article medium-10 large-10 small-centered columns" role="region">
+				<section id="featured-projects" class="featured-article archive-thumb-container" role="region">
 
 					<h3 class="text-center">Featured Projects</h3>
 
@@ -50,7 +50,7 @@
 
 				<hr>
 
-				<section id="featured-series" class="featured-article medium-10 large-10 small-centered columns" role="region">
+				<section id="featured-series" class="featured-article archive-thumb-container" role="region">
 
 					<h3 class="text-center">Featured Series</h3>
 

@@ -60,9 +60,14 @@
 				<option value="" <?php //If no course is in the url, set empty a selected
 				if (empty($selected_course)) { echo 'selected';	} ?>>--</option>
 				<?php
-				$courses_fieldObj = get_field_object('course_check');
 
+				$courses_fieldObj = get_field_object('course_check');
 				$courses = $courses_fieldObj['choices'];
+
+				// $courses = get_field('course_check', 'options');
+				// print_r($courses);
+
+
 				foreach ($courses as $value => $label):	?>
 					<option value="<?php echo $value; ?>"
 						<?php if ($value === $selected_course){ echo 'selected'; } ?>>

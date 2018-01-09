@@ -18,6 +18,9 @@ body.author{
   //clean up with more elegant solution
   .featured-article{
     box-sizing: content-box;
+    h3{
+      width: 100%;
+    }
   }
   .archive-grid{
       display: flex;

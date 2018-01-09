@@ -5196,6 +5196,8 @@ body.author .author-social-container {
   margin-bottom: 10px; }
 body.author .featured-article {
   box-sizing: content-box; }
+  body.author .featured-article h3 {
+    width: 100%; }
 body.author .archive-grid {
   display: flex;
   justify-content: center;
