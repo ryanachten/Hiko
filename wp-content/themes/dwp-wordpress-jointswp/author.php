@@ -2,9 +2,9 @@
 
 <?php get_header(); ?>
 
-	<div id="content" class="row">
+	<div id="content">
 
-		<header class="author-header archive-header medium-10 large-10 small-centered columns" >
+		<header class="author-header archive-header medium-10 large-10 small-centered columns row" >
 			<?php echo get_avatar( $post->post_author ); ?>
 			<h1 class="author-name">
 				<?php esc_html_e( the_author_meta( 'display_name', $post->post_author ), 'jointswp' ); ?>
@@ -28,7 +28,7 @@
 			</div>
 		</header>
 
-		<div id="inner-content" class="row">
+		<div id="inner-content">
 
 		    <section id="featured-posts" class="featured-article archive-thumb-container" role="region">
 

@@ -1,5 +1,4 @@
-
-body.author{
+.author{
   .author-header{
     padding: 10px;
     padding-top: 20px;
@@ -13,23 +12,10 @@ body.author{
     margin-bottom: 10px;
   }
 
-
-  // HACK: competes with the custom-grid / archive-grid approach
-  //clean up with more elegant solution
   .featured-article{
-    box-sizing: content-box;
+    margin-bottom: 30px;
     h3{
-      width: 100%;
-    }
+        width: 100%;
+      }
   }
-  .archive-grid{
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      width: 100%;
-  }
-  .article-thumbnail{
-    min-width: 300px;
-  }
-
 }
