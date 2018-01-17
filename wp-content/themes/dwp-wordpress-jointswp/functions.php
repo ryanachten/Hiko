@@ -152,46 +152,6 @@ function loop_custom_grid( $field, $user_field, $grid_columns ){
 }
 
 
-/* Courses custom taxonomy registration
-majority of rules outputed via CPT UI with customisations for role permissions
-interfaces with ACF 'Courses' Taxonomy field */
-function register_courses_taxonomy() {
-
-	$labels = array(
-		"name" => __( "Courses", "" ),
-		"singular_name" => __( "Course", "" ),
-		"menu_name" => __( "Courses", "" ),
-	);
-
-	$args = array(
-		"label" => __( "Courses", "" ),
-		"labels" => $labels,
-		"public" => false, //set to false to prevent default search field appearing
-		"publicly_queryable" => true, //set to true to enable search access
-		// Assign custom tax capabilties per role permissions
-		'capabilities' => array(
-      'manage_terms'=> 'manage_categories',
-      'edit_terms'=> 'manage_categories',
-      'delete_terms'=> 'manage_categories',
-      'assign_terms' => 'edit_posts'
-    ),
-		"hierarchical" => false,
-		"label" => "Courses",
-		"show_ui" => false, //need to have this also set to false to prevent showing in UI
-		"show_in_menu" => true,
-		"show_in_nav_menus" => true,
-		"query_var" => true,
-		"rewrite" => array( 'slug' => 'courses', 'with_front' => true,  'hierarchical' => true, ),
-		"show_admin_column" => false,
-		"show_in_rest" => false,
-		"rest_base" => "",
-		"show_in_quick_edit" => false,
-	);
-	register_taxonomy( "courses", array( "post", "projects", "series" ), $args );
-}
-add_action( 'init', 'register_courses_taxonomy' );
-
-
 /* Restrict file types able to uploaded to the media manager
 to only image files */
 function allowed_media_upload_mimetypes( $mimes ){
