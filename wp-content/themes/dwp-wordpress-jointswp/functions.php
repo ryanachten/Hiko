@@ -120,7 +120,7 @@ function loop_custom_grid( $field, $user_field, $grid_columns ){
 			setup_postdata($post);
 
 			get_template_part( 'parts/loop', 'custom-grid' );
-		}		
+		}
 	}
 
 	/*if( $posts ){
@@ -319,18 +319,19 @@ function search_pre_get_posts( $query ){
 			$query->set( 'post_type', [ 'post', 'projects', 'series' ] );
 		}
 
-	$courses = get_query_var('course-check');
-	if ($courses) {
-		echo 'Courses: ' . $courses .'<br>';
-		$query->set('meta_query', array(
-				array(
-					'key' => 'course_check',
-					'value' => '"'.$courses.'"', //i.e mdia-403
-					'compare' => 'LIKE'
-				),
-			)
-		);
-	}
+		$courses = get_query_var('courses_tax');
+		if ($courses) {
+			echo 'Courses: ' . $courses .'<br>';
+			$query->set('tax_query', array(
+						array(
+							'taxonomy' => 'courses_tax',
+							'field'    => 'slug',
+							'terms'    => $courses,
+						),
+					)
+				);
+		}
+
 
 	$date = get_query_var('date');
 	if ($date) {

@@ -51,31 +51,29 @@
 		</div>
 
 		<!-- Course archive select -->
-		<div class="filter-mode small-10 medium-3 small-centered columns">
-			<h4>Course</h4>
-			<select aria-label="course" name="course-check">
-				<?php
-				// See if course search term exists in url
-				$selected_course = get_query_var('course-check');?>
-				<option value="" <?php //If no course is in the url, set empty a selected
-				if (empty($selected_course)) { echo 'selected';	} ?>>--</option>
-				<?php
+		<!-- Course archive select -->
+	<div class="filter-mode small-10 medium-3 small-centered columns">
+		<h4>Course</h4>
+		<select class="" name="courses_tax">
+			<?php
+			// See if course search term exists in url
+			$selected_course = sanitize_text_field( get_query_var('courses_tax') );?>
+			<option value="" <?php //If no course is in the url, set empty a selected
+			if (empty($selected_course)) { echo 'selected';	} ?>>--</option>
+			<?php $args = array( 'taxonomy' => 'courses_tax' );
+			$courses = get_terms( $args );
+			foreach ($courses as $course):
+				$courseSlug = sanitize_text_field($course->slug)?>
+				<option class="" value="<?php echo $courseSlug ?>" name="<?php echo $courseSlug ?>"
+					<?php
+					// if the course slug matches the url var, select this option
+					if ($courseSlug === $selected_course){ echo 'selected'; } ?> >
+					<?php esc_html_e(	$course->name) ?>
+				</option>
 
-				$courses_fieldObj = get_field_object('course_check');
-				$courses = $courses_fieldObj['choices'];
-
-				// $courses = get_field('course_check', 'options');
-				// print_r($courses);
-
-
-				foreach ($courses as $value => $label):	?>
-					<option value="<?php echo $value; ?>"
-						<?php if ($value === $selected_course){ echo 'selected'; } ?>>
-						<?php echo $label; ?>
-					</option>
 				<?php endforeach; ?>
-			</select>
-		</div>
+		</select>
+	</div>
 
 		<!-- Category archive select -->
 		<div class="filter-mode small-10 medium-3 small-centered columns">

@@ -2,7 +2,7 @@
 
 <?php
 $article_categories = get_the_category();
-$article_courses = get_field('course_check');//get_the_terms( $post->ID, 'courses' );
+$article_courses = get_the_terms( $post->ID, 'courses_tax' );
 $article_tags = get_the_tags();
 //Check to see if any Series are associated with Post/Project
 //via ACF Relationship reverse query
@@ -53,18 +53,8 @@ if( $categoriesToShow ||
 		<p class="courses">
 			<?php  //access ACF Taxonomy field
 				 if( !empty( $article_courses ) ): ?>
-					<h6 class="courses-title"><strong>
-						<?php _e('Courses:', 'jointswp');?></strong>
-					</h6>
-					<?php
-					$article_courses = get_field('course_check');
-					$courses_fieldObj = get_field_object('course_check');
-					// print_r($courses_fieldObj);
-					// print_r($article_courses);
-					foreach ($article_courses as $course) {
-						echo $courses_fieldObj['choices'][$course] .'<br>';
-					}
- 				?>
+					<h6 class="courses-title"><strong><?php _e('Courses:', 'jointswp');?></strong></h6>
+					<?php the_terms($post->ID, 'courses_tax', '', '<br>', '' ); ?>
 				<?php endif; ?>
 		</p>
 
