@@ -51,10 +51,9 @@
 		</div>
 
 		<!-- Course archive select -->
-		<!-- Course archive select -->
 	<div class="filter-mode small-10 medium-3 small-centered columns">
 		<h4>Course</h4>
-		<select class="" name="courses_tax">
+		<select aria-label="courses" name="courses_tax">
 			<?php
 			// See if course search term exists in url
 			$selected_course = sanitize_text_field( get_query_var('courses_tax') );?>
