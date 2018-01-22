@@ -40,19 +40,6 @@ h1.entry-title.single-title,
     }
   }
 }
-// Metadata container
-#article-metacontainer{
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0 0 5px #888888;
-  border-radius: 7px;
-  max-width: 800px;
-}
-// Related series articles
-#article-relatedseries-container{
-  text-align: center;
-  margin-top: 30px;
-}
 
 // Citation container
 #article-citecontainer{
@@ -62,23 +49,5 @@ h1.entry-title.single-title,
 
   #article-citetitle{
     text-align: center;
-  }
-}
-
-// Related series thumbnails
-.article-relatedseries-thumb{
-  display: inline-block;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 150px;
-  margin: 10px 10px;
-  padding: 15px;
-  vertical-align: top;
-
-  .article-relatedseries-title{
-    @include highlighter-effect($background-colour, 4px);
-    display: inline;
   }
 }

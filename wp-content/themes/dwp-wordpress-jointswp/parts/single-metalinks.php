@@ -1,6 +1,7 @@
-<!-- Provides metadata links for single posts (blog/project/series) -->
-
 <?php
+
+//Provides metadata links for single posts (blog/project/series)
+
 $article_categories = get_the_category();
 $article_courses = get_the_terms( $post->ID, 'courses_tax' );
 $article_tags = get_the_tags();
@@ -30,37 +31,37 @@ if( $categoriesToShow ||
 		!empty( $series )): ?>
 
 	<!-- Article metadata section -->
-	<section id="article-metacontainer" class="small-10 medium-10 large-8 small-centered">
+	<section id="meta-container" class="small-12 medium-12 large-10 small-centered">
 
-		<h5>Article Information:</h5>
+		<h4>Article Information:</h4>
 
 		<!-- Article tags -->
-		<p class="tags">
-			<?php the_tags('<h6 class="tags-title"><strong>' . __( 'Keywords:', 'jointswp' ) . '</strong></h6> ', ', ', ''); ?>
-		</p>
+		<?php if ( !empty($article_tags )): ?>
+			<section class="meta-section tags small-12 medium-4 large-3">
+				<?php the_tags('<h6 class="tags-title"><strong><i class="fi-pricetag-multiple">&nbsp;&nbsp;</i> ' . __( 'Keywords:', 'jointswp' ) . '</strong></h6> ', ', ', ''); ?>
+			</section>
+		<?php endif; ?>
 
 		<!-- Article categories -->
-		<p class="categories">
-			<?php
-				// Prevent empty strings or simply 'Uncategorised' presenting category section
-				if( !empty( $article_categories ) && $article_categories[0]->name !== 'Uncategorised' ):?>
-					<h6 class="categories-title"><strong><?php _e('Categories:', 'jointswp'); ?></strong></h6>
-					<?php the_category(', '); ?>
-				<?php endif; ?>
-		</p>
+		<?php 	// Prevent empty strings or simply 'Uncategorised' presenting category section
+		if( !empty( $article_categories ) && $article_categories[0]->name !== 'Uncategorised' ):?>
+			<section class="meta-section categories small-12 medium-4 large-3">
+				<h6 class="categories-title"><strong><i class="fi-folder">	&nbsp;&nbsp;</i><?php _e('Categories:', 'jointswp'); ?></strong></h6>
+				<?php the_category(', '); ?>
+			</section>
+		<?php endif; ?>
 
 		<!-- Article courses -->
-		<p class="courses">
-			<?php  //access ACF Taxonomy field
-				 if( !empty( $article_courses ) ): ?>
-					<h6 class="courses-title"><strong><?php _e('Courses:', 'jointswp');?></strong></h6>
-					<?php the_terms($post->ID, 'courses_tax', '', '<br>', '' ); ?>
-				<?php endif; ?>
-		</p>
+		<?php  //access ACF Taxonomy field
+		if( !empty( $article_courses ) ): ?>
+			<section class="meta-section courses small-12 medium-12 large-3">
+				<h6 class="courses-title"><strong><i class="fi-book-bookmark">&nbsp;&nbsp;</i><?php _e('Courses:', 'jointswp');?></strong></h6>
+				<?php the_terms($post->ID, 'courses_tax', '', '<br>', '' ); ?>
+			</section>
+		<?php endif; ?>
 
-		<!-- If the Post/Project is associated with a Series
-		link to the Series -->
-		<?php if( $series ): ?>
+		<?php //If the Post/Project is associated with a Series link to the Series
+		if( $series ): ?>
 
 			<section id="article-relatedseries-container" class="small-10 small-centered">
 

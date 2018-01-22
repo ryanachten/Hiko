@@ -1,0 +1,44 @@
+//Styles for the metadata container used in single posts
+
+// Metadata container
+#meta-container{
+  text-align: center;
+  padding: 20px;
+  // box-shadow: 0 0 5px #888888;
+  background-color: #F4F4F4;
+  // border-radius: 7px;
+  // max-width: 800px;
+}
+
+// Sections of metadata
+.meta-section{
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px;
+  margin: 0 0 20px 0;
+}
+
+
+// Related series articles
+#article-relatedseries-container{
+  text-align: center;
+  margin-top: 10px;
+}
+
+// Related series thumbnails
+.article-relatedseries-thumb{
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 150px;
+  margin: 10px 10px;
+  padding: 15px;
+  vertical-align: top;
+
+  .article-relatedseries-title{
+    @include highlighter-effect($background-colour, 4px);
+    display: inline;
+  }
+}
