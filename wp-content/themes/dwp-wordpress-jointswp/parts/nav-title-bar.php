@@ -4,7 +4,8 @@ $breakpoint = "medium"; ?>
 
 <div class="title-bar" data-responsive-toggle="top-bar-menu" data-hide-for="<?php echo $breakpoint ?>">
   <button class="menu-icon" type="button" data-toggle></button>
-  <div class="title-bar-title"><?php _e( 'Menu', 'jointswp' ); ?></div>
+  <div class="title-bar-title"><a href="<?php echo home_url(); ?>">
+    <span id="top-bar-menu-logotype"><?php bloginfo('name'); ?></span></a></div>
 </div>
 
 <div class="top-bar" id="top-bar-menu">

@@ -10,6 +10,7 @@ Foundation top bar sass vars */
   background-color: $background-colour;
 }
 .menu-icon{
+  float: right;
   &:after,
   &:hover:after{
     background: $primary-colour;

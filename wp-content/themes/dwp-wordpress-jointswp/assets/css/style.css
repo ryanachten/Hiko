@@ -4913,9 +4913,11 @@ Foundation top bar sass vars */
   color: black;
   background-color: white; }
 
-.menu-icon:after, .menu-icon:hover:after {
-  background: black;
-  box-shadow: 0 7px 0 black, 0 14px 0 black; }
+.menu-icon {
+  float: right; }
+  .menu-icon:after, .menu-icon:hover:after {
+    background: black;
+    box-shadow: 0 7px 0 black, 0 14px 0 black; }
 
 /* Top nav link styles */
 #top-bar-menu-logotype {
