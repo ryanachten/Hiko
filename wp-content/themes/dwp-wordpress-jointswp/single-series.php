@@ -3,7 +3,7 @@
 
 <div id="content">
 
-	<div id="inner-content">
+	<div id="inner-content" class="article-content">
 
 		<main id="main" class="small-12 small-centered" role="main">
 

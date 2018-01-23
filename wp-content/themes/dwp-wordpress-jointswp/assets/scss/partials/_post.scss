@@ -1,5 +1,10 @@
 @import "global";
 
+.article-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 // Article grid loop styles
 .article-header section.featured-image{
   @include featured-image(400px, 20px);
@@ -22,6 +27,8 @@ h1.entry-title.single-title,
   // Featured post hero image
   .article-hero-image{
     @include splash-hero-image;
+    margin: 0 auto;
+    min-height: auto;
   }
 
   // Styles for featured post description box
@@ -39,6 +46,11 @@ h1.entry-title.single-title,
       @include highlighter-effect($series-background, 10px);
     }
   }
+}
+
+.article-excerpt{
+  text-align: center;
+  margin-top: 20px;
 }
 
 // Citation container

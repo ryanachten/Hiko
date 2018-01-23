@@ -4,7 +4,7 @@
 
 	<?php //get_sidebar(); ?>
 
-	<div id="inner-content">
+	<div id="inner-content" class="article-content">
 
 		<main id="main" class="small-12 small-centered" role="main">
 
@@ -19,10 +19,6 @@
 		    <?php endif; ?>
 
 		</main> <!-- end #main -->
-
-	</div> <!-- end #inner-content -->
-
-</div> <!-- end #content -->
 
 <!-- Check to see if there are article Citations -->
 <?php $article_citations = get_field('citations', $post->ID );
@@ -46,5 +42,9 @@
 
 <!-- Comments not allowed on frontend of site - uncomment if requirement changes -->
 <?php // comments_template(); ?>
+
+</div> <!-- end #inner-content -->
+
+</div> <!-- end #content -->
 
 <?php get_footer(); ?>

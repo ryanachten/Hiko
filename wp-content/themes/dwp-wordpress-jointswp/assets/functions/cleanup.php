@@ -68,10 +68,16 @@ function joints_gallery_style($css) {
 }
 
 // This removes the annoying […] to a Read More link
+// function joints_excerpt_more($more) {
+// 	global $post;
+// 	// edit here if you like
+// return '<br><a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __('Read', 'jointswp') . get_the_title($post->ID).'">'. __('... Read more', 'jointswp') .'</a>';
+// }
+
 function joints_excerpt_more($more) {
 	global $post;
 	// edit here if you like
-return '<br><a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __('Read', 'jointswp') . get_the_title($post->ID).'">'. __('... Read more', 'jointswp') .'</a>';
+return '...';
 }
 
 //  Stop WordPress from using the sticky class (which conflicts with Foundation), and style WordPress sticky posts using the .wp-sticky class instead

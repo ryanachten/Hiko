@@ -5027,6 +5027,10 @@ blockquote, blockquote p {
   color: #616161; }
 
 /* Splash / featured posts */
+.article-content {
+  max-width: 1200px;
+  margin: 0 auto; }
+
 .article-header section.featured-image {
   background-position: center;
   background-repeat: no-repeat;
@@ -5053,7 +5057,9 @@ h1.entry-title.single-title,
   height: auto;
   min-height: 450px;
   padding: 20px;
-  border-radius: 0px; }
+  border-radius: 0px;
+  margin: 0 auto;
+  min-height: auto; }
 .article-hero-section .article-hero-description {
   text-align: center;
   padding: 20px;
@@ -5078,6 +5084,10 @@ h1.entry-title.single-title,
   .article-hero-section .article-hero-description .entry-title.series-background a {
     background-color: #D5FFF9;
     box-shadow: 0px 0px 0px 10px #D5FFF9; }
+
+.article-excerpt {
+  text-align: center;
+  margin-top: 20px; }
 
 #article-citecontainer {
   padding: 20px;

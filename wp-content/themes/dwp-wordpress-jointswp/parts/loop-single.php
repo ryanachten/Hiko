@@ -3,7 +3,7 @@
 		<!-- Splash image -->
 
 		<!-- Splash description -->
-		<section class="article-hero-image"
+		<section class="article-hero-image small-11 medium-11 large-11"
 		style="background-image: url('<?php
 			echo esc_url( get_the_post_thumbnail_url( $post->ID, 'medium') ); ?>');">
 
@@ -20,13 +20,14 @@
 		      <?php endif; ?>
 							<a href="<?php the_permalink() ?>"><?php esc_html_e( the_title(), 'jointswp' ); ?></a>
 						</h1>
-					<?php esc_html_e( the_excerpt() ); ?>
 			</div>
 		</section>
 	</header>
 
 	<!-- Article content -->
   <section class="entry-content small-11 medium-10 large-8 small-centered" itemprop="articleBody">
+		<h4 class="article-excerpt subheader small-11 small-centered"><?php esc_html_e( get_the_excerpt() ); ?></h4>
+		<hr>
 		<?php _e( the_content() ); ?>
 	</section>
 

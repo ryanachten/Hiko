@@ -31,13 +31,13 @@ if( $categoriesToShow ||
 		!empty( $series )): ?>
 
 	<!-- Article metadata section -->
-	<section id="meta-container" class="small-12 medium-12 large-10 small-centered">
+	<section id="meta-container" class="small-12 medium-12 large-10 small-centered row">
 
 		<h4>Article Information:</h4>
 
 		<!-- Article tags -->
 		<?php if ( !empty($article_tags )): ?>
-			<section class="meta-section tags small-12 medium-4 large-3">
+			<section class="meta-section tags small-12 medium-6 large-4 columns">
 				<?php the_tags('<h6 class="tags-title"><strong><i class="fi-pricetag-multiple">&nbsp;&nbsp;</i> ' . __( 'Keywords:', 'jointswp' ) . '</strong></h6> ', ', ', ''); ?>
 			</section>
 		<?php endif; ?>
@@ -45,7 +45,7 @@ if( $categoriesToShow ||
 		<!-- Article categories -->
 		<?php 	// Prevent empty strings or simply 'Uncategorised' presenting category section
 		if( !empty( $article_categories ) && $article_categories[0]->name !== 'Uncategorised' ):?>
-			<section class="meta-section categories small-12 medium-4 large-3">
+			<section class="meta-section categories small-12 medium-6 large-4 columns">
 				<h6 class="categories-title"><strong><i class="fi-folder">	&nbsp;&nbsp;</i><?php _e('Categories:', 'jointswp'); ?></strong></h6>
 				<?php the_category(', '); ?>
 			</section>
@@ -54,7 +54,7 @@ if( $categoriesToShow ||
 		<!-- Article courses -->
 		<?php  //access ACF Taxonomy field
 		if( !empty( $article_courses ) ): ?>
-			<section class="meta-section courses small-12 medium-12 large-3">
+			<section class="meta-section courses small-12 medium-12 large-4 columns">
 				<h6 class="courses-title"><strong><i class="fi-book-bookmark">&nbsp;&nbsp;</i><?php _e('Courses:', 'jointswp');?></strong></h6>
 				<?php the_terms($post->ID, 'courses_tax', '', '<br>', '' ); ?>
 			</section>
@@ -63,7 +63,7 @@ if( $categoriesToShow ||
 		<?php //If the Post/Project is associated with a Series link to the Series
 		if( $series ): ?>
 
-			<section id="article-relatedseries-container" class="small-10 small-centered">
+			<section id="article-relatedseries-container" class="small-12 columns small-centered">
 
 				<h5><?php _e('Featured in the following', 'jointswp'); ?> <a href="<?php echo get_post_type_archive_link( 'series' ); ?>"><?php _e('Series') ?></a>:</h5>
 
