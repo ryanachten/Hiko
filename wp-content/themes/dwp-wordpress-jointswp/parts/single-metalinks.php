@@ -38,7 +38,7 @@ if( $categoriesToShow ||
 		<!-- Article tags -->
 		<?php if ( !empty($article_tags )): ?>
 			<section class="meta-section tags small-12 medium-6 large-4 columns">
-				<?php the_tags('<h6 class="tags-title"><strong><i class="fi-pricetag-multiple">&nbsp;&nbsp;</i> ' . __( 'Keywords:', 'jointswp' ) . '</strong></h6> ', ', ', ''); ?>
+				<?php the_tags('<h6 class="tags-title"><strong><i class="fi-pricetag-multiple icon-spacing"></i> ' . __( 'Keywords:', 'jointswp' ) . '</strong></h6> ', ', ', ''); ?>
 			</section>
 		<?php endif; ?>
 
@@ -46,7 +46,7 @@ if( $categoriesToShow ||
 		<?php 	// Prevent empty strings or simply 'Uncategorised' presenting category section
 		if( !empty( $article_categories ) && $article_categories[0]->name !== 'Uncategorised' ):?>
 			<section class="meta-section categories small-12 medium-6 large-4 columns">
-				<h6 class="categories-title"><strong><i class="fi-folder">	&nbsp;&nbsp;</i><?php _e('Categories:', 'jointswp'); ?></strong></h6>
+				<h6 class="categories-title"><strong><i class="fi-folder icon-spacing"></i><?php _e('Categories:', 'jointswp'); ?></strong></h6>
 				<?php the_category(', '); ?>
 			</section>
 		<?php endif; ?>
@@ -55,7 +55,7 @@ if( $categoriesToShow ||
 		<?php  //access ACF Taxonomy field
 		if( !empty( $article_courses ) ): ?>
 			<section class="meta-section courses small-12 medium-12 large-4 columns">
-				<h6 class="courses-title"><strong><i class="fi-book-bookmark">&nbsp;&nbsp;</i><?php _e('Courses:', 'jointswp');?></strong></h6>
+				<h6 class="courses-title"><strong><i class="fi-book-bookmark icon-spacing"></i><?php _e('Courses:', 'jointswp');?></strong></h6>
 				<?php the_terms($post->ID, 'courses_tax', '', '<br>', '' ); ?>
 			</section>
 		<?php endif; ?>

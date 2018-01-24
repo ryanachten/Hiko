@@ -4821,6 +4821,9 @@ blockquote, blockquote p {
   color: #616161; }
 
 /* Splash / featured posts */
+.icon-spacing {
+  margin-right: 10px; }
+
 .footer {
   padding: 0 20px; }
 
@@ -4904,6 +4907,9 @@ blockquote, blockquote p {
   color: #616161; }
 
 /* Splash / featured posts */
+.icon-spacing {
+  margin-right: 10px; }
+
 /* Foundation Top-bar overrides
 TODO: this could probably be more elegantly achieved via altering the
 Foundation top bar sass vars */
@@ -5027,6 +5033,9 @@ blockquote, blockquote p {
   color: #616161; }
 
 /* Splash / featured posts */
+.icon-spacing {
+  margin-right: 10px; }
+
 .article-content {
   max-width: 1200px;
   margin: 0 auto; }
@@ -5278,6 +5287,9 @@ blockquote, blockquote p {
   color: #616161; }
 
 /* Splash / featured posts */
+.icon-spacing {
+  margin-right: 10px; }
+
 .frontpage-sections {
   display: flex;
   flex-flow: row wrap;
@@ -5375,6 +5387,9 @@ blockquote, blockquote p {
   color: #616161; }
 
 /* Splash / featured posts */
+.icon-spacing {
+  margin-right: 10px; }
+
 #login-logotype {
   font-family: "Signika", sans-serif;
   font-weight: bold;

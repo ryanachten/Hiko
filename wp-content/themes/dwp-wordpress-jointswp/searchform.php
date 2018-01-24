@@ -109,7 +109,7 @@
 
 		<!-- Filter submission -->
 		<div class="">
-				<input type="submit" class="search-submit button" value="<?php echo esc_attr_x( 'Search', 'jointswp' ) ?>" />
+				<button type="submit" class="search-submit button" value="<?php echo esc_attr_x( 'Search', 'jointswp' ) ?>" ><i class="fi-filter icon-spacing"></i>Filter</button>
 		</div>
 
 
