@@ -5189,10 +5189,36 @@ section.archive-grid.featured-image {
 .entry-content p {
   word-wrap: break-word; }
 
+.article-body {
+  padding: 0 10px; }
+
+.page-navigation {
+  text-align: center;
+  width: 100%; }
+
 .archive-thumb-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center; }
+
+.archive-splash .article-hero-image {
+  height: 100%;
+  width: 100%; }
+
+.archive-splash.article-hero-section {
+  margin: 20px;
+  width: 50%;
+  min-width: 300px; }
+
+.archive-splash-excerpt {
+  margin: 0 auto;
+  text-align: center; }
+  .archive-splash-excerpt p {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    margin: 0; }
 
 .article-thumbnail {
   box-shadow: 0 0 5px #888888;
@@ -5203,13 +5229,6 @@ section.archive-grid.featured-image {
   min-width: 300px;
   padding: 10px;
   width: 20%; }
-
-.article-body {
-  padding: 0 10px; }
-
-.page-navigation {
-  text-align: center;
-  width: 100%; }
 
 .author .author-header {
   padding: 10px;

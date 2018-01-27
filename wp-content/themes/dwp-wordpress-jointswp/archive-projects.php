@@ -18,10 +18,18 @@
 
 		    <main id="main" class="archive-thumb-container" role="main">
 
-		    	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		    	<?php
+					$first_post = true;
+					if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<!-- To see additional archive styles, visit the /parts directory -->
-					<?php get_template_part( 'parts/loop', 'archive-grid' ); ?>
+					<?php if ($first_post){
+						// Apply splash thumbnail template if first post
+						get_template_part( 'parts/loop', 'archive-splash' );
+						$first_post = false;
+					}else{
+						// For test, apply general thumbnail template
+						get_template_part( 'parts/loop', 'archive-grid' );
+					} ?>
 
 				<?php endwhile; ?>
 
