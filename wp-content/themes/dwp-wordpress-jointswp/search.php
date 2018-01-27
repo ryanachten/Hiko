@@ -20,9 +20,7 @@
 
 		    <main id="main" class="medium-12 large-12 small-centered columns archive-thumb-container" role="main">
 
-		    	<?php if (have_posts()) : ?>
-					<hr class="search__divider">
-					<?php while (have_posts()) : the_post(); ?>
+					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 					<!-- To see additional archive styles, visit the /parts directory -->
 					<?php get_template_part( 'parts/loop', 'archive-grid' ); ?>

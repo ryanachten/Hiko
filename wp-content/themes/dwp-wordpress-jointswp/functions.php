@@ -61,18 +61,6 @@ function init_series_markdown_support(){
 }
 
 
-// Change default query to include custom page types
-// add_action( 'pre_get_posts', function( $query )
-// {
-// 		if(	!is_admin() // Only target front end queries
-// 				&& $query->is_main_query() // Only target the main query
-// 				&& !$query->is_post_type_archive([ 'projects', 'series' ]) // Don't apply modified query to CPT archives
-// 				&& is_archive() // Restrict custom query to only archive pages
-// 		 ){
-// 			 $query->set( 'post_type', [ 'post', 'projects', 'series' ] );
-// 		 }
-// });
-
 /* Series Advanced Custom Field Relationship query
 only make available posts / projects owned by the current user */
 function series_relationship_query( $args, $field, $post_id ){
@@ -122,33 +110,6 @@ function loop_custom_grid( $field, $user_field, $grid_columns ){
 			get_template_part( 'parts/loop', 'custom-grid' );
 		}
 	}
-
-	/*if( $posts ){
-		// Need custom index tracker since this doesn't work
-		// work directly with wp_query->current_index
-		// process below based on loop-archive-grid.php
-		$current_index = 0;
-
-
-
-			// Check for the start of new row
-			if( 0 === ( $current_index  ) % $grid_columns ){
-				echo '<div class="row archive-grid" data-equalizer>';
-			}
-
-
-
-			// If the next post exceeds the grid_columns or at the end of the posts, close off the row
-			if( 0 === ( $current_index + 1 ) % $grid_columns
-				||  ( $current_index + 1 ) ===  $grid_columns ){
-						echo '</div>';
-				}
-
-			$current_index++;
-		}
-		wp_reset_postdata();
-	}
-	*/
 }
 
 
@@ -222,16 +183,6 @@ add_filter( 'query_vars', 'register_search_query_vars');
 // might conflict with the other pre_query I have here
 function search_pre_get_posts( $query ){
 
-	// // exit query if user is requesting admin page
-	// if ( is_admin() ||
-	// 	// or query if it is not main query
-	// 	!$query->is_main_query() ||
-	// 	// or if it is not the search page being displayed
-	// 	!is_search() )
-	// 	{
-	// 		return;
-	// 	}
-
 	// If user is not requesting admin page
 	if ( !is_admin() &&
 		// and if it is the main query
@@ -281,7 +232,7 @@ function search_pre_get_posts( $query ){
 
 		$courses = get_query_var('courses_tax');
 		if ($courses) {
-			echo 'Courses: ' . $courses .'<br>';
+			// echo 'Courses: ' . $courses .'<br>';
 			$query->set('tax_query', array(
 						array(
 							'taxonomy' => 'courses_tax',
@@ -309,7 +260,7 @@ function search_pre_get_posts( $query ){
 
 	$category = get_query_var('category_name');
 	if ($category) {
-		echo 'category: ' . $category .'<br>';
+		// echo 'category: ' . $category .'<br>';
 		$query->set('category_name', $category);
 	}
 
