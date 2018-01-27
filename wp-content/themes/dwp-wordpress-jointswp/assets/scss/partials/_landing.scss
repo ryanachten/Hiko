@@ -27,6 +27,13 @@
     .series-title a{
       @include highlighter-effect( $series-background, 10px);
     }
+
+    .fontpage-splash-excerpt{
+      background-color: white;
+      display: inline-block;
+      font-family: $body-font;
+      padding: 5px;
+    }
   }
 
 // Header for each thumbnail section

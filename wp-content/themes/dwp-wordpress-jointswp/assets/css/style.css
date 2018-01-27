@@ -5351,6 +5351,11 @@ blockquote, blockquote p {
   .frontpage-hero-description .series-title a {
     background-color: #D5FFF9;
     box-shadow: 0px 0px 0px 10px #D5FFF9; }
+  .frontpage-hero-description .fontpage-splash-excerpt {
+    background-color: white;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    padding: 5px; }
 
 .frontpage-section-header {
   display: block;

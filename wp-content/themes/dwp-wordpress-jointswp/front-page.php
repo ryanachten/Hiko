@@ -26,7 +26,7 @@
 									<?php esc_html_e(	the_title(), 'jointswp' ); ?>
 								</a>
 							</h1>
-							<?php esc_html_e( the_excerpt(), 'jointswp' ); ?>
+							<h5 class="fontpage-splash-excerpt subheader"><?php esc_html_e( get_the_excerpt(), 'jointswp' ); ?></h5>
 					</div>
 
 				</section>
