@@ -9,7 +9,7 @@
 
 				<section class="frontpage-hero-post"
 				style="background-image: url('<?php
-					echo esc_url( get_the_post_thumbnail_url( $post->ID, 'medium') ); ?>');">
+					echo esc_url( get_the_post_thumbnail_url( $post->ID, 'full') ); ?>');">
 
 					<div class="frontpage-hero-description small-centered small-11 large-11 row">
 							<?php get_template_part( 'parts/content', 'byline' ); ?>
