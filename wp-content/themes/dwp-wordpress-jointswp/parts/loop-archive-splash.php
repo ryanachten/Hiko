@@ -4,7 +4,7 @@
 	<!-- Splash description -->
 	<section class="article-hero-image small-11 medium-11 large-11"
 	style="background-image: url('<?php
-		echo esc_url( get_the_post_thumbnail_url( $post->ID, 'medium') ); ?>');">
+		echo esc_url( get_the_post_thumbnail_url( $post->ID, 'full') ); ?>');">
 
 		<div class="article-hero-description small-centered small-11 large-11 row">
 				<?php get_template_part( 'parts/content', 'byline' ); ?>
