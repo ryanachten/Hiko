@@ -18,7 +18,7 @@ function joints_top_nav() {
         'fallback_cb' => false,                         // Fallback function (see below)
         'walker' => new Topbar_Menu_Walker()
     ));
-} 
+}
 
 // Big thanks to Brett Mason (https://github.com/brettsmason) for the awesome walker
 class Topbar_Menu_Walker extends Walker_Nav_Menu {
@@ -39,7 +39,7 @@ function joints_off_canvas_nav() {
         'fallback_cb' => false,                         // Fallback function (see below)
         'walker' => new Off_Canvas_Menu_Walker()
     ));
-} 
+}
 
 class Off_Canvas_Menu_Walker extends Walker_Nav_Menu {
     function start_lvl(&$output, $depth = 0, $args = Array() ) {
@@ -86,3 +86,16 @@ function required_active_nav_class( $classes, $item ) {
     return $classes;
 }
 add_filter( 'nav_menu_css_class', 'required_active_nav_class', 10, 2 );
+
+
+add_filter( 'wp_nav_menu_items', 'add_loginout_topbar_link', 10, 2 );
+function add_loginout_topbar_link( $items, $args ) {
+   if ($args->theme_location == 'main-nav') {
+      if (is_user_logged_in()) {
+         $items .= '<li class="menu-item login-link"><a href="'. wp_logout_url() .'">'. __("Log Out") .'</a></li>';
+      } else {
+         $items .= '<li class="menu-item login-link"><a href="'. wp_login_url(get_permalink()) .'">'. __("Log In") .'</a></li>';
+      }
+   }
+   return $items;
+}

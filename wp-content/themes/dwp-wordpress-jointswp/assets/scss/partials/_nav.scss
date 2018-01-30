@@ -31,6 +31,18 @@ Foundation top bar sass vars */
     @include button-link;
   }
 }
+// Login top nav link
+.login-link{
+  padding: 0 16px;
+
+  a{
+    color: $background-colour;
+    background-color: $primary-colour;
+    font-size: 0.8rem;
+    padding: 8px 10px;
+    display: inline-block !important;
+  }
+}
 
 .header{
   margin-bottom: 0px;

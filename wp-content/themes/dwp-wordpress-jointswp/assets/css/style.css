@@ -4945,6 +4945,15 @@ Foundation top bar sass vars */
   background-color: #616161;
   border-radius: 1px; }
 
+.login-link {
+  padding: 0 16px; }
+  .login-link a {
+    color: white;
+    background-color: black;
+    font-size: 0.8rem;
+    padding: 8px 10px;
+    display: inline-block !important; }
+
 .header {
   margin-bottom: 0px; }
 
