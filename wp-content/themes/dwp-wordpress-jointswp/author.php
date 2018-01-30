@@ -10,10 +10,6 @@
 				<?php esc_html_e( the_author_meta( 'display_name', $post->post_author ), 'jointswp' ); ?>
 			</h1>
 			<div class="author-social-container">
-					<a class="author-social-icon" href="mailto:<?php
-					esc_url( the_author_meta( 'user_email', $post->post_author ) ); ?>">
-						<i class="fi-mail"></i>
-					</a>
 					<?php
 						$author_web = esc_url( get_the_author_meta( 'url', $post->post_author ) );
 						if( !empty($author_web) ): ?>

@@ -88,6 +88,7 @@ function required_active_nav_class( $classes, $item ) {
 add_filter( 'nav_menu_css_class', 'required_active_nav_class', 10, 2 );
 
 
+// Add login / logout button to topbar navigation
 add_filter( 'wp_nav_menu_items', 'add_loginout_topbar_link', 10, 2 );
 function add_loginout_topbar_link( $items, $args ) {
    if ($args->theme_location == 'main-nav') {
