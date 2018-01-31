@@ -317,9 +317,28 @@ add_filter( 'get_user_option_meta-box-order_projects', 'reorder_post_metaboxes' 
 add_filter( 'get_user_option_meta-box-order_series', 'reorder_post_metaboxes' );
 
 
+/************* ALL POSTS (aka Edit.php + cpt's) *******************/
+
 /* Remove Comments columns from All Posts view (edit.php) */
 function remove_commments_posts_column( $columns ) {
 	unset($columns['comments']);
 	return $columns;
 }
 add_action( 'manage_posts_columns' , 'remove_commments_posts_column', 10, 2 );
+
+
+/* Restrict Authors to only be able to see posts they own or co-own */
+function restrict_author_allpost_visibility($query) {
+
+    if( !$query->is_admin )
+        return $query;
+
+    if( !current_user_can( 'edit_others_posts' ) ) {
+			$current_user = wp_get_current_user();
+
+			$query->is_author = true;
+			$query->set('author_name', $current_user->user_nicename);
+    }
+    return $query;
+}
+add_filter('pre_get_posts', 'restrict_author_allpost_visibility');
