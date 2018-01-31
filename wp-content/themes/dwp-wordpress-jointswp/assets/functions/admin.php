@@ -315,3 +315,11 @@ function reorder_post_metaboxes( $order ){
 add_filter( 'get_user_option_meta-box-order_post', 'reorder_post_metaboxes' );
 add_filter( 'get_user_option_meta-box-order_projects', 'reorder_post_metaboxes' );
 add_filter( 'get_user_option_meta-box-order_series', 'reorder_post_metaboxes' );
+
+
+/* Remove Comments columns from All Posts view (edit.php) */
+function remove_commments_posts_column( $columns ) {
+	unset($columns['comments']);
+	return $columns;
+}
+add_action( 'manage_posts_columns' , 'remove_commments_posts_column', 10, 2 );
