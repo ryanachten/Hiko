@@ -307,7 +307,7 @@ function reorder_post_metaboxes( $order ){
 						array(
 							'submitdiv', // Publish status box
 							'postimagediv', // Featured image
-							'acf_1384', // Courses
+							'courses_taxdiv', // Courses
 						)
 				)
     );
