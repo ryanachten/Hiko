@@ -36,6 +36,17 @@ function dashboard_class_check(){
 }
 add_action( 'admin_head', 'dashboard_class_check' );
 
+
+/* Hides update notices for users other than admin */
+function hide_update_notice() {
+    // $current_user = wp_get_current_user();
+    if (!current_user_can('manage_options')) {
+        remove_action( 'admin_notices', 'update_nag', 3 );
+    }
+}
+add_action( 'admin_notices', 'hide_update_notice', 1 );
+
+
 /************* DASHBOARD WIDGETS *****************/
 // Disable default dashboard widgets
 function remove_dashboard_widgets() {
