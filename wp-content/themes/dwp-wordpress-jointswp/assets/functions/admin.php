@@ -38,13 +38,21 @@ add_action( 'admin_head', 'dashboard_class_check' );
 
 
 /* Hides update notices for users other than admin */
-function hide_update_notice() {
-    // $current_user = wp_get_current_user();
+function hide_update_version_notice() {
     if (!current_user_can('manage_options')) {
         remove_action( 'admin_notices', 'update_nag', 3 );
     }
 }
-add_action( 'admin_notices', 'hide_update_notice', 1 );
+add_action( 'admin_notices', 'hide_update_version_notice', 1 );
+
+
+/* Hides admin footer 'thank you for creating in WP' notice */
+function remove_thankyou_footer()
+{
+    add_filter( 'admin_footer_text',    '__return_false', 11 );
+    add_filter( 'update_footer',        '__return_false', 11 );
+}
+add_action( 'admin_init', 'remove_thankyou_footer' );
 
 
 /************* DASHBOARD WIDGETS *****************/
