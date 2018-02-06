@@ -93,7 +93,18 @@ add_filter( 'wp_nav_menu_items', 'add_loginout_topbar_link', 10, 2 );
 function add_loginout_topbar_link( $items, $args ) {
    if ($args->theme_location == 'main-nav') {
       if (is_user_logged_in()) {
+				// Dashboard link
+				$items .= '<li class="menu-item"><a href="'. admin_url() .'"><i class="fi-home admin-icon"></i></a></li>';
+
+				// Create post link
+				$items .= '<li class="menu-item"><a href="'. admin_url('post-new.php') .'"><i class="fi-pencil admin-icon"></i></a></li>';
+
+				// Profile link
+				$items .= '<li class="menu-item"><a href="'. admin_url('profile.php') .'"><i class="fi-torso admin-icon"></i></a></li>';
+
+				// Log out button
          $items .= '<li class="menu-item login-link"><a href="'. wp_logout_url() .'">'. __("Log Out") .'</a></li>';
+
       } else {
          $items .= '<li class="menu-item login-link"><a href="'. wp_login_url(get_permalink()) .'">'. __("Log In") .'</a></li>';
       }

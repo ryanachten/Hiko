@@ -4945,6 +4945,9 @@ Foundation top bar sass vars */
   background-color: #616161;
   border-radius: 1px; }
 
+.admin-icon {
+  font-size: 1.3rem; }
+
 .login-link {
   padding: 0 16px; }
   .login-link a {

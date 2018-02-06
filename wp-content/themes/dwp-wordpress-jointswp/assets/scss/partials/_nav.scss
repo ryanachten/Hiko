@@ -31,10 +31,15 @@ Foundation top bar sass vars */
     @include button-link;
   }
 }
+
+// Admin icons
+.admin-icon {
+  font-size: 1.3rem;
+}
+
 // Login top nav link
 .login-link{
   padding: 0 16px;
-
   a{
     color: $background-colour;
     background-color: $primary-colour;
