@@ -330,9 +330,24 @@ add_action( 'manage_posts_columns' , 'remove_commments_posts_column', 10, 2 );
 /* Restrict Authors to only be able to see posts they own or co-own */
 function restrict_author_allpost_visibility($query) {
 
+		// Don't run if not on an admin screen
     if( !$query->is_admin )
         return $query;
 
+		$current_screen = get_current_screen();
+		// Don't run following condition if screen obj is empty - causes errors
+		if (empty($current_screen)) {
+			return $query;
+		}
+		// Check to see if on one of the 'All Posts' pages
+		if ($current_screen->id !== 'edit-post' &&
+				$current_screen->id !== 'edit-projects' &&
+				$current_screen->id !== 'edit-series' )
+			{
+				return $query;
+			}
+
+		// Only apply to Author profiles
     if( !current_user_can( 'edit_others_posts' ) ) {
 			$current_user = wp_get_current_user();
 
