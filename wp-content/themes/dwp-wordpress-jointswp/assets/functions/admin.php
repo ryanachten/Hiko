@@ -107,6 +107,11 @@ function dashboard_blogposts_widget(){
 	echo '</div>';
 
 	echo '<div class="dashboard-post-recentsection">
+	<h4>'. __('Pending', 'jointswp').'</h4><ul>';
+		get_dashboard_recentposts('post', 'pending');
+	echo '</div>';
+
+	echo '<div class="dashboard-post-recentsection">
 	<h4>'. __('Published', 'jointswp').'</h4><ul>';
 		get_dashboard_recentposts('post', 'publish');
 	echo '</div>';

@@ -30,4 +30,12 @@ jQuery(document).ready(function(){
     }
   }
   addDashboardWidgetLogos();
+
+  // Hide extra dashboard postboxes
+  function hideDashboardPostboxes(){
+    jQuery('#postbox-container-2').remove();
+    jQuery('#postbox-container-3').remove();
+    jQuery('#postbox-container-4').remove();
+  }
+  hideDashboardPostboxes();
 });
