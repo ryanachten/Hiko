@@ -33,9 +33,12 @@ jQuery(document).ready(function(){
 
   // Hide extra dashboard postboxes
   function hideDashboardPostboxes(){
-    jQuery('#postbox-container-2').remove();
-    jQuery('#postbox-container-3').remove();
-    jQuery('#postbox-container-4').remove();
+    var dashboardContainer = jQuery('#dashboard-widgets');
+    if(dashboardContainer.length > 0){
+      jQuery('#postbox-container-2').remove();
+      jQuery('#postbox-container-3').remove();
+      jQuery('#postbox-container-4').remove();
+    }
   }
   hideDashboardPostboxes();
 });
