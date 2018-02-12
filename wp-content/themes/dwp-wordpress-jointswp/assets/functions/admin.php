@@ -279,6 +279,25 @@ add_action( 'admin_head-user-edit.php', 'cor_profile_subject_start' );
 add_action( 'admin_footer-user-edit.php', 'cor_profile_subject_end' );
 
 
+/* Add Portfolio Header and User Profile link to Profiile page */
+add_action( 'show_user_profile', 'add_view_profile_link' );
+add_action( 'edit_user_profile', 'add_view_profile_link' );
+
+function add_view_profile_link( $user ) { ?>
+	<hr>
+	<h3><?php _e("Portfolio", 'jointswp');	?></h3>
+	<table class="form-table">
+		<tr>
+	    <th><?php _e("View Portfolio", 'jointswp');	?></th>
+			<td><a target="_blank" href="
+					<?php echo esc_url(get_author_posts_url( get_current_user_id() )); ?>">
+					View at this link
+			</a></td>
+		</tr>
+	</table>
+<?php }
+
+
 /************* POSTS *******************/
 
 /* Removes unnecessary metaboxes from post scenes */
