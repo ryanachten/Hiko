@@ -27,7 +27,6 @@ function dashboard_class_check(){
 	if($current_screen->id == 'dashboard'){
 		echo '<script>
 						jQuery(document).ready(function(){
-							console.log("testing");
 							jQuery(document.body).addClass("dashboard");
 						});
 
