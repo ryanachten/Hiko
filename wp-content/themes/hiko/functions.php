@@ -5,6 +5,9 @@ require_once(get_template_directory().'/assets/functions/theme-support.php');
 // WP Head and other cleanup functions
 require_once(get_template_directory().'/assets/functions/cleanup.php');
 
+// Register Advanced Custom Field plugin fields and settings
+require_once(get_template_directory().'/assets/functions/register_advanced_custom_fields.php');
+
 // Register scripts and stylesheets
 require_once(get_template_directory().'/assets/functions/enqueue-scripts.php');
 
@@ -38,6 +41,8 @@ require_once(get_template_directory().'/assets/functions/editor-styles.php');
 
 // Register custom post types and taxonomies
 require_once(get_template_directory().'/assets/functions/register-custom-types-taxes.php');
+
+
 
 // Customize the WordPress login menu
 require_once(get_template_directory().'/assets/functions/login.php');
