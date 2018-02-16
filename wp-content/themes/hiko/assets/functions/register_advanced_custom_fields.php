@@ -6,7 +6,7 @@ for GUI settings assignment */
 function register_acf_custom_fields(){
 
   // Hide ACF interface
-  // define('ACF_LITE', true);
+  define('ACF_LITE', true);
 
   if(function_exists("register_field_group"))
   {
