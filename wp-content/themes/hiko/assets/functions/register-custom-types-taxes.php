@@ -14,7 +14,7 @@ function register_project_series_types() {
 	$args = array(
 		"label" => __( "Projects", "" ),
 		"labels" => $labels,
-		"description" => "Digital writing projects *update with proper content*",
+		"description" => "Individual and collaborative digital works",
 		"public" => true,
 		"publicly_queryable" => true,
 		"show_ui" => true,
@@ -47,7 +47,7 @@ function register_project_series_types() {
 	$args = array(
 		"label" => __( "Series", "" ),
 		"labels" => $labels,
-		"description" => "Digital projects comprised of multiple parts",
+		"description" => "Digital works comprised of multiple parts",
 		"public" => true,
 		"publicly_queryable" => true,
 		"show_ui" => true,
