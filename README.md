@@ -49,7 +49,7 @@ Any articles an editor feels is ready to become publicly accessible will be publ
 ![Hiko mobile layouts](https://github.com/ryanachten/Hiko/blob/master/wp-content/themes/hiko/assets/images/wiki/HeroImages/Hiko_HeroImage_MobilePages.jpg)
 
 ## Credits:
-Design and development: Ryan Achten
+Design and development: Ryan Achten\
 Supervision:
 * Dr Cherie Lacey
 * Dr Sydney Shep
