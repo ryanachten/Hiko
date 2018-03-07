@@ -1,8 +1,17 @@
 # Hiko
 Hiko is a digital writing and publishing platform developed for Victoria University of Wellington. Hiko was produced out of a need to allow students to create individual and collaborative texts that were interactive, co-creative and media-rich, without requiring specialist coding skills.
 
+### Quicklinks
+* [Developer Guides](https://github.com/ryanachten/Hiko/wiki/Developer-Guides)
+* [Author Tutorial](https://github.com/ryanachten/Hiko/wiki/Author-Tutorial)
+* [Editor Manual](https://github.com/ryanachten/Hiko/wiki/Editor-Manual)
+* [Admin Manual](https://github.com/ryanachten/Hiko/wiki/Admin-Manual)
+* [Writing Resources](https://github.com/ryanachten/Hiko/wiki/Writing-Resources)
+* [Media Resources](https://github.com/ryanachten/Hiko/wiki/Media-Resources)
+
 ![Hiko home page](https://github.com/ryanachten/Hiko/blob/master/wp-content/themes/hiko/assets/images/wiki/HeroImages/Hiko_HeroImage_Header.jpg)
 
+## Background
 The initial system requirements for Hiko included the following:
 * Creation of born-digital texts using rich text, Markdown or HTML
 * Creation of individual projects
