@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.9.4" created="2018-02-17 23:00" -->
+<!-- generator="WordPress/4.9.4" created="2018-03-13 20:23" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Hiko</title>
 	<link>http://localhost:8888/hiko-devtut</link>
 	<description>Digital Publishing Platform</description>
-	<pubDate>Sat, 17 Feb 2018 23:00:39 +0000</pubDate>
+	<pubDate>Tue, 13 Mar 2018 20:23:41 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://localhost:8888/hiko-devtut</wp:base_site_url>
@@ -97,64 +97,6 @@
 	<generator>https://wordpress.org/?v=4.9.4</generator>
 
 	<item>
-		<title>Amazon Store</title>
-		<link>http://localhost:8888/hiko-devtut/amazon-store__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 22:48:51 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1062</guid>
-		<description></description>
-		<content:encoded><![CDATA[<iframe src="http://astore.amazon.com/iogiea09-20" height="4000" width="100%" frameborder="0" scrolling="no"></iframe>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1062</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 17:48:51]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 22:48:51]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[amazon-store__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[standard_seo_post_meta_description]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517345035]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[amazon-store]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>Home</title>
 		<link>http://localhost:8888/hiko-devtut/home/</link>
 		<pubDate>Fri, 15 Mar 2013 22:56:11 +0000</pubDate>
@@ -183,10 +125,6 @@ Des Moines try PR rubber cement paidContent newspaper strike shoot a photo Dayto
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
@@ -208,7 +146,7 @@ Des Moines try PR rubber cement paidContent newspaper strike shoot a photo Dayto
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[landing_featured_article]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:4:"1592";}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:4:"1686";}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_landing_featured_article]]></wp:meta_key>
@@ -258,495 +196,12 @@ A few things to check once this is done.
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Page Comments Disabled</title>
-		<link>http://localhost:8888/hiko-devtut/page-comments-disabled__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:15:14 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1075</guid>
-		<description></description>
-		<content:encoded><![CDATA[This page has its comments, pingbacks, and trackbacks disabled.
-
-There should be no comment reply form or any pingbacks and trackbacks listed.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1075</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:15:14]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:15:14]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[page-comments-disabled__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517345077]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[page-comments-disabled]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Page Comments</title>
-		<link>http://localhost:8888/hiko-devtut/page-comments__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:16:08 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1077</guid>
-		<description></description>
-		<content:encoded><![CDATA[This post has its comments, pingbacks, and trackbacks enabled.
-
-If your theme support comments on pages, then they should show up below.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1077</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:16:08]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:16:08]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[page-comments__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517345077]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[page-comments]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_comments_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:2;s:1:"1";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:comment>
-			<wp:comment_id>2</wp:comment_id>
-			<wp:comment_author><![CDATA[Chris Ames]]></wp:comment_author>
-			<wp:comment_author_email><![CDATA[yo@chrisam.es]]></wp:comment_author_email>
-			<wp:comment_author_url>http://chrisam.es/</wp:comment_author_url>
-			<wp:comment_author_IP><![CDATA[24.126.245.62]]></wp:comment_author_IP>
-			<wp:comment_date><![CDATA[2013-03-15 18:16:59]]></wp:comment_date>
-			<wp:comment_date_gmt><![CDATA[2013-03-15 23:16:59]]></wp:comment_date_gmt>
-			<wp:comment_content><![CDATA[Ello! Pretend you're reading this comment with an English accent.]]></wp:comment_content>
-			<wp:comment_approved><![CDATA[post-trashed]]></wp:comment_approved>
-			<wp:comment_type><![CDATA[]]></wp:comment_type>
-			<wp:comment_parent>0</wp:comment_parent>
-			<wp:comment_user_id>0</wp:comment_user_id>
-		</wp:comment>
-	</item>
-	<item>
-		<title>Page Image Alignment</title>
-		<link>http://localhost:8888/hiko-devtut/page-image-alignment__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:19:23 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1080</guid>
-		<description></description>
-		<content:encoded><![CDATA[Welcome to image alignment! The best way to demonstrate the ebb and flow of the various image positioning options is to nestle them snuggly among an ocean of words. Grab a paddle and let's get started.
-
-On the topic of alignment, it should be noted that users can choose from the options of <em>None</em>, <em>Left</em>, <em>Right, </em>and <em>Center</em>. In addition, they also get the options of <em>Thumbnail</em>, <em>Medium</em>, <em>Large</em> &amp; <em>Fullsize</em>.
-
-<p style="text-align: center;"><img class="size-full wp-image-906 aligncenter" title="Image Alignment 580x300" alt="Image Alignment 580x300" src="http://localhost:8888/dwp-wordpress/wp-content/uploads/2013/03/image-alignment-580x300.jpg" width="580" height="300" /></p>
-
-The image above happens to be <em><strong>centered</strong></em>.
-
-<strong><img class="size-full wp-image-904 alignleft" title="Image Alignment 150x150" alt="Image Alignment 150x150" src="http://localhost:8888/dwp-wordpress/wp-content/uploads/2013/03/image-alignment-150x150.jpg" width="150" height="150" /></strong>The rest of this paragraph is filler for the sake of seeing the text wrap around the 150x150 image, which is <em><strong>left aligned</strong></em>. <strong></strong>
-
-As you can see the should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we'll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it's thang. Mission accomplished!
-
-And now for a <em><strong>massively large image</strong></em>. It also has <em><strong>no alignment</strong></em>.
-
-<img class="alignnone  wp-image-907" title="Image Alignment 1200x400" alt="Image Alignment 1200x400" src="http://localhost:8888/dwp-wordpress/wp-content/uploads/2013/03/image-alignment-1200x4002.jpg" width="1200" height="400" />
-
-The image above, though 1200px wide, should not overflow the content area. It should remain contained with no visible disruption to the flow of content.
-
-<img class="size-full wp-image-905 alignright" title="Image Alignment 300x200" alt="Image Alignment 300x200" src="http://localhost:8888/dwp-wordpress/wp-content/uploads/2013/03/image-alignment-300x200.jpg" width="300" height="200" />
-
-And now we're going to shift things to the <em><strong>right align</strong></em>. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there... Hey guy! Way to rock that right side. I don't care what the left aligned image says, you look great. Don't let anyone else tell you differently.
-
-In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah... Just like that. It never felt so good to be right.
-
-And just when you thought we were done, we're going to do them all over again with captions!
-
-[caption id="attachment_906" align="aligncenter" width="580"]<img class="size-full wp-image-906  " title="Image Alignment 580x300" alt="Image Alignment 580x300" src="http://localhost:8888/dwp-wordpress/wp-content/uploads/2013/03/image-alignment-580x300.jpg" width="580" height="300" /> Look at 580x300 getting some <a title="Image Settings" href="http://en.support.wordpress.com/images/image-settings/">caption</a> love.[/caption]
-
-The image above happens to be <em><strong>centered</strong></em>. The caption also has a link in it, just to see if it does anything funky.
-
-[caption id="attachment_904" align="alignleft" width="150"]<img class="size-full wp-image-904  " title="Image Alignment 150x150" alt="Image Alignment 150x150" src="http://localhost:8888/dwp-wordpress/wp-content/uploads/2013/03/image-alignment-150x150.jpg" width="150" height="150" /> Itty-bitty caption.[/caption]
-
-<strong></strong>The rest of this paragraph is filler for the sake of seeing the text wrap around the 150x150 image, which is <em><strong>left aligned</strong></em>. <strong></strong>
-
-As you can see the should be some space above, below, and to the right of the image. The text should not be creeping on the image. Creeping is just not right. Images need breathing room too. Let them speak like you words. Let them do their jobs without any hassle from the text. In about one more sentence here, we'll see that the text moves from the right of the image down below the image in seamless transition. Again, letting the do it's thang. Mission accomplished!
-
-And now for a <em><strong>massively large image</strong></em>. It also has <em><strong>no alignment</strong></em>.
-
-[caption id="attachment_907" align="alignnone" width="1200"]<img class=" wp-image-907" title="Image Alignment 1200x400" alt="Image Alignment 1200x400" src="http://localhost:8888/dwp-wordpress/wp-content/uploads/2013/03/image-alignment-1200x4002.jpg" width="1200" height="400" /> Massive image comment for your eyeballs.[/caption]
-
-The image above, though 1200px wide, should not overflow the content area. It should remain contained with no visible disruption to the flow of content.
-
-[caption id="attachment_905" align="alignright" width="300"]<img class="size-full wp-image-905 " title="Image Alignment 300x200" alt="Image Alignment 300x200" src="http://localhost:8888/dwp-wordpress/wp-content/uploads/2013/03/image-alignment-300x200.jpg" width="300" height="200" /> Feels good to be right all the time.[/caption]
-
-And now we're going to shift things to the <em><strong>right align</strong></em>. Again, there should be plenty of room above, below, and to the left of the image. Just look at him there... Hey guy! Way to rock that right side. I don't care what the left aligned image says, you look great. Don't let anyone else tell you differently.
-
-In just a bit here, you should see the text start to wrap below the right aligned image and settle in nicely. There should still be plenty of room and everything should be sitting pretty. Yeah... Just like that. It never felt so good to be right.
-
-And that's a wrap, yo! You survived the tumultuous waters of alignment. Image alignment achievement unlocked!]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1080</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:19:23]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:19:23]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[page-image-alignment__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517345077]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[page-image-alignment]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Page Markup And Formatting</title>
-		<link>http://localhost:8888/hiko-devtut/page-markup-and-formatting__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:20:05 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1083</guid>
-		<description></description>
-		<content:encoded><![CDATA[<h2>Headings</h2>
-
-<h1>Header one</h1>
-
-<h2>Header two</h2>
-
-<h3>Header three</h3>
-
-<h4>Header four</h4>
-
-<h5>Header five</h5>
-
-<h6>Header six</h6>
-
-<h2>Blockquotes</h2>
-
-Single line blockquote:
-
-<blockquote>Stay hungry. Stay foolish.</blockquote>
-
-Multi line blockquote with a cite reference:
-
-<blockquote>People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things. <cite>Steve Jobs - Apple Worldwide Developers' Conference, 1997</cite></blockquote>
-
-<h2>Tables</h2>
-
-<table>
-<tbody>
-<tr>
-<th>Employee</th>
-<th class="views">Salary</th>
-<th></th>
-</tr>
-<tr class="odd">
-<td><a href="http://john.do/">John Saddington</a></td>
-<td>$1</td>
-<td>Because that's all Steve Job' needed for a salary.</td>
-</tr>
-<tr class="even">
-<td><a href="http://tommcfarlin.com/">Tom McFarlin</a></td>
-<td>$100K</td>
-<td>For all the blogging he does.</td>
-</tr>
-<tr class="odd">
-<td><a href="http://jarederickson.com/">Jared Erickson</a></td>
-<td>$100M</td>
-<td>Pictures are worth a thousand words, right? So Tom x 1,000.</td>
-</tr>
-<tr class="even">
-<td><a href="http://chrisam.es/">Chris Ames</a></td>
-<td>$100B</td>
-<td>With hair like that?! Enough said...</td>
-</tr>
-</tbody>
-</table>
-
-<h2>Definition Lists</h2>
-
-<dl><dt>Definition List Title</dt><dd>Definition list division.</dd><dt>Startup</dt><dd>A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.</dd><dt>#dowork</dt><dd>Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.</dd><dt>Do It Live</dt><dd>I'll let Bill O'Reilly will <a title="We'll Do It Live" href="https://www.youtube.com/watch?v=O_HyZ5aW76c">explain</a> this one.</dd></dl>
-
-<h2>Unordered Lists (Nested)</h2>
-
-<ul>
-    <li>List item one
-<ul>
-    <li>List item one
-<ul>
-    <li>List item one</li>
-    <li>List item two</li>
-    <li>List item three</li>
-    <li>List item four</li>
-</ul>
-</li>
-    <li>List item two</li>
-    <li>List item three</li>
-    <li>List item four</li>
-</ul>
-</li>
-    <li>List item two</li>
-    <li>List item three</li>
-    <li>List item four</li>
-</ul>
-
-<h2>Ordered List (Nested)</h2>
-
-<ol>
-    <li>List item one
-<ol>
-    <li>List item one
-<ol>
-    <li>List item one</li>
-    <li>List item two</li>
-    <li>List item three</li>
-    <li>List item four</li>
-</ol>
-</li>
-    <li>List item two</li>
-    <li>List item three</li>
-    <li>List item four</li>
-</ol>
-</li>
-    <li>List item two</li>
-    <li>List item three</li>
-    <li>List item four</li>
-</ol>
-
-<h2>HTML Tags</h2>
-
-These supported tags come from the WordPress.com code <a title="Code" href="http://en.support.wordpress.com/code/">FAQ</a>.
-
-<strong>Address Tag</strong>
-
-<address>1 Infinite Loop
-Cupertino, CA 95014
-United States</address>
-
-<strong>Anchor Tag (aka. Link)</strong>
-
-This is an example of a <a title="Apple" href="http://apple.com">link</a>.
-
-<strong>Abbreviation Tag</strong>
-
-The abbreviation <abbr title="Seriously">srsly</abbr> stands for "seriously".
-
-<strong>Acronym Tag</strong>
-
-The acronym <acronym title="For The Win">ftw</acronym> stands for "for the win".
-
-<strong>Big Tag</strong>
-
-These tests are a <big>big</big> deal, but this tag is no longer supported in HTML5.
-
-<strong>Cite Tag</strong>
-
-"Code is poetry." --<cite>Automattic</cite>
-
-<strong>Code Tag</strong>
-
-You will learn later on in these tests that <code>word-wrap: break-word;</code> will be your best friend.
-
-<strong>Delete Tag</strong>
-
-This tag will let you <del>strikeout text</del>, but this tag is no longer supported in HTML5 (use the <code>&lt;strike&gt;</code> instead).
-
-<strong>Emphasize Tag</strong>
-
-The emphasize tag should <em>italicize</em> text.
-
-<strong>Insert Tag</strong>
-
-This tag should denote <ins>inserted</ins> text.
-
-<strong>Keyboard Tag</strong>
-
-This scarsly known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the <code>&lt;code&gt;</code> tag.
-
-<strong>Preformatted Tag</strong>
-
-This tag styles large blocks of code.
-
-<pre>.post-title {
-    margin: 0 0 5px;
-    font-weight: bold;
-    font-size: 38px;
-    line-height: 1.2;
-}</pre>
-
-<strong>Quote Tag</strong>
-
-<q>Developers, developers, developers...</q> --Steve Ballmer
-
-<strong>Strong Tag</strong>
-
-This tag shows <strong>bold<strong> text.</strong></strong>
-
-<strong>Subscript Tag</strong>
-
-Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
-
-<strong>Superscript Tag</strong>
-
-Still sticking with science and Albert Einstein's E = MC<sup>2</sup>, which should lift the "2" up.
-
-<strong>Teletype Tag</strong>
-
-This rarely used tag emulates <tt>teletype text</tt>, which is usually styled like the <code>&lt;code&gt;</code> tag.
-
-<strong>Variable Tag</strong>
-
-This allows you to denote <var>variables</var>.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1083</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:20:05]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:20:05]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[page-markup-and-formatting__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[standard_seo_post_meta_description]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517345078]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[page-markup-and-formatting]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -756,13 +211,79 @@ This allows you to denote <var>variables</var>.]]></content:encoded>
 		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
 		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1086</guid>
 		<description></description>
-		<content:encoded><![CDATA[<a title="WP Test - The Best Tests For WordPress" href="http://wptest.io" target="_blank">WP Test</a> is a fantastically exhaustive set of test data to measure the integrity of your plugins and themes.
+		<content:encoded><![CDATA[Hiko is a digital writing and publishing platform developed for Victoria University of Wellington. Hiko was produced out of a need to allow students to create individual and collaborative texts that were interactive, co-creative and media-rich, without requiring specialist coding skills.
 
-The foundation of these tests are derived from <a title="Theme Unit Test" href="http://codex.wordpress.org/Theme_Unit_Test" target="_blank">WordPress’ Theme Unit Test Codex</a> data. It’s paired with lessons learned from over three years of theme and plugin support, and baffling corner cases, to create a potent cocktail of simulated, quirky user content.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/HeroImages/Hiko_HeroImage_Header.jpg" alt="Hiko home page" />
 
-The word "comprehensive" was purposely left off this description. It's not. There will always be something new squarely scenario to test. That's where you come in. <a title="Contact" href="http://wptest.io/contact/">Let us know</a> of a test we're not covering. We'd love to squash it.
+The initial system requirements for Hiko included the following:
 
-Let’s make WordPress testing easier and resilient together.]]></content:encoded>
+<ul>
+<li>Creation of born-digital texts using rich text, Markdown or HTML</li>
+<li>Creation of individual projects</li>
+<li>Creation of collaborative projects</li>
+<li>Ability to peer-review work (review, comment, and critique work of others)</li>
+<li>Ability to archive work using a version management system</li>
+<li>Ability to manage workflow between primary evidence, research and publication</li>
+<li>Multimodal media integration</li>
+<li>Online student portfolio</li>
+<li>Software created using open sources</li>
+</ul>
+
+WordPress’ CMS was eventually selected for its plugin ecosystem, ease of which rapid development could take place, and the degree to which project requirements were fulfilled by WordPress core out-of-the-box. Both the frontend and backend of WordPress were heavily customised and a number of plugins used to deliver the end result.
+
+Of all of the features we have built for Hiko, two are of specific importance: Hiko’s article types and editorial workflow.
+
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/HeroImages/Hiko_HeroImage_ArchivePages.jpg" alt="Hiko post archive page" />
+
+<h2>Article Types</h2>
+
+Hiko provides authors with the option to create digital works in the form of three different types of articles:
+
+<h3>Blog Posts</h3>
+
+Are articles which may be used for short-form textual pieces – be it a social media announcement, poetry, or short story.
+
+<h3>Projects</h3>
+
+These are the primary medium of the Hiko platform; you may use Projects for any written purpose; essays, creative works, scholarly articles – the choice is yours.
+
+<h3>Series</h3>
+
+Are collections of Blog Posts, Projects and even other Series which are connected to a central theme. These may be also used to produce works comprised of multiple parts, such as zines, essay collections or periodicals.
+
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_EditorialWorkflow.png" alt="Hiko editorial workflow" />
+
+<h2>Editorial Workflow</h2>
+
+To ensure that only the highest quality work can be viewed on the Hiko platform, Hiko has adopted an editorial workflow, where an author must have their work approved by an editor before it will become publicly accessible. This workflow is comprised of the following stages:
+
+<h3>Draft</h3>
+
+The draft stage refers to any article you are currently writing and have not yet submitted for review (think work in progress). When you are satisfied with the article, you can submit it for review by an editor.
+
+<h3>Pending</h3>
+
+Once you have submitted your work for review by an editor, they may either consider it ready to be published or identify issues and send it back to you for further revisions (where the article will once again become a Draft).
+
+<h3>Published</h3>
+
+Any articles an editor feels is ready to become publicly accessible will be published. Once published, you can share your work with others and add it to your portfolio via your Profile.
+
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/HeroImages/Hiko_HeroImage_MobilePages.jpg" alt="Hiko mobile layouts" />
+
+<h2>Credits</h2>
+
+Design and development: <a href="https://github.com/ryanachten">Ryan Achten</a>
+Supervision:
+
+<ul>
+<li>Dr Cherie Lacey</li>
+<li>Dr Sydney Shep</li>
+<li>Walter Langelaar</li>
+<li>Matt Plummer</li>
+</ul>
+
+Developed for Victoria University of Wellington, 2017-2018]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>1086</wp:post_id>
 		<wp:post_date><![CDATA[2013-03-15 18:21:12]]></wp:post_date>
@@ -776,10 +297,7 @@ Let’s make WordPress testing easier and resilient together.]]></content:encod
 		<wp:post_type><![CDATA[page]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
+		<category domain="author" nicename="cap-ryanachten"><![CDATA[ryanachten]]></category>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
@@ -795,112 +313,6 @@ Let’s make WordPress testing easier and resilient together.]]></content:encod
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[standard_seo_post_meta_description]]></wp:meta_key>
 			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Parent Page</title>
-		<link>http://localhost:8888/hiko-devtut/parent-page__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:24:09 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1088</guid>
-		<description></description>
-		<content:encoded><![CDATA[This page the a parent page.
-
-It contains child pages.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1088</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:24:09]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:24:09]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[parent-page__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517345078]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[parent-page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Child Page 01</title>
-		<link>http://localhost:8888/hiko-devtut/parent-page__trashed/child-page-01__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:25:40 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1090</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is a child page.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1090</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:25:40]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:25:40]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[child-page-01__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>1088</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517345078]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[child-page-01]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
@@ -929,10 +341,6 @@ It contains child pages.]]></content:encoded>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 		<category domain="author" nicename="cap-ryanachten"><![CDATA[ryanachten]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
@@ -989,6 +397,40 @@ Android the notional night cops reporter in Des Moines filters kitchen table of 
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Courses</title>
+		<link>http://localhost:8888/hiko-devtut/__trashed/</link>
+		<pubDate>Fri, 16 Feb 2018 03:23:39 +0000</pubDate>
+		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/dwp-wordpress/?page_id=1521</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1521</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-16 03:23:39]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-16 03:23:39]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
@@ -997,8 +439,16 @@ Android the notional night cops reporter in Des Moines filters kitchen table of 
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[draft]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1518751418]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -1032,71 +482,12 @@ Android the notional night cops reporter in Des Moines filters kitchen table of 
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
 			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title></title>
-		<link>http://localhost:8888/hiko-devtut/2018/02/17/1585/</link>
-		<pubDate>Sat, 17 Feb 2018 22:46:21 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/hiko-devtut/?p=1585</guid>
-		<description></description>
-		<content:encoded><![CDATA[ ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1585</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-17 22:46:21]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-17 22:46:21]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[1585]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>1</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="main-menu"><![CDATA[Main Menu]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1066]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-			<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -1210,20 +601,1116 @@ Android the notional night cops reporter in Des Moines filters kitchen table of 
 		</wp:postmeta>
 	</item>
 	<item>
-		<title></title>
-		<link>http://localhost:8888/hiko-devtut/2018/02/17/1588/</link>
-		<pubDate>Sat, 17 Feb 2018 22:52:22 +0000</pubDate>
+		<title>Author Tutorial</title>
+		<link>http://localhost:8888/hiko-devtut/author-tutorial/</link>
+		<pubDate>Sun, 18 Feb 2018 20:56:42 +0000</pubDate>
 		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/hiko-devtut/?p=1588</guid>
+		<guid isPermaLink="false">http://localhost:8888/dwp-wordpress/?page_id=1629</guid>
+		<description></description>
+		<content:encoded><![CDATA[<h2>Getting Setup</h2>
+
+Before we get into writing some actual content using the Hiko system, we’re going to spend a few minutes showing you how to get your account and details setup.
+
+<h3>Logging into Hiko</h3>
+
+<ul>
+<li>Log into the Hiko system by clicking on the <em>Log In</em> button - this will redirect you to the login screen.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_LogInLink.png" alt="Admin log In link" /></li>
+<li>At the login screen, enter your email or username and password associated with you Hiko account. If you are unsure as to what these details are, click the <em>Lost your password?</em> link or get in contact with your system administrator.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_LogInScreen.png" alt="Hiko login screen" /></li>
+</ul>
+
+<h3>Customising Your Profile</h3>
+
+<ul>
+<li>Once you’re logged in, one of the first things we’re going to take a look is setting up your Profile. If you’re not redirected to the <em>Dashboard</em> page automatically, you can access this using the <em>Home</em> button above (or go there directly using the <em>Profile</em> button).
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_LoggedInLink.png" alt="Hiko logged in link" /></li>
+<li>From the Dashboard page, we can access our <em>Profile</em> page via the <em>Profile</em> link on the sidebar menu.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_DashboardNoContent.png" alt="Hiko Dashboard screen" /></li>
+<li>At the <em>Profile</em> page, we can decide how our profile and portfolio appears to the public and other users of the Hiko system. The <em>website</em> field refers to your own personal website - you can leave this blank if you want.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_ProfileInfo.png" alt="Hiko Profile page" /></li>
+<li>Feel free to customise this how you see fit and scroll down and click <em>Update Profile</em> to confirm your changes. Don’t worry about the <em>Featured Posts, Projects</em> and <em>Series</em> at this stage; we’ll come back to that once we’ve got some work to show.</li>
+</ul>
+
+<h3>Accessing Your Dashboard</h3>
+
+The <em>Dashboard</em> is the landing page you may have been redirected to earlier after logging in. Here you are able to see the current status of your various articles. Before we get into actually creating some articles of our own, it might be a good idea to introduce some key concepts underlying the Hiko system.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_DashboardWithContent.png" alt="Hiko Dashboard page" />
+
+<h4>Types of articles</h4>
+
+In the image above we can see three rows dedicated to the different types of articles Hiko allows for: <em>Blog Posts, Projects</em> and <em>Series</em>
+
+<strong>Blog Posts</strong>
+Are articles which may be used for short-form textual pieces - be it a social media announcement, poetry, or short story.
+Try to keep your blog posts to under 500 words; if you find yourself exceeding this, perhaps a <em>Project</em>, would be a more appropriate medium.
+
+<strong>Projects</strong>
+These are the primary medium of the Hiko platform; you may use <em>Projects</em> for any written purpose; essays, creative works, scholarly articles - the choice is yours.
+
+<strong>Series</strong>
+Are collections of <em>Blog Posts, Projects</em> and even other <em>Series</em> which are connected to a central theme. These may be also used to produce works comprised of multiple parts, such as zines, essay collections or periodicals.
+
+<h4>Editorial Workflow</h4>
+
+<ul>
+<li>Within the rows of different types of articles, you will also be able to see three column headings: <em>Drafted, Pending,</em> and <em>Published</em>. These each refer to various parts of Hiko’s editorial workflow authors use to publish their work.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_EditorialWorkflow.png" alt="Hiko editorial workflow" /></li>
+</ul>
+
+<ol>
+<li><strong>Draft</strong>
+
+<ul>
+<li>The draft stage refers to any article you are currently writing and have not yet submitted for review (think work in progress). When you are satisfied with the article, you can submit it for review by an editor.</li>
+</ul></li>
+<li><strong>Pending</strong>
+
+<ul>
+<li>Once you have submitted your work for review by an editor, they may either consider it ready to be published or identify issues and send it back to you for further revisions (where the article will once again become a <em>Draft</em>).</li>
+</ul></li>
+<li><strong>Published</strong>
+
+<ul>
+<li>Any articles an editor feels is ready to become publicly accessible will be published. Once published, you can share your work with others and add it to your portfolio via your <em>Profile</em>.</li>
+</ul></li>
+</ol>
+
+Now that you’ve got a feel for how Hiko works, let's get into some actual writing.
+
+<hr />
+
+<h2>Creating a Blog Post</h2>
+
+<ul>
+<li>The first type of article we’re going to start off with is a <em>Blog Post</em>. Let’s navigate there by hovering over the <em>Posts</em> icon and clicking on <em>Add New</em>.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_PostNav.png" alt="Add new post link" /></li>
+</ul>
+
+<h3>Editor Overview</h3>
+
+<ul>
+<li>Before we get writing, let’s go over what the various boxes refer to. Fortunately, these are largely the same across all of the types of articles available in Hiko. 
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_PostPage.png" alt="Add new post screen" />
+
+<ul>
+<li><em>Title</em> - title of the post</li>
+<li><em>Editor</em> - used for writing the bulk of the content of the post; we’ll talk about this later</li>
+<li><em>Citations</em> - be sure to include here any references to external sources or media you may have used during the creation of your post. Be sure to check with your editor as to the style guide you are expected to follow here (i.e. APA, MLA, etc.).</li>
+<li><em>Publish</em> - here is where you can see the status of your post and, when it is ready, submit it for review by an editor.</li>
+<li><em>Featured Image</em> - click on this link to upload a header image relevant to the premise of your post.
+
+<ul>
+<li>Ideally these images should be of good resolution (at least 1000px wide and 500px high).</li>
+<li>Be sure to comply with copyright restrictions when selecting images you have not produced (see our <em>Media Guide</em> for creative common sources).</li>
+<li><strong>Note</strong>: to make sure your article looks great, a featured image is required before you are able to submit for review.</li>
+</ul></li>
+<li><em>Courses</em> - be sure to include any academic courses this post was produced as part of.</li>
+<li><em>Categories</em> - if you feel that this post aligns with any of the categories provided, you can add them to aid discoverability.</li>
+<li><em>Tags</em> - Similar to tags (or ‘keywords’) serve to aid discoverability and aid contextualisation of the post.</li>
+</ul></li>
+</ul>
+
+Now that we know what the various boxes and buttons do, feel free to go ahead and write your first <em>Blog Post</em>. Once you’re satisfied with your work, go ahead and submit it for review.
+
+If you ever want to go back and edit a previous post, check its status, or view all of your posts at once, you can access this by clicking the <em>All Posts</em> sidebar link.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_PostEdit.png" alt="Edit post page" />
+
+<hr />
+
+<h2>Creating a Project</h2>
+
+Since we have mastered the basics of writing with the Hiko system, we’re now going to go over creating a <em>Project</em>.
+
+The functionality for <em>Projects</em> is largely the same as what we just covered in our <em>Blog Post</em> section, however, there are some areas we glossed over or specific to <em>Projects</em> which we will discuss in this section.
+
+<h3>Writing Modes</h3>
+
+<ul>
+<li>Hover over <em>Projects</em> and click <em>Add New</em> where you will be redirected to a screen similar to the one we worked with during the <em>Blog Post</em> tutorial.</li>
+<li>The editor which you wrote the bulk of your <em>Blog Post</em> in previously is actually capable of different writing modes:</li>
+</ul>
+
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_EditorRichText.png" alt="Rich text editor mode" />
+
+<h4>Rich Text</h4>
+
+<ul>
+<li>Rich text is the default mode activated when you land on an <em>Add New</em> page. If you’ve ever used a word processor, such as Microsoft Word or Google Docs, you may find this quite similar.
+
+<ul>
+<li>Rich text allows you to use the editor’s toolbar to control the presentation of your text.</li>
+<li>Common keyboard shortcuts, such crtl+b / cmd+b are also supported here (depending on your computer’s operating system).</li>
+</ul></li>
+</ul>
+
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_EditorMarkdown.png" alt="Markdown editor mode" />
+
+<h4>Markdown</h4>
+
+<ul>
+<li>By swapping to the <em>Text</em> tab of the editor (<em>Visual</em> being reserved for rich text), you can begin to work in a form of markup language called Markdown. Markdown is a popular method of writing on the internet, as your writing is no longer impeded by clicking buttons or your hands leaving the keyboard. If you’ve ever written on platforms such as Medium, you may be familiar with this approach.
+
+<ul>
+<li>The Markdown syntax is too big to discuss in the context of this tutorial. Check out our <em>Writing Guides</em> page for handy resources on the topic.</li>
+</ul></li>
+</ul>
+
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_EditorHtml.png" alt="HTML editor mode" />
+
+<h4>HTML</h4>
+
+<ul>
+<li>The <em>Text</em> tab of the editor allows for another markup language: the Hypertext Markup Language, or simply ‘HTML’. HTML provides the scaffolding for websites on the internet, so it is certainly useful to understand. While slightly more complex than Markdown, the syntax for HTML has a very low learning curve.
+
+<ul>
+<li>Similar to Markdown, the syntax for HTML exceeds the scope of this tutorial. Refer to our Writing Guides for further information.</li>
+<li><strong>Nerd Note:</strong> JavaScript is escaped and rendered as plain text for security reasons. Inline CSS, however, is largely supported.</li>
+</ul></li>
+</ul>
+
+<h3>Excerpt</h3>
+
+A feature somewhat important to <em>Projects</em> and <em>Series</em> (which we will be covering soon) is an <em>Excerpt</em>. An excerpt acts as a foreword to the article you have written, to help entice readers to engage with your material. If you’re writing a scholarly article, a short abstract could also be included here.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_Excerpt.png" alt="Excerpt editor field" />
+
+<ul>
+<li>You should be able to see this box below the editor; if not, go to the <em>Screen Options</em> dropdown and click the appropriate checkbox (excerpts can be enabled in the same manner for <em>Blog Posts</em>).</li>
+</ul>
+
+<h3>Collaboration</h3>
+
+<h4>Requesting a co-author</h4>
+
+<ul>
+<li>Creativity through collaboration is an important aspect of the Hiko platform. If you want to work alongside a friend or colleague on this <em>Project</em>, add any initial content you want to start the article with and save it as a draft (via the <em>Save Draft</em> button). Be sure to add important information such as a title and courses to make it easier for your editor to find.</li>
+<li>Once you’re satisfied, contact your editor with: (*required)
+
+<ul>
+<li>*The name of the Hiko user you would like to collaborate with</li>
+<li>*The type of article (_Blog Post_, _Project_, or _Series_)</li>
+<li>*The title of your article you would like them to co-author</li>
+<li>Any courses the article is associated with</li>
+</ul></li>
+<li><strong>Note:</strong> before sending your request, be sure to save your draft and exit out of the article. 
+If you are writing when the editor attempts to add a co-author, you may be kicked off the article; the article should automatically save-  however, it is better to be safe than sorry.</li>
+<li>If you see the warning <em>‘<em>Name of editor</em> is currently editing’</em> above your article in <em>All Posts/Projects/Series</em> - avoid editing the article; they are probably adding your co-author, or reviewing your work.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_CoauthorEditorEditing.png" alt="Editor is currently editing warning" /></li>
+<li>Once you see your co-author listed as an <em>Author</em> of the article, you will know that your collaborator has been successfully added.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_CoauthorAuthorAdded.png" alt="Author successfully added" /></li>
+<li><strong>Note:</strong> collaborators on the Hiko system can’t simultaneously edit the same document.
+
+<ul>
+<li>If this is a necessary aspect of your workflow, consider writing the bulk of the article using a platform such as Google Docs and pasting content into Hiko.</li>
+<li>If a user is currently editing a document you are a co-author on, you will be able to tell from the <em>All Posts/Projects/Series</em> page.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_CoauthorEditLink.png" alt="User already editing the document warning" /></li>
+<li>In the event you need to access the document, regardless of a peer having the document open, click on the <em>Edit link</em> anyway. You will then be prompted with the following message. It should be safe to press <em>Take Over</em> as the author’s work will be saved automatically.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_CoauthorCurrentlyEditting.png" alt="Author is currently editing warning" /></li>
+</ul></li>
+<li><strong>Note:</strong> articles that you have not created yourself but are collaborating on will appear under the <em>All</em> tab, as opposed to the <em>Mine</em> tab which you are presented by default.</li>
+</ul>
+
+<h4>Communication</h4>
+
+<ul>
+<li>You can communicate ideas and suggestions to your collaborators directly inside of the Hiko system without resorting to third-party systems. Simply locate the <em>Editorial Comments</em> section at the bottom of the <em>Add New</em> page and click <em>Respond to this Post</em>.</li>
+<li>Additionally, this same system can be used to communicate with editors, who may use these comments to suggest changes and ideas prior to the article’s publication.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_EditorialComments.png" alt="Editorial comments field box" /></li>
+</ul>
+
+<h3>Revisions</h3>
+
+<ul>
+<li>There may come a time where you or your collaborators have made changes to your article which you no longer feel are appropriate. In these situations, you can use the <em>Revision</em> tool to compare and contrast changes made to the document and restore previous versions of the article.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_RevisionsLink.png" alt="Revisions link" />
+
+<ul>
+<li>To do so, click the <em>Browse</em> link next to the <em>Revisions</em> section of the <em>Publish</em> box.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_RevisionsScreen.png" alt="Revisions tool screen" /></li>
+<li>You will then be presented with a screen where new content is highlighted in green, while any removed content is highlighted in red (unchanged content has no background).</li>
+<li>You can slide through various changes to the document using the slider at the top of the page and restore them using the Restore This Revision button.</li>
+</ul></li>
+</ul>
+
+<hr />
+
+<h2>Creating a Series</h2>
+
+The final type of article Hiko provides are <em>Series</em>; using <em>Series</em> we can create articles comprised of multiple articles centred around a theme or topic.
+
+<h3>Series Components</h3>
+
+<ul>
+<li>Hover over <em>Series</em> and click <em>Add New</em> where you will be redirected to a screen similar to the one we working with in the other tutorials.</li>
+<li>Using the editor, we can provide the body content of the <em>Series</em>; perhaps to discuss its premise, or to add content unique to the <em>Series</em>.</li>
+<li>In fact, all of the fields are exactly the same as those available for a Project, with one major addition:
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_SeriesComponents.png" alt="Series components field" />
+
+<ul>
+<li>Using the <em>Series Components</em> panel, we can add the various <em>Blog Posts</em>, <em>Projects</em>, or even other <em>Series</em> which comprise this <em>Series</em>. The list to left are the articles we are able to add, while the (empty) list to the right are the <em>Series</em> components.</li>
+<li>To add a component, we can hover over one of the items in the list and press the <strong>+</strong> button
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_SeriesComponentAdd.png" alt="Add Series component button" /></li>
+<li>To remove a component, we can hover over the item again and select the <strong>-</strong> button
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_SeriesComponentMinus.png" alt="Remove Series component button" /></li>
+<li>We can reorder these components by hovering over one of the items and drag-and-dropping it in place.</li>
+<li>Later, when we have produced a lot of different articles, it may become cumbersome to simply scroll and find what you’re looking for. In this case, we can simply filter by article type or search for the title of the desired article
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_SeriesComponentFilter.png" alt="Filter Series components dropdown" /></li>
+<li><strong>Note:</strong> only articles on which we are an author or co-author are available for us to add to a series.
+
+<ul>
+<li>Additionally, only articles which are <strong>published</strong> will be published along with the article, however, unpublished <em>Series</em> components can still be submitted for review.</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h3>Including Media</h3>
+
+Be it a video, an image or a map, the majority of media out there is able to be integrated into a <em>Blog Post, Project</em>, or <em>Series</em> by Hiko in one form or another. This is especially important in <em>Projects</em> and <em>Series</em>, where multimedia works are encouraged. Depending on the type of media you are wanting to integrate into your works, there are one of two approaches.
+
+<h4>Images</h4>
+
+<ul>
+<li>Images can be inserted directly into an article via Hiko’s <em>Media Library</em>, via the <em>Add Media</em> button. Here you can upload or add existing media up to 5MB in size.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_MediaAddToLibrary.png" alt="Add image to Media Library button" /></li>
+</ul>
+
+<h4>Anything else</h4>
+
+<ul>
+<li>Anything other than images need to be embedded using third-party providers (i.e. Youtube or Vimeo for video or Google Maps for maps). See our Media Guide for further information about supported embeds.
+
+<ul>
+<li>While some embeds will work if copied and pasted into the editor using the rich text <em>Visual</em> mode, a safer approach is to paste the embed snippet using the <em>Text</em> mode:
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_MediaEmbedSnippet.png" alt="Media embed snippet" /></li>
+<li>Once the embed snippet has been pasted, you can switch back to Visual to see the rendered result:
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_MediaEmbedRendered.png" alt="Media embed rendered" /></li>
+</ul></li>
+</ul>
+
+You should be pretty familiar with the other boxes present in the <em>Add New</em> screen, so go forth and create your first <em>Series</em> and, when you’re ready, submit it to review by your editor.
+
+Once your editor has published a <em>Blog Post, Project</em>, or <em>Series</em>, meet back with us at the next tutorial for some final notes.
+
+<hr />
+
+<h2>Final Notes</h2>
+
+We’ve pretty much gone over the majority of Hiko’s system in the previous tutorials. We’ll finish this tutorial with a few bits and pieces you might find useful.
+
+<h3>Setting Up Your Portfolio</h3>
+
+<ul>
+<li>Once you’ve produced some amazing articles in Hiko that have been reviewed and published by your editor, you may want to be able to show off to friends, family, colleagues and potential employers your body of work. </li>
+<li>To get this done, head to the <em>Profile</em> page via the link on the sidebar.</li>
+<li>We looked at the <em>Featured Posts, Projects</em> and <em>Series</em> sections briefly at the start of the tutorial when we were customising our profile. Now that we’ve got some work to feature, let’s look at how to use them.</li>
+</ul>
+
+<h4>Featured Posts</h4>
+
+<ul>
+<li>Having completed the <em>Series</em> tutorial, you will probably recognise the lists we used to select our <em>Series Components</em>; in fact, the process is pretty much exactly the same.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_ProfilePortfolio.png" alt="Featured posts, projects and series fields" />
+
+<ul>
+<li>Hovering over an article in the list allows us to add it to those which will be featured on our profile page. We can add up to four <em>Blog Posts, Projects</em> and <em>Series</em> to promote on our portfolio.</li>
+<li>By hovering over those in the right column, we can drag-and-drop to rearrange them to taste.</li>
+<li>Once you’re satisfied with the articles you want to feature, be sure to click the <em>Update Profile</em> button to confirm your changes.</li>
+</ul></li>
+<li><p>If you want to see how you’re portfolio is looking, or if you want to share it with others, you can access this directly via your <em>Profile</em> page at the <em>View Portfolio</em> link.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_ProfileViewLink.png" alt="View portfolio link" /></p></li>
+<li>This will redirect you to your publicly accessible portfolio, now updated with your work.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_ProfilePage.png" alt="Portfolio page accessible to the public" /></li>
+</ul>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1629</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-18 20:56:42]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-18 20:56:42]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[author-tutorial]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="author" nicename="cap-ryanachten"><![CDATA[ryanachten]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_oembed_37c314fe279cea0cb10dade06b32567c]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{{unknown}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Editor Manual</title>
+		<link>http://localhost:8888/hiko-devtut/editor-manual/</link>
+		<pubDate>Sun, 18 Feb 2018 20:56:53 +0000</pubDate>
+		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/dwp-wordpress/?page_id=1631</guid>
+		<description></description>
+		<content:encoded><![CDATA[<h2>What’s an Editor?</h2>
+
+Hiko has a hierarchical editorial workflow (discussed further below) used to help manage the production of content through the system. Your role as an editor comes with a couple of responsibilities:
+
+<ul>
+<li><em>Reviewing Articles</em> - deciding which articles are suitable for publication and those which warrant further revisions</li>
+<li><em>Aiding Collaboration</em> - authors are not able to add collaborators to their works; it is up to you to decide if co-authorship is suitable and facilitate these arrangements</li>
+<li><em>Managing Courses</em> - if Hiko is being used in an educational context, courses are available to aid categorisation of works</li>
+<li><em>Managing Categories</em> - there may be other terms, specific perhaps to a certain task or theme of work, required to group works under. You may do so by creating a category</p></li>
+<li>One task you are not able to do is add new users to the Hiko system; to achieve this, get in contact with your system administrator</p></li>
+</ul>
+
+<h3>What about Authors?</h3>
+
+<p>In addition to the privileges editors receive in the Hiko system, they are also able to do everything authors are able to. To get a feel for how authors are expected to use the Hiko system, feel free to read and even complete the <em>Author Tutorial</em>.
+
+<hr />
+
+<h2>Getting Started</h2>
+
+<h3>Logging into Hiko</h3>
+
+<ul>
+<li>Log into the Hiko system by clicking on the <em>Log In</em> button - this will redirect you to the login screen
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_LogInLink.png" alt="Hiko login link" /></li>
+<li>At the login screen, enter your email or username and password associated with you Hiko account. If you are unsure as to what these details are, click the <em>Lost your password?</em> link or get in contact with your system administrator.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_LogInScreen.png" alt="Hiko login screen" /></li>
+</ul>
+
+<hr />
+
+<h2>Reviewing Articles</h2>
+
+<h3>Editorial Workflow</h3>
+
+Before an author can have their Blog Post, Project, or Series become publicly accessible, the article needs to be reviewed and accepted by an editor such as yourself. This process is part of Hiko’s editorial workflow, which comprises the following stages:
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_EditorialWorkflow.png" alt="Hiko editorial workflow" />
+
+<ol>
+<li>Draft
+
+<ul>
+<li>The draft stage refers to any article an author is currently writing and has not yet submitted for review (think work in progress). When the author is satisfied with the article, they may submit it to you for review.</li>
+</ul></li>
+<li>Pending
+
+<ul>
+<li>Once an author has submitted their work for review, you may either consider it ready to be published or identify issues and send it back to the author for further revisions (where the article will once again become a Daft).</li>
+</ul></li>
+<li>Published
+
+<ul>
+<li>Any articles you feel are ready to become publicly accessible can be published. Once published, an author may share their work with others and add it to their portfolio.</li>
+</ul></li>
+</ol>
+
+<h3>Reviewing an Article</h3>
+
+<ul>
+<li>Articles pending review by yourself and other editors can be viewed at the <em>All Post</em> page. Regardless of the type of article (<em>Blog Post, Project,</em> or <em>Series</em>), the process is the same.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_PublishAllPosts.png" alt="All posts page link" /></li>
+<li>Once on the <em>All Posts</em> page, you can find the articles awaiting review by clicking the <em>Pending</em> link
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_PublishAllPending.png" alt="All posts page" />
+
+<ul>
+<li>In the case that you are looking for a specific article, you can use the search field to filter by the title of an article</li>
+</ul></li>
+<li>By clicking on an article you would like to review, you will be presented with the content of the article. If you deem the article to be fit for publication, the article can be published by clicking the <em>Publish</em> button
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_PublishPublishButton.png" alt="Publish article button" /></li>
+</ul>
+
+<h3>Requesting Changes</h3>
+
+If there are changes to be made to the article before it can be published, you can communicate issues or comments to the author in a couple of ways:
+
+<ul>
+<li>One 'non-invasive' approach is to use the internal commenting system Hiko provides. Find the <em>Editorial Comments</em> section at the bottom of the page and click <em>Respond</em> to this Post. Comments themselves can be responded to by hovering over the comment in question.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_EditorComments.png" alt="Editorial comments" /></li>
+<li>There may be cases where this commenting is too indirect for effective communication. For example, in the case where you want to comment on a specific line of text, writing comments inline maybe more effective.
+
+<ul>
+<li>Be sure to be clear where these comments have been made - changing the colour of the text to something obvious might be a good idea
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_EditorCommentsInline.png" alt="Inline editorial comments" /></li>
+</ul></li>
+<li>You will also want to change the status of the article back to <em>Draft</em> to allow the author to re-submit once they have made the appropriate alterations. To do so, click the <em>Edit</em> link next to the <em>Status</em> field in the <em>Publish</em> box.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_PublishStatusLink.png" alt="Article status link" />
+
+<ul>
+<li>Select <em>Draft</em> from the dropdown and press OK
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_PublishStatusDropdown.png" alt="Article status dropdown" /></li>
+<li>Press <em>Save the Draft</em> to save your changes and exit the article to make the article accessible to its author</li>
+</ul></li>
+</ul>
+
+<hr />
+
+<h2>Adding a Co-Author</h2>
+
+For a co-author to another author’s article (be it a <em>Blog Post, Project</em>, or <em>Series</em>), the creator of the project needs to contact you with the following information: (*required)
+
+<ul>
+<li>*The name of the Hiko user you would like to collaborate with</li>
+<li>*The type of article (_Blog Post, Project_, or _Series_)</li>
+<li>*The title of your article you would like them to co-author
+
+</li>
+<li>
+
+Depending on the type of article you can then navigate to <em>All Posts/Projects/Series</em> (in this example the request is for a collaborative Project)
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_CoauthorAllProjects.png" alt="All Projects page" />
+
+<ul>
+<li>Search the name of the article, filter by author name, or by course (if supplied) to find the article in question</li>
+</ul>
+
+</li>
+<li>Once you have located the article, hover over the article and click the <em>Edit</em> link
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_CoauthorEditLink.png" alt="Edit article link" /></li>
+<li>If an author is currently editing the article, you will be prompted with the following message. It should be safe to press <em>Take Over</em> as the author’s work will be saved automatically
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_CoauthorCurrentlyEditting.png" alt="Author is currently editing warning" /></li>
+<li>Locate the <em>Authors</em> box at the bottom of the page and begin typing the name of the author to be added as a co-author. When the appropriate name is presented, click the link to confirm the addition
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_CoauthorAuthorsBox.png" alt="Co-authors input field" /></li>
+<li><strong>Important</strong>: once the necessary co-authors have been added, be sure to click the <em>Save Draft</em> button in the Publish box at the top of the page. Exit out of the article screen once you have completed the additions (to prevent the article appearing ‘locked’).
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_CoauthorSaveDraft.png" alt="Save draft button" /></li>
+</ul>
+
+<hr />
+
+<h2>Managing Courses</h2>
+
+<h3>Adding a Course</h3>
+
+<ul>
+<li>To add a course, simply hover over one of the <em>Posts, Projects</em>, or <em>Series</em> options on the sidebar menu and click on the link <em>Courses</em>. It doesn’t matter which article type this is done through - the course which is created will be available for all types of article.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_CoursesLink.png" alt="Add courses link" /></li>
+<li>You will then be redirected to the Courses management page, containing a series of fields.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_CoursesPage.png" alt="Add courses page" />
+
+<ul>
+<li>A good rule of thumb when creating courses is being consistent to help ensure intuitive user experience. Some guidelines for these fields are discussed below:
+
+<ul>
+<li><em>Name:</em> name of the course. The naming structure adopted here is the course code followed by the title of the paper.</li>
+<li><em>Slug:</em> reference code for accessing the course.
+
+<ul>
+<li><strong>Important:</strong> this must be URL friendly, containing no spaces or ampersands. Underscores and hyphens are recommended for separating characters.</li>
+</ul></li>
+<li><em>Parent Course:</em> ignore, this is irrelevant for most use cases.</li>
+<li><em>Description:</em> description of the course. Keep this concise and clear.</li>
+</ul></li>
+</ul></li>
+<li>When you are satisfied with the course details, go ahead and click Add new Course</li>
+</ul>
+
+<h3>Editing a Course</h3>
+
+<ul>
+<li>To edit the details of a course, simply hover over the course in question and click the <em>edit</em> link
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_CoursesEditLink.png" alt="Edit courses link" /></li>
+<li>You will then be redirected to the <em>Edit Course</em> page, where you can modify the necessary details. Once you are satisfied, click the <em>Update</em> button
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_CoursesEditPage.png" alt="Edit courses page" /></li>
+</ul>
+
+<h3>Removing a Course</h3>
+
+<ul>
+<li>To remove a course, simply hover over the course to be removed and select <em>Delete</em>
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_CoursesEditLink.png" alt="Delete courses link" /></li>
+</ul>
+
+<hr />
+
+<h2>Managing Categories</h2>
+
+The process for managing categories is exactly the same as the approach we just discussed for managing courses.
+
+<ul>
+<li>To access the category page, simply hover over one of the <em>Posts, Projects</em>, or <em>Series</em> options on the sidebar menu and click on the link <em>Categories</em>. Again, it doesn’t matter which article type this is done through - the course which is created will be available for all types of article.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/EditorTutorial/Hiko_Tut_CategoriesLink.png" alt="Categories link" /></li>
+</ul>
+
+To avoid repetition, follow the steps described in <em>Managing Courses</em> for adding, editing and removing categories]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1631</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-18 20:56:53]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-18 20:56:53]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[editor-manual]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="author" nicename="cap-ryanachten"><![CDATA[ryanachten]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Admin Manual</title>
+		<link>http://localhost:8888/hiko-devtut/admin-manual/</link>
+		<pubDate>Sun, 18 Feb 2018 20:57:13 +0000</pubDate>
+		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/dwp-wordpress/?page_id=1633</guid>
+		<description></description>
+		<content:encoded><![CDATA[<h2>What’s an Admin?</h2>
+
+Hiko’s system administrator sits outside of its editorial workflow, ensuring that the system is functioning appropriately and performing managerial tasks. As an admin, you have access to the highest degree of administrative features and are therefore responsible for a few important tasks:
+
+<ul>
+<li><em>Managing Users:</em> users cannot simply sign up to the Hiko system. Instead, they have to be invited by admins such as yourself</li>
+<li><em>Updating WordPress:</em> Hiko is built on the WordPress content management system, the core of which occasionally needs updating</li>
+<li><em>Updating Plugins:</em> in addition to WordPress, Hiko relies on a number of important plugins to operate properly, these also need updating on occasion</li>
+<li><em>Updating Page Content:</em> updating content on Hiko’s main pages (i.e <em>About, Legal,</em> etc.)</li>
+<li><em>Featured Article:</em> on the Hiko landing page, one article may be used for the main splash</li>
+</ul>
+
+We’ve also included some helpful additional resources at the end which may come in handy.
+
+<hr />
+
+<h2>Getting Started</h2>
+
+<h3>Logging into Hiko</h3>
+
+<ul>
+<li>Log into the Hiko system by clicking on the ‘Log In’ button - this will redirect you to the login screen
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_LogInLink.png" alt="Hiko login link" /></li>
+<li>At the login screen, enter your email or username and password associated with you Hiko account. If you are unsure as to what these details are, click the Lost your password? link
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AuthorTutorial/Hiko_Tut_LogInScreen.png" alt="Hiko login screen" /></li>
+</ul>
+
+<hr />
+
+<h2>Managing Users</h2>
+
+The main user task you will have to deal with as an admin is setting up user accounts with their necessary information. Additionally, administrators are responsible for other user-related tasks such as modifying user login information where required and removing users from the Hiko system.
+
+<h3>Adding New Users</h3>
+
+<ul>
+<li>To add a new user, we first need to hover over the Users section on the sidebar menu and select Add New User
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_AddNewUserLink.png" alt="Add new user link" /></li>
+<li>You will then be redirected to the Add New User screen, providing a number of fields required for the creation of a new user account. Try to keep your approach to user information as consistent as possible across all users.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_AddNewUser.png" alt="Add new user page" />
+
+<ul>
+<li><em>Username</em> - used for login purposes. Following existing conventions, such as school logins might be best practice here.</li>
+<li><em>Email</em> - also used for login purposes. Again, using school emails addresses could be a good idea in terms of stability.</li>
+<li><em>First Name</em> - self-explanatory</li>
+<li><em>Last Name</em> - self-explanatory</li>
+<li><em>Website</em> - as an admin, you don’t need to add this; authors can add their own at a later time</li>
+<li><em>Password</em> - Important: a secure password is generated by default, which users can later customise. If you want to provide a standardised password, ensure security is considered ‘Strong’
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_AddNewUserPassword.png" alt="Add new user password" /></li>
+<li><em>Role</em> - Important: by default, this is set to Author. Change using the dropdown to Editor or Administrator if appropriate. These roles can be briefly defined as:</li>
+<li><em>Administrator</em> – somebody who has access to all the administration features within a single site.</li>
+<li><em>Editor</em> – somebody who can publish and manage the posts of other users.</li>
+<li><em>Author</em> – somebody who can create their own posts but not publish.</li>
+<li><em>Featured Posts / Projects / Series</em> - ignore; this is for student to update later as they produce their own works.</li>
+</ul></li>
+<li>When you are satisfied with the user information you have entered, you can go ahead and confirm this addition by clicking the <em>Add New User</em> button at the bottom of the screen.</li>
+</ul>
+
+<h3>Editing User Information</h3>
+
+<ul>
+<li>The information discussed above can be changed at any time via the <em>All Users</em> page
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_EditUserAllUserLink.png" alt="All user link" /></li>
+<li>You will then be redirected to the <em>All Users</em> page. Here you will need to locate the user whose information you would like to edit (users can be searched for, or filtered by role). Hover over the user in question and click the <em>Edit</em> link
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_EditUserAllUsers.png" alt="Edit users link" /></li>
+</ul>
+
+<h3>Removing Users</h3>
+
+<ul>
+<li>Sometimes users may no longer be using the Hiko system and need to be removed. To do so, simply access the <em>All Users</em> scene discussed above and hover over the user in question. <em>Click the Delete</em> link.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_EditUserAllUsers.png" alt="Remove users link" /></li>
+<li>You will then be presented with a screen asking what Hiko should do with the deleted user’s content. Generally, you will want to click Delete all content and not attribute it to another user.\
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_DeleteUserInfo.png" alt="Delete users page" /></li>
+</ul>
+
+<hr />
+
+<h2>Updating WordPress</h2>
+
+Hiko is built on top of the WordPress content management system. WordPress is frequently updated to improve features, fix bugs, and prevent security vulnerabilities.
+
+To ensure that Hiko is secure and performant, it is important that its WordPress core is kept up-to-date. Fortunately, the process is remarkably simple:
+
+<ul>
+<li>You will first be notified that an update is available through an alert in the dashboard
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_UpdateWpAlert.png" alt="WordPress updates alter" />
+
+<ul>
+<li>Click the link <em>Please Update Now</em> or select <em>Updates</em> from the sidebar menu</li>
+</ul></li>
+<li>This will redirect you to the <em>WordPress Updates</em> page. Click the button <em>Update Now</em> to proceed with the installation
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_UpdateWpPage.png" alt="WordPress update page" /></li>
+<li>While you see the following scene, WordPress is being updated
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_UpdateWpUpdating.png" alt="WordPress updating page" /></li>
+<li>When the installation is complete, you will see the following screen
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_UpdateWpComplete.png" alt="WordPress update complete page" /></li>
+</ul>
+
+<strong>Important:</strong> while every measure has been taken to ensure Hiko’s stability, WordPress updates can introduce factors we were unable to foresee at the time of Hiko’s development. If you, or any of your users, notice anything strange occurring after a WordPress update, please log a bug via our GitHub repository.
+
+<hr />
+
+<h2>Updating Plugins</h2>
+
+In addition to using WordPress as its core, Hiko relies on a number of plugins to function as expected. These plugins are also often updated, sometimes in response to WordPress updating, to improve existing functionality, or introduce new features.
+
+As an admin, you will also be responsible for making sure that Hiko’s plugins are also up-to-date. Similar, to updating the WordPress core, the process is very simple.
+
+<ul>
+<li>You will be able to see if any plugins require updating when a red circle appears next to the Plugins section on the sidebar. Hover over the link and select <em>Installed Plugins</em>
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_UpdatePluginLink.png" alt="Installed plugins link" /></li>
+<li>You will then be redirected to the <em>Plugins</em> page. The plugin(s) requiring an update will appear with a yellow alert below their description. Click the <em>update now</em> link</li>
+<li>The alert will change to the following while the update is in progress\
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_UpdatePluginUpdating.png" alt="Plugin updating alert" /></li>
+<li>When the update is complete, the alert should display:\
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_UpdatePluginComplete.png" alt="Plugin update complete warning" /></li>
+</ul>
+
+<hr />
+
+<h2>Updating Page Content</h2>
+
+A situation may arise where you would like to be able to alter the information provided on one of Hiko’s main pages, such as About, Legal, Contact, or even one of the Help pages.
+
+<ul>
+<li>To do so, hover over the <em>Pages</em> link on the sidebar and click <em>All Pages</em>
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_EditPagesLink.png" alt="Edit pages link" /></li>
+<li>Hover over the page you would like to edit and click the <em>Edit</em> link
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_EditPagesAllPages.png" alt="All pages page" /></li>
+<li>Use the editor to make your necessary alterations
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_EditPage.png" alt="Edit pages page" /></li>
+<li>Once you are satisfied with the change you have made, press <em>Update</em> to confirm them
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_EditPagesUpdate.png" alt="Update page content button" /></li>
+</ul>
+
+<hr />
+
+<h2>Featured Article</h2>
+
+On the Hiko landing page, one article (Blog Post, Project, or Series) is used for the header splash. This article should be a testament to the quality of user content produced through Hiko and have a high quality featured image.
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_FeaturedArticle.png" alt="Featured article on home page" />
+
+<ul>
+<li>As an admin, you have the ability to change which article is featured here by first accessing the <em>All Pages</em> page\
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_EditPagesLink.png" alt="Edit pages link" /></li>
+<li>Hover over the Home list item and click <em>Edit</em>\
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_FeaturedArticleHomePage.png" alt="Edit home page link" /></li>
+<li>You will see near the top of the page a section called <em>Featured Article</em>. Before adding a new article, you will need to remove the existing article from the column on the right. Hover over the current article and press the - button
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_FeaturedArticleRemove.png" alt="Remove featured article" /></li>
+<li>Now you can use the dialogue box to filter by article type or search for an article’s title to find the work you would like to promote
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_FeaturedArticleFilter.png" alt="Filter for featured article dropdown" /></li>
+<li>Once you have located the article you would like to promote, hover over the list item and press the + button
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_FeaturedArticleAdd.png" alt="Add featured article button" /></li>
+<li>To confirm your selection, press the <em>Update</em> button in the <em>Publish</em> box
+<img src="https://github.com/ryanachten/Hiko/raw/master/wp-content/themes/hiko/assets/images/wiki/AdminTutorial/Hiko_Tut_FeaturedArticleUpdate.png" alt="Update featured article button" /></li>
+</ul>
+
+<hr />
+
+<h2>Further Reading</h2>
+
+Did we miss something? If so, we’ve compiled a few resources which hopefully be able to help you out.
+As we have mentioned throughout this manual, Hiko is built on top of WordPress, a content management system with extensive documentation and support networks.
+
+If you’re interested in learning more about WordPress, or we’ve overlooked something you need, take a look at <a href="https://codex.wordpress.org/Getting_Started_with_WordPress"><em>Getting Started with WordPress</em></a>
+
+If you have a simple question to ask, the following forums are generally very responsive:
+
+<ul>
+<li><a href="https://wordpress.org/support/">WordPress Support</a> (various forums hosted by WordPress)</li>
+<li><a href="https://wordpress.stackexchange.com/">WordPress Stack Exchange</a> (NB: more development orientated)</li>
+</ul>
+
+<h3>Developer Documentation</h3>
+
+If you’re a developer and are looking to extend Hiko, take a look the ReadMe at our <a href="https://github.com/ryanachten/Hiko">GitHub</a> repository to get started
+
+If you’ve uncovered a bug, or one has been introduced through WordPress / plugin updates, you can log this bug at our <a href="https://github.com/ryanachten/Hiko/issues">GitHub issues</a>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1633</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-18 20:57:13]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-18 20:57:13]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[admin-manual]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="author" nicename="cap-ryanachten"><![CDATA[ryanachten]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Writing Resources</title>
+		<link>http://localhost:8888/hiko-devtut/writing-resources/</link>
+		<pubDate>Sun, 18 Feb 2018 20:57:29 +0000</pubDate>
+		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/dwp-wordpress/?page_id=1635</guid>
+		<description></description>
+		<content:encoded><![CDATA[<h2>Writing for the web</h2>
+
+Not sure how to get started? Looking for inspiration? We’ve compiled some resources we think might be useful for you when starting out; from projects we admire, to handy tips and tricks.
+
+<h3>E-Resources</h3>
+
+<ul>
+<li><a href="http://ds106.us/">ds106</a> (University of Mary Washington) - Resource containing tips on digital storytelling</li>
+<li><em><a href="https://www.intechnic.com/blog/50-tips-for-writing-for-the-web/">50 Tips for Writing for the Web</a></em> (intechnic) - Sound advice on writing for the web</li>
+<li><em><a href="https://www.contentfac.com/even-more-web-content-writing-tips/">(Even More!) Web Content Writing Tips</a></em> (contentfac) - Another good source on the topic</li>
+</ul>
+
+<h3>Books</h3>
+
+<ul>
+<li><em><a href="https://books.google.co.nz/books/about/Writing_and_Editing_for_Digital_Media.html?id=Ab3cAwAAQBAJ&amp;redir_esc=y">‘Writing and Editing for Digital Media’</a></em> (Carroll, 2014) - Excellent book on digital writing and editing techniques</li>
+<li><em><a href="https://www.amazon.com/Crafting-Digital-Writing-Composing-Across/dp/0325046964">‘Crafting Digital Writing: Composing Texts Across Media and Genres’</a></em> (Hicks, 2013) - Another good book on this topic</li>
+</ul>
+
+<h3>Examples of Digital Writing Projects:</h3>
+
+<ul>
+<li><a href="https://bat-bean-beam.blogspot.co.nz/">Bat, Bean, Beam</a></li>
+<li><a href="https://thenewinquiry.com/blog/">The New Inquiry</a></li>
+<li><a href="https://publicaddress.net/">Public Address</a></li>
+<li><a href="https://www.canopycanopycanopy.com/">Triple Canopy</a></li>
+<li><a href="http://stephanieklein.com/">Stephanie Klein</a></li>
+<li><a href="https://www.thefword.org.uk/">the f-word</a></li>
+<li><a href="https://disquietblog.wordpress.com/">The Blog of Disquiet</a></li>
+<li><a href="http://readingthemaps.blogspot.co.nz/">Reading the Maps</a></li>
+<li><a href="http://socialdead.tumblr.com/">Social Dead Zone</a></li>
+<li><a href="https://wellywoodwoman.blogspot.co.nz/">Wellywood Woman</a></li>
+</ul>
+
+<hr />
+
+<h2>Markdown</h2>
+
+Markdown is a popular method of writing on the internet, as your writing is no longer impeded by clicking buttons or your hands leaving the keyboard. If you’ve ever written on platforms such as Medium, you may be familiar with this approach.
+
+Excellent resources related to Markdown can be viewed at GitHub:
+
+<ul>
+<li>Their <em><a href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown</a></em> guide covers the majority of the syntax MD uses</li>
+<li>For a quick visual reference, keep their <em><a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">Markdown Syntax</a></em> sheet handy</li>
+</ul>
+
+<h2>HTML Resources</h2>
+
+HTML provides the scaffolding for websites on the internet, so it is certainly useful to understand. While slightly more complex than Markdown, the syntax for HTML has a very low learning curve.
+
+If you’re interested in using HTML for writing in Hiko, a great place to start is by looking at the HTML resources provided by the Mozilla Developer Network:
+
+<ul>
+<li>A full list of MND HTML resources can be accessed <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">here</a></li>
+<li><em><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">The Introduction to HTML</a></em> module is especially relevant to writing using HTML</li>
+</ul>
+
+If interactive learning comes easier to you, perhaps take a look at the codecademy <em><a href="https://www.codecademy.com/learn/learn-html">Learn HTML</a></em> tutorial
+
+<hr />
+
+<h2>Citations</h2>
+
+Chances are, if you’re creating an article as part of a university course, then a formalised reference style should be used when referencing external sources.
+
+Fortunately, Victoria University of Wellington’s library has compiled an excellent array of resources for APA, Chicago, MLA, and NZLSG. See their <em><a href="http://libguides.victoria.ac.nz/c.php?g=191240&amp;p=1263543">Referencing and Citing</a></em> guide for more information.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1635</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-18 20:57:29]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-18 20:57:29]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[writing-resources]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="author" nicename="cap-ryanachten"><![CDATA[ryanachten]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Media Resources</title>
+		<link>http://localhost:8888/hiko-devtut/media-resources/</link>
+		<pubDate>Sun, 18 Feb 2018 20:57:45 +0000</pubDate>
+		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/dwp-wordpress/?page_id=1637</guid>
+		<description></description>
+		<content:encoded><![CDATA[<h2>WordPress Embeds</h2>
+
+Be it a video, an image or a map, the majority of media out there is able to be integrated into a <em>Blog Post, Project,</em> or <em>Series</em> by Hiko in one form or another. Depending on the type of media you are wanting to integrate into your works, there are one of two approaches.
+
+<h3>Images</h3>
+
+If you’re aiming to include an image you can upload these directly to Hiko - see the section in the <em>Author Tutorial</em> where we go over how.
+If you’re looking for places to source your images from, we’ve listed some excellent repositories below.
+
+<h3>Other media</h3>
+
+For anything other than images need to be embedded using third-party providers (i.e. Youtube or Vimeo for video or Google Maps for maps). Hiko is built on top of the WordPress content management system to help deliver a vast array of functionality. One aspect of this functionality is the media which can be embedded into your <em>Blog Post, Project,</em> or <em>Series</em>.
+
+We briefly go over how to embed media into your articles in this section of the <em>Author Tutorial</em>, however, for more comprehensive guide, we recommend you take a look at the <em><a href="https://codex.wordpress.org/Embeds">Embeds</a></em> guide on WordPress.org’s Codex
+
+<ul>
+<li>Especially important in this guide, is the section which discusses which <a href="https://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F">third-party embeds</a> are supported by WordPress (and are therefore supported by Hiko)</li>
+</ul>
+
+<hr />
+
+<h2>Sourcing Media</h2>
+
+When including media in your Hiko articles, we highly recommend the use of work which does not fall under restricted copyright licensing, such as those which sit in the public domain or licensed under Creative Commons. If you’re wanting to use media which falls under copyright, you will need to get in contact with the owner of the work and get their permission.
+
+While many of the sources listed below contain content free to use in your work, you need to be aware of the copyright status of the media you’re including.
+
+<ul>
+<li>If you’re unsure about how Creative Commons works, we suggest reading the <em><a href="https://creativecommons.org.nz/licences/licences-explained/">Licences explained</a></em> guide by Creative Commons NZ</li>
+</ul>
+
+<h3>Multimedia</h3>
+
+These sources include a range of media such as images, audio, video:
+
+<ul>
+<li><a href="https://digitalnz.org/">DigitalNZ</a> - <em>'Search 30+ million New Zealand items across 300+ collections in one place.’</em></li>
+<li><a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a> - <em>‘a collection of 44,455,053 freely usable media files to which anyone can contribute’</em></li>
+<li><a href="https://archive.org/">Internet Archive</a> - <em>‘non-profit library of millions of free books, movies, software, music, websites, and more.’</em></li>
+<li><a href="https://search.creativecommons.org/">Creative Commons Search</a> - <em>‘Find content you can share, use and remix’</em></li>
+<li><a href="http://www.openculture.com/">Open Culture</a> - <em>‘free cultural and educational media on the web’</em></li>
+</ul>
+
+<h3>Images</h3>
+
+<ul>
+<li><a href="https://www.flickr.com/commons">Flickr Commons</a> - ‘share hidden treasures from the world's public photography archives.’</li>
+<li><a href="http://search.getty.edu/gateway/search?cat=highlight&amp;f=%22Open+Content+Images%22&amp;rows=10&amp;srt=a&amp;dir=s&amp;pg=1">Getty Search Gateway</a> (Open Content Images) - <em>‘search across several of the Getty repositories, including collections databases, library catalogs, collection inventories, and archival finding aids.’</em></li>
+</ul>
+
+<h3>Music</h3>
+
+<ul>
+<li><a href="http://freemusicarchive.org/">Free Music Archive</a> - <em>‘interactive library of high-quality, legal audio downloads’</em></li>
+</ul>
+
+<h3>TV</h3>
+
+<ul>
+<li><a href="http://www.etv.org.nz/">eTV</a> - <em>'over 35,000 TV and Library recordings'</em> (requires education institution login)
+
+<ul>
+<li>See <a href="http://libguides.victoria.ac.nz/digital-tv">VUW guide</a> on how to use eTV</li>
+</ul></li>
+</ul>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1637</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-18 20:57:45]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-18 20:57:45]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[media-resources]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="author" nicename="cap-ryanachten"><![CDATA[ryanachten]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>FAQ</title>
+		<link>http://localhost:8888/hiko-devtut/faq/</link>
+		<pubDate>Sun, 18 Feb 2018 20:57:52 +0000</pubDate>
+		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/dwp-wordpress/?page_id=1639</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p style="text-align: center;">Coming soon!</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1639</wp:post_id>
+		<wp:post_date><![CDATA[2018-02-18 20:57:52]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-02-18 20:57:52]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[faq]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="author" nicename="cap-ryanachten"><![CDATA[ryanachten]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title></title>
+		<link>http://localhost:8888/hiko-devtut/2018/03/13/1647/</link>
+		<pubDate>Tue, 13 Mar 2018 20:21:23 +0000</pubDate>
+		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/hiko-devtut/?p=1647</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1588</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-17 22:52:22]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-17 22:52:22]]></wp:post_date_gmt>
+		<wp:post_id>1647</wp:post_id>
+		<wp:post_date><![CDATA[2018-03-13 20:21:23]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-03-13 20:21:23]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[1588]]></wp:post_name>
+		<wp:post_name><![CDATA[1647]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="main-menu"><![CDATA[Main Menu]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1066]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+			<wp:meta_value><![CDATA[page]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title></title>
+		<link>http://localhost:8888/hiko-devtut/2018/03/13/1648/</link>
+		<pubDate>Tue, 13 Mar 2018 20:22:04 +0000</pubDate>
+		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8888/hiko-devtut/?p=1648</guid>
+		<description></description>
+		<content:encoded><![CDATA[ ]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1648</wp:post_id>
+		<wp:post_date><![CDATA[2018-03-13 20:22:04]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-03-13 20:22:04]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[1648]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>1</wp:menu_order>
@@ -1266,19 +1753,19 @@ Android the notional night cops reporter in Des Moines filters kitchen table of 
 	</item>
 	<item>
 		<title></title>
-		<link>http://localhost:8888/hiko-devtut/2018/02/17/1589/</link>
-		<pubDate>Sat, 17 Feb 2018 22:52:22 +0000</pubDate>
+		<link>http://localhost:8888/hiko-devtut/2018/03/13/1649/</link>
+		<pubDate>Tue, 13 Mar 2018 20:22:05 +0000</pubDate>
 		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/hiko-devtut/?p=1589</guid>
+		<guid isPermaLink="false">http://localhost:8888/hiko-devtut/?p=1649</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1589</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-17 22:52:22]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-17 22:52:22]]></wp:post_date_gmt>
+		<wp:post_id>1649</wp:post_id>
+		<wp:post_date><![CDATA[2018-03-13 20:22:05]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-03-13 20:22:05]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[1589]]></wp:post_name>
+		<wp:post_name><![CDATA[1649]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>2</wp:menu_order>
@@ -1321,19 +1808,19 @@ Android the notional night cops reporter in Des Moines filters kitchen table of 
 	</item>
 	<item>
 		<title></title>
-		<link>http://localhost:8888/hiko-devtut/2018/02/17/1590/</link>
-		<pubDate>Sat, 17 Feb 2018 22:52:22 +0000</pubDate>
+		<link>http://localhost:8888/hiko-devtut/2018/03/13/1650/</link>
+		<pubDate>Tue, 13 Mar 2018 20:22:05 +0000</pubDate>
 		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/hiko-devtut/?p=1590</guid>
+		<guid isPermaLink="false">http://localhost:8888/hiko-devtut/?p=1650</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1590</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-17 22:52:22]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-17 22:52:22]]></wp:post_date_gmt>
+		<wp:post_id>1650</wp:post_id>
+		<wp:post_date><![CDATA[2018-03-13 20:22:05]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-03-13 20:22:05]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[1590]]></wp:post_name>
+		<wp:post_name><![CDATA[1650]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>4</wp:menu_order>
@@ -1376,19 +1863,19 @@ Android the notional night cops reporter in Des Moines filters kitchen table of 
 	</item>
 	<item>
 		<title></title>
-		<link>http://localhost:8888/hiko-devtut/2018/02/17/1591/</link>
-		<pubDate>Sat, 17 Feb 2018 22:52:22 +0000</pubDate>
+		<link>http://localhost:8888/hiko-devtut/2018/03/13/1651/</link>
+		<pubDate>Tue, 13 Mar 2018 20:22:05 +0000</pubDate>
 		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/hiko-devtut/?p=1591</guid>
+		<guid isPermaLink="false">http://localhost:8888/hiko-devtut/?p=1651</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1591</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-17 22:52:22]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-17 22:52:22]]></wp:post_date_gmt>
+		<wp:post_id>1651</wp:post_id>
+		<wp:post_date><![CDATA[2018-03-13 20:22:05]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-03-13 20:22:05]]></wp:post_date_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[1591]]></wp:post_name>
+		<wp:post_name><![CDATA[1651]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>3</wp:menu_order>
@@ -1487,667 +1974,6 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 			<wp:comment_parent>0</wp:comment_parent>
 			<wp:comment_user_id>0</wp:comment_user_id>
 		</wp:comment>
-	</item>
-	<item>
-		<title>Sample Page</title>
-		<link>http://localhost:8888/hiko-devtut/sample-page__trashed-2/</link>
-		<pubDate>Sat, 17 Feb 2018 04:33:22 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/hiko-devtut/?page_id=2</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:
-
-<blockquote>Hi there! I'm a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin' caught in the rain.)</blockquote>
-
-...or something like this:
-
-<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>
-
-As a new WordPress user, you should go to <a href="http://localhost:8888/hiko-devtut/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-17 04:33:22]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-17 04:33:22]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[sample-page__trashed-2]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1518842355]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[sample-page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Sample Page</title>
-		<link>http://localhost:8888/hiko-devtut/sample-page-2__trashed/</link>
-		<pubDate>Fri, 16 Feb 2018 01:44:11 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/hiko-devtut/?page_id=2</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:
-
-<blockquote>Hi there! I'm a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin' caught in the rain.)</blockquote>
-
-...or something like this:
-
-<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>
-
-As a new WordPress user, you should go to <a href="http://localhost:8888/hiko-devtut/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>5</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-16 01:44:11]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-16 01:44:11]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[sample-page-2__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1518842352]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[sample-page-2]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Sample Page</title>
-		<link>http://localhost:8888/hiko-devtut/sample-page__trashed/</link>
-		<pubDate>Thu, 14 Sep 2017 22:39:52 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/dwp-wordpress/?page_id=2</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:
-
-<blockquote>Hi there! I'm a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin' caught in the rain.)</blockquote>
-
-...or something like this:
-
-<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>
-
-As a new WordPress user, you should go to <a href="http://localhost:8888/dwp-wordpress/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>16</wp:post_id>
-		<wp:post_date><![CDATA[2017-09-14 22:39:52]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2017-09-14 22:39:52]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[sample-page__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517345078]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[sample-page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>This is a page test</title>
-		<link>http://localhost:8888/hiko-devtut/this-is-a-second-test__trashed/</link>
-		<pubDate>Fri, 15 Sep 2017 00:22:23 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/dwp-wordpress/?page_id=4</guid>
-		<description></description>
-		<content:encoded><![CDATA[Content will go here blah blah blah
-
-&nbsp;
-
-<h1>this is a h1 test yooo</h1>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>17</wp:post_id>
-		<wp:post_date><![CDATA[2017-09-15 00:22:23]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2017-09-15 00:22:23]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[this-is-a-second-test__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517345079]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[this-is-a-second-test]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Child Page 02</title>
-		<link>http://localhost:8888/hiko-devtut/parent-page__trashed/child-page-02__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:25:51 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1092</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is a child page.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1092</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:25:51]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:25:51]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[child-page-02__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>1088</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517345078]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[child-page-02]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Child Page 03</title>
-		<link>http://localhost:8888/hiko-devtut/parent-page__trashed/child-page-03__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:26:23 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1094</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is a child page.
-
-And, just for fun, it also contains a child page (aka. a grandchild page).]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1094</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:26:23]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:26:23]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[child-page-03__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>1088</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517345078]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[child-page-03]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Child Page 04</title>
-		<link>http://localhost:8888/hiko-devtut/parent-page__trashed/child-page-04__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:26:40 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1096</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is a child page.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1096</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:26:40]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:26:40]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[child-page-04__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>1088</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517345078]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[child-page-04]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Child Page 05</title>
-		<link>http://localhost:8888/hiko-devtut/parent-page__trashed/child-page-05__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:27:40 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1098</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is a child page.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1098</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:27:40]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:27:40]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[child-page-05__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>1088</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517345078]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[child-page-05]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Grandchild Page</title>
-		<link>http://localhost:8888/hiko-devtut/parent-page__trashed/child-page-03__trashed/grandchild-page__trashed/</link>
-		<pubDate>Fri, 15 Mar 2013 23:28:48 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://wptest.io/demo/?page_id=1102</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is a grandchild page.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1102</wp:post_id>
-		<wp:post_date><![CDATA[2013-03-15 18:28:48]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2013-03-15 23:28:48]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[grandchild-page__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>1094</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517345078]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[grandchild-page]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Markdown Page Test</title>
-		<link>http://localhost:8888/hiko-devtut/markdown-vs-markup-test__trashed/</link>
-		<pubDate>Mon, 25 Sep 2017 01:50:55 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/dwp-wordpress/?page_id=1322</guid>
-		<description></description>
-		<content:encoded><![CDATA[MD Github Cheatsheet - MD test <a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">via</a>
-
-<h1>This is an h1 tag (can't combine with html h1 tag)</h1>
-
-<h2>This is an h2 tag (can't combine with html h2 tag)</h2>
-
-<h6>This is an h6 tag (can't combine with html h6 tag)</h6>
-
-<em>This text will be italic</em>
-<em>This will also be italic</em>
-<strong>This text will be bold</strong>
-<strong>This will also be bold</strong>
-<em>You <strong>can</strong> combine them</em>
-
-<ul>
-<li>Item 1</li>
-<li>Item 2
-
-<ul>
-<li>Item 2a</li>
-<li>Item 2b</li>
-</ul></li>
-</ul>
-
-<ol>
-<li>Item 1</li>
-<li>Item 2</li>
-<li>Item 3
-
-<ul>
-<li>Item 3a</li>
-<li>Item 3b</li>
-</ul></li>
-</ol>
-
-As Grace Hopper said:
-
-<blockquote>
-  I’ve always been more interested
-  in the future than in the past.
-</blockquote>
-
-&#42;literal asterisks&#42;
-
-<table>
-<thead>
-<tr>
-  <th>First Header</th>
-  <th>Second Header</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Content cell 1</td>
-  <td>Content cell 2</td>
-</tr>
-<tr>
-  <td>Content column 1</td>
-  <td>Content column 2</td>
-</tr>
-</tbody>
-</table>
-
-<pre><code class="javascript">function test() {
- console.log("look ma’, no spaces");
-}
-</code></pre>
-
-<a href="http://github.com">GitHub</a>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1322</wp:post_id>
-		<wp:post_date><![CDATA[2017-09-25 01:50:55]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2017-09-25 01:50:55]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[markdown-vs-markup-test__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="author" nicename="cap-ryanachten"><![CDATA[ryanachten]]></category>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1517345048]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[markdown-vs-markup-test]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Courses</title>
-		<link>http://localhost:8888/hiko-devtut/__trashed/</link>
-		<pubDate>Fri, 16 Feb 2018 03:23:39 +0000</pubDate>
-		<dc:creator><![CDATA[RyanAchten]]></dc:creator>
-		<guid isPermaLink="false">http://localhost:8888/dwp-wordpress/?page_id=1521</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1521</wp:post_id>
-		<wp:post_date><![CDATA[2018-02-16 03:23:39]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2018-02-16 03:23:39]]></wp:post_date_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wpcom_is_markdown]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-			<wp:meta_value><![CDATA[draft]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-			<wp:meta_value><![CDATA[1518751418]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Hello world!</title>
