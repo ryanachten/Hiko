@@ -12,28 +12,26 @@
 
 							<header class="article-header">
 								<h1 class="page-title text-center"><?php esc_html_e( the_title(), 'jointswp' ); ?></h1>
-							</header> <!-- end article header -->
+							</header>
 
 							<section class="entry-content" itemprop="articleBody">
 								<?php esc_html_e( the_content(), 'jointswp' ); ?>
-							</section> <!-- end article section -->
+							</section>
 
 							<footer class="article-footer">
 
-							</footer> <!-- end article footer -->
+							</footer>
 
-						</article> <!-- end article -->
+						</article>
 
 		    <?php endwhile; endif; ?>
 
-			</main> <!-- end #main -->
+			</main>
 
-		    <?php //get_sidebar(); ?>
+		</div>
 
-		</div> <!-- end #inner-content -->
+	</div>
 
-	</div> <!-- end #content -->
-
-	<p style="text-align: center;">Template: page-about.php</p>
+	<!-- <p style="text-align: center;">Template: page-about.php</p> -->
 
 <?php get_footer(); ?>

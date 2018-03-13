@@ -7,10 +7,10 @@
     					</nav>
 							<a class="footer-logo" href="<?php echo home_url(); ?>"><span class="footer-logotype"><?php bloginfo('name'); ?></span></a>
     				</div>
-					</div> <!-- end #inner-footer -->
-				</footer> <!-- end .footer -->
-			</div>  <!-- end .main-content -->
-		</div> <!-- end .off-canvas-wrapper -->
+					</div>
+				</footer>
+			</div>
+		</div>
 		<?php wp_footer(); ?>
 	</body>
-</html> <!-- end page -->
+</html>

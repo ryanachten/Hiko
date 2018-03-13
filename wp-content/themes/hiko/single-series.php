@@ -17,7 +17,7 @@
 
 		    <?php endif; ?>
 
-			</main> <!-- end #main -->
+			</main>
 
 			 <section id="series-parts-container" class="medium-12 large-12 small-centered columns">
 
@@ -32,9 +32,8 @@
 			<?php	// reset post data before retrieving metadata to avoid conflicts
 			wp_reset_postdata(); ?>
 
-	</div> <!-- end #inner-content -->
-
-</div> <!-- end #content -->
+	</div>
+</div>
 
 
 <?php //Check to see if there are article Citations
@@ -50,9 +49,9 @@
 <?php endif; ?>
 
 
-<!-- Get metadata links -->
-<?php get_template_part( 'parts/single', 'metalinks' ); ?>
+<?php //Get metadata links
+get_template_part( 'parts/single', 'metalinks' ); ?>
 
-<p style="text-align: center;">Template: single-series.php</p>
+<!-- <p style="text-align: center;">Template: single-series.php</p> -->
 
 <?php get_footer(); ?>

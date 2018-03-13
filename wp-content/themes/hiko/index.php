@@ -12,8 +12,8 @@
 
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<!-- To see additional archive styles, visit the /parts directory -->
-					<?php get_template_part( 'parts/loop', 'archive-grid' ); ?>
+					<?php //To see additional archive styles, visit the /parts directory
+					get_template_part( 'parts/loop', 'archive-grid' ); ?>
 
 				<?php endwhile; ?>
 
@@ -25,12 +25,11 @@
 
 				<?php endif; ?>
 
-		    </main> <!-- end #main -->
+		    </main>
 
 				<p style="text-align: center;">Template: index.php</p>
 
-		</div> <!-- end #inner-content -->
-
-	</div> <!-- end #content -->
+		</div>
+	</div>
 
 <?php get_footer(); ?>

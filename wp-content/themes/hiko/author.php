@@ -1,5 +1,3 @@
-
-
 <?php get_header(); ?>
 
 	<div id="content">
@@ -53,11 +51,8 @@
 					<?php	loop_custom_grid('featured_series', true, 4); ?>
 
 				</section>
-
-
-	    </div> <!-- end #inner-content -->
-
-	</div> <!-- end #content -->
-	<p style="text-align: center;">Template: author.php</p>
+	    </div>
+	</div>
+	<!-- <p style="text-align: center;">Template: author.php</p> -->
 
 <?php get_footer(); ?>

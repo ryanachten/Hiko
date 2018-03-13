@@ -41,13 +41,9 @@
 
 				<?php endif; ?>
 
-			</main> <!-- end #main -->
-
-
-
-	    </div> <!-- end #inner-content -->
-
-	</div> <!-- end #content -->
-	<p style="clear: both; text-align: center;">Template: archive-series.php</p>
+			</main>
+	   </div>
+	</div>
+	<!-- <p style="clear: both; text-align: center;">Template: archive-series.php</p> -->
 
 <?php get_footer(); ?>

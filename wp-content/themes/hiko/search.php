@@ -22,8 +22,9 @@
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<!-- To see additional archive styles, visit the /parts directory -->
-					<?php get_template_part( 'parts/loop', 'archive-grid' ); ?>
+					<?php
+					// To see additional archive styles, visit the /parts directory
+					get_template_part( 'parts/loop', 'archive-grid' ); ?>
 
 					<?php endwhile; ?>
 
@@ -35,11 +36,11 @@
 
 					<?php endif; ?>
 
-				</main> <!-- end #main -->
+				</main>
 
-	    </div> <!-- end #inner-content -->
+	    </div>
 
-	</div> <!-- end #content -->
-	<p style="clear: both; text-align: center;">Template: search.php</p>
+	</div>
+	<!-- <p style="clear: both; text-align: center;">Template: search.php</p> -->
 
 <?php get_footer(); ?>

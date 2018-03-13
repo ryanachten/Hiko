@@ -70,6 +70,6 @@
 		</div>
 	</div>
 
-	<p style="text-align: center;">Template: page-help.php</p>
+	<!-- <p style="text-align: center;">Template: page-help.php</p> -->
 
 <?php get_footer(); ?>

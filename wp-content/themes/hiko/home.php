@@ -42,13 +42,9 @@ Blog archive page (as per WP template architecture), not the front-page
 
 				<?php endif; ?>
 
-			</main> <!-- end #main -->
-
-
-
-	    </div> <!-- end #inner-content -->
-
-	</div> <!-- end #content -->
-	<p style="text-align: center;">Template: home.php</p>
+			</main>
+	  </div>
+	</div>
+	<!-- <p style="text-align: center;">Template: home.php</p> -->
 
 <?php get_footer(); ?>

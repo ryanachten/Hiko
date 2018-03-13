@@ -25,7 +25,7 @@ The initial system requirements for Hiko included the following:
 
 WordPress’ CMS was eventually selected for its plugin ecosystem, ease of which rapid development could take place, and the degree to which project requirements were fulfilled by WordPress core out-of-the-box. Both the frontend and backend of WordPress were heavily customised and a number of plugins used to deliver the end result.
 
-Of all of the features we have built for Hiko, two are of specific importance: Hiko’s article types and editorial workflow.
+Of all of the features we have built for Hiko, two are of specific importance: Hiko’s _article types_ and _editorial workflow_.
 
 ![Hiko post archive page](https://github.com/ryanachten/Hiko/blob/master/wp-content/themes/hiko/assets/images/wiki/HeroImages/Hiko_HeroImage_ArchivePages.jpg)
 

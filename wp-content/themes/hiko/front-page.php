@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-	<!-- Gets post assigned via ACF Relationship field -->
-	<?php	$featured_article = get_field('landing_featured_article');
+	<?php	//Gets post assigned via ACF Relationship field
+	$featured_article = get_field('landing_featured_article');
 		if( $featured_article ): ?>
-			<!-- assign featured post to post global -->
-			<?php $post = $featured_article[0];
+			<?php //assign featured post to post global
+			$post = $featured_article[0];
 				setup_postdata( $post ); ?>
 
 				<section class="frontpage-hero-post"
@@ -14,8 +14,8 @@
 					<div class="frontpage-hero-description small-centered small-11 large-11 row">
 							<?php get_template_part( 'parts/content', 'byline' ); ?>
 
-						<!-- Style title based on post type -->
-						<?php if (get_post_type() == 'post'): ?>
+						<?php //Style title based on post type
+						if (get_post_type() == 'post'): ?>
 							<h1 class="blog-title">
 						<?php elseif (get_post_type() == 'projects'): ?>
 							<h1 class="project-title">
@@ -126,15 +126,10 @@
 							}
 						?>
 					</section>
-
-				</main> <!-- end #main -->
-
-	    </div> <!-- end #inner-content -->
-
-	</div> <!-- end #content -->
-	<div class="small-12">
-			<p style="text-align: center;">Template: front-page.php</p>
+				</main>
+	    </div>
 	</div>
+	<!-- <p style="text-align: center;">Template: front-page.php</p> -->
 
 
 <?php get_footer(); ?>

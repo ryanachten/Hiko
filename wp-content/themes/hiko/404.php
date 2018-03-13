@@ -10,12 +10,12 @@
 
 					<header class="fourofour-header">
 						<h1 class="text-center"><?php _e( 'Epic 404 - Page Not Found', 'jointswp' ); ?></h1>
-					</header> <!-- end article header -->
+					</header>
 
 					<section class="fourofour-content text-center">
 						<h3 class="subheader"><?php _e( 'Sorry! The page you were looking for was not found, how about searching for it below?', 'jointswp' ); ?></h3>
 						<?php get_search_form() ?>
-					</section> <!-- end article section -->
+					</section>
 
 					<h3 class="subheader text-center"><?php _e( '...Or check out one of these articles:', 'jointswp' ); ?></h3>
 					<!-- Provides latest article thumbnails -->
@@ -37,13 +37,9 @@
 							}
 						?>
 					</section>
-
-				</article> <!-- end article -->
-
-			</main> <!-- end #main -->
-
-		</div> <!-- end #inner-content -->
-
-	</div> <!-- end #content -->
+				</article>
+			</main>
+		</div>
+	</div>
 
 <?php get_footer(); ?>

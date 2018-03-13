@@ -57,12 +57,10 @@
 
 			</main> <!-- end #main -->
 
-		    <?php //get_sidebar(); ?>
-
 		</div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
 
-	<p style="text-align: center;">Template: page-contact.php</p>
+	<!-- <p style="text-align: center;">Template: page-contact.php</p> -->
 
 <?php get_footer(); ?>

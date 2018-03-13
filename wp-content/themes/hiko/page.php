@@ -12,14 +12,12 @@
 
 			    <?php endwhile; endif; ?>
 
-			</main> <!-- end #main -->
+			</main>
 
-		    <?php //get_sidebar(); ?>
+		</div>
 
-		</div> <!-- end #inner-content -->
+	</div>
 
-	</div> <!-- end #content -->
-
-	<p style="text-align: center;">Template: page.php</p>
+	<!-- <p style="text-align: center;">Template: page.php</p> -->
 
 <?php get_footer(); ?>
