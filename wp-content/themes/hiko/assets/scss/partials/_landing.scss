@@ -59,3 +59,13 @@
 main#main.frontpage-content{
   margin: 0 auto;
 }
+
+// Footer fix for the front page
+body.home{
+  .off-canvas-content{
+    padding-bottom: 0px;
+  }
+  .footer{
+    position: inherit;
+  }
+}
