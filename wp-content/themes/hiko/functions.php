@@ -142,6 +142,11 @@ function media_upload_filesize_cap( $size ){
 		// i.e. 5,242,880 bytes binary = 5MB
 		$size = 1024 * 1024 * 5;
 	}
+	else if( current_user_can( 'manage_options' )) {
+		// Admin has larger upload allowance
+		// i.e. 10,485,760 bytes binary = 10MB
+		$size = 1024 * 1024 * 10;
+	}
 	return $size;
 }
 add_filter( 'upload_size_limit', 'media_upload_filesize_cap' );
